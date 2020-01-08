@@ -77,8 +77,6 @@ CAMK ,DAPK3, DAPK3_HUMAN (O43293    )
 CAMK ,DCLK1, DCLK1_HUMAN (O15075    )
 CAMK ,DCLK2, DCLK2_HUMAN (Q8N568    )
 CAMK ,DCLK3, DCLK3_HUMAN (Q9C098    )
-CAMK ,Gm4922,
-CAMK ,Gm7168,
 CAMK ,HUNK, HUNK_HUMAN  (P57058    )
 CAMK ,KALRN, KALRN_HUMAN (O60229    )
 CAMK ,MAPKAPK2, MAPK2_HUMAN (P49137    )
@@ -124,11 +122,6 @@ CAMK ,STK17A, ST17A_HUMAN (Q9UEE5    )
 CAMK ,STK17B, ST17B_HUMAN (O94768    )
 CAMK ,STK33, STK33_HUMAN (Q9BYT3    )
 CAMK ,STK40, STK40_HUMAN (Q8N2I9    )
-CAMK ,Smok2a,
-CAMK ,Smok2b,
-CAMK ,Smok3a,
-CAMK ,Smok3b,
-CAMK ,Stk-ps2,
 CAMK ,TRIB1, TRIB1_HUMAN (Q96RU8    )
 CAMK ,TRIB2, TRIB2_HUMAN (Q92519    )
 CAMK ,TRIB3, TRIB3_HUMAN (Q96RU7    )
@@ -139,7 +132,6 @@ CAMK ,TSSK3, TSSK3_HUMAN (Q96PN8    )
 CAMK ,TSSK4, TSSK4_HUMAN (Q6SA08    )
 CAMK ,TSSK6, TSSK6_HUMAN (Q9BXA6    )
 CAMK ,TTN, TITIN_HUMAN (Q8WZ42    )
-CAMK ,Tssk5,
 CK1 ,CSNK1A1, KC1A_HUMAN  (P48729    )
 CK1 ,CSNK1A1L, KC1AL_HUMAN (Q8N752    )
 CK1 ,CSNK1D, KC1D_HUMAN  (P48730    )
@@ -228,8 +220,6 @@ NEK ,NEK9     ,NEK9_HUMAN  (Q8TD19    )
 adenylyl cyclase class-4/guanylyl cyclase,GUCY2C    ,GUC2C_HUMAN (P25092    )
 adenylyl cyclase class-4/guanylyl cyclase,GUCY2D    ,GUC2D_HUMAN (Q02846    )
 adenylyl cyclase class-4/guanylyl cyclase,GUCY2F    ,GUC2F_HUMAN (P51841    )
-adenylyl cyclase class-4/guanylyl cyclase,Gucy2e,
-adenylyl cyclase class-4/guanylyl cyclase,Gucy2g,
 adenylyl cyclase class-4/guanylyl cyclase,NPR1      ,ANPRA_HUMAN (P16066    )
 adenylyl cyclase class-4/guanylyl cyclase,NPR2      ,ANPRB_HUMAN (P20594    )
 STE ,MAP2K1,MP2K1_HUMAN (Q02750    )
@@ -402,8 +392,6 @@ Tyr,SRC,SRC_HUMAN   (P12931    )
 Tyr,SRMS,SRMS_HUMAN  (Q9H3Y6    )
 Tyr,STYK1,STYK1_HUMAN (Q6J9G0    )
 Tyr,SYK,KSYK_HUMAN  (P43405    )
-Tyr,Smok1,
-Tyr,Smoktcr,
 Tyr,TEC,TEC_HUMAN   (P42680    )
 Tyr,TEK,TIE2_HUMAN  (Q02763    )
 Tyr,TIE1,TIE1_HUMAN  (P35590    )
