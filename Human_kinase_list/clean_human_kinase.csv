@@ -1,407 +1,407 @@
 ,Family,Gene name,Uniprot_identifier,Uniprot_number
-0,AGC ,AKT1, AKT1_HUMAN  ,P31749    
-1,AGC ,AKT2, AKT2_HUMAN  ,P31751    
-2,AGC ,AKT3, AKT3_HUMAN  ,Q9Y243    
-3,AGC ,CDC42BPA, MRCKA_HUMAN ,Q5VT25    
-4,AGC ,CDC42BPB, MRCKB_HUMAN ,Q9Y5S2    
-5,AGC ,CDC42BPG, MRCKG_HUMAN ,Q6DT37    
-6,AGC ,CIT, CTRO_HUMAN  ,O14578    
-7,AGC ,DMPK, DMPK_HUMAN  ,Q09013    
-8,AGC ,GRK1, GRK1_HUMAN  ,Q15835    
-9,AGC ,GRK2, ARBK1_HUMAN ,P25098    
-10,AGC ,GRK3, ARBK2_HUMAN ,P35626    
-11,AGC ,GRK4, GRK4_HUMAN  ,P32298    
-12,AGC ,GRK5, GRK5_HUMAN  ,P34947    
-13,AGC ,GRK6, GRK6_HUMAN  ,P43250    
-14,AGC ,GRK7, GRK7_HUMAN  ,Q8WTQ7    
-15,AGC ,LATS1, LATS1_HUMAN ,O95835    
-16,AGC ,LATS2, LATS2_HUMAN ,Q9NRM7    
-17,AGC ,MAST1, MAST1_HUMAN ,Q9Y2H9    
-18,AGC ,MAST2, MAST2_HUMAN ,Q6P0Q8    
-19,AGC ,MAST3, MAST3_HUMAN ,O60307    
-20,AGC ,MAST4, MAST4_HUMAN ,O15021    
-21,AGC ,MASTL, GWL_HUMAN   ,Q96GX5    
-22,AGC ,PDPK1, PDPK1_HUMAN ,O15530    
-23,AGC ,PDPK2P, PDPK2_HUMAN ,Q6A1A2    
-24,AGC ,PKN1, PKN1_HUMAN  ,Q16512    
-25,AGC ,PKN2, PKN2_HUMAN  ,Q16513    
-26,AGC ,PKN3, PKN3_HUMAN  ,Q6P5Z2    
-27,AGC ,PRKACA, KAPCA_HUMAN ,P17612    
-28,AGC ,PRKACB, KAPCB_HUMAN ,P22694    
-29,AGC ,PRKACG, KAPCG_HUMAN ,P22612    
-30,AGC ,PRKCA, KPCA_HUMAN  ,P17252    
-31,AGC ,PRKCB, KPCB_HUMAN  ,P05771    
-32,AGC ,PRKCD, KPCD_HUMAN  ,Q05655    
-33,AGC ,PRKCE, KPCE_HUMAN  ,Q02156    
-34,AGC ,PRKCG, KPCG_HUMAN  ,P05129    
-35,AGC ,PRKCH, KPCL_HUMAN  ,P24723    
-36,AGC ,PRKCI, KPCI_HUMAN  ,P41743    
-37,AGC ,PRKCQ, KPCT_HUMAN  ,Q04759    
-38,AGC ,PRKCZ, KPCZ_HUMAN  ,Q05513    
-39,AGC ,PRKG1, KGP1_HUMAN  ,Q13976    
-40,AGC ,PRKG2, KGP2_HUMAN  ,Q13237    
-41,AGC ,PRKX, PRKX_HUMAN  ,P51817    
-42,AGC ,PRKY, PRKY_HUMAN  ,O43930    
-43,AGC ,ROCK1, ROCK1_HUMAN ,Q13464    
-44,AGC ,ROCK2, ROCK2_HUMAN ,O75116    
-45,AGC ,RPS6KA1, KS6A1_HUMAN ,Q15418    
-46,AGC ,RPS6KA2, KS6A2_HUMAN ,Q15349    
-47,AGC ,RPS6KA3, KS6A3_HUMAN ,P51812    
-48,AGC ,RPS6KA4, KS6A4_HUMAN ,O75676    
-49,AGC ,RPS6KA5, KS6A5_HUMAN ,O75582    
-50,AGC ,RPS6KA6, KS6A6_HUMAN ,Q9UK32    
-51,AGC ,RPS6KB1, KS6B1_HUMAN ,P23443    
-52,AGC ,RPS6KB2, KS6B2_HUMAN ,Q9UBS0    
-53,AGC ,SGK1, SGK1_HUMAN  ,O00141    
-54,AGC ,SGK2, SGK2_HUMAN  ,Q9HBY8    
-55,AGC ,SGK3, SGK3_HUMAN  ,Q96BR1    
-56,AGC ,STK38, STK38_HUMAN ,Q15208    
-57,AGC ,STK38L, ST38L_HUMAN ,Q9Y2H1    
-58,CAMK ,BRSK1, BRSK1_HUMAN ,Q8TDC3    
-59,CAMK ,BRSK2, BRSK2_HUMAN ,Q8IWQ3    
-60,CAMK ,CAMK1, KCC1A_HUMAN ,Q14012    
-61,CAMK ,CAMK1D, KCC1D_HUMAN ,Q8IU85    
-62,CAMK ,CAMK1G, KCC1G_HUMAN ,Q96NX5    
-63,CAMK ,CAMK2A, KCC2A_HUMAN ,Q9UQM7    
-64,CAMK ,CAMK2B, KCC2B_HUMAN ,Q13554    
-65,CAMK ,CAMK2D, KCC2D_HUMAN ,Q13557    
-66,CAMK ,CAMK2G, KCC2G_HUMAN ,Q13555    
-67,CAMK ,CAMK4, KCC4_HUMAN  ,Q16566    
-68,CAMK ,CAMKV, CAMKV_HUMAN ,Q8NCB2    
-69,CAMK ,CASK, CSKP_HUMAN  ,O14936    
-70,CAMK ,CHEK1, CHK1_HUMAN  ,O14757    
-71,CAMK ,CHEK2, CHK2_HUMAN  ,O96017    
-72,CAMK ,DAPK1, DAPK1_HUMAN ,P53355    
-73,CAMK ,DAPK2, DAPK2_HUMAN ,Q9UIK4    
-74,CAMK ,DAPK3, DAPK3_HUMAN ,O43293    
-75,CAMK ,DCLK1, DCLK1_HUMAN ,O15075    
-76,CAMK ,DCLK2, DCLK2_HUMAN ,Q8N568    
-77,CAMK ,DCLK3, DCLK3_HUMAN ,Q9C098    
-78,CAMK ,HUNK, HUNK_HUMAN  ,P57058    
-79,CAMK ,KALRN, KALRN_HUMAN ,O60229    
-80,CAMK ,MAPKAPK2, MAPK2_HUMAN ,P49137    
-81,CAMK ,MAPKAPK3, MAPK3_HUMAN ,Q16644    
-82,CAMK ,MAPKAPK5, MAPK5_HUMAN ,Q8IW41    
-83,CAMK ,MARK1, MARK1_HUMAN ,Q9P0L2    
-84,CAMK ,MARK2, MARK2_HUMAN ,Q7KZI7    
-85,CAMK ,MARK3, MARK3_HUMAN ,P27448    
-86,CAMK ,MARK4, MARK4_HUMAN ,Q96L34    
-87,CAMK ,MELK, MELK_HUMAN  ,Q14680    
-88,CAMK ,MKNK1, MKNK1_HUMAN ,Q9BUB5    
-89,CAMK ,MKNK2, MKNK2_HUMAN ,Q9HBH9    
-90,CAMK ,MYLK, MYLK_HUMAN  ,Q15746    
-91,CAMK ,MYLK2, MYLK2_HUMAN ,Q9H1R3    
-92,CAMK ,MYLK3, MYLK3_HUMAN ,Q32MK0    
-93,CAMK ,MYLK4, MYLK4_HUMAN ,Q86YV6    
-94,CAMK ,NIM1K, NIM1_HUMAN  ,Q8IY84    
-95,CAMK ,NUAK1, NUAK1_HUMAN ,O60285    
-96,CAMK ,NUAK2, NUAK2_HUMAN ,Q9H093    
-97,CAMK ,OBSCN, OBSCN_HUMAN ,Q5VST9    
-98,CAMK ,PASK, PASK_HUMAN  ,Q96RG2    
-99,CAMK ,PHKG1, PHKG1_HUMAN ,Q16816    
-100,CAMK ,PHKG2, PHKG2_HUMAN ,P15735    
-101,CAMK ,PIM1, PIM1_HUMAN  ,P11309    
-102,CAMK ,PIM2, PIM2_HUMAN  ,Q9P1W9    
-103,CAMK ,PIM3, PIM3_HUMAN  ,Q86V86    
-104,CAMK ,PNCK, KCC1B_HUMAN ,Q6P2M8    
-105,CAMK ,PRKAA1, AAPK1_HUMAN ,Q13131    
-106,CAMK ,PRKAA2, AAPK2_HUMAN ,P54646    
-107,CAMK ,PRKD1, KPCD1_HUMAN ,Q15139    
-108,CAMK ,PRKD2, KPCD2_HUMAN ,Q9BZL6    
-109,CAMK ,PRKD3, KPCD3_HUMAN ,O94806    
-110,CAMK ,PSKH1, KPSH1_HUMAN ,P11801    
-111,CAMK ,PSKH2, KPSH2_HUMAN ,Q96QS6    
-112,CAMK ,SIK1, SIK1_HUMAN  ,P57059    
-113,CAMK ,SIK1B, SIK1B_HUMAN ,A0A0B4J2F2
-114,CAMK ,SIK2, SIK2_HUMAN  ,Q9H0K1    
-115,CAMK ,SIK3, SIK3_HUMAN  ,Q9Y2K2    
-116,CAMK ,SNRK, SNRK_HUMAN  ,Q9NRH2    
-117,CAMK ,SPEG, SPEG_HUMAN  ,Q15772    
-118,CAMK ,STK11, STK11_HUMAN ,Q15831    
-119,CAMK ,STK17A, ST17A_HUMAN ,Q9UEE5    
-120,CAMK ,STK17B, ST17B_HUMAN ,O94768    
-121,CAMK ,STK33, STK33_HUMAN ,Q9BYT3    
-122,CAMK ,STK40, STK40_HUMAN ,Q8N2I9    
-123,CAMK ,TRIB1, TRIB1_HUMAN ,Q96RU8    
-124,CAMK ,TRIB2, TRIB2_HUMAN ,Q92519    
-125,CAMK ,TRIB3, TRIB3_HUMAN ,Q96RU7    
-126,CAMK ,TRIO, TRIO_HUMAN  ,O75962    
-127,CAMK ,TSSK1B, TSSK1_HUMAN ,Q9BXA7    
-128,CAMK ,TSSK2, TSSK2_HUMAN ,Q96PF2    
-129,CAMK ,TSSK3, TSSK3_HUMAN ,Q96PN8    
-130,CAMK ,TSSK4, TSSK4_HUMAN ,Q6SA08    
-131,CAMK ,TSSK6, TSSK6_HUMAN ,Q9BXA6    
-132,CAMK ,TTN, TITIN_HUMAN ,Q8WZ42    
-133,CK1 ,CSNK1A1, KC1A_HUMAN  ,P48729    
-134,CK1 ,CSNK1A1L, KC1AL_HUMAN ,Q8N752    
-135,CK1 ,CSNK1D, KC1D_HUMAN  ,P48730    
-136,CK1 ,CSNK1E, KC1E_HUMAN  ,P49674    
-137,CK1 ,CSNK1G1, KC1G1_HUMAN ,Q9HCP0    
-138,CK1 ,CSNK1G2, KC1G2_HUMAN ,P78368    
-139,CK1 ,CSNK1G3, KC1G3_HUMAN ,Q9Y6M4    
-140,CK1 ,TTBK1, TTBK1_HUMAN ,Q5TCY1    
-141,CK1 ,TTBK2, TTBK2_HUMAN ,Q6IQ55    
-142,CK1 ,VRK1, VRK1_HUMAN  ,Q99986    
-143,CK1 ,VRK2, VRK2_HUMAN  ,Q86Y07    
-144,CK1 ,VRK3, VRK3_HUMAN  ,Q8IV63    
-145,CMGC ,CDK1      ,CDK1_HUMAN  ,P06493    
-146,CMGC ,CDK10     ,CDK10_HUMAN ,Q15131    
-147,CMGC ,CDK11A    ,CD11A_HUMAN ,Q9UQ88    
-148,CMGC ,CDK11B    ,CD11B_HUMAN ,P21127    
-149,CMGC ,CDK12     ,CDK12_HUMAN ,Q9NYV4    
-150,CMGC ,CDK13     ,CDK13_HUMAN ,Q14004    
-151,CMGC ,CDK14     ,CDK14_HUMAN ,O94921    
-152,CMGC ,CDK15     ,CDK15_HUMAN ,Q96Q40    
-153,CMGC ,CDK16     ,CDK16_HUMAN ,Q00536    
-154,CMGC ,CDK17     ,CDK17_HUMAN ,Q00537    
-155,CMGC ,CDK18     ,CDK18_HUMAN ,Q07002    
-156,CMGC ,CDK19     ,CDK19_HUMAN ,Q9BWU1    
-157,CMGC ,CDK2      ,CDK2_HUMAN  ,P24941    
-158,CMGC ,CDK20     ,CDK20_HUMAN ,Q8IZL9    
-159,CMGC ,CDK3      ,CDK3_HUMAN  ,Q00526    
-160,CMGC ,CDK4      ,CDK4_HUMAN  ,P11802    
-161,CMGC ,CDK5      ,CDK5_HUMAN  ,Q00535    
-162,CMGC ,CDK6      ,CDK6_HUMAN  ,Q00534    
-163,CMGC ,CDK7      ,CDK7_HUMAN  ,P50613    
-164,CMGC ,CDK8      ,CDK8_HUMAN  ,P49336    
-165,CMGC ,CDK9      ,CDK9_HUMAN  ,P50750    
-166,CMGC ,CDKL1     ,CDKL1_HUMAN ,Q00532    
-167,CMGC ,CDKL2     ,CDKL2_HUMAN ,Q92772    
-168,CMGC ,CDKL3     ,CDKL3_HUMAN ,Q8IVW4    
-169,CMGC ,CDKL4     ,CDKL4_HUMAN ,Q5MAI5    
-170,CMGC ,CDKL5     ,CDKL5_HUMAN ,O76039    
-171,CMGC ,CLK1      ,CLK1_HUMAN  ,P49759    
-172,CMGC ,CLK2      ,CLK2_HUMAN  ,P49760    
-173,CMGC ,CLK3      ,CLK3_HUMAN  ,P49761    
-174,CMGC ,CLK4      ,CLK4_HUMAN  ,Q9HAZ1    
-175,CMGC ,DYRK1A    ,DYR1A_HUMAN ,Q13627    
-176,CMGC ,DYRK1B    ,DYR1B_HUMAN ,Q9Y463    
-177,CMGC ,DYRK2     ,DYRK2_HUMAN ,Q92630    
-178,CMGC ,DYRK3     ,DYRK3_HUMAN ,O43781    
-179,CMGC ,DYRK4     ,DYRK4_HUMAN ,Q9NR20    
-180,CMGC ,GSK3A     ,GSK3A_HUMAN ,P49840    
-181,CMGC ,GSK3B     ,GSK3B_HUMAN ,P49841    
-182,CMGC ,HIPK1     ,HIPK1_HUMAN ,Q86Z02    
-183,CMGC ,HIPK2     ,HIPK2_HUMAN ,Q9H2X6    
-184,CMGC ,HIPK3     ,HIPK3_HUMAN ,Q9H422    
-185,CMGC ,HIPK4     ,HIPK4_HUMAN ,Q8NE63    
-186,CMGC ,ICK       ,ICK_HUMAN   ,Q9UPZ9    
-187,CMGC ,MAK       ,MAK_HUMAN   ,P20794    
-188,CMGC ,MAPK1     ,MK01_HUMAN  ,P28482    
-189,CMGC ,MAPK10    ,MK10_HUMAN  ,P53779    
-190,CMGC ,MAPK11    ,MK11_HUMAN  ,Q15759    
-191,CMGC ,MAPK12    ,MK12_HUMAN  ,P53778    
-192,CMGC ,MAPK13    ,MK13_HUMAN  ,O15264    
-193,CMGC ,MAPK14    ,MK14_HUMAN  ,Q16539    
-194,CMGC ,MAPK15    ,MK15_HUMAN  ,Q8TD08    
-195,CMGC ,MAPK3     ,MK03_HUMAN  ,P27361    
-196,CMGC ,MAPK4     ,MK04_HUMAN  ,P31152    
-197,CMGC ,MAPK6     ,MK06_HUMAN  ,Q16659    
-198,CMGC ,MAPK7     ,MK07_HUMAN  ,Q13164    
-199,CMGC ,MAPK8     ,MK08_HUMAN  ,P45983    
-200,CMGC ,MAPK9     ,MK09_HUMAN  ,P45984    
-201,CMGC ,MOK       ,MOK_HUMAN   ,Q9UQ07    
-202,CMGC ,NLK       ,NLK_HUMAN   ,Q9UBE8    
-203,CMGC ,PRPF4B    ,PRP4B_HUMAN ,Q13523    
-204,CMGC ,SRPK1     ,SRPK1_HUMAN ,Q96SB4    
-205,CMGC ,SRPK2     ,SRPK2_HUMAN ,P78362    
-206,CMGC ,SRPK3     ,SRPK3_HUMAN ,Q9UPE1    
-207,NEK ,NEK1     ,NEK1_HUMAN  ,Q96PY6        
-208,NEK ,NEK10    ,NEK10_HUMAN ,Q6ZWH5        
-209,NEK ,NEK11    ,NEK11_HUMAN ,Q8NG66        
-210,NEK ,NEK2     ,NEK2_HUMAN  ,P51955        
-211,NEK ,NEK3     ,NEK3_HUMAN  ,P51956        
-212,NEK ,NEK4     ,NEK4_HUMAN  ,P51957        
-213,NEK ,NEK5     ,NEK5_HUMAN  ,Q6P3R8        
-214,NEK ,NEK6     ,NEK6_HUMAN  ,Q9HC98        
-215,NEK ,NEK7     ,NEK7_HUMAN  ,Q8TDX7        
-216,NEK ,NEK8     ,NEK8_HUMAN  ,Q86SG6        
-217,NEK ,NEK9     ,NEK9_HUMAN  ,Q8TD19        
+0,AGC Ser/Thr protein kinase family ,AKT1, AKT1_HUMAN  ,P31749    
+1,AGC Ser/Thr protein kinase family ,AKT2, AKT2_HUMAN  ,P31751    
+2,AGC Ser/Thr protein kinase family ,AKT3, AKT3_HUMAN  ,Q9Y243    
+3,AGC Ser/Thr protein kinase family ,CDC42BPA, MRCKA_HUMAN ,Q5VT25    
+4,AGC Ser/Thr protein kinase family ,CDC42BPB, MRCKB_HUMAN ,Q9Y5S2    
+5,AGC Ser/Thr protein kinase family ,CDC42BPG, MRCKG_HUMAN ,Q6DT37    
+6,AGC Ser/Thr protein kinase family ,CIT, CTRO_HUMAN  ,O14578    
+7,AGC Ser/Thr protein kinase family ,DMPK, DMPK_HUMAN  ,Q09013    
+8,AGC Ser/Thr protein kinase family ,GRK1, GRK1_HUMAN  ,Q15835    
+9,AGC Ser/Thr protein kinase family ,GRK2, ARBK1_HUMAN ,P25098    
+10,AGC Ser/Thr protein kinase family ,GRK3, ARBK2_HUMAN ,P35626    
+11,AGC Ser/Thr protein kinase family ,GRK4, GRK4_HUMAN  ,P32298    
+12,AGC Ser/Thr protein kinase family ,GRK5, GRK5_HUMAN  ,P34947    
+13,AGC Ser/Thr protein kinase family ,GRK6, GRK6_HUMAN  ,P43250    
+14,AGC Ser/Thr protein kinase family ,GRK7, GRK7_HUMAN  ,Q8WTQ7    
+15,AGC Ser/Thr protein kinase family ,LATS1, LATS1_HUMAN ,O95835    
+16,AGC Ser/Thr protein kinase family ,LATS2, LATS2_HUMAN ,Q9NRM7    
+17,AGC Ser/Thr protein kinase family ,MAST1, MAST1_HUMAN ,Q9Y2H9    
+18,AGC Ser/Thr protein kinase family ,MAST2, MAST2_HUMAN ,Q6P0Q8    
+19,AGC Ser/Thr protein kinase family ,MAST3, MAST3_HUMAN ,O60307    
+20,AGC Ser/Thr protein kinase family ,MAST4, MAST4_HUMAN ,O15021    
+21,AGC Ser/Thr protein kinase family ,MASTL, GWL_HUMAN   ,Q96GX5    
+22,AGC Ser/Thr protein kinase family ,PDPK1, PDPK1_HUMAN ,O15530    
+23,AGC Ser/Thr protein kinase family ,PDPK2P, PDPK2_HUMAN ,Q6A1A2    
+24,AGC Ser/Thr protein kinase family ,PKN1, PKN1_HUMAN  ,Q16512    
+25,AGC Ser/Thr protein kinase family ,PKN2, PKN2_HUMAN  ,Q16513    
+26,AGC Ser/Thr protein kinase family ,PKN3, PKN3_HUMAN  ,Q6P5Z2    
+27,AGC Ser/Thr protein kinase family ,PRKACA, KAPCA_HUMAN ,P17612    
+28,AGC Ser/Thr protein kinase family ,PRKACB, KAPCB_HUMAN ,P22694    
+29,AGC Ser/Thr protein kinase family ,PRKACG, KAPCG_HUMAN ,P22612    
+30,AGC Ser/Thr protein kinase family ,PRKCA, KPCA_HUMAN  ,P17252    
+31,AGC Ser/Thr protein kinase family ,PRKCB, KPCB_HUMAN  ,P05771    
+32,AGC Ser/Thr protein kinase family ,PRKCD, KPCD_HUMAN  ,Q05655    
+33,AGC Ser/Thr protein kinase family ,PRKCE, KPCE_HUMAN  ,Q02156    
+34,AGC Ser/Thr protein kinase family ,PRKCG, KPCG_HUMAN  ,P05129    
+35,AGC Ser/Thr protein kinase family ,PRKCH, KPCL_HUMAN  ,P24723    
+36,AGC Ser/Thr protein kinase family ,PRKCI, KPCI_HUMAN  ,P41743    
+37,AGC Ser/Thr protein kinase family ,PRKCQ, KPCT_HUMAN  ,Q04759    
+38,AGC Ser/Thr protein kinase family ,PRKCZ, KPCZ_HUMAN  ,Q05513    
+39,AGC Ser/Thr protein kinase family ,PRKG1, KGP1_HUMAN  ,Q13976    
+40,AGC Ser/Thr protein kinase family ,PRKG2, KGP2_HUMAN  ,Q13237    
+41,AGC Ser/Thr protein kinase family ,PRKX, PRKX_HUMAN  ,P51817    
+42,AGC Ser/Thr protein kinase family ,PRKY, PRKY_HUMAN  ,O43930    
+43,AGC Ser/Thr protein kinase family ,ROCK1, ROCK1_HUMAN ,Q13464    
+44,AGC Ser/Thr protein kinase family ,ROCK2, ROCK2_HUMAN ,O75116    
+45,AGC Ser/Thr protein kinase family ,RPS6KA1, KS6A1_HUMAN ,Q15418    
+46,AGC Ser/Thr protein kinase family ,RPS6KA2, KS6A2_HUMAN ,Q15349    
+47,AGC Ser/Thr protein kinase family ,RPS6KA3, KS6A3_HUMAN ,P51812    
+48,AGC Ser/Thr protein kinase family ,RPS6KA4, KS6A4_HUMAN ,O75676    
+49,AGC Ser/Thr protein kinase family ,RPS6KA5, KS6A5_HUMAN ,O75582    
+50,AGC Ser/Thr protein kinase family ,RPS6KA6, KS6A6_HUMAN ,Q9UK32    
+51,AGC Ser/Thr protein kinase family ,RPS6KB1, KS6B1_HUMAN ,P23443    
+52,AGC Ser/Thr protein kinase family ,RPS6KB2, KS6B2_HUMAN ,Q9UBS0    
+53,AGC Ser/Thr protein kinase family ,SGK1, SGK1_HUMAN  ,O00141    
+54,AGC Ser/Thr protein kinase family ,SGK2, SGK2_HUMAN  ,Q9HBY8    
+55,AGC Ser/Thr protein kinase family ,SGK3, SGK3_HUMAN  ,Q96BR1    
+56,AGC Ser/Thr protein kinase family ,STK38, STK38_HUMAN ,Q15208    
+57,AGC Ser/Thr protein kinase family ,STK38L, ST38L_HUMAN ,Q9Y2H1    
+58,CAMK Ser/Thr protein kinase family,BRSK1, BRSK1_HUMAN ,Q8TDC3    
+59,CAMK Ser/Thr protein kinase family,BRSK2, BRSK2_HUMAN ,Q8IWQ3    
+60,CAMK Ser/Thr protein kinase family,CAMK1, KCC1A_HUMAN ,Q14012    
+61,CAMK Ser/Thr protein kinase family,CAMK1D, KCC1D_HUMAN ,Q8IU85    
+62,CAMK Ser/Thr protein kinase family,CAMK1G, KCC1G_HUMAN ,Q96NX5    
+63,CAMK Ser/Thr protein kinase family,CAMK2A, KCC2A_HUMAN ,Q9UQM7    
+64,CAMK Ser/Thr protein kinase family,CAMK2B, KCC2B_HUMAN ,Q13554    
+65,CAMK Ser/Thr protein kinase family,CAMK2D, KCC2D_HUMAN ,Q13557    
+66,CAMK Ser/Thr protein kinase family,CAMK2G, KCC2G_HUMAN ,Q13555    
+67,CAMK Ser/Thr protein kinase family,CAMK4, KCC4_HUMAN  ,Q16566    
+68,CAMK Ser/Thr protein kinase family,CAMKV, CAMKV_HUMAN ,Q8NCB2    
+69,CAMK Ser/Thr protein kinase family,CASK, CSKP_HUMAN  ,O14936    
+70,CAMK Ser/Thr protein kinase family,CHEK1, CHK1_HUMAN  ,O14757    
+71,CAMK Ser/Thr protein kinase family,CHEK2, CHK2_HUMAN  ,O96017    
+72,CAMK Ser/Thr protein kinase family,DAPK1, DAPK1_HUMAN ,P53355    
+73,CAMK Ser/Thr protein kinase family,DAPK2, DAPK2_HUMAN ,Q9UIK4    
+74,CAMK Ser/Thr protein kinase family,DAPK3, DAPK3_HUMAN ,O43293    
+75,CAMK Ser/Thr protein kinase family,DCLK1, DCLK1_HUMAN ,O15075    
+76,CAMK Ser/Thr protein kinase family,DCLK2, DCLK2_HUMAN ,Q8N568    
+77,CAMK Ser/Thr protein kinase family,DCLK3, DCLK3_HUMAN ,Q9C098    
+78,CAMK Ser/Thr protein kinase family,HUNK, HUNK_HUMAN  ,P57058    
+79,CAMK Ser/Thr protein kinase family,KALRN, KALRN_HUMAN ,O60229    
+80,CAMK Ser/Thr protein kinase family,MAPKAPK2, MAPK2_HUMAN ,P49137    
+81,CAMK Ser/Thr protein kinase family,MAPKAPK3, MAPK3_HUMAN ,Q16644    
+82,CAMK Ser/Thr protein kinase family,MAPKAPK5, MAPK5_HUMAN ,Q8IW41    
+83,CAMK Ser/Thr protein kinase family,MARK1, MARK1_HUMAN ,Q9P0L2    
+84,CAMK Ser/Thr protein kinase family,MARK2, MARK2_HUMAN ,Q7KZI7    
+85,CAMK Ser/Thr protein kinase family,MARK3, MARK3_HUMAN ,P27448    
+86,CAMK Ser/Thr protein kinase family,MARK4, MARK4_HUMAN ,Q96L34    
+87,CAMK Ser/Thr protein kinase family,MELK, MELK_HUMAN  ,Q14680    
+88,CAMK Ser/Thr protein kinase family,MKNK1, MKNK1_HUMAN ,Q9BUB5    
+89,CAMK Ser/Thr protein kinase family,MKNK2, MKNK2_HUMAN ,Q9HBH9    
+90,CAMK Ser/Thr protein kinase family,MYLK, MYLK_HUMAN  ,Q15746    
+91,CAMK Ser/Thr protein kinase family,MYLK2, MYLK2_HUMAN ,Q9H1R3    
+92,CAMK Ser/Thr protein kinase family,MYLK3, MYLK3_HUMAN ,Q32MK0    
+93,CAMK Ser/Thr protein kinase family,MYLK4, MYLK4_HUMAN ,Q86YV6    
+94,CAMK Ser/Thr protein kinase family,NIM1K, NIM1_HUMAN  ,Q8IY84    
+95,CAMK Ser/Thr protein kinase family,NUAK1, NUAK1_HUMAN ,O60285    
+96,CAMK Ser/Thr protein kinase family,NUAK2, NUAK2_HUMAN ,Q9H093    
+97,CAMK Ser/Thr protein kinase family,OBSCN, OBSCN_HUMAN ,Q5VST9    
+98,CAMK Ser/Thr protein kinase family,PASK, PASK_HUMAN  ,Q96RG2    
+99,CAMK Ser/Thr protein kinase family,PHKG1, PHKG1_HUMAN ,Q16816    
+100,CAMK Ser/Thr protein kinase family,PHKG2, PHKG2_HUMAN ,P15735    
+101,CAMK Ser/Thr protein kinase family,PIM1, PIM1_HUMAN  ,P11309    
+102,CAMK Ser/Thr protein kinase family,PIM2, PIM2_HUMAN  ,Q9P1W9    
+103,CAMK Ser/Thr protein kinase family,PIM3, PIM3_HUMAN  ,Q86V86    
+104,CAMK Ser/Thr protein kinase family,PNCK, KCC1B_HUMAN ,Q6P2M8    
+105,CAMK Ser/Thr protein kinase family,PRKAA1, AAPK1_HUMAN ,Q13131    
+106,CAMK Ser/Thr protein kinase family,PRKAA2, AAPK2_HUMAN ,P54646    
+107,CAMK Ser/Thr protein kinase family,PRKD1, KPCD1_HUMAN ,Q15139    
+108,CAMK Ser/Thr protein kinase family,PRKD2, KPCD2_HUMAN ,Q9BZL6    
+109,CAMK Ser/Thr protein kinase family,PRKD3, KPCD3_HUMAN ,O94806    
+110,CAMK Ser/Thr protein kinase family,PSKH1, KPSH1_HUMAN ,P11801    
+111,CAMK Ser/Thr protein kinase family,PSKH2, KPSH2_HUMAN ,Q96QS6    
+112,CAMK Ser/Thr protein kinase family,SIK1, SIK1_HUMAN  ,P57059    
+113,CAMK Ser/Thr protein kinase family,SIK1B, SIK1B_HUMAN ,A0A0B4J2F2
+114,CAMK Ser/Thr protein kinase family,SIK2, SIK2_HUMAN  ,Q9H0K1    
+115,CAMK Ser/Thr protein kinase family,SIK3, SIK3_HUMAN  ,Q9Y2K2    
+116,CAMK Ser/Thr protein kinase family,SNRK, SNRK_HUMAN  ,Q9NRH2    
+117,CAMK Ser/Thr protein kinase family,SPEG, SPEG_HUMAN  ,Q15772    
+118,CAMK Ser/Thr protein kinase family,STK11, STK11_HUMAN ,Q15831    
+119,CAMK Ser/Thr protein kinase family,STK17A, ST17A_HUMAN ,Q9UEE5    
+120,CAMK Ser/Thr protein kinase family,STK17B, ST17B_HUMAN ,O94768    
+121,CAMK Ser/Thr protein kinase family,STK33, STK33_HUMAN ,Q9BYT3    
+122,CAMK Ser/Thr protein kinase family,STK40, STK40_HUMAN ,Q8N2I9    
+123,CAMK Ser/Thr protein kinase family,TRIB1, TRIB1_HUMAN ,Q96RU8    
+124,CAMK Ser/Thr protein kinase family,TRIB2, TRIB2_HUMAN ,Q92519    
+125,CAMK Ser/Thr protein kinase family,TRIB3, TRIB3_HUMAN ,Q96RU7    
+126,CAMK Ser/Thr protein kinase family,TRIO, TRIO_HUMAN  ,O75962    
+127,CAMK Ser/Thr protein kinase family,TSSK1B, TSSK1_HUMAN ,Q9BXA7    
+128,CAMK Ser/Thr protein kinase family,TSSK2, TSSK2_HUMAN ,Q96PF2    
+129,CAMK Ser/Thr protein kinase family,TSSK3, TSSK3_HUMAN ,Q96PN8    
+130,CAMK Ser/Thr protein kinase family,TSSK4, TSSK4_HUMAN ,Q6SA08    
+131,CAMK Ser/Thr protein kinase family,TSSK6, TSSK6_HUMAN ,Q9BXA6    
+132,CAMK Ser/Thr protein kinase family,TTN, TITIN_HUMAN ,Q8WZ42    
+133,CK1 Ser/Thr protein kinase family,CSNK1A1, KC1A_HUMAN  ,P48729    
+134,CK1 Ser/Thr protein kinase family,CSNK1A1L, KC1AL_HUMAN ,Q8N752    
+135,CK1 Ser/Thr protein kinase family,CSNK1D, KC1D_HUMAN  ,P48730    
+136,CK1 Ser/Thr protein kinase family,CSNK1E, KC1E_HUMAN  ,P49674    
+137,CK1 Ser/Thr protein kinase family,CSNK1G1, KC1G1_HUMAN ,Q9HCP0    
+138,CK1 Ser/Thr protein kinase family,CSNK1G2, KC1G2_HUMAN ,P78368    
+139,CK1 Ser/Thr protein kinase family,CSNK1G3, KC1G3_HUMAN ,Q9Y6M4    
+140,CK1 Ser/Thr protein kinase family,TTBK1, TTBK1_HUMAN ,Q5TCY1    
+141,CK1 Ser/Thr protein kinase family,TTBK2, TTBK2_HUMAN ,Q6IQ55    
+142,CK1 Ser/Thr protein kinase family,VRK1, VRK1_HUMAN  ,Q99986    
+143,CK1 Ser/Thr protein kinase family,VRK2, VRK2_HUMAN  ,Q86Y07    
+144,CK1 Ser/Thr protein kinase family,VRK3, VRK3_HUMAN  ,Q8IV63    
+145,CMGC Ser/Thr protein kinase family,CDK1      ,CDK1_HUMAN  ,P06493    
+146,CMGC Ser/Thr protein kinase family,CDK10     ,CDK10_HUMAN ,Q15131    
+147,CMGC Ser/Thr protein kinase family,CDK11A    ,CD11A_HUMAN ,Q9UQ88    
+148,CMGC Ser/Thr protein kinase family,CDK11B    ,CD11B_HUMAN ,P21127    
+149,CMGC Ser/Thr protein kinase family,CDK12     ,CDK12_HUMAN ,Q9NYV4    
+150,CMGC Ser/Thr protein kinase family,CDK13     ,CDK13_HUMAN ,Q14004    
+151,CMGC Ser/Thr protein kinase family,CDK14     ,CDK14_HUMAN ,O94921    
+152,CMGC Ser/Thr protein kinase family,CDK15     ,CDK15_HUMAN ,Q96Q40    
+153,CMGC Ser/Thr protein kinase family,CDK16     ,CDK16_HUMAN ,Q00536    
+154,CMGC Ser/Thr protein kinase family,CDK17     ,CDK17_HUMAN ,Q00537    
+155,CMGC Ser/Thr protein kinase family,CDK18     ,CDK18_HUMAN ,Q07002    
+156,CMGC Ser/Thr protein kinase family,CDK19     ,CDK19_HUMAN ,Q9BWU1    
+157,CMGC Ser/Thr protein kinase family,CDK2      ,CDK2_HUMAN  ,P24941    
+158,CMGC Ser/Thr protein kinase family,CDK20     ,CDK20_HUMAN ,Q8IZL9    
+159,CMGC Ser/Thr protein kinase family,CDK3      ,CDK3_HUMAN  ,Q00526    
+160,CMGC Ser/Thr protein kinase family,CDK4      ,CDK4_HUMAN  ,P11802    
+161,CMGC Ser/Thr protein kinase family,CDK5      ,CDK5_HUMAN  ,Q00535    
+162,CMGC Ser/Thr protein kinase family,CDK6      ,CDK6_HUMAN  ,Q00534    
+163,CMGC Ser/Thr protein kinase family,CDK7      ,CDK7_HUMAN  ,P50613    
+164,CMGC Ser/Thr protein kinase family,CDK8      ,CDK8_HUMAN  ,P49336    
+165,CMGC Ser/Thr protein kinase family,CDK9      ,CDK9_HUMAN  ,P50750    
+166,CMGC Ser/Thr protein kinase family,CDKL1     ,CDKL1_HUMAN ,Q00532    
+167,CMGC Ser/Thr protein kinase family,CDKL2     ,CDKL2_HUMAN ,Q92772    
+168,CMGC Ser/Thr protein kinase family,CDKL3     ,CDKL3_HUMAN ,Q8IVW4    
+169,CMGC Ser/Thr protein kinase family,CDKL4     ,CDKL4_HUMAN ,Q5MAI5    
+170,CMGC Ser/Thr protein kinase family,CDKL5     ,CDKL5_HUMAN ,O76039    
+171,CMGC Ser/Thr protein kinase family,CLK1      ,CLK1_HUMAN  ,P49759    
+172,CMGC Ser/Thr protein kinase family,CLK2      ,CLK2_HUMAN  ,P49760    
+173,CMGC Ser/Thr protein kinase family,CLK3      ,CLK3_HUMAN  ,P49761    
+174,CMGC Ser/Thr protein kinase family,CLK4      ,CLK4_HUMAN  ,Q9HAZ1    
+175,CMGC Ser/Thr protein kinase family,DYRK1A    ,DYR1A_HUMAN ,Q13627    
+176,CMGC Ser/Thr protein kinase family,DYRK1B    ,DYR1B_HUMAN ,Q9Y463    
+177,CMGC Ser/Thr protein kinase family,DYRK2     ,DYRK2_HUMAN ,Q92630    
+178,CMGC Ser/Thr protein kinase family,DYRK3     ,DYRK3_HUMAN ,O43781    
+179,CMGC Ser/Thr protein kinase family,DYRK4     ,DYRK4_HUMAN ,Q9NR20    
+180,CMGC Ser/Thr protein kinase family,GSK3A     ,GSK3A_HUMAN ,P49840    
+181,CMGC Ser/Thr protein kinase family,GSK3B     ,GSK3B_HUMAN ,P49841    
+182,CMGC Ser/Thr protein kinase family,HIPK1     ,HIPK1_HUMAN ,Q86Z02    
+183,CMGC Ser/Thr protein kinase family,HIPK2     ,HIPK2_HUMAN ,Q9H2X6    
+184,CMGC Ser/Thr protein kinase family,HIPK3     ,HIPK3_HUMAN ,Q9H422    
+185,CMGC Ser/Thr protein kinase family,HIPK4     ,HIPK4_HUMAN ,Q8NE63    
+186,CMGC Ser/Thr protein kinase family,ICK       ,ICK_HUMAN   ,Q9UPZ9    
+187,CMGC Ser/Thr protein kinase family,MAK       ,MAK_HUMAN   ,P20794    
+188,CMGC Ser/Thr protein kinase family,MAPK1     ,MK01_HUMAN  ,P28482    
+189,CMGC Ser/Thr protein kinase family,MAPK10    ,MK10_HUMAN  ,P53779    
+190,CMGC Ser/Thr protein kinase family,MAPK11    ,MK11_HUMAN  ,Q15759    
+191,CMGC Ser/Thr protein kinase family,MAPK12    ,MK12_HUMAN  ,P53778    
+192,CMGC Ser/Thr protein kinase family,MAPK13    ,MK13_HUMAN  ,O15264    
+193,CMGC Ser/Thr protein kinase family,MAPK14    ,MK14_HUMAN  ,Q16539    
+194,CMGC Ser/Thr protein kinase family,MAPK15    ,MK15_HUMAN  ,Q8TD08    
+195,CMGC Ser/Thr protein kinase family,MAPK3     ,MK03_HUMAN  ,P27361    
+196,CMGC Ser/Thr protein kinase family,MAPK4     ,MK04_HUMAN  ,P31152    
+197,CMGC Ser/Thr protein kinase family,MAPK6     ,MK06_HUMAN  ,Q16659    
+198,CMGC Ser/Thr protein kinase family,MAPK7     ,MK07_HUMAN  ,Q13164    
+199,CMGC Ser/Thr protein kinase family,MAPK8     ,MK08_HUMAN  ,P45983    
+200,CMGC Ser/Thr protein kinase family,MAPK9     ,MK09_HUMAN  ,P45984    
+201,CMGC Ser/Thr protein kinase family,MOK       ,MOK_HUMAN   ,Q9UQ07    
+202,CMGC Ser/Thr protein kinase family,NLK       ,NLK_HUMAN   ,Q9UBE8    
+203,CMGC Ser/Thr protein kinase family,PRPF4B    ,PRP4B_HUMAN ,Q13523    
+204,CMGC Ser/Thr protein kinase family,SRPK1     ,SRPK1_HUMAN ,Q96SB4    
+205,CMGC Ser/Thr protein kinase family,SRPK2     ,SRPK2_HUMAN ,P78362    
+206,CMGC Ser/Thr protein kinase family,SRPK3     ,SRPK3_HUMAN ,Q9UPE1    
+207,NEK Ser/Thr protein kinase family,NEK1     ,NEK1_HUMAN  ,Q96PY6        
+208,NEK Ser/Thr protein kinase family,NEK10    ,NEK10_HUMAN ,Q6ZWH5        
+209,NEK Ser/Thr protein kinase family,NEK11    ,NEK11_HUMAN ,Q8NG66        
+210,NEK Ser/Thr protein kinase family,NEK2     ,NEK2_HUMAN  ,P51955        
+211,NEK Ser/Thr protein kinase family,NEK3     ,NEK3_HUMAN  ,P51956        
+212,NEK Ser/Thr protein kinase family,NEK4     ,NEK4_HUMAN  ,P51957        
+213,NEK Ser/Thr protein kinase family,NEK5     ,NEK5_HUMAN  ,Q6P3R8        
+214,NEK Ser/Thr protein kinase family,NEK6     ,NEK6_HUMAN  ,Q9HC98        
+215,NEK Ser/Thr protein kinase family,NEK7     ,NEK7_HUMAN  ,Q8TDX7        
+216,NEK Ser/Thr protein kinase family,NEK8     ,NEK8_HUMAN  ,Q86SG6        
+217,NEK Ser/Thr protein kinase family,NEK9     ,NEK9_HUMAN  ,Q8TD19        
 218,adenylyl cyclase class-4/guanylyl cyclase,GUCY2C    ,GUC2C_HUMAN ,P25092    
 219,adenylyl cyclase class-4/guanylyl cyclase,GUCY2D    ,GUC2D_HUMAN ,Q02846    
 220,adenylyl cyclase class-4/guanylyl cyclase,GUCY2F    ,GUC2F_HUMAN ,P51841    
 221,adenylyl cyclase class-4/guanylyl cyclase,NPR1      ,ANPRA_HUMAN ,P16066    
 222,adenylyl cyclase class-4/guanylyl cyclase,NPR2      ,ANPRB_HUMAN ,P20594    
-223,STE ,MAP2K1,MP2K1_HUMAN ,Q02750    
-224,STE ,MAP2K2,MP2K2_HUMAN ,P36507    
-225,STE ,MAP2K3,MP2K3_HUMAN ,P46734    
-226,STE ,MAP2K4,MP2K4_HUMAN ,P45985    
-227,STE ,MAP2K5,MP2K5_HUMAN ,Q13163    
-228,STE ,MAP2K6,MP2K6_HUMAN ,P52564    
-229,STE ,MAP2K7,MP2K7_HUMAN ,O14733    
-230,STE ,MAP3K1,M3K1_HUMAN  ,Q13233    
-231,STE ,MAP3K10,M3K10_HUMAN ,Q02779    
-232,STE ,MAP3K11,M3K11_HUMAN ,Q16584    
-233,STE ,MAP3K12,M3K12_HUMAN ,Q12852    
-234,STE ,MAP3K13,M3K13_HUMAN ,O43283    
-235,STE ,MAP3K14,M3K14_HUMAN ,Q99558    
-236,STE ,MAP3K15,M3K15_HUMAN ,Q6ZN16    
-237,STE ,MAP3K19,M3K19_HUMAN ,Q56UN5    
-238,STE ,MAP3K2,M3K2_HUMAN  ,Q9Y2U5    
-239,STE ,MAP3K20,M3K20_HUMAN ,Q9NYL2    
-240,STE ,MAP3K21,M3K21_HUMAN ,Q5TCX8    
-241,STE ,MAP3K3,M3K3_HUMAN  ,Q99759    
-242,STE ,MAP3K4,M3K4_HUMAN  ,Q9Y6R4    
-243,STE ,MAP3K5,M3K5_HUMAN  ,Q99683    
-244,STE ,MAP3K6,M3K6_HUMAN  ,O95382    
-245,STE ,MAP3K7,M3K7_HUMAN  ,O43318    
-246,STE ,MAP3K8,M3K8_HUMAN  ,P41279    
-247,STE ,MAP3K9,M3K9_HUMAN  ,P80192    
-248,STE ,MAP4K1,M4K1_HUMAN  ,Q92918    
-249,STE ,MAP4K2,M4K2_HUMAN  ,Q12851    
-250,STE ,MAP4K3,M4K3_HUMAN  ,Q8IVH8    
-251,STE ,MAP4K4,M4K4_HUMAN  ,O95819    
-252,STE ,MAP4K5,M4K5_HUMAN  ,Q9Y4K4    
-253,STE ,MINK1,MINK1_HUMAN ,Q8N4C8    
-254,STE ,MYO3A,MYO3A_HUMAN ,Q8NEV4    
-255,STE ,MYO3B,MYO3B_HUMAN ,Q8WXR4    
-256,STE ,NRK,NRK_HUMAN   ,Q7Z2Y5    
-257,STE ,OXSR1,OXSR1_HUMAN ,O95747    
-258,STE ,PAK1,PAK1_HUMAN  ,Q13153    
-259,STE ,PAK2,PAK2_HUMAN  ,Q13177    
-260,STE ,PAK3,PAK3_HUMAN  ,O75914    
-261,STE ,PAK4,PAK4_HUMAN  ,O96013    
-262,STE ,PAK5,PAK5_HUMAN  ,Q9P286    
-263,STE ,PAK6,PAK6_HUMAN  ,Q9NQU5    
-264,STE ,PBK,TOPK_HUMAN  ,Q96KB5    
-265,STE ,SLK,SLK_HUMAN   ,Q9H2G2    
-266,STE ,STK10,STK10_HUMAN ,O94804    
-267,STE ,STK24,STK24_HUMAN ,Q9Y6E0    
-268,STE ,STK25,STK25_HUMAN ,O00506    
-269,STE ,STK26,STK26_HUMAN ,Q9P289    
-270,STE ,STK3,STK3_HUMAN  ,Q13188    
-271,STE ,STK39,STK39_HUMAN ,Q9UEW8    
-272,STE ,STK4,STK4_HUMAN  ,Q13043    
-273,STE ,STRADA,STRAA_HUMAN ,Q7RTN6    
-274,STE ,STRADB,STRAB_HUMAN ,Q9C0K7    
-275,STE ,TAOK1,TAOK1_HUMAN ,Q7L7X3    
-276,STE ,TAOK2,TAOK2_HUMAN ,Q9UL54    
-277,STE ,TAOK3,TAOK3_HUMAN ,Q9H2K8    
-278,STE ,TNIK,TNIK_HUMAN  ,Q9UKE5    
-279,TKL ,ACVR1     ,ACVR1_HUMAN ,Q04771    
-280,TKL ,ACVR1B   ,ACV1B_HUMAN ,P36896    
-281,TKL ,ACVR1C    ,ACV1C_HUMAN ,Q8NER5    
-282,TKL ,ACVR2A    ,AVR2A_HUMAN ,P27037    
-283,TKL ,ACVR2B    ,AVR2B_HUMAN ,Q13705    
-284,TKL ,ACVRL1    ,ACVL1_HUMAN ,P37023    
-285,TKL ,AMHR2     ,AMHR2_HUMAN ,Q16671    
-286,TKL ,ANKK1     ,ANKK1_HUMAN ,Q8NFD2    
-287,TKL ,ARAF      ,ARAF_HUMAN  ,P10398    
-288,TKL ,BMPR1A    ,BMR1A_HUMAN ,P36894    
-289,TKL ,BMPR1B    ,BMR1B_HUMAN ,O00238    
-290,TKL ,BMPR2     ,BMPR2_HUMAN ,Q13873    
-291,TKL ,BRAF      ,BRAF_HUMAN  ,P15056    
-292,TKL ,ILK       ,ILK_HUMAN   ,Q13418    
-293,TKL ,IRAK1     ,IRAK1_HUMAN ,P51617    
-294,TKL ,IRAK2     ,IRAK2_HUMAN ,O43187    
-295,TKL ,IRAK3     ,IRAK3_HUMAN ,Q9Y616    
-296,TKL ,IRAK4     ,IRAK4_HUMAN ,Q9NWZ3    
-297,TKL ,KSR1      ,KSR1_HUMAN  ,Q8IVT5    
-298,TKL ,KSR2      ,KSR2_HUMAN  ,Q6VAB6    
-299,TKL ,LIMK1     ,LIMK1_HUMAN ,P53667    
-300,TKL ,LIMK2     ,LIMK2_HUMAN ,P53671    
-301,TKL ,LRRK1     ,LRRK1_HUMAN ,Q38SD2    
-302,TKL ,LRRK2     ,LRRK2_HUMAN ,Q5S007    
-303,TKL ,RAF1      ,RAF1_HUMAN  ,P04049    
-304,TKL ,RIPK1     ,RIPK1_HUMAN ,Q13546    
-305,TKL ,RIPK2     ,IPK2_HUMAN ,O43353    
-306,TKL ,RIPK3     ,IPK3_HUMAN ,Q9Y572    
-307,TKL ,RIPK4     ,IPK4_HUMAN ,P57078    
-308,TKL ,TESK1     ,ESK1_HUMAN ,Q15569    
-309,TKL ,TESK2     ,ESK2_HUMAN ,Q96S53    
-310,TKL ,TGFBR1    ,GFR1_HUMAN ,P36897    
-311,TKL ,TGFBR2    ,GFR2_HUMAN ,P37173    
-312,TKL ,TNNI3K    ,NI3K_HUMAN ,Q59H18    
-313,Tyr,AATK,LMTK1_HUMAN ,Q6ZMQ8    
-314,Tyr,ABL1,ABL1_HUMAN  ,P00519    
-315,Tyr,ABL2,ABL2_HUMAN  ,P42684    
-316,Tyr,ALK,ALK_HUMAN   ,Q9UM73    
-317,Tyr,AXL,UFO_HUMAN   ,P30530    
-318,Tyr,BLK,BLK_HUMAN   ,P51451    
-319,Tyr,BMX,BMX_HUMAN   ,P51813    
-320,Tyr,BTK,BTK_HUMAN   ,Q06187    
-321,Tyr,CSF1R,CSF1R_HUMAN ,P07333    
-322,Tyr,CSK,CSK_HUMAN   ,P41240    
-323,Tyr,DDR1,DDR1_HUMAN  ,Q08345    
-324,Tyr,DDR2,DDR2_HUMAN  ,Q16832    
-325,Tyr,EGFR,EGFR_HUMAN  ,P00533    
-326,Tyr,EPHA1,EPHA1_HUMAN ,P21709    
-327,Tyr,EPHA10,EPHAA_HUMAN ,Q5JZY3    
-328,Tyr,EPHA2,EPHA2_HUMAN ,P29317    
-329,Tyr,EPHA3,EPHA3_HUMAN ,P29320    
-330,Tyr,EPHA4,EPHA4_HUMAN ,P54764    
-331,Tyr,EPHA5,EPHA5_HUMAN ,P54756    
-332,Tyr,EPHA6,EPHA6_HUMAN ,Q9UF33    
-333,Tyr,EPHA7,EPHA7_HUMAN ,Q15375    
-334,Tyr,EPHA8,EPHA8_HUMAN ,P29322    
-335,Tyr,EPHB1,EPHB1_HUMAN ,P54762    
-336,Tyr,EPHB2,EPHB2_HUMAN ,P29323    
-337,Tyr,EPHB3,EPHB3_HUMAN ,P54753    
-338,Tyr,EPHB4,EPHB4_HUMAN ,P54760    
-339,Tyr,EPHB6,EPHB6_HUMAN ,O15197    
-340,Tyr,ERBB2,ERBB2_HUMAN ,P04626    
-341,Tyr,ERBB3,ERBB3_HUMAN ,P21860    
-342,Tyr,ERBB4,ERBB4_HUMAN ,Q15303    
-343,Tyr,FER,FER_HUMAN   ,P16591    
-344,Tyr,FES,FES_HUMAN   ,P07332    
-345,Tyr,FGFR1,FGFR1_HUMAN ,P11362    
-346,Tyr,FGFR2,FGFR2_HUMAN ,P21802    
-347,Tyr,FGFR3,FGFR3_HUMAN ,P22607    
-348,Tyr,FGFR4,FGFR4_HUMAN ,P22455    
-349,Tyr,FGR,FGR_HUMAN   ,P09769    
-350,Tyr,FLT1,VGFR1_HUMAN ,P17948    
-351,Tyr,FLT3,FLT3_HUMAN  ,P36888    
-352,Tyr,FLT4,VGFR3_HUMAN ,P35916    
-353,Tyr,FRK,FRK_HUMAN   ,P42685    
-354,Tyr,FYN,FYN_HUMAN   ,P06241    
-355,Tyr,HCK,HCK_HUMAN   ,P08631    
-356,Tyr,IGF1R,IGF1R_HUMAN ,P08069    
-357,Tyr,INSR,INSR_HUMAN  ,P06213    
-358,Tyr,INSRR,INSRR_HUMAN ,P14616    
-359,Tyr,ITK,ITK_HUMAN   ,Q08881    
-360,Tyr,JAK1,JAK1_HUMAN  ,P23458    
-361,Tyr,JAK2,JAK2_HUMAN  ,O60674    
-362,Tyr,JAK3,JAK3_HUMAN  ,P52333    
-363,Tyr,KDR,VGFR2_HUMAN ,P35968    
-364,Tyr,KIT,KIT_HUMAN   ,P10721    
-365,Tyr,LCK,LCK_HUMAN   ,P06239    
-366,Tyr,LMTK2,LMTK2_HUMAN ,Q8IWU2    
-367,Tyr,LMTK3,LMTK3_HUMAN ,Q96Q04    
-368,Tyr,LTK,LTK_HUMAN   ,P29376    
-369,Tyr,LYN,LYN_HUMAN   ,P07948    
-370,Tyr,MATK,MATK_HUMAN  ,P42679    
-371,Tyr,MERTK,MERTK_HUMAN ,Q12866    
-372,Tyr,MET,MET_HUMAN   ,P08581    
-373,Tyr,MST1R,RON_HUMAN   ,Q04912    
-374,Tyr,MUSK,MUSK_HUMAN  ,O15146    
-375,Tyr,NTRK1,NTRK1_HUMAN ,P04629    
-376,Tyr,NTRK2,NTRK2_HUMAN ,Q16620    
-377,Tyr,NTRK3,NTRK3_HUMAN ,Q16288    
-378,Tyr,PDGFRA,PGFRA_HUMAN ,P16234    
-379,Tyr,PDGFRB,PGFRB_HUMAN ,P09619    
-380,Tyr,PTK2,FAK1_HUMAN  ,Q05397    
-381,Tyr,PTK2B,FAK2_HUMAN  ,Q14289    
-382,Tyr,PTK6,PTK6_HUMAN  ,Q13882    
-383,Tyr,PTK7,PTK7_HUMAN  ,Q13308    
-384,Tyr,RET,RET_HUMAN   ,P07949    
-385,Tyr,ROR1,ROR1_HUMAN  ,Q01973    
-386,Tyr,ROR2,ROR2_HUMAN  ,Q01974    
-387,Tyr,ROS1,ROS1_HUMAN  ,P08922    
-388,Tyr,RYK,RYK_HUMAN   ,P34925    
-389,Tyr,SRC,SRC_HUMAN   ,P12931    
-390,Tyr,SRMS,SRMS_HUMAN  ,Q9H3Y6    
-391,Tyr,STYK1,STYK1_HUMAN ,Q6J9G0    
-392,Tyr,SYK,KSYK_HUMAN  ,P43405    
-393,Tyr,TEC,TEC_HUMAN   ,P42680    
-394,Tyr,TEK,TIE2_HUMAN  ,Q02763    
-395,Tyr,TIE1,TIE1_HUMAN  ,P35590    
-396,Tyr,TNK1,TNK1_HUMAN  ,Q13470    
-397,Tyr,TNK2,ACK1_HUMAN  ,Q07912    
-398,Tyr,TXK,TXK_HUMAN   ,P42681    
-399,Tyr,TYK2,TYK2_HUMAN  ,P29597    
-400,Tyr,TYRO3,TYRO3_HUMAN ,Q06418    
-401,Tyr,YES1,YES_HUMAN   ,P07947    
-402,Tyr,ZAP70,ZAP70_HUMAN ,P43403    
+223,STE Ser/Thr protein kinase family,MAP2K1,MP2K1_HUMAN ,Q02750    
+224,STE Ser/Thr protein kinase family,MAP2K2,MP2K2_HUMAN ,P36507    
+225,STE Ser/Thr protein kinase family,MAP2K3,MP2K3_HUMAN ,P46734    
+226,STE Ser/Thr protein kinase family,MAP2K4,MP2K4_HUMAN ,P45985    
+227,STE Ser/Thr protein kinase family,MAP2K5,MP2K5_HUMAN ,Q13163    
+228,STE Ser/Thr protein kinase family,MAP2K6,MP2K6_HUMAN ,P52564    
+229,STE Ser/Thr protein kinase family,MAP2K7,MP2K7_HUMAN ,O14733    
+230,STE Ser/Thr protein kinase family,MAP3K1,M3K1_HUMAN  ,Q13233    
+231,STE Ser/Thr protein kinase family,MAP3K10,M3K10_HUMAN ,Q02779    
+232,STE Ser/Thr protein kinase family,MAP3K11,M3K11_HUMAN ,Q16584    
+233,STE Ser/Thr protein kinase family,MAP3K12,M3K12_HUMAN ,Q12852    
+234,STE Ser/Thr protein kinase family,MAP3K13,M3K13_HUMAN ,O43283    
+235,STE Ser/Thr protein kinase family,MAP3K14,M3K14_HUMAN ,Q99558    
+236,STE Ser/Thr protein kinase family,MAP3K15,M3K15_HUMAN ,Q6ZN16    
+237,STE Ser/Thr protein kinase family,MAP3K19,M3K19_HUMAN ,Q56UN5    
+238,STE Ser/Thr protein kinase family,MAP3K2,M3K2_HUMAN  ,Q9Y2U5    
+239,STE Ser/Thr protein kinase family,MAP3K20,M3K20_HUMAN ,Q9NYL2    
+240,STE Ser/Thr protein kinase family,MAP3K21,M3K21_HUMAN ,Q5TCX8    
+241,STE Ser/Thr protein kinase family,MAP3K3,M3K3_HUMAN  ,Q99759    
+242,STE Ser/Thr protein kinase family,MAP3K4,M3K4_HUMAN  ,Q9Y6R4    
+243,STE Ser/Thr protein kinase family,MAP3K5,M3K5_HUMAN  ,Q99683    
+244,STE Ser/Thr protein kinase family,MAP3K6,M3K6_HUMAN  ,O95382    
+245,STE Ser/Thr protein kinase family,MAP3K7,M3K7_HUMAN  ,O43318    
+246,STE Ser/Thr protein kinase family,MAP3K8,M3K8_HUMAN  ,P41279    
+247,STE Ser/Thr protein kinase family,MAP3K9,M3K9_HUMAN  ,P80192    
+248,STE Ser/Thr protein kinase family,MAP4K1,M4K1_HUMAN  ,Q92918    
+249,STE Ser/Thr protein kinase family,MAP4K2,M4K2_HUMAN  ,Q12851    
+250,STE Ser/Thr protein kinase family,MAP4K3,M4K3_HUMAN  ,Q8IVH8    
+251,STE Ser/Thr protein kinase family,MAP4K4,M4K4_HUMAN  ,O95819    
+252,STE Ser/Thr protein kinase family,MAP4K5,M4K5_HUMAN  ,Q9Y4K4    
+253,STE Ser/Thr protein kinase family,MINK1,MINK1_HUMAN ,Q8N4C8    
+254,STE Ser/Thr protein kinase family,MYO3A,MYO3A_HUMAN ,Q8NEV4    
+255,STE Ser/Thr protein kinase family,MYO3B,MYO3B_HUMAN ,Q8WXR4    
+256,STE Ser/Thr protein kinase family,NRK,NRK_HUMAN   ,Q7Z2Y5    
+257,STE Ser/Thr protein kinase family,OXSR1,OXSR1_HUMAN ,O95747    
+258,STE Ser/Thr protein kinase family,PAK1,PAK1_HUMAN  ,Q13153    
+259,STE Ser/Thr protein kinase family,PAK2,PAK2_HUMAN  ,Q13177    
+260,STE Ser/Thr protein kinase family,PAK3,PAK3_HUMAN  ,O75914    
+261,STE Ser/Thr protein kinase family,PAK4,PAK4_HUMAN  ,O96013    
+262,STE Ser/Thr protein kinase family,PAK5,PAK5_HUMAN  ,Q9P286    
+263,STE Ser/Thr protein kinase family,PAK6,PAK6_HUMAN  ,Q9NQU5    
+264,STE Ser/Thr protein kinase family,PBK,TOPK_HUMAN  ,Q96KB5    
+265,STE Ser/Thr protein kinase family,SLK,SLK_HUMAN   ,Q9H2G2    
+266,STE Ser/Thr protein kinase family,STK10,STK10_HUMAN ,O94804    
+267,STE Ser/Thr protein kinase family,STK24,STK24_HUMAN ,Q9Y6E0    
+268,STE Ser/Thr protein kinase family,STK25,STK25_HUMAN ,O00506    
+269,STE Ser/Thr protein kinase family,STK26,STK26_HUMAN ,Q9P289    
+270,STE Ser/Thr protein kinase family,STK3,STK3_HUMAN  ,Q13188    
+271,STE Ser/Thr protein kinase family,STK39,STK39_HUMAN ,Q9UEW8    
+272,STE Ser/Thr protein kinase family,STK4,STK4_HUMAN  ,Q13043    
+273,STE Ser/Thr protein kinase family,STRADA,STRAA_HUMAN ,Q7RTN6    
+274,STE Ser/Thr protein kinase family,STRADB,STRAB_HUMAN ,Q9C0K7    
+275,STE Ser/Thr protein kinase family,TAOK1,TAOK1_HUMAN ,Q7L7X3    
+276,STE Ser/Thr protein kinase family,TAOK2,TAOK2_HUMAN ,Q9UL54    
+277,STE Ser/Thr protein kinase family,TAOK3,TAOK3_HUMAN ,Q9H2K8    
+278,STE Ser/Thr protein kinase family,TNIK,TNIK_HUMAN  ,Q9UKE5    
+279,TKL Ser/Thr protein kinase family,ACVR1     ,ACVR1_HUMAN ,Q04771    
+280,TKL Ser/Thr protein kinase family,ACVR1B   ,ACV1B_HUMAN ,P36896    
+281,TKL Ser/Thr protein kinase family,ACVR1C    ,ACV1C_HUMAN ,Q8NER5    
+282,TKL Ser/Thr protein kinase family,ACVR2A    ,AVR2A_HUMAN ,P27037    
+283,TKL Ser/Thr protein kinase family,ACVR2B    ,AVR2B_HUMAN ,Q13705    
+284,TKL Ser/Thr protein kinase family,ACVRL1    ,ACVL1_HUMAN ,P37023    
+285,TKL Ser/Thr protein kinase family,AMHR2     ,AMHR2_HUMAN ,Q16671    
+286,TKL Ser/Thr protein kinase family,ANKK1     ,ANKK1_HUMAN ,Q8NFD2    
+287,TKL Ser/Thr protein kinase family,ARAF      ,ARAF_HUMAN  ,P10398    
+288,TKL Ser/Thr protein kinase family,BMPR1A    ,BMR1A_HUMAN ,P36894    
+289,TKL Ser/Thr protein kinase family,BMPR1B    ,BMR1B_HUMAN ,O00238    
+290,TKL Ser/Thr protein kinase family,BMPR2     ,BMPR2_HUMAN ,Q13873    
+291,TKL Ser/Thr protein kinase family,BRAF      ,BRAF_HUMAN  ,P15056    
+292,TKL Ser/Thr protein kinase family,ILK       ,ILK_HUMAN   ,Q13418    
+293,TKL Ser/Thr protein kinase family,IRAK1     ,IRAK1_HUMAN ,P51617    
+294,TKL Ser/Thr protein kinase family,IRAK2     ,IRAK2_HUMAN ,O43187    
+295,TKL Ser/Thr protein kinase family,IRAK3     ,IRAK3_HUMAN ,Q9Y616    
+296,TKL Ser/Thr protein kinase family,IRAK4     ,IRAK4_HUMAN ,Q9NWZ3    
+297,TKL Ser/Thr protein kinase family,KSR1      ,KSR1_HUMAN  ,Q8IVT5    
+298,TKL Ser/Thr protein kinase family,KSR2      ,KSR2_HUMAN  ,Q6VAB6    
+299,TKL Ser/Thr protein kinase family,LIMK1     ,LIMK1_HUMAN ,P53667    
+300,TKL Ser/Thr protein kinase family,LIMK2     ,LIMK2_HUMAN ,P53671    
+301,TKL Ser/Thr protein kinase family,LRRK1     ,LRRK1_HUMAN ,Q38SD2    
+302,TKL Ser/Thr protein kinase family,LRRK2     ,LRRK2_HUMAN ,Q5S007    
+303,TKL Ser/Thr protein kinase family,RAF1      ,RAF1_HUMAN  ,P04049    
+304,TKL Ser/Thr protein kinase family,RIPK1     ,RIPK1_HUMAN ,Q13546    
+305,TKL Ser/Thr protein kinase family,RIPK2     ,IPK2_HUMAN ,O43353    
+306,TKL Ser/Thr protein kinase family,RIPK3     ,IPK3_HUMAN ,Q9Y572    
+307,TKL Ser/Thr protein kinase family,RIPK4     ,IPK4_HUMAN ,P57078    
+308,TKL Ser/Thr protein kinase family,TESK1     ,ESK1_HUMAN ,Q15569    
+309,TKL Ser/Thr protein kinase family,TESK2     ,ESK2_HUMAN ,Q96S53    
+310,TKL Ser/Thr protein kinase family,TGFBR1    ,GFR1_HUMAN ,P36897    
+311,TKL Ser/Thr protein kinase family,TGFBR2    ,GFR2_HUMAN ,P37173    
+312,TKL Ser/Thr protein kinase family,TNNI3K    ,NI3K_HUMAN ,Q59H18    
+313,Tyr protein kinase family,AATK,LMTK1_HUMAN ,Q6ZMQ8    
+314,Tyr protein kinase family,ABL1,ABL1_HUMAN  ,P00519    
+315,Tyr protein kinase family,ABL2,ABL2_HUMAN  ,P42684    
+316,Tyr protein kinase family,ALK,ALK_HUMAN   ,Q9UM73    
+317,Tyr protein kinase family,AXL,UFO_HUMAN   ,P30530    
+318,Tyr protein kinase family,BLK,BLK_HUMAN   ,P51451    
+319,Tyr protein kinase family,BMX,BMX_HUMAN   ,P51813    
+320,Tyr protein kinase family,BTK,BTK_HUMAN   ,Q06187    
+321,Tyr protein kinase family,CSF1R,CSF1R_HUMAN ,P07333    
+322,Tyr protein kinase family,CSK,CSK_HUMAN   ,P41240    
+323,Tyr protein kinase family,DDR1,DDR1_HUMAN  ,Q08345    
+324,Tyr protein kinase family,DDR2,DDR2_HUMAN  ,Q16832    
+325,Tyr protein kinase family,EGFR,EGFR_HUMAN  ,P00533    
+326,Tyr protein kinase family,EPHA1,EPHA1_HUMAN ,P21709    
+327,Tyr protein kinase family,EPHA10,EPHAA_HUMAN ,Q5JZY3    
+328,Tyr protein kinase family,EPHA2,EPHA2_HUMAN ,P29317    
+329,Tyr protein kinase family,EPHA3,EPHA3_HUMAN ,P29320    
+330,Tyr protein kinase family,EPHA4,EPHA4_HUMAN ,P54764    
+331,Tyr protein kinase family,EPHA5,EPHA5_HUMAN ,P54756    
+332,Tyr protein kinase family,EPHA6,EPHA6_HUMAN ,Q9UF33    
+333,Tyr protein kinase family,EPHA7,EPHA7_HUMAN ,Q15375    
+334,Tyr protein kinase family,EPHA8,EPHA8_HUMAN ,P29322    
+335,Tyr protein kinase family,EPHB1,EPHB1_HUMAN ,P54762    
+336,Tyr protein kinase family,EPHB2,EPHB2_HUMAN ,P29323    
+337,Tyr protein kinase family,EPHB3,EPHB3_HUMAN ,P54753    
+338,Tyr protein kinase family,EPHB4,EPHB4_HUMAN ,P54760    
+339,Tyr protein kinase family,EPHB6,EPHB6_HUMAN ,O15197    
+340,Tyr protein kinase family,ERBB2,ERBB2_HUMAN ,P04626    
+341,Tyr protein kinase family,ERBB3,ERBB3_HUMAN ,P21860    
+342,Tyr protein kinase family,ERBB4,ERBB4_HUMAN ,Q15303    
+343,Tyr protein kinase family,FER,FER_HUMAN   ,P16591    
+344,Tyr protein kinase family,FES,FES_HUMAN   ,P07332    
+345,Tyr protein kinase family,FGFR1,FGFR1_HUMAN ,P11362    
+346,Tyr protein kinase family,FGFR2,FGFR2_HUMAN ,P21802    
+347,Tyr protein kinase family,FGFR3,FGFR3_HUMAN ,P22607    
+348,Tyr protein kinase family,FGFR4,FGFR4_HUMAN ,P22455    
+349,Tyr protein kinase family,FGR,FGR_HUMAN   ,P09769    
+350,Tyr protein kinase family,FLT1,VGFR1_HUMAN ,P17948    
+351,Tyr protein kinase family,FLT3,FLT3_HUMAN  ,P36888    
+352,Tyr protein kinase family,FLT4,VGFR3_HUMAN ,P35916    
+353,Tyr protein kinase family,FRK,FRK_HUMAN   ,P42685    
+354,Tyr protein kinase family,FYN,FYN_HUMAN   ,P06241    
+355,Tyr protein kinase family,HCK,HCK_HUMAN   ,P08631    
+356,Tyr protein kinase family,IGF1R,IGF1R_HUMAN ,P08069    
+357,Tyr protein kinase family,INSR,INSR_HUMAN  ,P06213    
+358,Tyr protein kinase family,INSRR,INSRR_HUMAN ,P14616    
+359,Tyr protein kinase family,ITK,ITK_HUMAN   ,Q08881    
+360,Tyr protein kinase family,JAK1,JAK1_HUMAN  ,P23458    
+361,Tyr protein kinase family,JAK2,JAK2_HUMAN  ,O60674    
+362,Tyr protein kinase family,JAK3,JAK3_HUMAN  ,P52333    
+363,Tyr protein kinase family,KDR,VGFR2_HUMAN ,P35968    
+364,Tyr protein kinase family,KIT,KIT_HUMAN   ,P10721    
+365,Tyr protein kinase family,LCK,LCK_HUMAN   ,P06239    
+366,Tyr protein kinase family,LMTK2,LMTK2_HUMAN ,Q8IWU2    
+367,Tyr protein kinase family,LMTK3,LMTK3_HUMAN ,Q96Q04    
+368,Tyr protein kinase family,LTK,LTK_HUMAN   ,P29376    
+369,Tyr protein kinase family,LYN,LYN_HUMAN   ,P07948    
+370,Tyr protein kinase family,MATK,MATK_HUMAN  ,P42679    
+371,Tyr protein kinase family,MERTK,MERTK_HUMAN ,Q12866    
+372,Tyr protein kinase family,MET,MET_HUMAN   ,P08581    
+373,Tyr protein kinase family,MST1R,RON_HUMAN   ,Q04912    
+374,Tyr protein kinase family,MUSK,MUSK_HUMAN  ,O15146    
+375,Tyr protein kinase family,NTRK1,NTRK1_HUMAN ,P04629    
+376,Tyr protein kinase family,NTRK2,NTRK2_HUMAN ,Q16620    
+377,Tyr protein kinase family,NTRK3,NTRK3_HUMAN ,Q16288    
+378,Tyr protein kinase family,PDGFRA,PGFRA_HUMAN ,P16234    
+379,Tyr protein kinase family,PDGFRB,PGFRB_HUMAN ,P09619    
+380,Tyr protein kinase family,PTK2,FAK1_HUMAN  ,Q05397    
+381,Tyr protein kinase family,PTK2B,FAK2_HUMAN  ,Q14289    
+382,Tyr protein kinase family,PTK6,PTK6_HUMAN  ,Q13882    
+383,Tyr protein kinase family,PTK7,PTK7_HUMAN  ,Q13308    
+384,Tyr protein kinase family,RET,RET_HUMAN   ,P07949    
+385,Tyr protein kinase family,ROR1,ROR1_HUMAN  ,Q01973    
+386,Tyr protein kinase family,ROR2,ROR2_HUMAN  ,Q01974    
+387,Tyr protein kinase family,ROS1,ROS1_HUMAN  ,P08922    
+388,Tyr protein kinase family,RYK,RYK_HUMAN   ,P34925    
+389,Tyr protein kinase family,SRC,SRC_HUMAN   ,P12931    
+390,Tyr protein kinase family,SRMS,SRMS_HUMAN  ,Q9H3Y6    
+391,Tyr protein kinase family,STYK1,STYK1_HUMAN ,Q6J9G0    
+392,Tyr protein kinase family,SYK,KSYK_HUMAN  ,P43405    
+393,Tyr protein kinase family,TEC,TEC_HUMAN   ,P42680    
+394,Tyr protein kinase family,TEK,TIE2_HUMAN  ,Q02763    
+395,Tyr protein kinase family,TIE1,TIE1_HUMAN  ,P35590    
+396,Tyr protein kinase family,TNK1,TNK1_HUMAN  ,Q13470    
+397,Tyr protein kinase family,TNK2,ACK1_HUMAN  ,Q07912    
+398,Tyr protein kinase family,TXK,TXK_HUMAN   ,P42681    
+399,Tyr protein kinase family,TYK2,TYK2_HUMAN  ,P29597    
+400,Tyr protein kinase family,TYRO3,TYRO3_HUMAN ,Q06418    
+401,Tyr protein kinase family,YES1,YES_HUMAN   ,P07947    
+402,Tyr protein kinase family,ZAP70,ZAP70_HUMAN ,P43403    
 403,Other,AAK1,AAK1_HUMAN  ,Q2M2I8    
 404,Other,AURKA,AURKA_HUMAN ,O14965    
 405,Other,AURKB,AURKB_HUMAN ,Q96GD4    
@@ -482,32 +482,32 @@
 480,Other,WNK2,WNK2_HUMAN  ,Q9Y3S1    
 481,Other,WNK3,WNK3_HUMAN  ,Q9BYP7    
 482,Other,WNK4,WNK4_HUMAN  ,Q96J92    
-483,Atypical: ADCK,ADCK1    ,ADCK1_HUMAN ,Q86TW2        
-484,Atypical: ADCK,ADCK2    ,ADCK2_HUMAN ,Q7Z695        
-485,Atypical: ADCK,ADCK5    ,ADCK5_HUMAN ,Q3MIX3        
-486,Atypical: ADCK,COQ8A    ,COQ8A_HUMAN ,Q8NI60        
-487,Atypical: ADCK,COQ8B    ,COQ8B_HUMAN ,Q96D53        
-488,Atypical: Alpha-type,ALPK1    ,ALPK1_HUMAN ,Q96QP1        
-489,Atypical: Alpha-type,ALPK2    ,ALPK2_HUMAN ,Q86TB3        
-490,Atypical: Alpha-type,ALPK3    ,ALPK3_HUMAN ,Q96L96        
-491,Atypical: Alpha-type,EEF2K    ,EF2K_HUMAN  ,O00418        
-492,Atypical: Alpha-type,TRPM6    ,TRPM6_HUMAN ,Q9BX84        
-493,Atypical: Alpha-type,TRPM7    ,TRPM7_HUMAN ,Q96QT4        
-494,Atypical: FAST,FASTK    ,FAPM7_HUMAN ,Q96QT4        
-495,Atypical: PDK/BCKDK,BCKDK    ,BCPM7_HUMAN ,Q96QT4        
-496,Atypical: PDK/BCKDK,PDK1     ,PDPM7_HUMAN ,Q96QT4        
-497,Atypical: PDK/BCKDK,PDK2     ,PDPM7_HUMAN ,Q96QT4        
-498,Atypical: PDK/BCKDK,PDK3     ,PDPM7_HUMAN ,Q96QT4        
-499,Atypical: PDK/BCKDK,PDK4     ,PDPM7_HUMAN ,Q96QT4        
-500,Atypical: PI3/PI4,ATM      ,APM7_HUMAN ,Q96QT4        
-501,Atypical: PI3/PI5,ATR      ,APM7_HUMAN ,Q96QT4        
-502,Atypical: PI3/PI6,MTOR     ,MPM7_HUMAN ,Q96QT4        
-503,Atypical: PI3/PI7,PIK3CA   ,PPM7_HUMAN ,Q96QT4        
-504,Atypical: PI3/PI8,PIK3CB   ,PPM7_HUMAN ,Q96QT4        
-505,Atypical: PI3/PI9,PIK3CD   ,PPM7_HUMAN ,Q96QT4        
-506,Atypical: PI3/PI10,PIK3CG    ,PPM7_HUMAN ,Q96QT4        
-507,Atypical: PI3/PI11,PRKDC     ,PPM7_HUMAN ,Q96QT4        
-508,Atypical: PI3/PI12,SMG1      ,SPM7_HUMAN ,Q96QT4        
-509,Atypical: RIO-type ,RIOK1    ,RIPM7_HUMAN ,Q96QT4        
-510,Atypical: RIO-type ,RIOK2    ,RIPM7_HUMAN ,Q96QT4        
-511,Atypical: RIO-type ,RIOK3    ,RIPM7_HUMAN ,Q96QT4        
+483,Atypical: ADCK protein kinase family,ADCK1    ,ADCK1_HUMAN ,Q86TW2        
+484,Atypical: ADCK protein kinase family,ADCK2    ,ADCK2_HUMAN ,Q7Z695        
+485,Atypical: ADCK protein kinase family,ADCK5    ,ADCK5_HUMAN ,Q3MIX3        
+486,Atypical: ADCK protein kinase family,COQ8A    ,COQ8A_HUMAN ,Q8NI60        
+487,Atypical: ADCK protein kinase family,COQ8B    ,COQ8B_HUMAN ,Q96D53        
+488,Atypical: Alpha-type protein kinase family,ALPK1    ,ALPK1_HUMAN ,Q96QP1        
+489,Atypical: Alpha-type protein kinase family,ALPK2    ,ALPK2_HUMAN ,Q86TB3        
+490,Atypical: Alpha-type protein kinase family,ALPK3    ,ALPK3_HUMAN ,Q96L96        
+491,Atypical: Alpha-type protein kinase family,EEF2K    ,EF2K_HUMAN  ,O00418        
+492,Atypical: Alpha-type protein kinase family,TRPM6    ,TRPM6_HUMAN ,Q9BX84        
+493,Atypical: Alpha-type protein kinase family,TRPM7    ,TRPM7_HUMAN ,Q96QT4        
+494,Atypical: FAST protein kinase family,FASTK    ,FAPM7_HUMAN ,Q96QT4        
+495,Atypical: PDK/BCKDK protein kinase family,BCKDK    ,BCPM7_HUMAN ,Q96QT4        
+496,Atypical: PDK/BCKDK protein kinase family,PDK1     ,PDPM7_HUMAN ,Q96QT4        
+497,Atypical: PDK/BCKDK protein kinase family,PDK2     ,PDPM7_HUMAN ,Q96QT4        
+498,Atypical: PDK/BCKDK protein kinase family,PDK3     ,PDPM7_HUMAN ,Q96QT4        
+499,Atypical: PDK/BCKDK protein kinase family,PDK4     ,PDPM7_HUMAN ,Q96QT4        
+500,Atypical: PI3/PI4-kinase family,ATM      ,APM7_HUMAN ,Q96QT4        
+501,Atypical: PI3/PI4-kinase family,ATR      ,APM7_HUMAN ,Q96QT4        
+502,Atypical: PI3/PI4-kinase family,MTOR     ,MPM7_HUMAN ,Q96QT4        
+503,Atypical: PI3/PI4-kinase family,PIK3CA   ,PPM7_HUMAN ,Q96QT4        
+504,Atypical: PI3/PI4-kinase family,PIK3CB   ,PPM7_HUMAN ,Q96QT4        
+505,Atypical: PI3/PI4-kinase family,PIK3CD   ,PPM7_HUMAN ,Q96QT4        
+506,Atypical: PI3/PI4-kinase family,PIK3CG    ,PPM7_HUMAN ,Q96QT4        
+507,Atypical: PI3/PI4-kinase family,PRKDC     ,PPM7_HUMAN ,Q96QT4        
+508,Atypical: PI3/PI4-kinase family,SMG1      ,SPM7_HUMAN ,Q96QT4        
+509,Atypical: RIO-type Ser/Thr kinase family,RIOK1    ,RIPM7_HUMAN ,Q96QT4        
+510,Atypical: RIO-type Ser/Thr kinase family,RIOK2    ,RIPM7_HUMAN ,Q96QT4        
+511,Atypical: RIO-type Ser/Thr kinase family,RIOK3    ,RIPM7_HUMAN ,Q96QT4        
