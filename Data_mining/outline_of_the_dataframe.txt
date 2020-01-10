@@ -16,6 +16,9 @@ Gene_name
 
 	
 
+| Gene_name | Protein_name | Family | Cell_location | 
+| ------------- | ------------- | ------------- | ------------- |
+| MAPK1  | Mitogen-activated protein kinase 1  | CMGC | Nucleus |	
 	
 
 	
