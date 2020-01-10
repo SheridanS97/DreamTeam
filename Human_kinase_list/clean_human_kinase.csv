@@ -493,21 +493,21 @@
 491,Atypical: Alpha-type protein kinase family,EEF2K    ,EF2K_HUMAN  ,O00418        
 492,Atypical: Alpha-type protein kinase family,TRPM6    ,TRPM6_HUMAN ,Q9BX84        
 493,Atypical: Alpha-type protein kinase family,TRPM7    ,TRPM7_HUMAN ,Q96QT4        
-494,Atypical: FAST protein kinase family,FASTK    ,FAPM7_HUMAN ,Q96QT4        
-495,Atypical: PDK/BCKDK protein kinase family,BCKDK    ,BCPM7_HUMAN ,Q96QT4        
-496,Atypical: PDK/BCKDK protein kinase family,PDK1     ,PDPM7_HUMAN ,Q96QT4        
-497,Atypical: PDK/BCKDK protein kinase family,PDK2     ,PDPM7_HUMAN ,Q96QT4        
-498,Atypical: PDK/BCKDK protein kinase family,PDK3     ,PDPM7_HUMAN ,Q96QT4        
-499,Atypical: PDK/BCKDK protein kinase family,PDK4     ,PDPM7_HUMAN ,Q96QT4        
-500,Atypical: PI3/PI4-kinase family,ATM      ,APM7_HUMAN ,Q96QT4        
-501,Atypical: PI3/PI4-kinase family,ATR      ,APM7_HUMAN ,Q96QT4        
-502,Atypical: PI3/PI4-kinase family,MTOR     ,MPM7_HUMAN ,Q96QT4        
-503,Atypical: PI3/PI4-kinase family,PIK3CA   ,PPM7_HUMAN ,Q96QT4        
-504,Atypical: PI3/PI4-kinase family,PIK3CB   ,PPM7_HUMAN ,Q96QT4        
-505,Atypical: PI3/PI4-kinase family,PIK3CD   ,PPM7_HUMAN ,Q96QT4        
-506,Atypical: PI3/PI4-kinase family,PIK3CG    ,PPM7_HUMAN ,Q96QT4        
-507,Atypical: PI3/PI4-kinase family,PRKDC     ,PPM7_HUMAN ,Q96QT4        
-508,Atypical: PI3/PI4-kinase family,SMG1      ,SPM7_HUMAN ,Q96QT4        
-509,Atypical: RIO-type Ser/Thr kinase family,RIOK1    ,RIPM7_HUMAN ,Q96QT4        
-510,Atypical: RIO-type Ser/Thr kinase family,RIOK2    ,RIPM7_HUMAN ,Q96QT4        
-511,Atypical: RIO-type Ser/Thr kinase family,RIOK3    ,RIPM7_HUMAN ,Q96QT4        
+494,Atypical: FAST protein kinase family,FASTK    ,FAPM7_HUMAN ,Q14296
+495,Atypical: PDK/BCKDK protein kinase family,BCKDK    ,BCPM7_HUMAN ,Q14874
+496,Atypical: PDK/BCKDK protein kinase family,PDK1     ,PDPM7_HUMAN ,Q15118
+497,Atypical: PDK/BCKDK protein kinase family,PDK2     ,PDPM7_HUMAN ,Q15119
+498,Atypical: PDK/BCKDK protein kinase family,PDK3     ,PDPM7_HUMAN ,Q15120
+499,Atypical: PDK/BCKDK protein kinase family,PDK4     ,PDPM7_HUMAN ,Q16654
+500,Atypical: PI3/PI4-kinase family,ATM      ,APM7_HUMAN ,Q13315
+501,Atypical: PI3/PI4-kinase family,ATR      ,APM7_HUMAN ,Q13535
+502,Atypical: PI3/PI4-kinase family,MTOR     ,MPM7_HUMAN ,P42345
+503,Atypical: PI3/PI4-kinase family,PIK3CA   ,PPM7_HUMAN ,P42336
+504,Atypical: PI3/PI4-kinase family,PIK3CB   ,PPM7_HUMAN ,P42338
+505,Atypical: PI3/PI4-kinase family,PIK3CD   ,PPM7_HUMAN ,O00329 
+506,Atypical: PI3/PI4-kinase family,PIK3CG    ,PPM7_HUMAN ,P48736
+507,Atypical: PI3/PI4-kinase family,PRKDC     ,PPM7_HUMAN ,P78527
+508,Atypical: PI3/PI4-kinase family,SMG1      ,SPM7_HUMAN ,Q96Q15 
+509,Atypical: RIO-type Ser/Thr kinase family,RIOK1    ,RIPM7_HUMAN ,Q9BRS2
+510,Atypical: RIO-type Ser/Thr kinase family,RIOK2    ,RIPM7_HUMAN ,Q9BVS4
+511,Atypical: RIO-type Ser/Thr kinase family,RIOK3    ,RIPM7_HUMAN ,O14730
