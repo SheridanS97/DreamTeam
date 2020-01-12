@@ -1,0 +1,3772 @@
+,Uniprot Number,Subcellular Location
+0,P31749    ,Nucleus
+1,P31749    ,Membrane
+2,P31749    ,Cytoplasm
+3,P31749    ,Plasma Membrane
+5,P31749    ,Protein-Containing Complex
+7,P31749    ,Vesicle
+12,P31749    ,Cytosol
+73,P31749    ,Nucleoplasm
+88,P31749    ,Microtubule Cytoskeleton
+90,P31749    ,Postsynapse
+91,P31749    ,Ciliary Basal Body
+93,P31749    ,Cell-Cell Junction
+95,P31749    ,Spindle
+96,P31749    ,Mitochondrion
+104,P31751    ,Protein-Containing Complex
+105,P31751    ,Ruffle Membrane
+106,P31751    ,Cell Cortex
+107,P31751    ,Plasma Membrane
+109,P31751    ,Nucleus
+111,P31751    ,Cytosol
+115,P31751    ,Nucleoplasm
+116,P31751    ,Intracellular Membrane-Bounded Organelle
+122,P31751    ,Membrane
+123,P31751    ,Endosome
+126,P31751    ,Cytoplasm
+127,P31751    ,Early Endosome
+132,Q9Y243    ,Membrane
+133,Q9Y243    ,Nucleus
+134,Q9Y243    ,Cytoplasm
+139,Q5VT25    ,Extracellular Exosome
+140,Q5VT25    ,Lamellipodium
+141,Q5VT25    ,Actomyosin
+142,Q5VT25    ,Cell Leading Edge
+143,Q5VT25    ,Cell-Cell Junction
+145,Q5VT25    ,Cytoskeleton
+146,Q5VT25    ,Cytoplasm
+148,Q5VT25    ,Cell Projection
+152,Q9Y5S2    ,Membrane
+153,Q9Y5S2    ,Plasma Membrane
+154,Q9Y5S2    ,Cell Junction
+155,Q9Y5S2    ,Cell Projection
+156,Q9Y5S2    ,Cytoplasm
+158,Q9Y5S2    ,Lamellipodium
+161,Q9Y5S2    ,Extracellular Exosome
+162,Q9Y5S2    ,Cytoskeleton
+164,Q9Y5S2    ,Actomyosin
+165,Q9Y5S2    ,Cell Leading Edge
+166,Q9Y5S2    ,Cell-Cell Junction
+172,Q6DT37    ,Cell Leading Edge
+173,Q6DT37    ,Cytoskeleton
+174,Q6DT37    ,Cytoplasm
+175,Q6DT37    ,Centriolar Satellite
+176,Q6DT37    ,Cytosol
+180,O14578    ,Cytoplasm
+182,O14578    ,Membrane
+183,O14578    ,Cleavage Furrow
+184,O14578    ,Actin Cytoskeleton
+185,O14578    ,Cytoskeleton
+187,O14578    ,Cytosol
+190,Q09013    ,Mitochondrion
+191,Q09013    ,Nucleus
+192,Q09013    ,Membrane
+193,Q09013    ,Endoplasmic Reticulum
+194,Q09013    ,Integral Component Of Membrane
+195,Q09013    ,Sarcoplasmic Reticulum
+196,Q09013    ,Plasma Membrane
+197,Q09013    ,Mitochondrial Outer Membrane
+198,Q09013    ,Cytoplasm
+199,Q09013    ,Nuclear Outer Membrane
+202,Q09013    ,Sarcoplasmic Reticulum Membrane
+203,Q09013    ,Cytosol
+204,Q09013    ,Endoplasmic Reticulum Membrane
+205,Q09013    ,Mitochondrial Membrane
+207,Q09013    ,Nuclear Membrane
+208,Q09013    ,Integral Component Of Mitochondrial Outer Membrane
+217,Q09013    ,Cell
+225,Q15835    ,Photoreceptor Disc Membrane
+226,Q15835    ,Cell Projection
+227,Q15835    ,Membrane
+229,Q15835    ,Photoreceptor Outer Segment
+231,P25098    ,Membrane
+233,P25098    ,Cytoplasm
+234,P25098    ,Cilium
+235,P25098    ,Plasma Membrane
+241,P25098    ,Cytosol
+243,P25098    ,Synapse
+251,P35626    ,Plasma Membrane
+254,P35626    ,Cytosol
+256,P32298    ,Photoreceptor Disc Membrane
+257,P32298    ,Neuronal Cell Body
+258,P32298    ,Dendrite
+259,P32298    ,Cytosol
+260,P32298    ,Cytoplasm
+262,P32298    ,Cell Cortex
+264,P34947    ,Cytoplasm
+265,P34947    ,Plasma Membrane
+270,P34947    ,Nuclear Membrane
+271,P34947    ,Nuclear Speck
+273,P34947    ,Cytosol
+274,P34947    ,Membrane
+277,P34947    ,Nucleus
+282,P43250    ,Membrane
+283,P43250    ,Plasma Membrane
+289,Q8WTQ7    ,Photoreceptor Disc Membrane
+290,Q8WTQ7    ,Membrane
+293,O95835    ,Cytoplasm
+294,O95835    ,Cytoskeleton
+295,O95835    ,Microtubule Organizing Center
+296,O95835    ,Spindle Pole
+298,O95835    ,Cytosol
+308,Q9NRM7    ,Nucleus
+309,Q9NRM7    ,Spindle Pole
+312,Q9NRM7    ,Cytosol
+322,Q9NRM7    ,Centriolar Satellite
+324,Q9NRM7    ,Cytoplasm
+325,Q9NRM7    ,Cytoskeleton
+327,Q9NRM7    ,Microtubule Organizing Center
+332,Q9Y2H9    ,Plasma Membrane
+333,Q9Y2H9    ,Cytoskeleton
+334,Q9Y2H9    ,Cytoplasm
+335,Q9Y2H9    ,Membrane
+336,Q9Y2H9    ,Cell Projection
+338,Q9Y2H9    ,Axon
+339,Q9Y2H9    ,Dendrite
+341,Q9Y2H9    ,Neuronal Cell Body
+342,Q9Y2H9    ,Neuron Projection
+347,Q6P0Q8    ,Plasma Membrane
+348,Q6P0Q8    ,Membrane
+349,Q6P0Q8    ,Cytoplasm
+350,Q6P0Q8    ,Cytoskeleton
+353,Q6P0Q8    ,Microtubule Cytoskeleton
+357,O15021    ,Cytoplasm
+360,Q96GX5    ,Cleavage Furrow
+362,Q96GX5    ,Centrosome
+363,Q96GX5    ,Nucleus
+366,Q96GX5    ,Nucleoplasm
+370,Q96GX5    ,Cytoplasm
+371,Q96GX5    ,Cytoskeleton
+373,Q96GX5    ,Microtubule Organizing Center
+376,O15530    ,Cell Projection
+377,O15530    ,Plasma Membrane
+379,O15530    ,Cytoplasm
+409,O15530    ,Cytosol
+414,O15530    ,Cell
+415,O15530    ,Perikaryon
+418,O15530    ,Cytoplasmic Vesicle
+419,O15530    ,Postsynaptic Density
+422,O15530    ,Cell Junction
+424,O15530    ,Membrane
+425,O15530    ,Nucleus
+427,O15530    ,Focal Adhesion
+431,Q6A1A2    ,Cytoplasm
+432,Q6A1A2    ,Membrane
+436,Q16512    ,Cleavage Furrow
+437,Q16512    ,Midbody
+438,Q16512    ,Endosome
+439,Q16512    ,Cytoplasm
+441,Q16512    ,Nucleus
+442,Q16512    ,Cytosol
+450,Q16512    ,Nucleoplasm
+459,Q16512    ,Protein-Containing Complex
+460,Q16512    ,Cytoplasmic Vesicle
+465,Q16512    ,Plasma Membrane
+471,Q16512    ,Membrane
+474,Q16513    ,Perinuclear Region Of Cytoplasm
+475,Q16513    ,Apical Junction Complex
+476,Q16513    ,Cleavage Furrow
+477,Q16513    ,Midbody
+478,Q16513    ,Lamellipodium
+479,Q16513    ,Cytoplasm
+480,Q16513    ,Nucleus
+481,Q16513    ,Cytosol
+484,Q16513    ,Intermediate Filament Cytoskeleton
+485,Q16513    ,Nuclear Body
+486,Q16513    ,Plasma Membrane
+488,Q16513    ,Centrosome
+489,Q16513    ,Nucleoplasm
+491,Q16513    ,Protein-Containing Complex
+494,Q16513    ,Membrane
+495,Q16513    ,Cell Projection
+496,Q16513    ,Cytoskeleton
+498,Q16513    ,Cell Junction
+509,Q6P5Z2    ,Golgi Apparatus
+510,Q6P5Z2    ,Nucleus
+512,Q6P5Z2    ,Cytoplasm
+514,Q6P5Z2    ,Perinuclear Region Of Cytoplasm
+516,P17612    ,Cilium
+517,P17612    ,Motile Cilium
+518,P17612    ,Cell Projection
+519,P17612    ,Cytoplasm
+520,P17612    ,Cytoplasmic Vesicle
+521,P17612    ,Plasma Membrane
+522,P17612    ,Membrane
+523,P17612    ,Nucleus
+524,P17612    ,Mitochondrion
+530,P17612    ,Acrosomal Vesicle
+533,P17612    ,Nuclear Speck
+536,P17612    ,Perinuclear Region Of Cytoplasm
+537,P17612    ,Camp-Dependent Protein Kinase Complex
+538,P17612    ,Axoneme
+539,P17612    ,Plasma Membrane Raft
+540,P17612    ,Extracellular Exosome
+542,P17612    ,Calcium Channel Complex
+545,P17612    ,Centrosome
+547,P17612    ,Ciliary Base
+549,P17612    ,Cytosol
+583,P17612    ,Nucleoplasm
+585,P17612    ,Intercellular Bridge
+587,P17612    ,Cell
+591,P17612    ,Dendritic Spine
+592,P17612    ,Sperm Flagellum
+593,P17612    ,Neuromuscular Junction
+600,P17612    ,Nucleotide-Activated Protein Kinase Complex
+602,P17612    ,Sperm Midpiece
+604,P22694    ,Extracellular Exosome
+605,P22694    ,Camp-Dependent Protein Kinase Complex
+606,P22694    ,Centrosome
+607,P22694    ,Nucleus
+608,P22694    ,Ciliary Base
+610,P22694    ,Cytosol
+618,P22694    ,Nucleoplasm
+620,P22694    ,Intercellular Bridge
+622,P22694    ,Perinuclear Region Of Cytoplasm
+625,P22694    ,Cytoplasm
+628,P22694    ,Plasma Membrane
+630,P22694    ,Membrane
+637,P22612    ,Nucleus
+638,P22612    ,Ciliary Base
+640,P22612    ,Cytosol
+648,P22612    ,Nucleoplasm
+650,P22612    ,Intercellular Bridge
+653,P17252    ,Extracellular Exosome
+654,P17252    ,Mitochondrion
+655,P17252    ,Endoplasmic Reticulum
+656,P17252    ,Perinuclear Region Of Cytoplasm
+657,P17252    ,Plasma Membrane
+659,P17252    ,Cytosol
+660,P17252    ,Cytoplasm
+683,P17252    ,Nucleoplasm
+689,P17252    ,Nucleus
+691,P17252    ,Membrane
+695,P17252    ,Mitochondrial Membrane
+698,P05771    ,Extracellular Exosome
+700,P05771    ,Plasma Membrane
+701,P05771    ,Cytoplasm
+702,P05771    ,Nucleus
+710,P05771    ,Cytosol
+718,P05771    ,Nucleoplasm
+722,P05771    ,Cell
+723,P05771    ,Presynaptic Cytosol
+724,P05771    ,Calyx Of Held
+725,P05771    ,Spectrin
+730,P05771    ,Membrane
+735,Q05655    ,Nucleus
+736,Q05655    ,Perinuclear Region Of Cytoplasm
+737,Q05655    ,Cytoplasm
+740,Q05655    ,Extracellular Exosome
+741,Q05655    ,Endoplasmic Reticulum
+742,Q05655    ,Plasma Membrane
+744,Q05655    ,Cytosol
+752,Q05655    ,Azurophil Granule Lumen
+768,Q05655    ,Nucleoplasm
+769,Q05655    ,Extracellular Region
+771,Q05655    ,Nuclear Matrix
+772,Q05655    ,Membrane
+773,Q05655    ,Cell-Cell Junction
+782,Q02156    ,Cytoplasm
+783,Q02156    ,Cytoskeleton
+784,Q02156    ,Nucleus
+785,Q02156    ,Perinuclear Region Of Cytoplasm
+786,Q02156    ,Plasma Membrane
+787,Q02156    ,Endoplasmic Reticulum
+788,Q02156    ,Cell Periphery
+792,Q02156    ,Cytosol
+793,Q02156    ,Golgi Apparatus
+800,Q02156    ,Membrane
+803,Q02156    ,Mitochondrion
+812,P05129    ,Cell Projection
+813,P05129    ,Synapse
+814,P05129    ,Cytoplasm
+815,P05129    ,Cell Junction
+816,P05129    ,Plasma Membrane
+817,P05129    ,Membrane
+818,P05129    ,Neuron Projection
+821,P05129    ,Dendrite
+822,P05129    ,Perinuclear Region Of Cytoplasm
+827,P05129    ,Cytosol
+834,P05129    ,Postsynaptic Cytosol
+840,P05129    ,Presynaptic Cytosol
+841,P05129    ,Synaptic Membrane
+842,P05129    ,Calyx Of Held
+844,P05129    ,Postsynaptic Density
+845,P05129    ,Cell-Cell Junction
+848,P05129    ,Nucleus
+850,P24723    ,Cytoplasm
+852,P24723    ,Extracellular Exosome
+853,P24723    ,Plasma Membrane
+854,P24723    ,Cytosol
+858,P41743    ,Extracellular Exosome
+859,P41743    ,Cytosol
+861,P41743    ,Nucleus
+863,P41743    ,Plasma Membrane
+866,P41743    ,Nucleoplasm
+867,P41743    ,Intercellular Bridge
+868,P41743    ,Microtubule Cytoskeleton
+870,P41743    ,Golgi Membrane
+871,P41743    ,Glutamatergic Synapse
+872,P41743    ,Cell Leading Edge
+873,P41743    ,Bicellular Tight Junction
+876,P41743    ,Apical Part Of Cell
+877,P41743    ,Schmidt-Lanterman Incisure
+878,P41743    ,Apical Plasma Membrane
+879,P41743    ,Cytoplasm
+883,P41743    ,Endosome
+884,P41743    ,Membrane
+890,Q04759    ,Plasma Membrane
+906,Q04759    ,Cytosol
+910,Q04759    ,Centriolar Satellite
+911,Q04759    ,Aggresome
+913,Q04759    ,Cytoplasm
+914,Q04759    ,Immunological Synapse
+915,Q04759    ,Membrane
+921,Q05513    ,Vesicle
+922,Q05513    ,Extracellular Exosome
+923,Q05513    ,Membrane
+924,Q05513    ,Plasma Membrane
+925,Q05513    ,Cytoplasm
+926,Q05513    ,Cell-Cell Junction
+927,Q05513    ,Cell Junction
+933,Q05513    ,Cytosol
+940,Q05513    ,Cell
+941,Q05513    ,Glutamatergic Synapse
+942,Q05513    ,Perinuclear Region Of Cytoplasm
+943,Q05513    ,Membrane Raft
+944,Q05513    ,Intracellular Membrane-Bounded Organelle
+945,Q05513    ,Cell Leading Edge
+946,Q05513    ,Postsynaptic Density
+950,Q05513    ,Stress Fiber
+951,Q05513    ,Apical Cortex
+952,Q05513    ,Axon Hillock
+953,Q05513    ,Myelin Sheath Abaxonal Region
+955,Q05513    ,Nuclear Matrix
+956,Q05513    ,Apical Plasma Membrane
+957,Q05513    ,Cell Cortex
+958,Q05513    ,Bicellular Tight Junction
+960,Q05513    ,Microtubule Organizing Center
+962,Q05513    ,Nuclear Envelope
+963,Q05513    ,Nucleus
+965,Q05513    ,Endosome
+973,Q13976    ,Cytoplasm
+975,Q13976    ,Plasma Membrane
+977,Q13976    ,Cytosol
+980,Q13976    ,Golgi Apparatus
+983,Q13237    ,Cytosol
+986,Q13237    ,Nuclear Membrane
+987,Q13237    ,Membrane
+989,Q13237    ,Plasma Membrane
+990,Q13237    ,Apical Plasma Membrane
+992,P51817    ,Cytoplasm
+994,P51817    ,Nucleus
+997,P51817    ,Camp-Dependent Protein Kinase Complex
+998,P51817    ,Nucleoplasm
+1004,O43930    ,Camp-Dependent Protein Kinase Complex
+1006,Q13464    ,Amyloid-Beta Complex
+1007,Q13464    ,Cytoplasmic Stress Granule
+1008,Q13464    ,Lamellipodium
+1009,Q13464    ,Plasma Membrane
+1010,Q13464    ,Cytoskeleton
+1011,Q13464    ,Ruffle
+1014,Q13464    ,Cytoplasm
+1015,Q13464    ,Secretory Granule Lumen
+1016,Q13464    ,Cytosol
+1023,Q13464    ,Extracellular Region
+1029,Q13464    ,Golgi Apparatus
+1031,Q13464    ,Cell Projection
+1034,Q13464    ,Membrane
+1036,Q13464    ,Bleb
+1037,Q13464    ,Golgi Membrane
+1039,Q13464    ,Centriole
+1044,O75116    ,Cytoplasm
+1045,O75116    ,Nucleus
+1046,O75116    ,Cytoskeleton
+1047,O75116    ,Membrane
+1048,O75116    ,Plasma Membrane
+1049,O75116    ,Microtubule Organizing Center
+1053,O75116    ,Cytoplasmic Ribonucleoprotein Granule
+1054,O75116    ,Centrosome
+1058,O75116    ,Cytosol
+1065,Q15418    ,Nucleus
+1066,Q15418    ,Cytoplasm
+1069,Q15418    ,Cytosol
+1070,Q15418    ,Nucleoplasm
+1080,Q15349    ,Nucleus
+1081,Q15349    ,Cytoplasm
+1085,Q15349    ,Cytosol
+1086,Q15349    ,Nucleoplasm
+1096,P51812    ,Cytoplasm
+1098,P51812    ,Nucleus
+1101,P51812    ,Cytosol
+1102,P51812    ,Nucleoplasm
+1109,O75676    ,Nucleus
+1111,O75676    ,Cytoplasm
+1113,O75676    ,Cytosol
+1114,O75676    ,Nucleoplasm
+1118,O75582    ,Cytoplasm
+1119,O75582    ,Nucleus
+1124,O75582    ,Nucleoplasm
+1136,Q9UK32    ,Cytoplasm
+1137,Q9UK32    ,Nucleus
+1138,Q9UK32    ,Mitochondrion
+1139,Q9UK32    ,Nucleolus
+1140,Q9UK32    ,Nucleoplasm
+1141,Q9UK32    ,Fibrillar Center
+1144,Q9UK32    ,Cytosol
+1147,P23443    ,Cytoplasm
+1148,P23443    ,Neuron Projection
+1149,P23443    ,Mitochondrion
+1150,P23443    ,Nucleus
+1151,P23443    ,Mitochondrial Outer Membrane
+1152,P23443    ,Membrane
+1153,P23443    ,Synapse
+1154,P23443    ,Cell Junction
+1163,P23443    ,Cytosol
+1168,P23443    ,Nucleoplasm
+1173,Q9UBS0    ,Cytoplasm
+1175,Q9UBS0    ,Nucleus
+1178,Q9UBS0    ,Nucleoplasm
+1182,O00141    ,Cytoplasm
+1183,O00141    ,Nucleus
+1184,O00141    ,Cytosol
+1188,O00141    ,Nuclear Speck
+1190,O00141    ,Membrane
+1192,O00141    ,Mitochondrion
+1194,O00141    ,Endoplasmic Reticulum
+1195,O00141    ,Plasma Membrane
+1197,O00141    ,Endoplasmic Reticulum Membrane
+1202,Q9HBY8    ,Cytosol
+1203,Q9HBY8    ,Nucleoplasm
+1204,Q9HBY8    ,Cytoplasm
+1205,Q9HBY8    ,Nucleus
+1209,Q96BR1    ,Cytosol
+1210,Q96BR1    ,Intracellular Membrane-Bounded Organelle
+1211,Q96BR1    ,Nucleoplasm
+1212,Q96BR1    ,Cytoplasmic Vesicle
+1213,Q96BR1    ,Endosome
+1215,Q96BR1    ,Recycling Endosome
+1216,Q96BR1    ,Early Endosome
+1218,Q15208    ,Nucleus
+1219,Q15208    ,Cytoplasm
+1226,Q15208    ,Cytosol
+1228,Q9Y2H1    ,Actin Cytoskeleton
+1229,Q9Y2H1    ,Cytoplasm
+1230,Q9Y2H1    ,Cytosol
+1234,Q9Y2H1    ,Membrane
+1235,Q9Y2H1    ,Cytoskeleton
+1240,Q8TDC3    ,Presynaptic Active Zone
+1241,Q8TDC3    ,Synaptic Vesicle
+1242,Q8TDC3    ,Distal Axon
+1246,Q8TDC3    ,Centrosome
+1247,Q8TDC3    ,Cytoplasm
+1248,Q8TDC3    ,Nucleus
+1252,Q8TDC3    ,Cell Junction
+1253,Q8TDC3    ,Nucleoplasm
+1257,Q8TDC3    ,Cytoplasmic Vesicle
+1260,Q8TDC3    ,Cell Projection
+1262,Q8TDC3    ,Synapse
+1263,Q8TDC3    ,Cytoskeleton
+1265,Q8TDC3    ,Microtubule Organizing Center
+1271,Q8IWQ3    ,Distal Axon
+1272,Q8IWQ3    ,Cytoplasm
+1273,Q8IWQ3    ,Endoplasmic Reticulum
+1274,Q8IWQ3    ,Centrosome
+1278,Q8IWQ3    ,Nucleus
+1281,Q8IWQ3    ,Cytoskeleton
+1283,Q8IWQ3    ,Perinuclear Region Of Cytoplasm
+1284,Q8IWQ3    ,Microtubule Organizing Center
+1286,Q14012    ,Nucleus
+1287,Q14012    ,Cytoplasm
+1288,Q14012    ,Cytosol
+1290,Q14012    ,Glutamatergic Synapse
+1291,Q14012    ,Postsynaptic Density
+1295,Q8IU85    ,Nucleus
+1296,Q8IU85    ,Cytoplasm
+1303,Q96NX5    ,Neuron Projection
+1304,Q96NX5    ,Cytoplasm
+1305,Q96NX5    ,Endomembrane System
+1306,Q96NX5    ,Plasma Membrane
+1307,Q96NX5    ,Membrane
+1310,Q96NX5    ,Golgi Apparatus
+1311,Q96NX5    ,Golgi Membrane
+1315,Q9UQM7    ,Mitochondrion
+1316,Q9UQM7    ,Nucleus
+1317,Q9UQM7    ,Dendritic Spine
+1318,Q9UQM7    ,Neuron Projection
+1319,Q9UQM7    ,Cytoplasm
+1320,Q9UQM7    ,Endocytic Vesicle Membrane
+1321,Q9UQM7    ,Cytosol
+1327,Q9UQM7    ,Nucleoplasm
+1328,Q9UQM7    ,Cell Projection
+1329,Q9UQM7    ,Synapse
+1330,Q9UQM7    ,Cell Junction
+1333,Q9UQM7    ,Dendrite
+1334,Q9UQM7    ,Postsynaptic Density
+1336,Q13554    ,Neuron Projection
+1337,Q13554    ,Cytoplasm
+1338,Q13554    ,Endocytic Vesicle Membrane
+1339,Q13554    ,Cytosol
+1340,Q13554    ,Nucleoplasm
+1341,Q13554    ,Synapse
+1343,Q13554    ,Membrane
+1344,Q13554    ,Cytoskeleton
+1345,Q13554    ,Cell Junction
+1346,Q13554    ,Sarcoplasmic Reticulum
+1348,Q13554    ,Sarcoplasmic Reticulum Membrane
+1349,Q13554    ,Microtubule Organizing Center
+1352,Q13557    ,Membrane
+1353,Q13557    ,Cytoplasm
+1354,Q13557    ,Nucleus
+1355,Q13557    ,Neuron Projection
+1357,Q13557    ,Endocytic Vesicle Membrane
+1358,Q13557    ,Cytosol
+1359,Q13557    ,Nucleoplasm
+1360,Q13557    ,Sarcoplasmic Reticulum
+1362,Q13557    ,Plasma Membrane
+1363,Q13557    ,Sarcoplasmic Reticulum Membrane
+1364,Q13557    ,Sarcolemma
+1366,Q13555    ,Membrane
+1367,Q13555    ,Neuron Projection
+1368,Q13555    ,Cytoplasm
+1369,Q13555    ,Endocytic Vesicle Membrane
+1370,Q13555    ,Cytosol
+1371,Q13555    ,Nucleoplasm
+1372,Q13555    ,Sarcoplasmic Reticulum Membrane
+1373,Q13555    ,Sarcoplasmic Reticulum
+1376,Q16566    ,Extracellular Exosome
+1377,Q16566    ,Cytoplasm
+1378,Q16566    ,Nucleus
+1379,Q16566    ,Nucleoplasm
+1382,Q16566    ,Fibrillar Center
+1383,Q16566    ,Glutamatergic Synapse
+1384,Q16566    ,Postsynapse
+1390,Q8NCB2    ,Glutamatergic Synapse
+1391,Q8NCB2    ,Membrane
+1392,Q8NCB2    ,Cytoplasmic Vesicle Membrane
+1393,Q8NCB2    ,Plasma Membrane
+1394,Q8NCB2    ,Cytoplasmic Vesicle
+1397,O14936    ,Nuclear Lamina
+1398,O14936    ,Nucleolus
+1399,O14936    ,Basement Membrane
+1400,O14936    ,Focal Adhesion
+1401,O14936    ,Actin Cytoskeleton
+1402,O14936    ,Plasma Membrane
+1403,O14936    ,Ciliary Membrane
+1404,O14936    ,Presynaptic Membrane
+1405,O14936    ,Nuclear Matrix
+1406,O14936    ,Cell-Cell Junction
+1407,O14936    ,Cytoplasm
+1411,O14936    ,Cytosol
+1414,O14936    ,Synapse
+1415,O14936    ,Vesicle
+1416,O14936    ,Basolateral Plasma Membrane
+1417,O14936    ,Membrane
+1421,O14936    ,Nucleus
+1431,O14757    ,Protein-Containing Complex
+1432,O14757    ,Cytoplasm
+1433,O14757    ,Nucleus
+1434,O14757    ,Extracellular Space
+1435,O14757    ,Chromosome
+1436,O14757    ,Telomeric Region
+1437,O14757    ,Centrosome
+1440,O14757    ,Condensed Nuclear Chromosome
+1441,O14757    ,Chromatin
+1444,O14757    ,Cytosol
+1445,O14757    ,Nucleoplasm
+1454,O14757    ,Intracellular Membrane-Bounded Organelle
+1458,O14757    ,Cytoskeleton
+1461,O14757    ,Microtubule Organizing Center
+1463,O96017    ,Chromosome
+1464,O96017    ,Telomeric Region
+1465,O96017    ,Pml Body
+1466,O96017    ,Cytoplasm
+1467,O96017    ,Nucleus
+1468,O96017    ,Nucleoplasm
+1478,O96017    ,Golgi Apparatus
+1486,P53355    ,Plasma Membrane
+1487,P53355    ,Cytoplasm
+1488,P53355    ,Actin Cytoskeleton
+1489,P53355    ,Nucleus
+1491,P53355    ,Cytoskeleton
+1496,Q9UIK4    ,Cytoplasm
+1499,Q9UIK4    ,Nucleus
+1500,Q9UIK4    ,Intracellular Membrane-Bounded Organelle
+1501,Q9UIK4    ,Golgi Apparatus
+1503,Q9UIK4    ,Cytoplasmic Vesicle
+1504,Q9UIK4    ,Autophagosome Lumen
+1507,O43293    ,Pml Body
+1508,O43293    ,Nucleus
+1509,O43293    ,Membrane Raft
+1510,O43293    ,Actin Filament
+1511,O43293    ,Cytoplasm
+1521,O43293    ,Nucleoplasm
+1523,O15075    ,Integral Component Of Plasma Membrane
+1524,O15075    ,Postsynaptic Density
+1526,Q8N568    ,Microtubule
+1527,Q8N568    ,Cytoplasm
+1528,Q8N568    ,Cytoskeleton
+1531,Q9C098    ,Cytoplasm
+1532,Q9C098    ,Nucleus
+1540,P57058    ,Cytoplasm
+1541,P57058    ,Nucleus
+1543,O60229    ,Extracellular Exosome
+1544,O60229    ,Actin Cytoskeleton
+1545,O60229    ,Cytosol
+1555,O60229    ,Nucleoplasm
+1556,O60229    ,Cytoplasm
+1557,O60229    ,Cytoskeleton
+1561,P49137    ,Extracellular Exosome
+1562,P49137    ,Nucleus
+1563,P49137    ,Cytoplasm
+1567,P49137    ,Cytosol
+1574,P49137    ,Nucleoplasm
+1578,P49137    ,Centrosome
+1587,Q16644    ,Nucleus
+1588,Q16644    ,Cytoplasm
+1590,Q16644    ,Cytosol
+1593,Q16644    ,Nucleoplasm
+1603,Q8IW41    ,Nucleus
+1604,Q8IW41    ,Cytoplasm
+1609,Q8IW41    ,Cytosol
+1619,Q8IW41    ,Nucleoplasm
+1632,Q9P0L2    ,Plasma Membrane
+1633,Q9P0L2    ,Membrane
+1634,Q9P0L2    ,Cell Projection
+1635,Q9P0L2    ,Cytoskeleton
+1636,Q9P0L2    ,Cytoplasm
+1639,Q9P0L2    ,Dendrite
+1643,Q9P0L2    ,Microtubule Cytoskeleton
+1649,Q7KZI7    ,Mitochondrion
+1650,Q7KZI7    ,Microtubule Bundle
+1651,Q7KZI7    ,Lateral Plasma Membrane
+1652,Q7KZI7    ,Membrane
+1653,Q7KZI7    ,Plasma Membrane
+1654,Q7KZI7    ,Actin Filament
+1655,Q7KZI7    ,Cytoplasm
+1657,Q7KZI7    ,Nucleoplasm
+1659,Q7KZI7    ,Cytoskeleton
+1662,Q7KZI7    ,Cell Projection
+1667,Q7KZI7    ,Dendrite
+1671,P27448    ,Cytoplasm
+1673,P27448    ,Dendrite
+1674,P27448    ,Extracellular Exosome
+1675,P27448    ,Plasma Membrane
+1678,P27448    ,Cytosol
+1710,P27448    ,Cell Projection
+1712,P27448    ,Membrane
+1717,Q96L34    ,Ciliary Basal Body
+1718,Q96L34    ,Cytoplasm
+1719,Q96L34    ,Dendrite
+1720,Q96L34    ,Gamma-Tubulin Complex
+1721,Q96L34    ,Midbody
+1722,Q96L34    ,Centrosome
+1723,Q96L34    ,Neuron Projection
+1724,Q96L34    ,Microtubule Cytoskeleton
+1725,Q96L34    ,Microtubule Organizing Center
+1728,Q96L34    ,Cytosol
+1734,Q96L34    ,Cytoskeleton
+1735,Q96L34    ,Cell Projection
+1742,Q14680    ,Membrane
+1743,Q14680    ,Plasma Membrane
+1746,Q14680    ,Cell Cortex
+1748,Q14680    ,Cytoplasm
+1749,Q14680    ,Nucleus
+1752,Q9BUB5    ,Cytoplasm
+1753,Q9BUB5    ,Nucleus
+1754,Q9BUB5    ,Cytosol
+1755,Q9BUB5    ,Nucleoplasm
+1761,Q9HBH9    ,Nucleus
+1762,Q9HBH9    ,Cytoplasm
+1764,Q9HBH9    ,Pml Body
+1767,Q9HBH9    ,Nuclear Body
+1768,Q9HBH9    ,Nucleoplasm
+1770,Q15746    ,Cytoplasm
+1771,Q15746    ,Cytoskeleton
+1772,Q15746    ,Lamellipodium
+1773,Q15746    ,Cleavage Furrow
+1779,Q15746    ,Stress Fiber
+1784,Q15746    ,Cytosol
+1787,Q15746    ,Actin Cytoskeleton
+1788,Q15746    ,Plasma Membrane
+1789,Q15746    ,Cell Projection
+1791,Q9H1R3    ,Sarcomere
+1792,Q9H1R3    ,Cytoplasm
+1793,Q9H1R3    ,Nucleus
+1795,Q9H1R3    ,Synapse
+1799,Q32MK0    ,Cytoplasm
+1800,Q32MK0    ,Cytosol
+1802,Q32MK0    ,Actin Cytoskeleton
+1811,Q8IY84    ,Cytoplasm
+1812,Q8IY84    ,Nucleus
+1814,O60285    ,Cytoplasm
+1815,O60285    ,Nucleus
+1822,O60285    ,Nucleoplasm
+1825,O60285    ,Microtubule Cytoskeleton
+1827,O60285    ,Fibrillar Center
+1829,Q9H093    ,Cytoplasm
+1830,Q9H093    ,Nucleus
+1832,Q5VST9    ,M Band
+1834,Q5VST9    ,Z Disc
+1835,Q5VST9    ,Myofibril
+1836,Q5VST9    ,Cytosol
+1839,Q5VST9    ,Nuclear Body
+1840,Q5VST9    ,Plasma Membrane
+1842,Q5VST9    ,Nucleus
+1844,Q5VST9    ,Cytoplasm
+1845,Q5VST9    ,Membrane
+1847,Q5VST9    ,Sarcolemma
+1851,Q96RG2    ,Cytoplasm
+1852,Q96RG2    ,Nucleus
+1853,Q96RG2    ,Cytosol
+1862,Q16816    ,Cytosol
+1863,Q16816    ,Phosphorylase Kinase Complex
+1866,P15735    ,Phosphorylase Kinase Complex
+1867,P15735    ,Cytosol
+1872,P11309    ,Membrane
+1873,P11309    ,Plasma Membrane
+1874,P11309    ,Nucleus
+1875,P11309    ,Cytoplasm
+1882,P11309    ,Nucleoplasm
+1883,P11309    ,Cytosol
+1884,P11309    ,Nucleolus
+1890,Q9P1W9    ,Cytoplasm
+1892,Q86V86    ,Cytoplasm
+1893,Q86V86    ,Cytosol
+1897,Q6P2M8    ,Nucleus
+1898,Q6P2M8    ,Cytoplasm
+1902,Q13131    ,Cytoplasm
+1903,Q13131    ,Nucleotide-Activated Protein Kinase Complex
+1904,Q13131    ,Neuronal Cell Body
+1905,Q13131    ,Dendrite
+1906,Q13131    ,Axon
+1908,Q13131    ,Nucleus
+1911,Q13131    ,Cytosol
+1925,Q13131    ,Nucleoplasm
+1926,Q13131    ,Nuclear Speck
+1928,Q13131    ,Cell
+1933,Q13131    ,Protein-Containing Complex
+1937,Q13131    ,Apical Plasma Membrane
+1949,P54646    ,Nucleus
+1950,P54646    ,Neuronal Cell Body
+1951,P54646    ,Dendrite
+1952,P54646    ,Axon
+1953,P54646    ,Cytoplasmic Stress Granule
+1954,P54646    ,Cytoplasm
+1956,P54646    ,Cytosol
+1971,P54646    ,Nucleoplasm
+1973,P54646    ,Nuclear Speck
+1974,P54646    ,Golgi Apparatus
+1975,P54646    ,Cell
+1987,Q15139    ,Golgi Apparatus
+1988,Q15139    ,Autophagosome Membrane
+1989,Q15139    ,Plasma Membrane
+1990,Q15139    ,Cytosol
+1992,Q15139    ,Trans-Golgi Network
+1996,Q15139    ,Cytoplasm
+1997,Q15139    ,Membrane
+2004,Q9BZL6    ,Nucleus
+2005,Q9BZL6    ,Cytoplasm
+2006,Q9BZL6    ,Golgi Apparatus
+2007,Q9BZL6    ,Membrane
+2008,Q9BZL6    ,Plasma Membrane
+2015,Q9BZL6    ,Cytosol
+2017,Q9BZL6    ,Nucleoplasm
+2019,O94806    ,Cytosol
+2021,O94806    ,Nucleoplasm
+2022,O94806    ,Cytoplasm
+2023,O94806    ,Membrane
+2027,P11801    ,Nucleoplasm
+2028,P11801    ,Nucleus
+2029,P11801    ,Endoplasmic Reticulum
+2030,P11801    ,Membrane
+2031,P11801    ,Golgi Apparatus
+2032,P11801    ,Cytoplasm
+2033,P11801    ,Cytoskeleton
+2034,P11801    ,Plasma Membrane
+2036,P11801    ,Endoplasmic Reticulum Membrane
+2037,P11801    ,Nuclear Speck
+2040,P11801    ,Microtubule Organizing Center
+2044,P57059    ,Cytoplasm
+2046,P57059    ,Nucleus
+2054,A0A0B4J2F2,Cytoplasm
+2055,A0A0B4J2F2,Nucleus
+2057,Q9H0K1    ,Cytoplasm
+2059,Q9H0K1    ,Nucleus
+2063,Q9Y2K2    ,Cytoplasm
+2067,Q9NRH2    ,Nucleus
+2069,Q9NRH2    ,Cytoplasm
+2074,Q15772    ,Nucleus
+2079,Q15831    ,Membrane
+2080,Q15831    ,Nucleus
+2081,Q15831    ,Mitochondrion
+2082,Q15831    ,Cytoplasm
+2087,Q15831    ,Extracellular Exosome
+2089,Q15831    ,Cytosol
+2099,Q15831    ,Nucleoplasm
+2116,Q9UEE5    ,Nucleus
+2118,Q9UEE5    ,Nuclear Speck
+2119,Q9UEE5    ,Plasma Membrane
+2123,O94768    ,Plasma Membrane
+2124,O94768    ,Nucleus
+2125,O94768    ,Endoplasmic Reticulum-Golgi Intermediate Compartment
+2129,O94768    ,Actin Cytoskeleton
+2132,O94768    ,Membrane
+2134,Q9BYT3    ,Cytoplasm
+2135,Q9BYT3    ,Nucleus
+2137,Q9BYT3    ,Perinuclear Region Of Cytoplasm
+2139,Q8N2I9    ,Cytosol
+2140,Q8N2I9    ,Nucleoplasm
+2141,Q8N2I9    ,Nucleus
+2142,Q8N2I9    ,Cytoplasm
+2146,Q96RU8    ,Cytoplasm
+2147,Q96RU8    ,Nucleus
+2150,Q92519    ,Cytoplasm
+2151,Q92519    ,Cytoskeleton
+2155,Q92519    ,Nucleus
+2157,Q96RU7    ,Nucleus
+2159,Q96RU7    ,Plasma Membrane
+2161,Q96RU7    ,Cytosol
+2162,Q96RU7    ,Nucleoplasm
+2166,O75962    ,Cell Projection
+2167,O75962    ,Cytoplasm
+2170,O75962    ,Cytosol
+2179,Q9BXA7    ,Motile Cilium
+2180,Q9BXA7    ,Cytoplasm
+2181,Q9BXA7    ,Nucleus
+2183,Q9BXA7    ,Cilium
+2186,Q9BXA7    ,Cell Projection
+2187,Q9BXA7    ,Cytoplasmic Vesicle
+2190,Q9BXA7    ,Acrosomal Vesicle
+2192,Q96PF2    ,Nucleus
+2193,Q96PF2    ,Cytoplasm
+2196,Q96PF2    ,Centriole
+2198,Q96PF2    ,Acrosomal Vesicle
+2199,Q96PF2    ,Cytoskeleton
+2204,Q96PN8    ,Cytoplasm
+2205,Q96PN8    ,Nucleus
+2207,Q6SA08    ,Cytoplasm
+2208,Q6SA08    ,Nucleus
+2209,Q6SA08    ,Sperm Flagellum
+2210,Q6SA08    ,Motile Cilium
+2211,Q6SA08    ,Cell Projection
+2213,Q6SA08    ,Cytoplasmic Vesicle
+2214,Q6SA08    ,Cilium
+2216,Q6SA08    ,Acrosomal Vesicle
+2218,Q9BXA6    ,Nucleus
+2219,Q9BXA6    ,Cytoplasm
+2222,Q8WZ42    ,Extracellular Exosome
+2223,Q8WZ42    ,I Band
+2224,Q8WZ42    ,Z Disc
+2225,Q8WZ42    ,Condensed Nuclear Chromosome
+2227,Q8WZ42    ,M Band
+2229,Q8WZ42    ,Sarcomere
+2230,Q8WZ42    ,Striated Muscle Thin Filament
+2231,Q8WZ42    ,Cytosol
+2236,Q8WZ42    ,Extracellular Region
+2238,Q8WZ42    ,Cytoplasm
+2239,Q8WZ42    ,Nucleus
+2246,P48729    ,Ciliary Basal Body
+2247,P48729    ,Beta-Catenin Destruction Complex
+2248,P48729    ,Keratin Filament
+2249,P48729    ,Membrane
+2250,P48729    ,Nuclear Speck
+2251,P48729    ,Centrosome
+2252,P48729    ,Cytoplasm
+2253,P48729    ,Nucleus
+2254,P48729    ,Cilium
+2255,P48729    ,Cytosol
+2278,P48729    ,Ribonucleoprotein Complex
+2280,P48729    ,Cytoskeleton
+2282,P48729    ,Cell Projection
+2283,P48729    ,Chromosome
+2284,P48729    ,Centromeric Region
+2286,P48729    ,Kinetochore
+2290,P48729    ,Microtubule Organizing Center
+2291,P48729    ,Condensed Chromosome Kinetochore
+2293,Q8N752    ,Cytoplasm
+2294,Q8N752    ,Nucleus
+2295,Q8N752    ,Cytosol
+2299,P48730    ,Cytoskeleton
+2300,P48730    ,Golgi Apparatus
+2301,P48730    ,Membrane
+2302,P48730    ,Cytoplasm
+2303,P48730    ,Plasma Membrane
+2304,P48730    ,Nucleus
+2305,P48730    ,Perinuclear Region Of Cytoplasm
+2309,P48730    ,Microtubule Organizing Center
+2310,P48730    ,Spindle
+2314,P48730    ,Spindle Microtubule
+2316,P48730    ,Centrosome
+2323,P48730    ,Endoplasmic Reticulum-Golgi Intermediate Compartment Membrane
+2324,P48730    ,Cytosol
+2347,P48730    ,Nucleoplasm
+2348,P48730    ,Golgi Membrane
+2350,P49674    ,Cytoplasm
+2351,P49674    ,Nucleus
+2354,P49674    ,Cytosol
+2378,P49674    ,Nucleoplasm
+2384,Q9HCP0    ,Plasma Membrane
+2385,Q9HCP0    ,Cytoplasm
+2386,Q9HCP0    ,Nucleus
+2387,Q9HCP0    ,Cytosol
+2391,P78368    ,Membrane
+2392,P78368    ,Plasma Membrane
+2393,P78368    ,Cytoplasm
+2394,P78368    ,Nucleus
+2395,P78368    ,Cytosol
+2399,Q9Y6M4    ,Plasma Membrane
+2400,Q9Y6M4    ,Cytoplasm
+2401,Q9Y6M4    ,Nucleus
+2405,Q5TCY1    ,Neuronal Cell Body
+2406,Q5TCY1    ,Perinuclear Region Of Cytoplasm
+2407,Q5TCY1    ,Microtubule Associated Complex
+2408,Q5TCY1    ,Nucleus
+2409,Q5TCY1    ,Cytoplasm
+2410,Q5TCY1    ,Cytosol
+2411,Q5TCY1    ,Nucleoplasm
+2417,Q6IQ55    ,Centriole
+2418,Q6IQ55    ,Ciliary Transition Zone
+2419,Q6IQ55    ,Extracellular Space
+2420,Q6IQ55    ,Ciliary Basal Body
+2422,Q6IQ55    ,Cytosol
+2423,Q6IQ55    ,Nucleus
+2426,Q6IQ55    ,Cytoplasm
+2434,Q6IQ55    ,Cytoskeleton
+2437,Q6IQ55    ,Cilium
+2438,Q6IQ55    ,Cell Projection
+2444,Q99986    ,Nucleus
+2445,Q99986    ,Golgi Stack
+2446,Q99986    ,Cytoplasm
+2448,Q99986    ,Cytosol
+2449,Q99986    ,Nucleoplasm
+2451,Q99986    ,Nucleolus
+2456,Q99986    ,Cytoskeleton
+2457,Q99986    ,Spindle
+2461,Q86Y07    ,Nuclear Envelope
+2462,Q86Y07    ,Mitochondrial Membrane
+2463,Q86Y07    ,Endoplasmic Reticulum Membrane
+2464,Q86Y07    ,Cytoplasm
+2465,Q86Y07    ,Nucleus
+2468,Q86Y07    ,Protein-Containing Complex
+2469,Q86Y07    ,Endoplasmic Reticulum
+2470,Q86Y07    ,Membrane
+2473,Q86Y07    ,Mitochondrion
+2474,Q86Y07    ,Integral Component Of Membrane
+2485,Q8IV63    ,Nucleus
+2486,Q8IV63    ,Cytoplasm
+2488,Q8IV63    ,Intracellular Membrane-Bounded Organelle
+2489,Q8IV63    ,Nucleolus
+2490,Q8IV63    ,Nucleoplasm
+2495,P06493    ,Nucleus
+2496,P06493    ,Cytoplasm
+2497,P06493    ,Cyclin-Dependent Protein Kinase Holoenzyme Complex
+2498,P06493    ,Nuclear Chromosome
+2499,P06493    ,Telomeric Region
+2500,P06493    ,Membrane
+2501,P06493    ,Extracellular Exosome
+2502,P06493    ,Mitochondrial Matrix
+2503,P06493    ,Mitotic Spindle
+2504,P06493    ,Midbody
+2505,P06493    ,Spindle Microtubule
+2506,P06493    ,Centrosome
+2507,P06493    ,Mitochondrion
+2509,P06493    ,Cytosol
+2554,P06493    ,Endoplasmic Reticulum Membrane
+2555,P06493    ,Nucleoplasm
+2585,P06493    ,Cytoskeleton
+2589,P06493    ,Spindle
+2590,P06493    ,Microtubule Organizing Center
+2595,Q15131    ,Ciliary Basal Body
+2596,Q15131    ,Nucleus
+2597,Q15131    ,Cytoplasm
+2598,Q15131    ,Cell Projection
+2599,Q15131    ,Cytoskeleton
+2601,Q9UQ88    ,Nucleus
+2604,Q9UQ88    ,Cytoplasm
+2608,P21127    ,Cytoplasm
+2609,P21127    ,Nucleus
+2616,Q9NYV4    ,Nuclear Speck
+2617,Q9NYV4    ,Nucleus
+2618,Q9NYV4    ,Nuclear Chromatin
+2619,Q9NYV4    ,Cyclin-Dependent Protein Kinase Holoenzyme Complex
+2620,Q9NYV4    ,Nucleoplasm
+2630,Q14004    ,Extracellular Space
+2631,Q14004    ,Nuclear Speck
+2632,Q14004    ,Chromosome
+2633,Q14004    ,Nucleus
+2634,Q14004    ,Nuclear Chromatin
+2635,Q14004    ,Cyclin-Dependent Protein Kinase Holoenzyme Complex
+2636,Q14004    ,Nucleoplasm
+2637,Q14004    ,Extracellular Region
+2639,Q14004    ,Cytosol
+2640,Q14004    ,Golgi Apparatus
+2644,O94921    ,Cytoplasm
+2645,O94921    ,Nucleus
+2646,O94921    ,Plasma Membrane
+2648,O94921    ,Cytosol
+2652,O94921    ,Nucleoplasm
+2659,O94921    ,Membrane
+2664,Q96Q40    ,Cytosol
+2665,Q96Q40    ,Cytoplasm
+2666,Q96Q40    ,Nucleus
+2668,Q00536    ,Cytoplasmic Vesicle
+2669,Q00536    ,Neuron Projection
+2670,Q00536    ,Plasma Membrane
+2671,Q00536    ,Cell Junction
+2672,Q00536    ,Membrane
+2673,Q00536    ,Cytoplasm
+2674,Q00536    ,Synapse
+2675,Q00536    ,Transport Vesicle
+2679,Q00536    ,Synaptic Vesicle
+2683,Q00536    ,Nucleus
+2684,Q00536    ,Microtubule Cytoskeleton
+2686,Q00536    ,Cytosol
+2689,Q00537    ,Cytoplasm
+2690,Q00537    ,Nucleus
+2692,Q07002    ,Cytoplasm
+2693,Q07002    ,Nucleus
+2695,Q9BWU1    ,Mediator Complex
+2696,Q9BWU1    ,Cytosol
+2697,Q9BWU1    ,Nucleus
+2701,P24941    ,Cyclin-Dependent Protein Kinase Holoenzyme Complex
+2702,P24941    ,Nucleoplasm
+2703,P24941    ,Cajal Body
+2704,P24941    ,Centrosome
+2705,P24941    ,Endosome
+2706,P24941    ,Cytoplasm
+2707,P24941    ,Nucleus
+2712,P24941    ,Cytosol
+2758,P24941    ,Transcription Factor Complex
+2760,P24941    ,Y Chromosome
+2761,P24941    ,X Chromosome
+2762,P24941    ,Condensed Chromosome
+2763,P24941    ,Chromosome
+2764,P24941    ,Telomeric Region
+2766,P24941    ,Cytoskeleton
+2770,P24941    ,Microtubule Organizing Center
+2775,Q8IZL9    ,Nucleus
+2776,Q8IZL9    ,Nucleoplasm
+2777,Q8IZL9    ,Cell Projection
+2778,Q8IZL9    ,Cilium
+2779,Q8IZL9    ,Cytoplasm
+2785,Q00526    ,Nucleus
+2787,P11802    ,Nucleus
+2788,P11802    ,Cyclin-Dependent Protein Kinase Holoenzyme Complex
+2789,P11802    ,Nuclear Membrane
+2790,P11802    ,Cytosol
+2791,P11802    ,Nucleolus
+2793,P11802    ,Chromatin
+2804,P11802    ,Nucleoplasm
+2822,P11802    ,Protein-Containing Complex
+2823,P11802    ,Bicellular Tight Junction
+2824,P11802    ,Cytoplasm
+2825,P11802    ,Transcription Factor Complex
+2828,P11802    ,Perinuclear Region Of Cytoplasm
+2832,P11802    ,Membrane
+2837,Q00535    ,Neuron Projection
+2838,Q00535    ,Growth Cone
+2839,Q00535    ,Membrane
+2840,Q00535    ,Microtubule
+2841,Q00535    ,Cytoplasm
+2842,Q00535    ,Neuronal Cell Body
+2843,Q00535    ,Neuromuscular Junction
+2845,Q00535    ,Dendrite
+2846,Q00535    ,Axon
+2848,Q00535    ,Postsynaptic Density
+2850,Q00535    ,Nucleus
+2853,Q00535    ,Cytosol
+2861,Q00535    ,Nucleoplasm
+2864,Q00535    ,Plasma Membrane
+2866,Q00535    ,Cell
+2868,Q00535    ,Filopodium
+2869,Q00535    ,Lamellipodium
+2873,Q00535    ,Glutamatergic Synapse
+2874,Q00535    ,Postsynapse
+2875,Q00535    ,Presynapse
+2885,Q00535    ,Cytoskeleton
+2888,Q00535    ,Cell Projection
+2889,Q00535    ,Cell Junction
+2894,Q00535    ,Synapse
+2900,Q00535    ,Perikaryon
+2903,Q00534    ,Nucleus
+2904,Q00534    ,Cytoskeleton
+2905,Q00534    ,Cytoplasm
+2906,Q00534    ,Cell Projection
+2907,Q00534    ,Ruffle
+2910,Q00534    ,Microtubule Organizing Center
+2911,Q00534    ,Centrosome
+2915,Q00534    ,Cyclin-Dependent Protein Kinase Holoenzyme Complex
+2917,Q00534    ,Cytosol
+2922,Q00534    ,Nucleoplasm
+2926,P50613    ,Nucleus
+2927,P50613    ,Transcription Factor Tfiih Holo Complex
+2928,P50613    ,Transcription Factor Tfiik Complex
+2929,P50613    ,Cytoplasm
+2931,P50613    ,Nucleoplasm
+3007,P50613    ,Perinuclear Region Of Cytoplasm
+3010,P49336    ,Mediator Complex
+3011,P49336    ,Nucleus
+3012,P49336    ,Nucleoplasm
+3020,P49336    ,Protein-Containing Complex
+3022,P49336    ,Nucleolus
+3028,P50750    ,Cytoplasm
+3029,P50750    ,Nucleus
+3032,P50750    ,Pml Body
+3033,P50750    ,Transcription Elongation Factor Complex
+3034,P50750    ,Membrane
+3037,P50750    ,Chromosome
+3039,P50750    ,Nuclear Chromatin
+3040,P50750    ,Cyclin-Dependent Protein Kinase Holoenzyme Complex
+3041,P50750    ,Nucleoplasm
+3070,P50750    ,Cytoplasmic Ribonucleoprotein Granule
+3075,Q00532    ,Ciliary Transition Zone
+3076,Q00532    ,Extracellular Exosome
+3077,Q00532    ,Nucleus
+3078,Q00532    ,Intracellular Membrane-Bounded Organelle
+3079,Q00532    ,Nucleoplasm
+3080,Q00532    ,Cytoplasm
+3085,Q92772    ,Nucleus
+3086,Q92772    ,Centrosome
+3087,Q92772    ,Nucleoplasm
+3089,Q92772    ,Cytoplasm
+3093,Q8IVW4    ,Cytoplasm
+3094,Q8IVW4    ,Nucleus
+3097,Q5MAI5    ,Cytoplasm
+3099,Q5MAI5    ,Nucleus
+3101,O76039    ,Centrosome
+3102,O76039    ,Ciliary Basal Body
+3103,O76039    ,Ciliary Tip
+3104,O76039    ,Dendritic Growth Cone
+3105,O76039    ,Dendrite Cytoplasm
+3106,O76039    ,Ruffle Membrane
+3107,O76039    ,Nucleus
+3108,O76039    ,Glutamatergic Synapse
+3116,O76039    ,Postsynaptic Density
+3117,O76039    ,Intracellular Component
+3119,O76039    ,Perinuclear Region Of Cytoplasm
+3120,O76039    ,Synapse
+3124,O76039    ,Cell Projection
+3126,O76039    ,Cytoskeleton
+3127,O76039    ,Cytoplasm
+3128,O76039    ,Microtubule Organizing Center
+3131,P49759    ,Nucleus
+3132,P49759    ,Cytoplasm
+3136,P49760    ,Nuclear Speck
+3137,P49760    ,Nucleus
+3140,P49760    ,Nuclear Body
+3141,P49760    ,Nucleoplasm
+3145,P49761    ,Membrane
+3146,P49761    ,Nucleus
+3147,P49761    ,Intermediate Filament Cytoskeleton
+3148,P49761    ,Nucleoplasm
+3150,P49761    ,Cytoplasm
+3152,P49761    ,Acrosomal Vesicle
+3154,P49761    ,Nuclear Speck
+3156,P49761    ,Cytoplasmic Vesicle
+3158,Q9HAZ1    ,Nucleus
+3162,Q13627    ,Dendrite
+3163,Q13627    ,Axon
+3164,Q13627    ,Cytoplasm
+3165,Q13627    ,Nucleus
+3168,Q13627    ,Nuclear Speck
+3170,Q13627    ,Cytoskeleton
+3176,Q13627    ,Nucleoplasm
+3179,Q13627    ,Ribonucleoprotein Complex
+3188,Q13627    ,Neurofilament
+3189,Q13627    ,Actin Filament
+3190,Q13627    ,Microtubule
+3192,Q9Y463    ,Nucleus
+3196,Q9Y463    ,Nucleoplasm
+3198,Q92630    ,Cytoplasm
+3201,Q92630    ,Nucleus
+3202,Q92630    ,Ubiquitin Ligase Complex
+3203,Q92630    ,Cytoskeleton
+3206,Q92630    ,Nucleoplasm
+3209,Q92630    ,Cytosol
+3211,Q92630    ,Ribonucleoprotein Complex
+3217,O43781    ,Cytoplasm
+3218,O43781    ,Microtubule Organizing Center
+3219,O43781    ,Nuclear Speck
+3220,O43781    ,Nucleus
+3221,O43781    ,Cytoplasmic Stress Granule
+3223,O43781    ,Pericentriolar Material
+3228,O43781    ,Cytoskeleton
+3231,O43781    ,Intracellular Membrane-Bounded Organelle
+3232,O43781    ,Cytosol
+3233,O43781    ,Nucleoplasm
+3238,Q9NR20    ,Cytoskeleton
+3239,Q9NR20    ,Cytoplasm
+3240,Q9NR20    ,Nucleus
+3241,Q9NR20    ,Intracellular Membrane-Bounded Organelle
+3247,P49840    ,Mitochondrion
+3249,P49840    ,Postsynapse
+3250,P49840    ,Microtubule
+3251,P49840    ,Cytoplasm
+3252,P49840    ,Apical Dendrite
+3253,P49840    ,Neuronal Cell Body
+3254,P49840    ,Proximal Dendrite
+3255,P49840    ,Beta-Catenin Destruction Complex
+3256,P49840    ,Cytosol
+3258,P49840    ,Axon
+3261,P49840    ,Nucleus
+3265,P49841    ,Cytoplasm
+3266,P49841    ,Nucleus
+3268,P49841    ,Plasma Membrane
+3270,P49841    ,Centrosome
+3271,P49841    ,Wnt Signalosome
+3272,P49841    ,Beta-Catenin Destruction Complex
+3273,P49841    ,Dendrite
+3274,P49841    ,Axon
+3287,P49841    ,Glutamatergic Synapse
+3295,P49841    ,Cytosol
+3329,P49841    ,Nucleoplasm
+3334,P49841    ,Mitochondrion
+3335,P49841    ,Postsynapse
+3336,P49841    ,Membrane
+3339,Q86Z02    ,Cytoplasm
+3340,Q86Z02    ,Nucleus
+3343,Q86Z02    ,Pml Body
+3346,Q86Z02    ,Nucleoplasm
+3347,Q86Z02    ,Cytosol
+3348,Q86Z02    ,Centrosome
+3350,Q86Z02    ,Nuclear Speck
+3359,Q9H2X6    ,Rna Polymerase Ii Transcription Factor Complex
+3360,Q9H2X6    ,Nucleus
+3361,Q9H2X6    ,Pml Body
+3363,Q9H2X6    ,Nuclear Body
+3365,Q9H2X6    ,Cytoplasm
+3370,Q9H2X6    ,Nucleoplasm
+3384,Q9H422    ,Pml Body
+3385,Q9H422    ,Cytoplasm
+3386,Q9H422    ,Nucleus
+3387,Q9H422    ,Nuclear Body
+3388,Q9H422    ,Cytosol
+3396,Q8NE63    ,Cytoplasm
+3399,Q8NE63    ,Nucleus
+3403,Q9UPZ9    ,Nucleus
+3404,Q9UPZ9    ,Ciliary Base
+3405,Q9UPZ9    ,Cilium
+3407,Q9UPZ9    ,Ciliary Basal Body
+3408,Q9UPZ9    ,Ciliary Tip
+3410,Q9UPZ9    ,Cytoplasm
+3412,Q9UPZ9    ,Fibrillar Center
+3418,Q9UPZ9    ,Cell Projection
+3419,Q9UPZ9    ,Cytoskeleton
+3422,Q9UPZ9    ,Cytosol
+3427,P20794    ,Spindle
+3428,P20794    ,Photoreceptor Inner Segment
+3429,P20794    ,Photoreceptor Outer Segment
+3430,P20794    ,Nucleus
+3431,P20794    ,Microtubule Organizing Center
+3432,P20794    ,Midbody
+3433,P20794    ,Mitotic Spindle
+3435,P20794    ,Centrosome
+3439,P20794    ,Cilium
+3440,P20794    ,Cytoplasm
+3442,P20794    ,Photoreceptor Connecting Cilium
+3443,P20794    ,Motile Cilium
+3444,P20794    ,Axoneme
+3448,P20794    ,Cell Projection
+3449,P20794    ,Cytoskeleton
+3452,P28482    ,Cytoplasm
+3453,P28482    ,Cytoskeleton
+3454,P28482    ,Membrane
+3455,P28482    ,Nucleus
+3457,P28482    ,Caveola
+3458,P28482    ,Microtubule Organizing Center
+3460,P28482    ,Spindle
+3462,P28482    ,Plasma Membrane
+3465,P28482    ,Mitotic Spindle
+3466,P28482    ,Focal Adhesion
+3469,P28482    ,Cytosol
+3470,P28482    ,Golgi Apparatus
+3471,P28482    ,Late Endosome
+3472,P28482    ,Early Endosome
+3473,P28482    ,Mitochondrion
+3480,P28482    ,Azurophil Granule Lumen
+3538,P28482    ,Nucleoplasm
+3549,P28482    ,Extracellular Region
+3551,P28482    ,Cell
+3552,P28482    ,Pseudopodium
+3557,P28482    ,Perikaryon
+3558,P28482    ,Protein-Containing Complex
+3559,P28482    ,Dendrite Cytoplasm
+3560,P28482    ,Axon
+3561,P28482    ,Postsynaptic Density
+3568,P53779    ,Plasma Membrane
+3569,P53779    ,Mitochondrion
+3570,P53779    ,Cytoplasm
+3571,P53779    ,Nucleus
+3573,P53779    ,Nucleoplasm
+3574,P53779    ,Cytosol
+3578,P53779    ,Glutamatergic Synapse
+3579,P53779    ,Perikaryon
+3580,P53779    ,Neuron Projection
+3584,P53779    ,Membrane
+3591,Q15759    ,Cytoplasm
+3592,Q15759    ,Nucleus
+3593,Q15759    ,Cytosol
+3599,Q15759    ,Nucleoplasm
+3615,P53778    ,Cytoplasm
+3616,P53778    ,Nucleus
+3617,P53778    ,Cytosol
+3620,P53778    ,Nucleoplasm
+3622,P53778    ,Mitochondrion
+3630,O15264    ,Cytoplasm
+3631,O15264    ,Nucleus
+3632,O15264    ,Cytosol
+3635,Q16539    ,Cytoplasm
+3636,Q16539    ,Nucleus
+3641,Q16539    ,Nucleoplasm
+3643,Q16539    ,Extracellular Region
+3645,Q16539    ,Secretory Granule Lumen
+3646,Q16539    ,Cytosol
+3664,Q16539    ,Nuclear Speck
+3666,Q16539    ,Glutamatergic Synapse
+3668,Q16539    ,Mitochondrion
+3671,Q16539    ,Cell
+3672,Q16539    ,Spindle Pole
+3678,Q8TD08    ,Nucleus
+3679,Q8TD08    ,Cytoplasm
+3680,Q8TD08    ,Cell-Cell Junction
+3681,Q8TD08    ,Axoneme
+3682,Q8TD08    ,Ciliary Basal Body
+3685,Q8TD08    ,Centriole
+3686,Q8TD08    ,Autophagosome
+3687,Q8TD08    ,Golgi Apparatus
+3688,Q8TD08    ,Extracellular Region
+3691,Q8TD08    ,Meiotic Spindle
+3692,Q8TD08    ,Cell Projection
+3695,Q8TD08    ,Cytoplasmic Vesicle
+3696,Q8TD08    ,Bicellular Tight Junction
+3697,Q8TD08    ,Cytoskeleton
+3698,Q8TD08    ,Cell Junction
+3706,Q8TD08    ,Spindle
+3708,P27361    ,Caveola
+3709,P27361    ,Plasma Membrane
+3710,P27361    ,Cytoplasm
+3711,P27361    ,Nuclear Envelope
+3712,P27361    ,Focal Adhesion
+3714,P27361    ,Cytoskeleton
+3715,P27361    ,Cytosol
+3716,P27361    ,Golgi Apparatus
+3717,P27361    ,Late Endosome
+3718,P27361    ,Early Endosome
+3719,P27361    ,Mitochondrion
+3720,P27361    ,Nucleus
+3781,P27361    ,Nucleoplasm
+3792,P27361    ,Cell
+3793,P27361    ,Protein-Containing Complex
+3800,P27361    ,Pseudopodium
+3805,P27361    ,Membrane
+3810,P31152    ,Cytoplasm
+3811,P31152    ,Nucleus
+3818,P31152    ,Cytosol
+3823,P31152    ,Nucleoplasm
+3831,Q16659    ,Nucleus
+3833,Q16659    ,Cytoplasm
+3839,Q16659    ,Cytosol
+3849,Q16659    ,Nucleoplasm
+3861,Q16659    ,Protein-Containing Complex
+3862,Q16659    ,Septin Cytoskeleton
+3866,Q13164    ,Cytosol
+3867,Q13164    ,Nucleus
+3868,Q13164    ,Pml Body
+3869,Q13164    ,Cytoplasm
+3876,Q13164    ,Nucleoplasm
+3889,P45983    ,Synapse
+3890,P45983    ,Basal Dendrite
+3891,P45983    ,Axon
+3892,P45983    ,Nucleus
+3893,P45983    ,Cytoplasm
+3895,P45983    ,Cytosol
+3904,P45983    ,Nucleoplasm
+3909,P45983    ,Mitochondrion
+3916,P45984    ,Cytoplasm
+3917,P45984    ,Nucleus
+3918,P45984    ,Cytosol
+3920,P45984    ,Nucleoplasm
+3924,P45984    ,Mitochondrion
+3931,Q9UQ07    ,Ciliary Base
+3932,Q9UQ07    ,Cilium
+3933,Q9UQ07    ,Nucleus
+3934,Q9UQ07    ,Cytoplasm
+3942,Q9UQ07    ,Cell Projection
+3947,Q9UBE8    ,Nucleus
+3948,Q9UBE8    ,Cytoplasm
+3955,Q9UBE8    ,Cytosol
+3958,Q9UBE8    ,Nucleoplasm
+3962,Q13523    ,Nucleus
+3963,Q13523    ,Nuclear Speck
+3964,Q13523    ,Chromosome
+3965,Q13523    ,Spliceosomal Complex
+3969,Q96SB4    ,Nucleus
+3970,Q96SB4    ,Cytoplasm
+3974,Q96SB4    ,Plasma Membrane
+3975,Q96SB4    ,Cytosol
+3976,Q96SB4    ,Nucleoplasm
+3977,Q96SB4    ,Intracellular Membrane-Bounded Organelle
+3980,Q96SB4    ,Endoplasmic Reticulum
+3984,Q96SB4    ,Nuclear Matrix
+3986,P78362    ,Cytoplasm
+3987,P78362    ,Nucleus
+3990,P78362    ,Cytosol
+3991,P78362    ,Nucleolus
+3992,P78362    ,Nucleoplasm
+3998,Q9UPE1    ,Cytoplasm
+3999,Q9UPE1    ,Nucleus
+4001,Q96PY6        ,Centrosome
+4002,Q96PY6        ,Pericentriolar Material
+4003,Q96PY6        ,Cytoplasm
+4005,Q96PY6        ,Nucleus
+4006,Q96PY6        ,Centriolar Satellite
+4007,Q96PY6        ,Cytosol
+4008,Q96PY6        ,Nucleoplasm
+4009,Q96PY6        ,Cytoskeleton
+4013,Q96PY6        ,Microtubule Organizing Center
+4016,Q6ZWH5        ,Protein Kinase Complex
+4018,Q8NG66        ,Nucleolus
+4019,Q8NG66        ,Centrosome
+4020,Q8NG66        ,Cytoplasm
+4021,Q8NG66        ,Nucleoplasm
+4024,Q8NG66        ,Nucleus
+4027,P51955        ,Microtubule
+4028,P51955        ,Cytoskeleton
+4029,P51955        ,Cytoplasm
+4030,P51955        ,Chromosome
+4031,P51955        ,Centromeric Region
+4032,P51955        ,Nucleus
+4033,P51955        ,Kinetochore
+4037,P51955        ,Microtubule Organizing Center
+4039,P51955        ,Condensed Chromosome Kinetochore
+4040,P51955        ,Nucleolus
+4042,P51955        ,Spindle Pole
+4043,P51955        ,Centrosome
+4045,P51955        ,Protein-Containing Complex
+4051,P51955        ,Cytosol
+4077,P51955        ,Nucleoplasm
+4078,P51955        ,Midbody
+4080,P51955        ,Condensed Nuclear Chromosome
+4082,P51956        ,Nucleus
+4083,P51956        ,Cytoplasm
+4085,P51956        ,Cell Projection
+4086,P51956        ,Axon
+4088,P51957        ,Cytoplasm
+4090,P51957        ,Cytosol
+4091,P51957        ,Ciliary Plasm
+4092,P51957        ,Ciliary Basal Body
+4093,P51957        ,Ciliary Transition Zone
+4094,P51957        ,Ciliary Rootlet
+4096,P51957        ,Cell Projection
+4097,P51957        ,Cilium
+4102,Q9HC98        ,Cytoplasm
+4103,Q9HC98        ,Cytoskeleton
+4105,Q9HC98        ,Microtubule
+4106,Q9HC98        ,Nucleus
+4107,Q9HC98        ,Microtubule Organizing Center
+4108,Q9HC98        ,Nuclear Speck
+4110,Q9HC98        ,Spindle Pole
+4112,Q9HC98        ,Centrosome
+4113,Q9HC98        ,Protein-Containing Complex
+4116,Q9HC98        ,Cytosol
+4119,Q9HC98        ,Intracellular Membrane-Bounded Organelle
+4120,Q9HC98        ,Centriolar Satellite
+4122,Q9HC98        ,Nucleoplasm
+4124,Q8TDX7        ,Cytoplasm
+4125,Q8TDX7        ,Nucleoplasm
+4127,Q8TDX7        ,Nucleus
+4129,Q8TDX7        ,Microtubule
+4130,Q8TDX7        ,Cytoskeleton
+4134,Q8TDX7        ,Microtubule Organizing Center
+4135,Q8TDX7        ,Spindle Pole
+4137,Q86SG6        ,Cilium
+4140,Q86SG6        ,Centrosome
+4141,Q86SG6        ,Cytoplasm
+4142,Q86SG6        ,Ciliary Base
+4143,Q86SG6        ,Ciliary Inversin Compartment
+4145,Q86SG6        ,Cytoskeleton
+4147,Q86SG6        ,Cell Projection
+4150,Q86SG6        ,Microtubule Organizing Center
+4154,Q8TD19        ,Centrosome
+4155,Q8TD19        ,Cytosol
+4160,Q8TD19        ,Nucleus
+4161,Q8TD19        ,Cytoplasm
+4165,P25092    ,Endoplasmic Reticulum
+4166,P25092    ,Plasma Membrane
+4167,P25092    ,Membrane
+4168,P25092    ,Integral Component Of Membrane
+4169,P25092    ,Endoplasmic Reticulum Membrane
+4175,Q02846    ,Endoplasmic Reticulum
+4176,Q02846    ,Cell Projection
+4177,Q02846    ,Membrane
+4178,Q02846    ,Endoplasmic Reticulum Membrane
+4180,Q02846    ,Photoreceptor Outer Segment
+4181,Q02846    ,Plasma Membrane
+4182,Q02846    ,Integral Component Of Plasma Membrane
+4183,Q02846    ,Nuclear Outer Membrane
+4185,Q02846    ,Photoreceptor Disc Membrane
+4186,Q02846    ,Photoreceptor Outer Segment Membrane
+4187,Q02846    ,Integral Component Of Membrane
+4189,P51841    ,Rod Photoreceptor Outer Segment
+4190,P51841    ,Integral Component Of Plasma Membrane
+4191,P51841    ,Nuclear Outer Membrane
+4192,P51841    ,Plasma Membrane
+4193,P51841    ,Photoreceptor Disc Membrane
+4194,P51841    ,Membrane
+4197,P51841    ,Integral Component Of Membrane
+4199,P51841    ,Cell Projection
+4201,P16066    ,Plasma Membrane
+4203,P16066    ,Receptor Complex
+4205,P16066    ,Integral Component Of Membrane
+4207,P16066    ,Membrane
+4210,P20594    ,Integral Component Of Plasma Membrane
+4211,P20594    ,Plasma Membrane
+4216,P20594    ,Integral Component Of Membrane
+4218,P20594    ,Membrane
+4222,Q02750    ,Focal Adhesion
+4223,Q02750    ,Cytosol
+4224,Q02750    ,Golgi Apparatus
+4225,Q02750    ,Late Endosome
+4226,Q02750    ,Early Endosome
+4227,Q02750    ,Mitochondrion
+4228,Q02750    ,Nucleus
+4229,Q02750    ,Cytoplasm
+4264,Q02750    ,Endoplasmic Reticulum
+4265,Q02750    ,Plasma Membrane
+4268,Q02750    ,Cytoskeleton
+4270,Q02750    ,Membrane
+4271,Q02750    ,Microtubule Organizing Center
+4276,P36507    ,Perinuclear Region Of Cytoplasm
+4277,P36507    ,Cytoplasmic Side Of Plasma Membrane
+4278,P36507    ,Focal Adhesion
+4279,P36507    ,Cell-Cell Junction
+4280,P36507    ,Microtubule
+4281,P36507    ,Cytosol
+4282,P36507    ,Golgi Apparatus
+4284,P36507    ,Endoplasmic Reticulum
+4285,P36507    ,Peroxisomal Membrane
+4286,P36507    ,Late Endosome
+4287,P36507    ,Early Endosome
+4288,P36507    ,Mitochondrion
+4289,P36507    ,Nucleus
+4290,P36507    ,Extracellular Region
+4291,P36507    ,Cytoplasm
+4325,P36507    ,Membrane
+4330,P46734    ,Membrane
+4331,P46734    ,Cytoplasm
+4332,P46734    ,Cytosol
+4336,P46734    ,Nucleoplasm
+4340,P45985    ,Nucleus
+4341,P45985    ,Cytoplasm
+4345,P45985    ,Cytosol
+4349,P45985    ,Perikaryon
+4350,P45985    ,Dendrite Cytoplasm
+4351,P45985    ,Axon
+4355,Q13163    ,Cytoplasm
+4356,Q13163    ,Cytosol
+4357,Q13163    ,Nucleus
+4358,Q13163    ,Spindle
+4360,P52564    ,Cytoplasm
+4361,P52564    ,Cytosol
+4367,P52564    ,Nucleoplasm
+4373,P52564    ,Cytoskeleton
+4375,P52564    ,Nucleus
+4380,O14733    ,Cytoplasm
+4381,O14733    ,Nucleus
+4383,O14733    ,Cytosol
+4392,Q13233    ,Cytoplasm
+4393,Q13233    ,Cytosol
+4398,Q02779    ,Cytoplasm
+4400,Q16584    ,Cytoskeleton
+4401,Q16584    ,Cytoplasm
+4402,Q16584    ,Microtubule Organizing Center
+4403,Q16584    ,Membrane
+4404,Q16584    ,Microtubule
+4405,Q16584    ,Centrosome
+4408,Q12852    ,Plasma Membrane
+4409,Q12852    ,Cytoplasm
+4410,Q12852    ,Membrane
+4417,Q12852    ,Cytosol
+4418,Q12852    ,Growth Cone
+4419,Q12852    ,Axon
+4423,O43283    ,Membrane
+4424,O43283    ,Cytoplasm
+4429,Q99558    ,Cytoplasm
+4430,Q99558    ,Cytosol
+4450,Q99558    ,Intracellular Membrane-Bounded Organelle
+4452,Q99558    ,Nucleoplasm
+4453,Q99558    ,Fibrillar Center
+4459,Q56UN5    ,Cytoplasm
+4461,Q9Y2U5    ,Nucleus
+4462,Q9Y2U5    ,Cytoplasm
+4466,Q9Y2U5    ,Cytosol
+4467,Q9Y2U5    ,Nucleoplasm
+4471,Q9NYL2    ,Cytoplasm
+4472,Q9NYL2    ,Cytosol
+4474,Q9NYL2    ,Nucleus
+4482,Q99759    ,Cytoplasm
+4483,Q99759    ,Cytosol
+4485,Q9Y6R4    ,Cytoplasm
+4486,Q9Y6R4    ,Perinuclear Region Of Cytoplasm
+4491,Q99683    ,Protein-Containing Complex
+4492,Q99683    ,Protein Kinase Complex
+4493,Q99683    ,Cytosol
+4496,Q99683    ,External Side Of Plasma Membrane
+4498,Q99683    ,Cytoplasm
+4500,Q99683    ,Endoplasmic Reticulum
+4506,O43318    ,Nucleus
+4507,O43318    ,Ikappab Kinase Complex
+4508,O43318    ,Endosome Membrane
+4513,O43318    ,Cytosol
+4542,O43318    ,Plasma Membrane
+4544,O43318    ,Membrane
+4546,O43318    ,Cytoplasm
+4550,P41279    ,Cytosol
+4551,P41279    ,Cytoplasm
+4568,Q92918    ,Membrane
+4569,Q92918    ,Cytoplasm
+4571,Q12851    ,Golgi Membrane
+4572,Q12851    ,Cytoplasm
+4573,Q12851    ,Cell
+4574,Q12851    ,Golgi Apparatus
+4575,Q12851    ,Membrane
+4576,Q12851    ,Plasma Membrane
+4578,Q12851    ,Basolateral Plasma Membrane
+4582,Q8IVH8    ,Cytoplasm
+4584,O95819    ,Cytoplasm
+4586,O95819    ,Focal Adhesion
+4590,Q9Y4K4    ,Cytoplasm
+4595,Q8N4C8    ,Extracellular Exosome
+4596,Q8N4C8    ,Golgi Apparatus
+4597,Q8N4C8    ,Cytoplasm
+4599,Q8N4C8    ,Cytosol
+4600,Q8N4C8    ,Cell Projection
+4601,Q8N4C8    ,Synapse
+4604,Q8N4C8    ,Cell Junction
+4606,Q8N4C8    ,Postsynaptic Density
+4608,Q8N4C8    ,Axon
+4609,Q8N4C8    ,Dendrite
+4611,Q8NEV4    ,Cytoskeleton
+4612,Q8NEV4    ,Myosin Complex
+4613,Q8NEV4    ,Cytoplasm
+4615,Q8NEV4    ,Filopodium Tip
+4617,Q8NEV4    ,Stereocilium
+4618,Q8NEV4    ,Stereocilium Tip
+4621,Q8NEV4    ,Filamentous Actin
+4622,Q8NEV4    ,Filopodium
+4624,Q8NEV4    ,Cell Projection
+4626,Q8WXR4    ,Myosin Complex
+4627,Q8WXR4    ,Cytoskeleton
+4629,Q8WXR4    ,Cytoplasm
+4630,Q8WXR4    ,Cell Projection
+4631,Q8WXR4    ,Stereocilium
+4633,Q8WXR4    ,Stereocilium Tip
+4635,Q7Z2Y5    ,Cytoplasm
+4637,O95747    ,Extracellular Exosome
+4638,O95747    ,Cytoplasm
+4639,O95747    ,Cytosol
+4643,Q13153    ,Cytoplasm
+4644,Q13153    ,Nucleoplasm
+4645,Q13153    ,Protein-Containing Complex
+4647,Q13153    ,Invadopodium
+4648,Q13153    ,Plasma Membrane
+4651,Q13153    ,Nuclear Membrane
+4652,Q13153    ,Actin Filament
+4653,Q13153    ,Dendrite
+4654,Q13153    ,Axon
+4655,Q13153    ,Z Disc
+4656,Q13153    ,Intercalated Disc
+4657,Q13153    ,Cell-Cell Junction
+4658,Q13153    ,Ruffle
+4664,Q13153    ,Cytosol
+4703,Q13153    ,Lamellipodium
+4705,Q13153    ,Membrane
+4712,Q13153    ,Cell Projection
+4714,Q13153    ,Nucleus
+4715,Q13153    ,Chromosome
+4716,Q13153    ,Cell Junction
+4717,Q13153    ,Ruffle Membrane
+4718,Q13153    ,Focal Adhesion
+4725,Q13177    ,Membrane
+4726,Q13177    ,Nucleus
+4727,Q13177    ,Cytoplasm
+4729,Q13177    ,Perinuclear Region Of Cytoplasm
+4732,Q13177    ,Cell-Cell Junction
+4734,Q13177    ,Cytosol
+4736,Q13177    ,Plasma Membrane
+4760,Q13177    ,Glutamatergic Synapse
+4761,Q13177    ,Postsynaptic Density
+4763,O75914    ,Cytoplasm
+4764,O75914    ,Plasma Membrane
+4766,O75914    ,Cytosol
+4783,O75914    ,Endosome
+4784,O75914    ,Glutamatergic Synapse
+4785,O75914    ,Postsynaptic Density
+4787,O96013    ,Adherens Junction
+4788,O96013    ,Focal Adhesion
+4789,O96013    ,Golgi Apparatus
+4790,O96013    ,Cytoplasm
+4794,Q9P286    ,Cytoplasm
+4795,Q9P286    ,Nucleoplasm
+4796,Q9P286    ,Synapse
+4797,Q9P286    ,Mitochondrion
+4800,Q9P286    ,Nucleus
+4805,Q9NQU5    ,Cytoplasm
+4806,Q9NQU5    ,Cell Junction
+4807,Q9NQU5    ,Nucleoplasm
+4808,Q9NQU5    ,Fibrillar Center
+4809,Q9NQU5    ,Nucleus
+4814,Q96KB5    ,Nucleus
+4816,Q9H2G2    ,Cytoplasm
+4817,Q9H2G2    ,Perinuclear Region Of Cytoplasm
+4818,Q9H2G2    ,Cell Leading Edge
+4820,Q9H2G2    ,Extracellular Exosome
+4827,O94804    ,Extracellular Exosome
+4828,O94804    ,Plasma Membrane
+4829,O94804    ,Cytoplasm
+4830,O94804    ,Specific Granule Membrane
+4833,O94804    ,Membrane
+4836,Q9Y6E0    ,Cytoplasm
+4838,Q9Y6E0    ,Golgi Apparatus
+4839,Q9Y6E0    ,Extracellular Exosome
+4842,Q9Y6E0    ,Nucleus
+4844,Q9Y6E0    ,Cytosol
+4846,Q9Y6E0    ,Nucleoplasm
+4848,Q9Y6E0    ,Nucleolus
+4849,Q9Y6E0    ,Membrane
+4856,O00506    ,Golgi Apparatus
+4857,O00506    ,Cytoplasm
+4858,O00506    ,Extracellular Exosome
+4860,O00506    ,Cell
+4861,O00506    ,Golgi Membrane
+4867,Q9P289    ,Golgi Apparatus
+4868,Q9P289    ,Cytoplasm
+4871,Q9P289    ,Membrane
+4872,Q9P289    ,Vesicle Membrane
+4873,Q9P289    ,Perinuclear Region Of Cytoplasm
+4874,Q9P289    ,Cell Periphery
+4877,Q9P289    ,Cytosol
+4878,Q9P289    ,Golgi-Associated Vesicle
+4879,Q9P289    ,Apical Plasma Membrane
+4880,Q9P289    ,Extracellular Exosome
+4883,Q9P289    ,Golgi Membrane
+4889,Q13188    ,Cytoplasm
+4891,Q13188    ,Cytosol
+4897,Q13188    ,Protein-Containing Complex
+4900,Q13188    ,Nucleus
+4904,Q9UEW8    ,Extrinsic Component Of Membrane
+4905,Q9UEW8    ,Cytosol
+4907,Q9UEW8    ,Cytoplasm
+4908,Q9UEW8    ,Intracellular Membrane-Bounded Organelle
+4910,Q9UEW8    ,Nucleoplasm
+4912,Q9UEW8    ,Cytoskeleton
+4915,Q9UEW8    ,Apical Plasma Membrane
+4916,Q9UEW8    ,Basolateral Plasma Membrane
+4917,Q9UEW8    ,Membrane
+4919,Q9UEW8    ,Nucleus
+4923,Q13043    ,Cytoplasm
+4926,Q13043    ,Nucleus
+4929,Q13043    ,Cytosol
+4935,Q13043    ,Protein-Containing Complex
+4936,Q13043    ,Nuclear Body
+4938,Q13043    ,Nucleoplasm
+4946,Q7RTN6    ,Cytoplasm
+4947,Q7RTN6    ,Nucleus
+4949,Q7RTN6    ,Cytosol
+4952,Q7RTN6    ,Nucleoplasm
+4958,Q9C0K7    ,Cytoplasm
+4959,Q9C0K7    ,Nucleus
+4965,Q9C0K7    ,Cytosol
+4967,Q9C0K7    ,Aggresome
+4970,Q7L7X3    ,Cytoplasm
+4972,Q7L7X3    ,Perinuclear Region Of Cytoplasm
+4973,Q7L7X3    ,Microtubule Cytoskeleton
+4974,Q7L7X3    ,Extracellular Exosome
+4976,Q7L7X3    ,Cytosol
+4990,Q7L7X3    ,Cell
+4992,Q9UL54    ,Integral Component Of Membrane
+4993,Q9UL54    ,Cytoplasm
+4994,Q9UL54    ,Cell Projection
+4995,Q9UL54    ,Cytoskeleton
+4996,Q9UL54    ,Membrane
+4997,Q9UL54    ,Nucleus
+4998,Q9UL54    ,Cytoplasmic Vesicle
+5001,Q9UL54    ,Cytoplasmic Vesicle Membrane
+5002,Q9UL54    ,Dendrite
+5003,Q9UL54    ,Axonal Growth Cone
+5004,Q9UL54    ,Dendritic Growth Cone
+5005,Q9UL54    ,Neuron Projection
+5006,Q9UL54    ,Axon
+5007,Q9UL54    ,Actin Cytoskeleton
+5010,Q9UL54    ,Receptor Complex
+5011,Q9UL54    ,Cytosol
+5012,Q9UL54    ,Nucleolus
+5013,Q9UL54    ,Nucleoplasm
+5020,Q9H2K8    ,Cytoplasm
+5022,Q9H2K8    ,Membrane
+5023,Q9H2K8    ,Plasma Membrane
+5027,Q9UKE5    ,Cytoplasm
+5028,Q9UKE5    ,Cytoskeleton
+5029,Q9UKE5    ,Recycling Endosome
+5030,Q9UKE5    ,Nucleus
+5031,Q9UKE5    ,Apical Plasma Membrane
+5032,Q9UKE5    ,Extracellular Exosome
+5038,Q9UKE5    ,Cytosol
+5039,Q9UKE5    ,Nucleoplasm
+5040,Q9UKE5    ,Postsynaptic Density
+5041,Q9UKE5    ,Intracellular Component
+5042,Q9UKE5    ,Glutamatergic Synapse
+5043,Q9UKE5    ,Presynapse
+5047,Q9UKE5    ,Endosome
+5049,Q04771    ,Apical Part Of Cell
+5050,Q04771    ,Integral Component Of Plasma Membrane
+5051,Q04771    ,Membrane
+5052,Q04771    ,Integral Component Of Membrane
+5055,Q04771    ,Activin Receptor Complex
+5057,Q04771    ,Bmp Receptor Complex
+5058,Q04771    ,Receptor Complex
+5059,Q04771    ,Plasma Membrane
+5061,P36896    ,Activin Receptor Complex
+5062,P36896    ,Receptor Complex
+5063,P36896    ,Cell Surface
+5064,P36896    ,Integral Component Of Plasma Membrane
+5067,P36896    ,Plasma Membrane
+5072,P36896    ,Cytosol
+5073,P36896    ,Membrane
+5074,P36896    ,Integral Component Of Membrane
+5079,Q8NER5    ,Activin Receptor Complex
+5081,Q8NER5    ,Receptor Complex
+5082,Q8NER5    ,Plasma Membrane
+5084,Q8NER5    ,Membrane
+5085,Q8NER5    ,Integral Component Of Membrane
+5089,P27037    ,Cell Surface
+5090,P27037    ,Membrane
+5091,P27037    ,Integral Component Of Membrane
+5094,P27037    ,Receptor Complex
+5095,P27037    ,Integral Component Of Plasma Membrane
+5096,P27037    ,Inhibin-Betaglycan-Actrii Complex
+5097,P27037    ,Cytoplasm
+5098,P27037    ,Activin Receptor Complex
+5100,P27037    ,Plasma Membrane
+5113,Q13705    ,Receptor Complex
+5114,Q13705    ,Integral Component Of Plasma Membrane
+5115,Q13705    ,Cytoplasm
+5116,Q13705    ,Activin Receptor Complex
+5118,Q13705    ,Plasma Membrane
+5130,Q13705    ,Protein-Containing Complex
+5131,Q13705    ,Membrane
+5134,Q13705    ,Integral Component Of Membrane
+5137,P37023    ,Plasma Membrane
+5138,P37023    ,Integral Component Of Plasma Membrane
+5139,P37023    ,Bmp Receptor Complex
+5140,P37023    ,Receptor Complex
+5143,P37023    ,Cell Surface
+5144,P37023    ,Neuronal Cell Body
+5145,P37023    ,Dendrite
+5147,P37023    ,Membrane
+5151,P37023    ,Integral Component Of Membrane
+5153,Q16671    ,Receptor Complex
+5154,Q16671    ,Plasma Membrane
+5156,Q16671    ,Integral Component Of Plasma Membrane
+5157,Q16671    ,Membrane
+5158,Q16671    ,Integral Component Of Membrane
+5162,Q8NFD2    ,Nucleus
+5163,Q8NFD2    ,Cell Projection
+5164,Q8NFD2    ,Cytoplasm
+5167,P10398    ,Cytosol
+5168,P10398    ,Mitochondrion
+5176,P36894    ,Plasma Membrane
+5177,P36894    ,Cell Surface
+5178,P36894    ,Hfe-Transferrin Receptor Complex
+5179,P36894    ,External Side Of Plasma Membrane
+5180,P36894    ,Integral Component Of Membrane
+5181,P36894    ,Caveola
+5183,P36894    ,Receptor Complex
+5194,P36894    ,Neuronal Cell Body
+5195,P36894    ,Dendrite
+5196,P36894    ,Membrane
+5201,O00238    ,Hfe-Transferrin Receptor Complex
+5202,O00238    ,Plasma Membrane
+5203,O00238    ,Receptor Complex
+5204,O00238    ,Integral Component Of Plasma Membrane
+5215,O00238    ,Neuronal Cell Body
+5216,O00238    ,Dendrite
+5218,O00238    ,Membrane
+5219,O00238    ,Integral Component Of Membrane
+5225,Q13873    ,Adherens Junction
+5226,Q13873    ,Plasma Membrane
+5227,Q13873    ,Extracellular Space
+5228,Q13873    ,Spanning Component Of Plasma Membrane
+5229,Q13873    ,Caveola
+5230,Q13873    ,Integral Component Of Plasma Membrane
+5232,Q13873    ,Receptor Complex
+5243,Q13873    ,Nucleoplasm
+5244,Q13873    ,Neuronal Cell Body
+5245,Q13873    ,Dendrite
+5246,Q13873    ,Apical Plasma Membrane
+5247,Q13873    ,Basal Plasma Membrane
+5249,Q13873    ,Cytoplasm
+5250,Q13873    ,Postsynaptic Density
+5251,Q13873    ,Cell Surface
+5253,Q13873    ,Membrane
+5256,Q13873    ,Integral Component Of Membrane
+5259,P15056    ,Cytoplasm
+5260,P15056    ,Membrane
+5261,P15056    ,Nucleus
+5262,P15056    ,Plasma Membrane
+5267,P15056    ,Cytosol
+5268,P15056    ,Mitochondrion
+5322,P15056    ,Intracellular Membrane-Bounded Organelle
+5325,Q13418    ,Cell Junction
+5326,Q13418    ,Cell Projection
+5327,Q13418    ,Membrane
+5328,Q13418    ,Cytoplasm
+5329,Q13418    ,Plasma Membrane
+5330,Q13418    ,Lamellipodium
+5331,Q13418    ,Sarcomere
+5332,Q13418    ,Focal Adhesion
+5336,Q13418    ,Stress Fiber
+5337,Q13418    ,Cytosol
+5342,Q13418    ,Nucleoplasm
+5345,Q13418    ,Dendritic Shaft
+5346,Q13418    ,Terminal Bouton
+5347,Q13418    ,Costamere
+5348,Q13418    ,Neuronal Cell Body
+5349,Q13418    ,Protein-Containing Complex
+5350,Q13418    ,Axon
+5352,Q13418    ,Cell-Cell Junction
+5357,P51617    ,Lipid Droplet
+5358,P51617    ,Plasma Membrane
+5359,P51617    ,Cytoplasm
+5360,P51617    ,Nucleus
+5361,P51617    ,Endosome Membrane
+5389,P51617    ,Cytosol
+5423,P51617    ,Nucleoplasm
+5424,P51617    ,Membrane
+5432,O43187    ,Plasma Membrane
+5433,O43187    ,Cytoplasm
+5434,O43187    ,Nucleus
+5435,O43187    ,Endosome Membrane
+5457,O43187    ,Cytosol
+5465,Q9Y616    ,Cytoplasm
+5466,Q9Y616    ,Nucleus
+5467,Q9Y616    ,Plasma Membrane
+5473,Q9NWZ3    ,Cytoplasm
+5476,Q9NWZ3    ,Nucleus
+5477,Q9NWZ3    ,Endosome Membrane
+5489,Q9NWZ3    ,Plasma Membrane
+5509,Q9NWZ3    ,Cytosol
+5528,Q9NWZ3    ,Extracellular Space
+5530,Q8IVT5    ,Membrane
+5532,Q8IVT5    ,Endoplasmic Reticulum
+5533,Q8IVT5    ,Cytosol
+5564,Q8IVT5    ,Protein-Containing Complex
+5567,Q8IVT5    ,Cell Projection
+5568,Q8IVT5    ,Cytoplasm
+5571,Q8IVT5    ,Plasma Membrane
+5573,Q8IVT5    ,Endoplasmic Reticulum Membrane
+5576,Q8IVT5    ,Ruffle Membrane
+5578,Q6VAB6    ,Membrane
+5579,Q6VAB6    ,Cytoplasm
+5582,Q6VAB6    ,Plasma Membrane
+5583,Q6VAB6    ,Cytosol
+5585,P53667    ,Cytoplasm
+5586,P53667    ,Lamellipodium
+5587,P53667    ,Neuron Projection
+5590,P53667    ,Nucleus
+5591,P53667    ,Cytosol
+5596,P53667    ,Nuclear Speck
+5600,P53667    ,Membrane
+5601,P53667    ,Focal Adhesion
+5604,P53667    ,Cell Projection
+5606,P53667    ,Cytoskeleton
+5613,P53671    ,Mitotic Spindle
+5614,P53671    ,Cytoplasm
+5616,P53671    ,Nucleus
+5619,P53671    ,Cis-Golgi Network
+5625,P53671    ,Cytoskeleton
+5626,P53671    ,Spindle
+5630,Q38SD2    ,Cytoplasm
+5631,Q38SD2    ,Cytosol
+5632,Q38SD2    ,Mitochondrion
+5635,Q5S007    ,Endoplasmic Reticulum Exit Site
+5636,Q5S007    ,Cytoplasm
+5637,Q5S007    ,Golgi Apparatus
+5638,Q5S007    ,Amphisome
+5639,Q5S007    ,Microvillus
+5640,Q5S007    ,Autolysosome
+5641,Q5S007    ,Multivesicular Body
+5642,Q5S007    ,Internal Vesicle
+5643,Q5S007    ,Endoplasmic Reticulum
+5644,Q5S007    ,Caveola Neck
+5645,Q5S007    ,Neuron Projection
+5646,Q5S007    ,Growth Cone
+5647,Q5S007    ,Cytosol
+5648,Q5S007    ,Plasma Membrane
+5649,Q5S007    ,Wnt Signalosome
+5651,Q5S007    ,Golgi-Associated Vesicle
+5653,Q5S007    ,Terminal Bouton
+5655,Q5S007    ,Cytoplasmic Vesicle
+5658,Q5S007    ,Endosome
+5659,Q5S007    ,Lysosome
+5660,Q5S007    ,Mitochondrial Matrix
+5661,Q5S007    ,Mitochondrial Inner Membrane
+5662,Q5S007    ,Mitochondrial Outer Membrane
+5663,Q5S007    ,Dendrite
+5664,Q5S007    ,Axon
+5665,Q5S007    ,Perikaryon
+5666,Q5S007    ,Mitochondrial Membrane
+5667,Q5S007    ,Inclusion Body
+5670,Q5S007    ,Extracellular Exosome
+5671,Q5S007    ,Extracellular Space
+5672,Q5S007    ,Neuronal Cell Body
+5675,Q5S007    ,Dendrite Cytoplasm
+5677,Q5S007    ,Cytoplasmic Side Of Mitochondrial Outer Membrane
+5680,Q5S007    ,Mitochondrion
+5683,Q5S007    ,Membrane Raft
+5695,Q5S007    ,Intracellular Membrane-Bounded Organelle
+5696,Q5S007    ,Nucleoplasm
+5697,Q5S007    ,Cell
+5698,Q5S007    ,Postsynapse
+5700,Q5S007    ,Synapse
+5707,Q5S007    ,Membrane
+5710,Q5S007    ,Ribonucleoprotein Complex
+5711,Q5S007    ,Presynaptic Cytosol
+5712,Q5S007    ,Glutamatergic Synapse
+5718,Q5S007    ,Synaptic Vesicle
+5720,Q5S007    ,Trans-Golgi Network
+5735,Q5S007    ,Cell Junction
+5738,Q5S007    ,Cell Projection
+5740,Q5S007    ,Synaptic Vesicle Membrane
+5742,Q5S007    ,Golgi Membrane
+5743,Q5S007    ,Endoplasmic Reticulum Membrane
+5748,P04049    ,Mitochondrion
+5749,P04049    ,Cytoplasm
+5750,P04049    ,Nucleus
+5751,P04049    ,Plasma Membrane
+5752,P04049    ,Membrane
+5757,P04049    ,Nuclear Speck
+5758,P04049    ,Cell
+5761,P04049    ,Pseudopodium
+5762,P04049    ,Cytosol
+5764,P04049    ,Mitochondrial Outer Membrane
+5814,P04049    ,Golgi Apparatus
+5817,Q13546    ,Protein-Containing Complex
+5818,Q13546    ,Receptor Complex
+5819,Q13546    ,Death-Inducing Signaling Complex
+5820,Q13546    ,Mitochondrion
+5821,Q13546    ,Ripoptosome
+5822,Q13546    ,Endosome Membrane
+5825,Q13546    ,Cytosol
+5875,Q13546    ,Membrane Raft
+5877,Q13546    ,Membrane
+5878,Q13546    ,Plasma Membrane
+5879,Q13546    ,Cytoplasm
+5883,O43353    ,Cytoplasm
+5886,O43353    ,Protein-Containing Complex
+5890,O43353    ,Vesicle
+5891,O43353    ,Cytoskeleton
+5893,O43353    ,Cytosol
+5894,O43353    ,Mitochondrion
+5910,Q9Y572    ,Protein-Containing Complex
+5911,Q9Y572    ,Cytosol
+5923,Q9Y572    ,Mitochondrion
+5924,Q9Y572    ,Plasma Membrane
+5927,Q9Y572    ,Cytoplasm
+5929,Q9Y572    ,Membrane
+5931,P57078    ,Cytoplasm
+5932,P57078    ,Membrane
+5938,Q15569    ,Cytoplasmic Vesicle
+5939,Q15569    ,Cytoplasm
+5940,Q15569    ,Nucleus
+5941,Q15569    ,Cytosol
+5944,Q96S53    ,Nucleus
+5945,Q96S53    ,Cytoplasm
+5947,Q96S53    ,Nuclear Body
+5948,Q96S53    ,Nucleoplasm
+5954,P36897    ,Membrane
+5955,P36897    ,Bicellular Tight Junction
+5956,P36897    ,Cell Junction
+5957,P36897    ,Plasma Membrane
+5958,P36897    ,Integral Component Of Membrane
+5960,P36897    ,Cell Surface
+5963,P36897    ,Membrane Raft
+5964,P36897    ,Endosome
+5965,P36897    ,Nucleus
+5969,P36897    ,Receptor Complex
+5973,P36897    ,Activin Receptor Complex
+6016,P36897    ,Cell
+6018,P37173    ,Membrane
+6019,P37173    ,Plasma Membrane
+6020,P37173    ,Membrane Raft
+6023,P37173    ,Receptor Complex
+6025,P37173    ,Integral Component Of Membrane
+6026,P37173    ,External Side Of Plasma Membrane
+6027,P37173    ,Caveola
+6070,P37173    ,Cytosol
+6072,P37173    ,Cell Surface
+6074,P37173    ,Integral Component Of Plasma Membrane
+6076,P37173    ,Cytoplasm
+6085,Q59H18    ,Cytoplasm
+6087,Q59H18    ,Nucleus
+6093,Q6ZMQ8    ,Membrane
+6094,Q6ZMQ8    ,Perinuclear Region Of Cytoplasm
+6095,Q6ZMQ8    ,Cytoplasm
+6098,Q6ZMQ8    ,Integral Component Of Membrane
+6100,P00519    ,Postsynapse
+6101,P00519    ,Nucleus
+6102,P00519    ,Cytoplasm
+6103,P00519    ,Protein-Containing Complex
+6104,P00519    ,Neuronal Cell Body
+6105,P00519    ,Dendrite
+6107,P00519    ,Mitochondrion
+6108,P00519    ,Perinuclear Region Of Cytoplasm
+6109,P00519    ,Actin Cytoskeleton
+6114,P00519    ,Cytosol
+6118,P00519    ,Nucleoplasm
+6122,P00519    ,Nucleolus
+6125,P00519    ,Nuclear Body
+6127,P00519    ,Cell
+6129,P00519    ,Cell Leading Edge
+6135,P00519    ,Membrane
+6137,P00519    ,Cytoskeleton
+6138,P00519    ,Nuclear Membrane
+6143,P42684    ,Actin Cytoskeleton
+6144,P42684    ,Cytosol
+6146,P42684    ,Cell
+6147,P42684    ,Cytoskeleton
+6148,P42684    ,Cytoplasm
+6151,Q9UM73    ,Extracellular Exosome
+6152,Q9UM73    ,Integral Component Of Plasma Membrane
+6154,Q9UM73    ,Receptor Complex
+6156,Q9UM73    ,Protein-Containing Complex
+6158,Q9UM73    ,Plasma Membrane
+6159,Q9UM73    ,Membrane
+6162,Q9UM73    ,Integral Component Of Membrane
+6165,P30530    ,Host Cell Surface
+6166,P30530    ,Extracellular Exosome
+6167,P30530    ,Cell Surface
+6168,P30530    ,Integral Component Of Plasma Membrane
+6170,P30530    ,Extracellular Space
+6171,P30530    ,Receptor Complex
+6173,P30530    ,Plasma Membrane
+6177,P30530    ,Intracellular Membrane-Bounded Organelle
+6178,P30530    ,Actin Cytoskeleton
+6181,P30530    ,Membrane
+6182,P30530    ,Integral Component Of Membrane
+6185,P51451    ,Cytosol
+6186,P51451    ,Plasma Membrane
+6187,P51451    ,Membrane
+6190,P51813    ,Ruffle Membrane
+6191,P51813    ,Cytosol
+6193,P51813    ,Plasma Membrane
+6194,P51813    ,Nucleoplasm
+6195,P51813    ,Cytoplasm
+6198,Q06187    ,Cytoplasm
+6199,Q06187    ,Membrane Raft
+6200,Q06187    ,Plasma Membrane
+6202,Q06187    ,Cytosol
+6204,Q06187    ,Nucleus
+6246,Q06187    ,Mast Cell Granule
+6247,Q06187    ,Cytoplasmic Vesicle
+6250,Q06187    ,Perinuclear Region Of Cytoplasm
+6253,Q06187    ,Membrane
+6259,P07333    ,Plasma Membrane
+6260,P07333    ,Cell Surface
+6261,P07333    ,Integral Component Of Plasma Membrane
+6264,P07333    ,Receptor Complex
+6269,P07333    ,Intracellular Membrane-Bounded Organelle
+6271,P07333    ,Nucleoplasm
+6272,P07333    ,Membrane
+6275,P07333    ,Integral Component Of Membrane
+6279,P41240    ,Cytoplasm
+6280,P41240    ,Extracellular Exosome
+6282,P41240    ,Plasma Membrane
+6284,P41240    ,Cytosol
+6297,P41240    ,Membrane Raft
+6299,P41240    ,Cell-Cell Junction
+6301,P41240    ,Membrane
+6306,Q08345    ,Extracellular Exosome
+6307,Q08345    ,Extracellular Space
+6308,Q08345    ,Integral Component Of Plasma Membrane
+6309,Q08345    ,Receptor Complex
+6311,Q08345    ,Plasma Membrane
+6315,Q08345    ,Membrane
+6317,Q08345    ,Integral Component Of Membrane
+6319,Q08345    ,Extracellular Region
+6323,Q16832    ,Focal Adhesion
+6324,Q16832    ,Integral Component Of Plasma Membrane
+6325,Q16832    ,Receptor Complex
+6327,Q16832    ,Plasma Membrane
+6328,Q16832    ,Actin Cytoskeleton
+6330,Q16832    ,Apical Plasma Membrane
+6332,Q16832    ,Membrane
+6335,Q16832    ,Integral Component Of Membrane
+6338,P00533    ,Extracellular Region
+6339,P00533    ,Integral Component Of Membrane
+6340,P00533    ,Endosome
+6341,P00533    ,Golgi Apparatus
+6342,P00533    ,Endoplasmic Reticulum
+6343,P00533    ,Plasma Membrane
+6344,P00533    ,Membrane
+6345,P00533    ,Nucleus
+6347,P00533    ,Endoplasmic Reticulum Membrane
+6349,P00533    ,Nuclear Membrane
+6351,P00533    ,Golgi Membrane
+6352,P00533    ,Endosome Membrane
+6354,P00533    ,Membrane Raft
+6355,P00533    ,Perinuclear Region Of Cytoplasm
+6356,P00533    ,Cytoplasm
+6358,P00533    ,Protein-Containing Complex
+6362,P00533    ,Cell Surface
+6363,P00533    ,Multivesicular Body
+6364,P00533    ,Internal Vesicle Lumen
+6365,P00533    ,Early Endosome Membrane
+6367,P00533    ,Focal Adhesion
+6369,P00533    ,Shc-Egfr Complex
+6370,P00533    ,Basolateral Plasma Membrane
+6381,P00533    ,Extracellular Space
+6382,P00533    ,Receptor Complex
+6383,P00533    ,Basal Plasma Membrane
+6384,P00533    ,Integral Component Of Plasma Membrane
+6385,P00533    ,Clathrin-Coated Vesicle Membrane
+6520,P00533    ,Cell Junction
+6522,P00533    ,Synapse
+6524,P00533    ,Endocytic Vesicle
+6525,P00533    ,Apical Plasma Membrane
+6539,P21709    ,Integral Component Of Plasma Membrane
+6540,P21709    ,Receptor Complex
+6541,P21709    ,Dendritic Spine
+6542,P21709    ,Neuron Projection
+6544,P21709    ,Plasma Membrane
+6557,P21709    ,Integral Component Of Membrane
+6560,P21709    ,Membrane
+6563,Q5JZY3    ,Receptor Complex
+6564,Q5JZY3    ,Neuron Projection
+6565,Q5JZY3    ,Integral Component Of Plasma Membrane
+6566,Q5JZY3    ,Plasma Membrane
+6578,Q5JZY3    ,Integral Component Of Membrane
+6580,Q5JZY3    ,Extracellular Region
+6582,Q5JZY3    ,Membrane
+6588,P29317    ,Integral Component Of Plasma Membrane
+6589,P29317    ,Integral Component Of Membrane
+6590,P29317    ,Membrane
+6592,P29317    ,Cell Junction
+6593,P29317    ,Cell Projection
+6594,P29317    ,Plasma Membrane
+6596,P29317    ,Focal Adhesion
+6597,P29317    ,Lamellipodium Membrane
+6598,P29317    ,Ruffle Membrane
+6599,P29317    ,Tight Junction
+6600,P29317    ,Lamellipodium
+6601,P29317    ,Cell Surface
+6604,P29317    ,Leading Edge Membrane
+6610,P29317    ,Receptor Complex
+6611,P29317    ,Neuron Projection
+6626,P29320    ,Integral Component Of Plasma Membrane
+6627,P29320    ,Integral Component Of Membrane
+6628,P29320    ,Extracellular Region
+6629,P29320    ,Plasma Membrane
+6630,P29320    ,Membrane
+6636,P29320    ,Early Endosome
+6637,P29320    ,Receptor Complex
+6638,P29320    ,Neuron Projection
+6651,P29320    ,Nuclear Membrane
+6652,P29320    ,Actin Cytoskeleton
+6654,P29320    ,Cytosol
+6655,P29320    ,Nucleoplasm
+6657,P54764    ,Plasma Membrane
+6658,P54764    ,Dendritic Shaft
+6659,P54764    ,Dendritic Spine
+6660,P54764    ,Early Endosome Membrane
+6661,P54764    ,Dendrite
+6662,P54764    ,Axon
+6663,P54764    ,Integral Component Of Plasma Membrane
+6664,P54764    ,Cytoplasm
+6665,P54764    ,Receptor Complex
+6667,P54764    ,Neuron Projection
+6680,P54764    ,Glutamatergic Synapse
+6681,P54764    ,Cell Body
+6682,P54764    ,Axonal Growth Cone
+6683,P54764    ,Axon Terminus
+6684,P54764    ,Perikaryon
+6687,P54764    ,Cell Projection
+6688,P54764    ,Neuromuscular Junction
+6690,P54764    ,Filopodium
+6691,P54764    ,Postsynaptic Density
+6692,P54764    ,Cell Surface
+6695,P54764    ,Golgi Apparatus
+6696,P54764    ,Endoplasmic Reticulum
+6697,P54764    ,Mitochondrial Outer Membrane
+6699,P54764    ,Integral Component Of Presynaptic Membrane
+6700,P54764    ,Integral Component Of Postsynaptic Membrane
+6707,P54764    ,Integral Component Of Membrane
+6708,P54764    ,Postsynaptic Membrane
+6710,P54764    ,Membrane
+6712,P54764    ,Endosome
+6713,P54764    ,Cell Junction
+6715,P54764    ,Synapse
+6717,P54764    ,Early Endosome
+6718,P54764    ,Adherens Junction
+6721,P54764    ,Postsynaptic Density Membrane
+6723,P54756    ,Integral Component Of Plasma Membrane
+6724,P54756    ,Integral Component Of Membrane
+6725,P54756    ,Plasma Membrane
+6726,P54756    ,Cell Projection
+6727,P54756    ,Membrane
+6730,P54756    ,Dendrite
+6731,P54756    ,Axon
+6734,P54756    ,Perinuclear Region Of Cytoplasm
+6735,P54756    ,Neuronal Cell Body
+6737,P54756    ,External Side Of Plasma Membrane
+6739,P54756    ,Rough Endoplasmic Reticulum
+6740,P54756    ,Receptor Complex
+6741,P54756    ,Neuron Projection
+6755,Q9UF33    ,Membrane
+6756,Q9UF33    ,Receptor Complex
+6757,Q9UF33    ,Neuron Projection
+6758,Q9UF33    ,Integral Component Of Plasma Membrane
+6759,Q9UF33    ,Plasma Membrane
+6770,Q9UF33    ,Nucleoplasm
+6772,Q9UF33    ,Integral Component Of Membrane
+6776,Q15375    ,Integral Component Of Postsynaptic Density Membrane
+6777,Q15375    ,Integral Component Of Postsynaptic Specialization Membrane
+6778,Q15375    ,Glutamatergic Synapse
+6779,Q15375    ,Postsynaptic Membrane
+6780,Q15375    ,Neuronal Cell Body
+6781,Q15375    ,Neuromuscular Junction
+6782,Q15375    ,Dendrite
+6784,Q15375    ,Integral Component Of Plasma Membrane
+6785,Q15375    ,Integral Component Of Membrane
+6787,Q15375    ,Membrane
+6788,Q15375    ,Plasma Membrane
+6790,Q15375    ,Receptor Complex
+6791,Q15375    ,Neuron Projection
+6805,P29322    ,Neuron Projection
+6806,P29322    ,Integral Component Of Plasma Membrane
+6807,P29322    ,Receptor Complex
+6810,P29322    ,Plasma Membrane
+6824,P29322    ,Integral Component Of Membrane
+6827,P29322    ,Cell Projection
+6828,P29322    ,Membrane
+6829,P29322    ,Endosome
+6830,P29322    ,Early Endosome Membrane
+6834,P54762    ,Integral Component Of Plasma Membrane
+6835,P54762    ,Integral Component Of Membrane
+6836,P54762    ,Plasma Membrane
+6838,P54762    ,Membrane
+6839,P54762    ,Cell Projection
+6840,P54762    ,Endosome
+6841,P54762    ,Early Endosome Membrane
+6843,P54762    ,Dendrite
+6844,P54762    ,Extracellular Exosome
+6848,P54762    ,Receptor Complex
+6881,P54762    ,Cytosol
+6882,P54762    ,Extracellular Region
+6885,P54762    ,Endoplasmic Reticulum
+6886,P54762    ,Glutamatergic Synapse
+6887,P54762    ,Membrane Raft
+6888,P54762    ,Filopodium Tip
+6889,P54762    ,Axon
+6891,P54762    ,Cytoplasm
+6893,P29323    ,Postsynapse
+6894,P29323    ,Dendrite
+6895,P29323    ,Axon
+6896,P29323    ,Integral Component Of Plasma Membrane
+6897,P29323    ,Receptor Complex
+6899,P29323    ,Plasma Membrane
+6930,P29323    ,Cytosol
+6931,P29323    ,Extracellular Region
+6933,P29323    ,Nucleoplasm
+6934,P29323    ,Integral Component Of Presynaptic Membrane
+6935,P29323    ,Integral Component Of Postsynaptic Membrane
+6936,P29323    ,Glutamatergic Synapse
+6937,P29323    ,Neuronal Cell Body
+6943,P29323    ,Integral Component Of Membrane
+6946,P29323    ,Membrane
+6947,P29323    ,Cell Projection
+6952,P54753    ,Integral Component Of Plasma Membrane
+6954,P54753    ,Receptor Complex
+6956,P54753    ,Plasma Membrane
+6987,P54753    ,Cytosol
+6988,P54753    ,Extracellular Region
+6990,P54753    ,Integral Component Of Membrane
+6992,P54753    ,Membrane
+6993,P54753    ,Cell Projection
+6995,P54753    ,Dendrite
+6998,P54760    ,Extracellular Exosome
+6999,P54760    ,Integral Component Of Plasma Membrane
+7000,P54760    ,Receptor Complex
+7002,P54760    ,Plasma Membrane
+7033,P54760    ,Cytosol
+7034,P54760    ,Extracellular Region
+7036,P54760    ,Integral Component Of Membrane
+7037,P54760    ,Membrane
+7042,O15197    ,Receptor Complex
+7043,O15197    ,Integral Component Of Plasma Membrane
+7044,O15197    ,Plasma Membrane
+7075,O15197    ,Cytosol
+7076,O15197    ,Extracellular Region
+7078,O15197    ,Integral Component Of Membrane
+7079,O15197    ,Membrane
+7085,P04626    ,Membrane
+7086,P04626    ,Integral Component Of Membrane
+7087,P04626    ,Cytoplasm
+7089,P04626    ,Plasma Membrane
+7090,P04626    ,Nucleus
+7091,P04626    ,Endosome
+7094,P04626    ,Perinuclear Region Of Cytoplasm
+7095,P04626    ,Early Endosome
+7099,P04626    ,Receptor Complex
+7101,P04626    ,Basolateral Plasma Membrane
+7103,P04626    ,Endosome Membrane
+7108,P04626    ,Basal Plasma Membrane
+7109,P04626    ,Integral Component Of Plasma Membrane
+7150,P04626    ,Cytosol
+7151,P04626    ,Myelin Sheath
+7152,P04626    ,Cytoplasmic Vesicle
+7153,P04626    ,Apical Plasma Membrane
+7157,P21860    ,Integral Component Of Plasma Membrane
+7158,P21860    ,Receptor Complex
+7159,P21860    ,Basolateral Plasma Membrane
+7160,P21860    ,Plasma Membrane
+7161,P21860    ,Extracellular Space
+7163,P21860    ,Basal Plasma Membrane
+7190,P21860    ,Lateral Plasma Membrane
+7191,P21860    ,Apical Plasma Membrane
+7192,P21860    ,Membrane
+7193,P21860    ,Integral Component Of Membrane
+7194,P21860    ,Extracellular Region
+7201,Q15303    ,Postsynaptic Membrane
+7202,Q15303    ,Basolateral Plasma Membrane
+7203,Q15303    ,Mitochondrion
+7204,Q15303    ,Nucleus
+7205,Q15303    ,Receptor Complex
+7206,Q15303    ,Basal Plasma Membrane
+7207,Q15303    ,Integral Component Of Plasma Membrane
+7208,Q15303    ,Plasma Membrane
+7241,Q15303    ,Cytosol
+7255,Q15303    ,Mitochondrial Matrix
+7256,Q15303    ,Nucleoplasm
+7266,Q15303    ,Extracellular Region
+7268,Q15303    ,Integral Component Of Postsynaptic Density Membrane
+7269,Q15303    ,Integral Component Of Presynaptic Membrane
+7270,Q15303    ,Gaba-Ergic Synapse
+7271,Q15303    ,Glutamatergic Synapse
+7272,Q15303    ,Membrane
+7273,Q15303    ,Integral Component Of Membrane
+7283,P16591    ,Cell Junction
+7284,P16591    ,Nucleus
+7285,P16591    ,Cytoskeleton
+7286,P16591    ,Plasma Membrane
+7287,P16591    ,Cell Projection
+7288,P16591    ,Membrane
+7289,P16591    ,Cytoplasm
+7297,P16591    ,Cell Cortex
+7299,P16591    ,Lamellipodium
+7300,P16591    ,Microtubule Cytoskeleton
+7301,P16591    ,Actin Cytoskeleton
+7304,P16591    ,Nuclear Chromatin
+7305,P16591    ,Cytosol
+7308,P07332    ,Plasma Membrane
+7309,P07332    ,Golgi Apparatus
+7310,P07332    ,Membrane
+7311,P07332    ,Cytoplasmic Vesicle
+7313,P07332    ,Microtubule Cytoskeleton
+7314,P07332    ,Focal Adhesion
+7315,P07332    ,Cytoplasm
+7316,P07332    ,Cytosol
+7323,P07332    ,Cell Junction
+7324,P07332    ,Cytoskeleton
+7331,P11362    ,Integral Component Of Plasma Membrane
+7332,P11362    ,Integral Component Of Membrane
+7335,P11362    ,Plasma Membrane
+7336,P11362    ,Extracellular Region
+7337,P11362    ,Receptor Complex
+7401,P11362    ,Cytosol
+7402,P11362    ,Nucleus
+7406,P11362    ,Membrane
+7407,P11362    ,Cytoplasmic Vesicle
+7408,P11362    ,Cytoplasm
+7410,P21802    ,Integral Component Of Membrane
+7411,P21802    ,Membrane
+7412,P21802    ,Cytoplasmic Vesicle
+7413,P21802    ,Golgi Apparatus
+7414,P21802    ,Extracellular Region
+7416,P21802    ,Plasma Membrane
+7420,P21802    ,Excitatory Synapse
+7421,P21802    ,Collagen-Containing Extracellular Matrix
+7424,P21802    ,Cell Surface
+7425,P21802    ,Cell Cortex
+7426,P21802    ,Integral Component Of Plasma Membrane
+7428,P21802    ,Cytoplasm
+7430,P21802    ,Nucleus
+7432,P21802    ,Receptor Complex
+7496,P22607    ,Transport Vesicle
+7497,P22607    ,Golgi Apparatus
+7498,P22607    ,Plasma Membrane
+7499,P22607    ,Integral Component Of Plasma Membrane
+7500,P22607    ,Focal Adhesion
+7502,P22607    ,Receptor Complex
+7564,P22607    ,Endoplasmic Reticulum
+7565,P22607    ,Cell Surface
+7566,P22607    ,Cytoplasm
+7567,P22607    ,Nucleus
+7568,P22607    ,Integral Component Of Membrane
+7569,P22607    ,Cytoplasmic Vesicle
+7570,P22607    ,Extracellular Region
+7572,P22607    ,Membrane
+7579,P22455    ,Transport Vesicle
+7580,P22455    ,Golgi Apparatus
+7581,P22455    ,Plasma Membrane
+7582,P22455    ,Integral Component Of Plasma Membrane
+7583,P22455    ,Cell-Cell Junction
+7585,P22455    ,Endoplasmic Reticulum
+7586,P22455    ,Receptor Complex
+7635,P22455    ,Integral Component Of Membrane
+7638,P22455    ,Endosome
+7639,P22455    ,Membrane
+7640,P22455    ,Cytoplasm
+7642,P22455    ,Extracellular Region
+7649,P09769    ,Cytoskeleton
+7650,P09769    ,Extracellular Exosome
+7652,P09769    ,Ruffle Membrane
+7653,P09769    ,Actin Cytoskeleton
+7654,P09769    ,Plasma Membrane
+7656,P09769    ,Secretory Granule Lumen
+7657,P09769    ,Cytosol
+7661,P09769    ,Extracellular Region
+7662,P09769    ,Aggresome
+7670,P09769    ,Mitochondrion
+7671,P09769    ,Cytoplasm
+7672,P09769    ,Membrane
+7673,P09769    ,Mitochondrial Inner Membrane
+7674,P09769    ,Cell Projection
+7679,P09769    ,Mitochondrial Intermembrane Space
+7682,P17948    ,Focal Adhesion
+7683,P17948    ,Integral Component Of Plasma Membrane
+7684,P17948    ,Extracellular Space
+7686,P17948    ,Receptor Complex
+7688,P17948    ,Plasma Membrane
+7691,P17948    ,Actin Cytoskeleton
+7694,P17948    ,Endosome
+7695,P17948    ,Cytoplasm
+7696,P17948    ,Membrane
+7697,P17948    ,Integral Component Of Membrane
+7699,P17948    ,Extracellular Region
+7705,P36888    ,Endoplasmic Reticulum
+7706,P36888    ,Membrane
+7707,P36888    ,Integral Component Of Membrane
+7708,P36888    ,Endoplasmic Reticulum Lumen
+7710,P36888    ,Integral Component Of Plasma Membrane
+7711,P36888    ,Receptor Complex
+7713,P36888    ,Plasma Membrane
+7718,P36888    ,Protein-Containing Complex
+7720,P36888    ,Cytosol
+7721,P36888    ,Cytoplasm
+7722,P36888    ,Nucleus
+7724,P35916    ,Membrane
+7725,P35916    ,Nucleus
+7726,P35916    ,Cytoplasm
+7727,P35916    ,Extracellular Region
+7728,P35916    ,Plasma Membrane
+7729,P35916    ,Integral Component Of Plasma Membrane
+7731,P35916    ,Receptor Complex
+7737,P35916    ,Nucleoplasm
+7739,P35916    ,Integral Component Of Membrane
+7745,P42685    ,Extracellular Exosome
+7747,P42685    ,Nucleus
+7748,P42685    ,Intracellular
+7749,P42685    ,Specific Granule Lumen
+7750,P42685    ,Azurophil Granule Lumen
+7751,P42685    ,Cytosol
+7753,P42685    ,Extracellular Region
+7756,P42685    ,Nucleoplasm
+7757,P42685    ,Plasma Membrane
+7759,P42685    ,Cytoplasm
+7763,P06241    ,Perinuclear Endoplasmic Reticulum
+7764,P06241    ,Perinuclear Region Of Cytoplasm
+7765,P06241    ,Mitochondrion
+7766,P06241    ,Nucleus
+7767,P06241    ,Membrane Raft
+7768,P06241    ,Glial Cell Projection
+7770,P06241    ,Cell Body
+7771,P06241    ,Dendrite
+7772,P06241    ,Postsynaptic Density
+7775,P06241    ,Plasma Membrane
+7777,P06241    ,Endosome
+7787,P06241    ,Cytosol
+7886,P06241    ,Cell Periphery
+7891,P06241    ,Actin Filament
+7894,P06241    ,Intracellular Component
+7895,P06241    ,Glutamatergic Synapse
+7898,P06241    ,Intracellular Membrane-Bounded Organelle
+7899,P06241    ,Membrane
+7905,P06241    ,Cytoplasm
+7910,P08631    ,Focal Adhesion
+7911,P08631    ,Caveola
+7912,P08631    ,Actin Filament
+7913,P08631    ,Lysosome
+7914,P08631    ,Cytosol
+7916,P08631    ,Plasma Membrane
+7917,P08631    ,Nucleoplasm
+7918,P08631    ,Membrane
+7919,P08631    ,Nucleus
+7920,P08631    ,Cell Projection
+7921,P08631    ,Cell Junction
+7922,P08631    ,Cytoplasm
+7923,P08631    ,Golgi Apparatus
+7924,P08631    ,Cytoplasmic Vesicle
+7925,P08631    ,Cytoskeleton
+7933,P08631    ,Transport Vesicle
+7940,P08069    ,Plasma Membrane
+7943,P08069    ,Protein Kinase Complex
+7944,P08069    ,Intracellular Membrane-Bounded Organelle
+7945,P08069    ,Membrane
+7946,P08069    ,Integral Component Of Plasma Membrane
+7947,P08069    ,Receptor Complex
+7948,P08069    ,Axon
+7949,P08069    ,Insulin Receptor Complex
+7960,P08069    ,Cell
+7962,P08069    ,Integral Component Of Membrane
+7968,P06213    ,Nuclear Envelope
+7969,P06213    ,Nuclear Lumen
+7970,P06213    ,Neuronal Cell Body Membrane
+7971,P06213    ,Dendrite Membrane
+7972,P06213    ,External Side Of Plasma Membrane
+7973,P06213    ,Extracellular Exosome
+7975,P06213    ,Insulin Receptor Complex
+7976,P06213    ,Membrane
+7977,P06213    ,Caveola
+7979,P06213    ,Integral Component Of Plasma Membrane
+7980,P06213    ,Plasma Membrane
+7981,P06213    ,Receptor Complex
+7982,P06213    ,Axon
+7985,P06213    ,Endosome Membrane
+8005,P06213    ,Integral Component Of Membrane
+8007,P06213    ,Lysosome
+8010,P06213    ,Late Endosome
+8011,P06213    ,Endosome
+8014,P06213    ,Cell Body
+8015,P06213    ,Neuronal Cell Body
+8016,P06213    ,Dendrite
+8018,P14616    ,Integral Component Of Plasma Membrane
+8019,P14616    ,Membrane
+8020,P14616    ,Integral Component Of Membrane
+8025,P14616    ,Receptor Complex
+8026,P14616    ,Axon
+8027,P14616    ,Insulin Receptor Complex
+8031,Q08881    ,Nucleus
+8032,Q08881    ,Cytosol
+8037,Q08881    ,Cell-Cell Junction
+8040,Q08881    ,Cytoplasm
+8044,P23458    ,Focal Adhesion
+8045,P23458    ,Cytoplasm
+8046,P23458    ,Nucleus
+8047,P23458    ,Cytosol
+8228,P23458    ,Endosome
+8229,P23458    ,Cytoskeleton
+8230,P23458    ,Membrane
+8232,P23458    ,Endomembrane System
+8233,O60674    ,Cytoplasm
+8234,O60674    ,Nucleus
+8235,O60674    ,Membrane
+8236,O60674    ,Endomembrane System
+8239,O60674    ,Membrane Raft
+8240,O60674    ,Caveola
+8244,O60674    ,Endosome Lumen
+8245,O60674    ,Cytosol
+8385,O60674    ,Nucleoplasm
+8386,O60674    ,Focal Adhesion
+8387,O60674    ,Plasma Membrane
+8389,O60674    ,Cell
+8390,O60674    ,Glutamatergic Synapse
+8391,O60674    ,Postsynapse
+8392,O60674    ,Nuclear Matrix
+8396,O60674    ,Cytoskeleton
+8398,P52333    ,Plasma Membrane
+8403,P52333    ,Cytosol
+8449,P52333    ,Endosome
+8450,P52333    ,Cytoskeleton
+8451,P52333    ,Membrane
+8452,P52333    ,Cytoplasm
+8454,P52333    ,Endomembrane System
+8457,P35968    ,Cytoplasmic Vesicle
+8458,P35968    ,Plasma Membrane
+8459,P35968    ,Membrane
+8460,P35968    ,Endoplasmic Reticulum
+8461,P35968    ,Nucleus
+8462,P35968    ,Extracellular Region
+8463,P35968    ,Cytoplasm
+8464,P35968    ,Cell Junction
+8465,P35968    ,Endosome
+8466,P35968    ,Integral Component Of Membrane
+8468,P35968    ,Early Endosome
+8475,P35968    ,Integral Component Of Plasma Membrane
+8476,P35968    ,Sorting Endosome
+8479,P35968    ,Membrane Raft
+8483,P35968    ,Golgi Apparatus
+8485,P35968    ,Receptor Complex
+8531,P10721    ,Extracellular Space
+8532,P10721    ,Receptor Complex
+8533,P10721    ,Integral Component Of Plasma Membrane
+8534,P10721    ,Plasma Membrane
+8569,P10721    ,Fibrillar Center
+8570,P10721    ,Mast Cell Granule
+8571,P10721    ,Cell Surface
+8572,P10721    ,External Side Of Plasma Membrane
+8573,P10721    ,Cell-Cell Junction
+8574,P10721    ,Cytoplasmic Side Of Plasma Membrane
+8576,P10721    ,Cytoplasm
+8577,P10721    ,Acrosomal Vesicle
+8582,P10721    ,Integral Component Of Membrane
+8583,P10721    ,Membrane
+8585,P06239    ,Membrane Raft
+8586,P06239    ,Plasma Membrane
+8587,P06239    ,Extracellular Exosome
+8590,P06239    ,Pericentriolar Material
+8593,P06239    ,Cytosol
+8653,P06239    ,Immunological Synapse
+8654,P06239    ,Cell
+8655,P06239    ,Cytoplasm
+8657,P06239    ,Membrane
+8661,Q8IWU2    ,Recycling Endosome
+8663,Q8IWU2    ,Perinuclear Region Of Cytoplasm
+8665,Q8IWU2    ,Integral Component Of Membrane
+8666,Q8IWU2    ,Golgi Apparatus
+8667,Q8IWU2    ,Early Endosome
+8669,Q8IWU2    ,Receptor Complex
+8670,Q8IWU2    ,Integral Component Of Plasma Membrane
+8671,Q8IWU2    ,Cytosol
+8672,Q8IWU2    ,Neuronal Cell Body
+8673,Q8IWU2    ,Growth Cone
+8675,Q8IWU2    ,Membrane
+8678,Q96Q04    ,Axon
+8679,Q96Q04    ,Membrane
+8680,Q96Q04    ,Golgi Membrane
+8681,Q96Q04    ,Dendrite
+8682,Q96Q04    ,Cell Projection
+8684,Q96Q04    ,Golgi Apparatus
+8685,Q96Q04    ,Integral Component Of Membrane
+8687,P29376    ,Integral Component Of Plasma Membrane
+8688,P29376    ,Plasma Membrane
+8689,P29376    ,Membrane
+8690,P29376    ,Receptor Complex
+8692,P29376    ,Integral Component Of Membrane
+8698,P07948    ,Membrane Raft
+8699,P07948    ,Extracellular Exosome
+8700,P07948    ,Perinuclear Region Of Cytoplasm
+8702,P07948    ,Plasma Membrane
+8704,P07948    ,Golgi Apparatus
+8706,P07948    ,Cytoplasm
+8707,P07948    ,Nucleus
+8719,P07948    ,Cytosol
+8768,P07948    ,Intracellular Membrane-Bounded Organelle
+8771,P07948    ,Mast Cell Granule
+8773,P07948    ,Protein-Containing Complex
+8777,P07948    ,Postsynaptic Specialization
+8778,P07948    ,Intracellular Component
+8779,P07948    ,Glutamatergic Synapse
+8782,P07948    ,Mitochondrial Membrane
+8783,P07948    ,Mitochondrial Crista
+8784,P07948    ,Membrane
+8785,P07948    ,Postsynaptic Density
+8787,P07948    ,Mitochondrial Intermembrane Space
+8799,P42679    ,Cytoplasm
+8800,P42679    ,Membrane
+8802,P42679    ,Cytosol
+8805,Q12866    ,Integral Component Of Plasma Membrane
+8806,Q12866    ,Rhabdomere
+8807,Q12866    ,Cytoplasm
+8809,Q12866    ,Extracellular Space
+8810,Q12866    ,Receptor Complex
+8812,Q12866    ,Plasma Membrane
+8813,Q12866    ,Photoreceptor Outer Segment
+8814,Q12866    ,Membrane
+8815,Q12866    ,Integral Component Of Membrane
+8818,P08581    ,Cell Surface
+8819,P08581    ,Integral Component Of Plasma Membrane
+8820,P08581    ,Integral Component Of Membrane
+8821,P08581    ,Receptor Complex
+8822,P08581    ,Basal Plasma Membrane
+8824,P08581    ,Plasma Membrane
+8886,P08581    ,Extracellular Region
+8887,P08581    ,Membrane
+8892,Q04912    ,Cell Surface
+8893,Q04912    ,Integral Component Of Plasma Membrane
+8894,Q04912    ,Receptor Complex
+8895,Q04912    ,Basal Plasma Membrane
+8897,Q04912    ,Plasma Membrane
+8901,Q04912    ,Vacuole
+8902,Q04912    ,Stress Fiber
+8903,Q04912    ,Integral Component Of Membrane
+8905,Q04912    ,Membrane
+8908,O15146    ,Postsynaptic Membrane
+8909,O15146    ,Neuromuscular Junction
+8910,O15146    ,Integral Component Of Plasma Membrane
+8911,O15146    ,Receptor Complex
+8914,O15146    ,Cell Junction
+8915,O15146    ,Membrane
+8916,O15146    ,Plasma Membrane
+8918,O15146    ,Synapse
+8919,O15146    ,Integral Component Of Membrane
+8922,P04629    ,Integral Component Of Plasma Membrane
+8924,P04629    ,Protein-Containing Complex
+8926,P04629    ,Plasma Membrane
+8927,P04629    ,Late Endosome
+8928,P04629    ,Early Endosome
+8929,P04629    ,Receptor Complex
+8930,P04629    ,Axon
+8932,P04629    ,Endosome Membrane
+8944,P04629    ,Golgi Membrane
+8946,P04629    ,Recycling Endosome
+8947,P04629    ,Neuronal Cell Body
+8949,P04629    ,Cytoplasmic Vesicle
+8950,P04629    ,Dendrite
+8952,P04629    ,Cell Surface
+8960,P04629    ,Cytoplasm
+8962,P04629    ,Membrane
+8963,P04629    ,Integral Component Of Membrane
+8965,P04629    ,Endosome
+8967,P04629    ,Early Endosome Membrane
+8968,P04629    ,Recycling Endosome Membrane
+8969,P04629    ,Late Endosome Membrane
+8973,Q16620    ,Integral Component Of Plasma Membrane
+8974,Q16620    ,Membrane
+8975,Q16620    ,Cell Junction
+8976,Q16620    ,Cell Projection
+8977,Q16620    ,Integral Component Of Membrane
+8978,Q16620    ,Cytoplasm
+8979,Q16620    ,Synapse
+8980,Q16620    ,Plasma Membrane
+8981,Q16620    ,Endosome
+8983,Q16620    ,Endosome Membrane
+8984,Q16620    ,Early Endosome Membrane
+8985,Q16620    ,Perinuclear Region Of Cytoplasm
+8986,Q16620    ,Axon
+8988,Q16620    ,Postsynaptic Density
+8989,Q16620    ,Dendrite
+8994,Q16620    ,Early Endosome
+8996,Q16620    ,Axon Terminus
+8997,Q16620    ,Receptor Complex
+8998,Q16620    ,Dendritic Spine
+9006,Q16620    ,Golgi Membrane
+9008,Q16620    ,Terminal Bouton
+9011,Q16620    ,Cytosol
+9015,Q16288    ,Integral Component Of Plasma Membrane
+9016,Q16288    ,Receptor Complex
+9017,Q16288    ,Axon
+9019,Q16288    ,Plasma Membrane
+9026,Q16288    ,Integral Component Of Postsynaptic Membrane
+9027,Q16288    ,Glutamatergic Synapse
+9028,Q16288    ,Membrane
+9030,Q16288    ,Cytoplasm
+9034,Q16288    ,Integral Component Of Membrane
+9037,P16234    ,Cilium
+9038,P16234    ,Golgi Apparatus
+9039,P16234    ,Membrane
+9040,P16234    ,Integral Component Of Plasma Membrane
+9041,P16234    ,Intrinsic Component Of Plasma Membrane
+9042,P16234    ,Cytoplasm
+9043,P16234    ,Nucleus
+9044,P16234    ,Receptor Complex
+9046,P16234    ,Plasma Membrane
+9068,P16234    ,Protein-Containing Complex
+9069,P16234    ,Cell Junction
+9071,P16234    ,Nucleoplasm
+9072,P16234    ,Cell
+9073,P16234    ,Cell Surface
+9074,P16234    ,External Side Of Plasma Membrane
+9076,P16234    ,Microvillus
+9082,P16234    ,Cell Projection
+9083,P16234    ,Integral Component Of Membrane
+9089,P09619    ,Focal Adhesion
+9090,P09619    ,Membrane
+9092,P09619    ,Intrinsic Component Of Plasma Membrane
+9093,P09619    ,Apical Plasma Membrane
+9094,P09619    ,Cytoplasm
+9095,P09619    ,Nucleus
+9096,P09619    ,Receptor Complex
+9097,P09619    ,Integral Component Of Plasma Membrane
+9098,P09619    ,Plasma Membrane
+9121,P09619    ,Intracellular Membrane-Bounded Organelle
+9122,P09619    ,Golgi Apparatus
+9123,P09619    ,Cell Surface
+9131,P09619    ,Lysosome
+9132,P09619    ,Integral Component Of Membrane
+9133,P09619    ,Cytoplasmic Vesicle
+9136,P09619    ,Lysosomal Lumen
+9138,Q05397    ,Plasma Membrane
+9139,Q05397    ,Cytoplasm
+9140,Q05397    ,Stress Fiber
+9141,Q05397    ,Cytoskeleton
+9142,Q05397    ,Focal Adhesion
+9144,Q05397    ,Cytosol
+9145,Q05397    ,Nucleus
+9147,Q05397    ,Dendritic Spine
+9191,Q05397    ,Intracellular Membrane-Bounded Organelle
+9194,Q05397    ,Lamellipodium
+9195,Q05397    ,Apical Plasma Membrane
+9202,Q05397    ,Membrane
+9205,Q05397    ,Cell Junction
+9207,Q05397    ,Cell Cortex
+9209,Q05397    ,Microtubule Organizing Center
+9213,Q14289    ,Postsynaptic Density
+9214,Q14289    ,Apical Dendrite
+9215,Q14289    ,Cell Body
+9216,Q14289    ,Neuronal Cell Body
+9217,Q14289    ,Growth Cone
+9218,Q14289    ,Dendrite
+9219,Q14289    ,Nmda Selective Glutamate Receptor Complex
+9221,Q14289    ,Cytoplasm
+9222,Q14289    ,Perinuclear Region Of Cytoplasm
+9223,Q14289    ,Lamellipodium
+9224,Q14289    ,Focal Adhesion
+9225,Q14289    ,Nucleus
+9226,Q14289    ,Dendritic Spine
+9228,Q14289    ,Cytosol
+9234,Q14289    ,Cell
+9235,Q14289    ,Glutamatergic Synapse
+9236,Q14289    ,Postsynapse
+9239,Q14289    ,Membrane Raft
+9243,Q14289    ,Cell Projection
+9246,Q14289    ,Axon
+9249,Q14289    ,Cell Cortex
+9254,Q14289    ,Cell Junction
+9256,Q14289    ,Membrane
+9259,Q14289    ,Plasma Membrane
+9267,Q14289    ,Cytoskeleton
+9270,Q13882    ,Cytoplasm
+9271,Q13882    ,Nucleus
+9272,Q13882    ,Ruffle
+9273,Q13882    ,Cytosol
+9303,Q13882    ,Nucleoplasm
+9309,Q13882    ,Nuclear Body
+9310,Q13882    ,Plasma Membrane
+9314,Q13882    ,Cell Projection
+9316,Q13882    ,Membrane
+9323,Q13308    ,Focal Adhesion
+9324,Q13308    ,Integral Component Of Plasma Membrane
+9325,Q13308    ,Cell-Cell Junction
+9327,Q13308    ,Membrane
+9329,Q13308    ,Plasma Membrane
+9331,Q13308    ,Integral Component Of Membrane
+9332,Q13308    ,Cell Junction
+9336,P07949    ,Plasma Membrane
+9337,P07949    ,Plasma Membrane Protein Complex
+9338,P07949    ,Endosome Membrane
+9339,P07949    ,Integral Component Of Plasma Membrane
+9341,P07949    ,Receptor Complex
+9342,P07949    ,Axon
+9369,P07949    ,Membrane Raft
+9370,P07949    ,Neuronal Cell Body
+9371,P07949    ,Dendrite
+9373,P07949    ,Early Endosome
+9374,P07949    ,Membrane
+9375,P07949    ,Endosome
+9377,P07949    ,Integral Component Of Membrane
+9382,Q01973    ,Cell Surface
+9383,Q01973    ,Cytoplasm
+9384,Q01973    ,Stress Fiber
+9385,Q01973    ,Axon Terminus
+9386,Q01973    ,Integral Component Of Membrane
+9387,Q01973    ,Membrane
+9388,Q01973    ,Cell Projection
+9390,Q01973    ,Axon
+9392,Q01973    ,Plasma Membrane
+9393,Q01973    ,Integral Component Of Plasma Membrane
+9397,Q01973    ,Receptor Complex
+9402,Q01974    ,Integral Component Of Membrane
+9403,Q01974    ,Integral Component Of Plasma Membrane
+9404,Q01974    ,Receptor Complex
+9405,Q01974    ,Axon
+9407,Q01974    ,Clathrin-Coated Endocytic Vesicle Membrane
+9408,Q01974    ,Plasma Membrane
+9410,Q01974    ,Neuronal Cell Body
+9411,Q01974    ,Dendrite
+9412,Q01974    ,Cell Surface
+9413,Q01974    ,Microtubule
+9414,Q01974    ,Cytoplasm
+9416,Q01974    ,Membrane
+9419,P08922    ,Plasma Membrane
+9420,P08922    ,Membrane
+9423,P08922    ,Receptor Complex
+9424,P08922    ,Integral Component Of Plasma Membrane
+9425,P08922    ,Perinuclear Region Of Cytoplasm
+9426,P08922    ,Cell Surface
+9428,P08922    ,Integral Component Of Membrane
+9430,P34925    ,Plasma Membrane
+9431,P34925    ,Nucleus
+9432,P34925    ,Integral Component Of Plasma Membrane
+9433,P34925    ,Integral Component Of Membrane
+9434,P34925    ,Membrane
+9435,P34925    ,Cytoplasm
+9437,P34925    ,Receptor Complex
+9453,P12931    ,Membrane Raft
+9454,P12931    ,Perinuclear Region Of Cytoplasm
+9455,P12931    ,Extracellular Exosome
+9457,P12931    ,Caveola
+9458,P12931    ,Plasma Membrane
+9459,P12931    ,Cytosol
+9460,P12931    ,Late Endosome
+9461,P12931    ,Lysosome
+9462,P12931    ,Mitochondrial Inner Membrane
+9463,P12931    ,Mitochondrion
+9464,P12931    ,Cytoplasm
+9592,P12931    ,Cell Junction
+9596,P12931    ,Ruffle Membrane
+9599,P12931    ,Actin Filament
+9600,P12931    ,Cytoskeleton
+9603,P12931    ,Nucleus
+9604,P12931    ,Podosome
+9605,P12931    ,Postsynaptic Specialization
+9606,P12931    ,Intracellular Component
+9607,P12931    ,Glutamatergic Synapse
+9608,P12931    ,Neuron Projection
+9609,P12931    ,Membrane
+9610,P12931    ,Postsynaptic Density
+9625,Q9H3Y6    ,Cytoplasm
+9629,Q9H3Y6    ,Cytosol
+9631,Q6J9G0    ,Plasma Membrane
+9632,Q6J9G0    ,Integral Component Of Membrane
+9633,Q6J9G0    ,Membrane
+9636,P43405    ,Early Phagosome
+9637,P43405    ,Cytosol
+9638,P43405    ,Plasma Membrane
+9687,P43405    ,T Cell Receptor Complex
+9688,P43405    ,Protein-Containing Complex
+9689,P43405    ,Cytoplasm
+9690,P43405    ,Nucleus
+9693,P43405    ,B Cell Receptor Complex
+9697,P43405    ,Membrane
+9701,P42680    ,Cytoskeleton
+9703,P42680    ,Cytosol
+9708,P42680    ,Plasma Membrane
+9709,P42680    ,Membrane
+9711,P42680    ,Cytoplasm
+9717,Q02763    ,Plasma Membrane
+9718,Q02763    ,Membrane
+9719,Q02763    ,Extracellular Region
+9720,Q02763    ,Cell Junction
+9721,Q02763    ,Cytoplasm
+9722,Q02763    ,Cytoskeleton
+9723,Q02763    ,Integral Component Of Membrane
+9727,Q02763    ,Focal Adhesion
+9729,Q02763    ,Integral Component Of Plasma Membrane
+9730,Q02763    ,Membrane Raft
+9731,Q02763    ,Apical Plasma Membrane
+9732,Q02763    ,Basolateral Plasma Membrane
+9733,Q02763    ,Cell Surface
+9734,Q02763    ,Basal Plasma Membrane
+9735,Q02763    ,Cell-Cell Junction
+9736,Q02763    ,Microvillus
+9738,Q02763    ,Actin Filament
+9739,Q02763    ,Stress Fiber
+9740,Q02763    ,Receptor Complex
+9756,Q02763    ,Centriolar Satellite
+9760,P35590    ,Integral Component Of Plasma Membrane
+9761,P35590    ,Receptor Complex
+9763,P35590    ,Plasma Membrane
+9764,P35590    ,Integral Component Of Membrane
+9767,P35590    ,Membrane
+9769,Q13470    ,Membrane
+9770,Q13470    ,Cytoplasm
+9771,Q13470    ,Cytosol
+9777,Q07912    ,Nucleus
+9779,Q07912    ,Clathrin-Coated Vesicle
+9780,Q07912    ,Clathrin-Coated Pit
+9781,Q07912    ,Plasma Membrane
+9782,Q07912    ,Cytoplasmic Vesicle Membrane
+9783,Q07912    ,Adherens Junction
+9784,Q07912    ,Perinuclear Region Of Cytoplasm
+9785,Q07912    ,Endosome
+9786,Q07912    ,Cytoophidium
+9787,Q07912    ,Membrane
+9793,Q07912    ,Cytoplasm
+9797,Q07912    ,Cytoplasmic Vesicle
+9800,Q07912    ,Cell Junction
+9803,P42681    ,Cytoplasm
+9804,P42681    ,Nucleus
+9809,P42681    ,Plasma Membrane
+9810,P42681    ,Membrane
+9815,P29597    ,Extracellular Exosome
+9816,P29597    ,Cytoplasm
+9817,P29597    ,Nucleus
+9818,P29597    ,Cytosol
+9882,P29597    ,Cytoskeleton
+9883,P29597    ,Membrane
+9885,Q06418    ,Plasma Membrane
+9886,Q06418    ,Integral Component Of Membrane
+9887,Q06418    ,Membrane
+9889,Q06418    ,Cell Surface
+9890,Q06418    ,Integral Component Of Plasma Membrane
+9891,Q06418    ,Endoplasmic Reticulum Membrane
+9892,Q06418    ,Nuclear Envelope
+9893,Q06418    ,Nucleus
+9894,Q06418    ,Receptor Complex
+9896,Q06418    ,Cell
+9899,P07947    ,Focal Adhesion
+9900,P07947    ,Extracellular Exosome
+9901,P07947    ,Plasma Membrane
+9902,P07947    ,Golgi Apparatus
+9903,P07947    ,Cytosol
+9937,P07947    ,Postsynaptic Specialization
+9938,P07947    ,Intracellular Component
+9939,P07947    ,Glutamatergic Synapse
+9942,P07947    ,Actin Filament
+9943,P07947    ,Cytoskeleton
+9945,P07947    ,Cytoplasm
+9946,P07947    ,Membrane
+9947,P07947    ,Microtubule Organizing Center
+9951,P43403    ,Cytoplasm
+9952,P43403    ,Plasma Membrane
+9953,P43403    ,Membrane Raft
+9957,P43403    ,Cytosol
+9964,P43403    ,T Cell Receptor Complex
+9965,P43403    ,Membrane
+9966,P43403    ,Cell-Cell Junction
+9970,P43403    ,Immunological Synapse
+9976,Q2M2I8    ,Terminal Bouton
+9977,Q2M2I8    ,Cell Leading Edge
+9978,Q2M2I8    ,Clathrin-Coated Vesicle
+9979,Q2M2I8    ,Extrinsic Component Of Plasma Membrane
+9980,Q2M2I8    ,Nucleus
+9981,Q2M2I8    ,Cytosol
+9998,Q2M2I8    ,Membrane
+9999,Q2M2I8    ,Cell Junction
+10000,Q2M2I8    ,Clathrin-Coated Pit
+10001,Q2M2I8    ,Plasma Membrane
+10002,Q2M2I8    ,Synapse
+10003,Q2M2I8    ,Cell Projection
+10006,Q2M2I8    ,Presynapse
+10008,O14965    ,Cytoskeleton
+10009,O14965    ,Cilium
+10010,O14965    ,Cell Projection
+10011,O14965    ,Microtubule
+10012,O14965    ,Cytoplasm
+10013,O14965    ,Microtubule Organizing Center
+10014,O14965    ,Neuron Projection
+10015,O14965    ,Centriole
+10016,O14965    ,Spindle Pole
+10017,O14965    ,Centrosome
+10019,O14965    ,Mitotic Spindle Pole
+10020,O14965    ,Spindle
+10021,O14965    ,Nucleus
+10022,O14965    ,Perinuclear Region Of Cytoplasm
+10023,O14965    ,Spindle Pole Centrosome
+10024,O14965    ,Microtubule Cytoskeleton
+10025,O14965    ,Spindle Microtubule
+10027,O14965    ,Midbody
+10032,O14965    ,Spindle Midzone
+10033,O14965    ,Chromosome Passenger Complex
+10036,O14965    ,Condensed Nuclear Chromosome
+10037,O14965    ,Centromeric Region
+10038,O14965    ,Cytosol
+10052,O14965    ,Nucleoplasm
+10058,O14965    ,Meiotic Spindle
+10059,O14965    ,Mitotic Spindle
+10060,O14965    ,Pronucleus
+10061,O14965    ,Axon Hillock
+10062,O14965    ,Germinal Vesicle
+10066,Q96GD4    ,Kinetochore
+10067,Q96GD4    ,Condensed Nuclear Chromosome
+10068,Q96GD4    ,Centromeric Region
+10069,Q96GD4    ,Chromosome Passenger Complex
+10072,Q96GD4    ,Midbody
+10074,Q96GD4    ,Spindle
+10075,Q96GD4    ,Nucleus
+10076,Q96GD4    ,Condensed Chromosome
+10078,Q96GD4    ,Spindle Midzone
+10080,Q96GD4    ,Spindle Pole Centrosome
+10081,Q96GD4    ,Spindle Microtubule
+10084,Q96GD4    ,Cytosol
+10102,Q96GD4    ,Nucleoplasm
+10109,Q96GD4    ,Mitotic Spindle Midzone
+10112,Q96GD4    ,Chromocenter
+10117,Q96GD4    ,Cytoplasm
+10118,Q96GD4    ,Cytoskeleton
+10119,Q96GD4    ,Chromosome
+10130,Q9UQB9    ,Spindle Midzone
+10131,Q9UQB9    ,Chromosome Passenger Complex
+10132,Q9UQB9    ,Midbody
+10134,Q9UQB9    ,Spindle
+10135,Q9UQB9    ,Condensed Chromosome
+10138,Q9UQB9    ,Spindle Pole Centrosome
+10139,Q9UQB9    ,Spindle Microtubule
+10140,Q9UQB9    ,Condensed Nuclear Chromosome
+10141,Q9UQB9    ,Centromeric Region
+10143,Q9UQB9    ,Chromosome
+10145,Q9UQB9    ,Nucleus
+10147,Q9UQB9    ,Cytoplasm
+10148,Q9UQB9    ,Cytoskeleton
+10155,Q9NSY1    ,Nucleus
+10158,Q9NSY1    ,Nuclear Speck
+10161,O43683    ,Nucleus
+10163,O43683    ,Condensed Chromosome Kinetochore
+10164,O43683    ,Condensed Nuclear Chromosome Outer Kinetochore
+10165,O43683    ,Membrane
+10167,O43683    ,Kinetochore
+10169,O43683    ,Condensed Nuclear Chromosome Kinetochore
+10170,O43683    ,Cytosol
+10187,O43683    ,Nucleoplasm
+10189,O43683    ,Chromosome
+10191,O43683    ,Centromeric Region
+10193,O60566    ,Cytoplasm
+10194,O60566    ,Anaphase-Promoting Complex
+10195,O60566    ,Perinuclear Region Of Cytoplasm
+10196,O60566    ,Spindle
+10197,O60566    ,Condensed Chromosome Outer Kinetochore
+10198,O60566    ,Condensed Chromosome Kinetochore
+10199,O60566    ,Kinetochore
+10203,O60566    ,Condensed Nuclear Chromosome Kinetochore
+10204,O60566    ,Cytosol
+10230,O60566    ,Chromosome
+10231,O60566    ,Centromeric Region
+10234,O60566    ,Nucleus
+10236,O60566    ,Cytoskeleton
+10239,O60566    ,Microtubule Organizing Center
+10242,Q8N5S9    ,Cytoplasm
+10243,Q8N5S9    ,Cytosol
+10244,Q8N5S9    ,Nucleoplasm
+10246,Q8N5S9    ,Nucleus
+10250,Q96RR4    ,Cytosol
+10254,Q96RR4    ,Nucleoplasm
+10257,Q96RR4    ,Cytoplasm
+10258,Q96RR4    ,Cell Projection
+10259,Q96RR4    ,Nucleus
+10261,Q96RR4    ,Neuron Projection
+10264,O00311    ,Nucleus
+10266,O00311    ,Cytoplasm
+10270,O00311    ,Nucleoplasm
+10277,O00311    ,Mitotic Spindle
+10278,O00311    ,Intercellular Bridge
+10281,O15111    ,Cytoplasm
+10283,O15111    ,Cytoplasmic Side Of Plasma Membrane
+10284,O15111    ,Ikappab Kinase Complex
+10287,O15111    ,Cytosol
+10320,O15111    ,Intracellular Membrane-Bounded Organelle
+10322,O15111    ,Nucleoplasm
+10324,O15111    ,Nucleus
+10331,P68400    ,Nucleus
+10334,P68400    ,Plasma Membrane
+10336,P68400    ,Nurd Complex
+10337,P68400    ,Pcg Protein Complex
+10339,P68400    ,Cytosol
+10348,P68400    ,Nucleoplasm
+10352,P19784    ,Nucleus
+10353,P19784    ,Pcg Protein Complex
+10356,P19784    ,Cytosol
+10363,P19784    ,Nucleoplasm
+10365,P19784    ,Plasma Membrane
+10366,P19784    ,Cytoplasm
+10368,P19784    ,Acrosomal Vesicle
+10369,P19784    ,Chromatin
+10371,Q8NEV1    ,Cytosol
+10372,Q8NEV1    ,Nucleus
+10373,Q8NEV1    ,Nucleoplasm
+10375,Q6XUX3    ,Cell Junction
+10376,Q6XUX3    ,Cytoplasm
+10377,Q6XUX3    ,Membrane
+10378,Q6XUX3    ,Plasma Membrane
+10380,Q6XUX3    ,Basolateral Plasma Membrane
+10383,Q6XUX3    ,Apical Plasma Membrane
+10391,Q9BQI3    ,Cytoplasm
+10395,P19525    ,Nucleus
+10396,P19525    ,Perinuclear Region Of Cytoplasm
+10397,P19525    ,Cytoplasm
+10398,P19525    ,Ribosome
+10399,P19525    ,Membrane
+10402,P19525    ,Cytosol
+10407,Q9NZJ5    ,Integral Component Of Endoplasmic Reticulum Membrane
+10409,Q9NZJ5    ,Membrane
+10410,Q9NZJ5    ,Endoplasmic Reticulum Membrane
+10412,Q9NZJ5    ,Endoplasmic Reticulum
+10415,Q9NZJ5    ,Cytoplasm
+10419,Q9NZJ5    ,Perinuclear Region Of Cytoplasm
+10420,Q9NZJ5    ,Integral Component Of Membrane
+10425,Q9P2K8    ,Polysome
+10426,Q9P2K8    ,Cytosolic Ribosome
+10427,Q9P2K8    ,Cytoplasm
+10430,O75460    ,Endoplasmic Reticulum
+10431,O75460    ,Cytoplasm
+10432,O75460    ,Integral Component Of Endoplasmic Reticulum Membrane
+10433,O75460    ,Endoplasmic Reticulum Membrane
+10438,O75460    ,Cell
+10440,O75460    ,Mitochondrion
+10441,O75460    ,Nuclear Inner Membrane
+10442,O75460    ,Integral Component Of Membrane
+10443,O75460    ,Membrane
+10447,Q76MJ5    ,Endoplasmic Reticulum Membrane
+10448,Q76MJ5    ,Integral Component Of Membrane
+10449,Q76MJ5    ,Membrane
+10450,Q76MJ5    ,Endoplasmic Reticulum
+10453,O14976    ,Cell Junction
+10454,O14976    ,Cytoplasm
+10455,O14976    ,Golgi Apparatus
+10456,O14976    ,Perinuclear Region Of Cytoplasm
+10457,O14976    ,Focal Adhesion
+10460,O14976    ,Vesicle
+10461,O14976    ,Membrane
+10462,O14976    ,Intracellular Membrane-Bounded Organelle
+10465,O14976    ,Cytosol
+10473,O14976    ,Presynapse
+10475,Q8TF76    ,Spindle
+10476,Q8TF76    ,Centrosome
+10477,Q8TF76    ,Nucleus
+10479,Q8TF76    ,Cytoplasm
+10481,Q8TF76    ,Nucleoplasm
+10483,Q8TF76    ,Chromosome
+10484,Q8TF76    ,Cytoskeleton
+10490,O14920    ,Cytoplasm
+10491,O14920    ,Membrane
+10492,O14920    ,Nucleus
+10494,O14920    ,Membrane Raft
+10496,O14920    ,Cytoplasmic Side Of Plasma Membrane
+10497,O14920    ,Ikappab Kinase Complex
+10500,O14920    ,Cytosol
+10532,Q14164    ,Cytoplasm
+10533,Q14164    ,Mitochondrial Membrane
+10534,Q14164    ,Pml Body
+10536,Q14164    ,Nucleus
+10538,Q14164    ,Endosome Membrane
+10544,Q14164    ,Cytosol
+10553,Q14164    ,Nucleoplasm
+10560,Q8NB16    ,Plasma Membrane
+10562,Q8NB16    ,Cytoplasm
+10563,Q8NB16    ,Cytosol
+10569,Q8NB16    ,Membrane
+10573,P00540    ,Cytosol
+10574,P00540    ,Cytoplasm
+10575,P00540    ,Cell
+10579,Q9UHY1    ,Endomembrane System
+10581,Q9UHY1    ,Cytoplasm
+10582,Q9UHY1    ,Nucleoplasm
+10583,Q9UHY1    ,Membrane
+10584,Q9UHY1    ,Cell Projection
+10586,Q9UHY1    ,Lamellipodium
+10587,Q9UHY1    ,Cell Cortex
+10590,Q9NSY0    ,Cytoplasm
+10591,Q9NSY0    ,Endomembrane System
+10596,Q58A45    ,Pan Complex
+10598,Q58A45    ,P-Body
+10599,Q58A45    ,Cytosol
+10605,Q58A45    ,Cytoplasm
+10607,Q8N165    ,Nucleoplasm
+10608,Q8N165    ,Nucleus
+10611,Q9H792    ,Cytoskeleton
+10612,Q9H792    ,Cell Junction
+10613,Q9H792    ,Cytoplasm
+10615,Q9H792    ,Focal Adhesion
+10616,Q9H792    ,Actin Cytoskeleton
+10625,Q99570    ,Membrane
+10626,Q99570    ,Axoneme
+10627,Q99570    ,Late Endosome
+10628,Q99570    ,Nucleus-Vacuole Junction
+10630,Q99570    ,Phagocytic Vesicle Membrane
+10631,Q99570    ,Cytosol
+10643,Q99570    ,Intracellular Membrane-Bounded Organelle
+10644,Q99570    ,Microtubule Cytoskeleton
+10646,Q99570    ,Endosome
+10648,Q99570    ,Cytoplasmic Vesicle
+10651,Q99570    ,Autophagosome
+10653,Q9BXM7    ,Mitochondrion
+10655,Q9BXM7    ,Mitochondrial Outer Membrane
+10658,Q9BXM7    ,Cytosol
+10659,Q9BXM7    ,Lewy Body
+10663,Q9BXM7    ,Astrocyte Projection
+10664,Q9BXM7    ,Cytoplasm
+10665,Q9BXM7    ,Perinuclear Region Of Cytoplasm
+10666,Q9BXM7    ,Cell Body
+10667,Q9BXM7    ,Axon
+10669,Q9BXM7    ,Mitochondrial Intermembrane Space
+10670,Q9BXM7    ,Mitochondrial Inner Membrane
+10672,Q9BXM7    ,Integral Component Of Mitochondrial Outer Membrane
+10673,Q9BXM7    ,Cytoskeleton
+10675,Q9BXM7    ,Membrane
+10676,Q9BXM7    ,Nucleus
+10677,Q9BXM7    ,Chromatin
+10680,Q9BXM7    ,Endoplasmic Reticulum
+10696,Q9BXM7    ,Growth Cone
+10709,Q9BXM7    ,Integral Component Of Membrane
+10715,Q504Y2    ,Extracellular Region
+10716,Q504Y2    ,Golgi Apparatus
+10724,Q99640    ,Membrane
+10726,Q99640    ,Golgi Apparatus
+10727,Q99640    ,Endoplasmic Reticulum
+10728,Q99640    ,Nucleus
+10729,Q99640    ,Cytosol
+10730,Q99640    ,Nucleoplasm
+10732,Q99640    ,Nucleolus
+10734,Q99640    ,Cytoplasm
+10740,Q99640    ,Golgi Membrane
+10741,Q99640    ,Endoplasmic Reticulum Membrane
+10743,P53350    ,Chromosome
+10744,P53350    ,Centromeric Region
+10746,P53350    ,Nucleus
+10747,P53350    ,Kinetochore
+10748,P53350    ,Cytoplasm
+10749,P53350    ,Cytoskeleton
+10750,P53350    ,Midbody
+10751,P53350    ,Spindle
+10753,P53350    ,Condensed Chromosome Kinetochore
+10754,P53350    ,Microtubule Organizing Center
+10755,P53350    ,Centrosome
+10760,P53350    ,Spindle Midzone
+10761,P53350    ,Microtubule Cytoskeleton
+10762,P53350    ,Spindle Microtubule
+10764,P53350    ,Condensed Nuclear Chromosome Outer Kinetochore
+10765,P53350    ,Spindle Pole
+10786,P53350    ,Cytosol
+10836,P53350    ,Nucleoplasm
+10851,P53350    ,Cell
+10852,P53350    ,Centriolar Satellite
+10853,P53350    ,Centriole
+10854,P53350    ,Synaptonemal Complex
+10855,P53350    ,Chromatin
+10856,P53350    ,Condensed Nuclear Chromosome
+10859,Q9NYY3    ,Cytoplasm
+10860,Q9NYY3    ,Cell Projection
+10861,Q9NYY3    ,Cytoskeleton
+10862,Q9NYY3    ,Dendrite
+10863,Q9NYY3    ,Centriole
+10867,Q9NYY3    ,Centrosome
+10871,Q9NYY3    ,Nucleus
+10872,Q9NYY3    ,Spindle Pole
+10873,Q9NYY3    ,Cytosol
+10876,Q9NYY3    ,Chromatin
+10879,Q9H4B4    ,Cytoplasm
+10881,Q9H4B4    ,Microtubule Organizing Center
+10882,Q9H4B4    ,Nucleolus
+10883,Q9H4B4    ,Golgi Apparatus
+10884,Q9H4B4    ,Nucleus
+10885,Q9H4B4    ,Centrosome
+10887,Q9H4B4    ,Golgi Stack
+10895,Q9H4B4    ,Spindle Pole
+10896,Q9H4B4    ,Nucleoplasm
+10899,Q9H4B4    ,Neuronal Cell Body
+10900,Q9H4B4    ,Dendrite
+10902,Q9H4B4    ,Cytoskeleton
+10905,O00444    ,Centriole
+10907,O00444    ,Deuterosome
+10911,O00444    ,Centrosome
+10912,O00444    ,Nucleolus
+10914,O00444    ,Cytoplasm
+10915,O00444    ,Nucleus
+10916,O00444    ,Spindle Pole
+10917,O00444    ,Cytosol
+10943,O00444    ,Xy Body
+10947,O00444    ,Cytoskeleton
+10950,O00444    ,Cleavage Furrow
+10952,Q496M5    ,Cytoplasm
+10953,Q496M5    ,Nucleus
+10955,Q496M5    ,Nucleolus
+10958,Q9H5K3    ,Endoplasmic Reticulum Membrane
+10961,Q9H5K3    ,Endoplasmic Reticulum
+10962,Q9H5K3    ,Integral Component Of Membrane
+10963,Q9H5K3    ,Membrane
+10966,Q86YV5    ,Cytoplasm
+10967,Q86YV5    ,Nucleus
+10968,Q86YV5    ,Cell Junction
+10970,Q86YV5    ,Focal Adhesion
+10979,Q7Z7A4    ,Plasma Membrane
+10980,Q7Z7A4    ,Cytoplasm
+10983,Q7Z7A4    ,Centriolar Satellite
+10985,Q7Z7A4    ,Cytosol
+10986,Q7Z7A4    ,Protein-Containing Complex
+10990,Q7Z7A4    ,Membrane
+10996,Q7Z7A4    ,Nucleus
+11001,Q05823    ,Cytosol
+11006,Q05823    ,Mitochondrial Matrix
+11007,Q05823    ,Nuclear Matrix
+11008,Q05823    ,Mitochondrion
+11009,Q05823    ,Cytoplasm
+11013,Q96S38    ,Early Endosome
+11015,Q96S38    ,Cytoplasm
+11016,Q96S38    ,Endosome
+11017,Q96S38    ,Membrane
+11022,Q9Y6S9    ,Ribosome
+11026,Q52WX2    ,Cytoplasm
+11029,P0C263    ,Cytoplasm
+11033,Q96KG9    ,Membrane
+11034,Q96KG9    ,Cytoplasm
+11035,Q96KG9    ,Copi Vesicle Coat
+11036,Q96KG9    ,Cis-Golgi Network
+11037,Q96KG9    ,Golgi Apparatus
+11038,Q96KG9    ,Endoplasmic Reticulum-Golgi Intermediate Compartment
+11039,Q96KG9    ,Cytosol
+11043,Q96KG9    ,Cytoskeleton
+11045,Q96KG9    ,Nucleus
+11047,Q96KG9    ,Microtubule Organizing Center
+11052,Q6P3W7    ,Cytoplasm
+11053,Q6P3W7    ,Membrane
+11054,Q6P3W7    ,Golgi Apparatus
+11055,Q6P3W7    ,Cytoplasmic Vesicle
+11056,Q6P3W7    ,Endosome
+11058,Q6P3W7    ,Clathrin-Coated Vesicle
+11059,Q6P3W7    ,Endosome Membrane
+11060,Q6P3W7    ,Perinuclear Region Of Cytoplasm
+11062,Q8IZE3    ,Cell Projection
+11063,Q8IZE3    ,Cytoplasm
+11064,Q8IZE3    ,Golgi Apparatus
+11067,Q8IZE3    ,Lamellipodium
+11072,Q8IZE3    ,Golgi Membrane
+11074,O75716    ,Cytoplasm
+11075,O75716    ,Membrane
+11076,O75716    ,Perinuclear Region Of Cytoplasm
+11079,O75716    ,Cytosol
+11080,O75716    ,Golgi-Associated Vesicle
+11082,Q9BXU1    ,Cytoplasm
+11083,Q9BXU1    ,Nucleus
+11085,Q9BXU1    ,Acrosomal Vesicle
+11087,Q8WU08    ,Membrane
+11088,Q8WU08    ,Plasma Membrane
+11095,Q8TDR2    ,Nuclear Body
+11096,Q8TDR2    ,Nucleoplasm
+11097,Q8TDR2    ,Nucleus
+11098,Q8TDR2    ,Cytoplasm
+11099,Q8TDR2    ,Nucleolus
+11103,Q9NRP7    ,Cytoplasm
+11104,Q9NRP7    ,Nucleus
+11110,Q9NRP7    ,Cytosol
+11111,Q9NRP7    ,Extracellular Region
+11116,Q8TEA7    ,Midbody
+11117,Q8TEA7    ,Mitotic Spindle
+11118,Q8TEA7    ,Cytoplasm
+11119,Q8TEA7    ,Cytoskeleton
+11122,Q8TEA7    ,Spindle
+11125,Q9UHD2    ,Cytoplasm
+11130,Q9UHD2    ,Endosome Membrane
+11136,Q9UHD2    ,Cytosol
+11157,Q9UHD2    ,Intracellular Membrane-Bounded Organelle
+11158,Q9UHD2    ,Nucleoplasm
+11160,Q8IWB6    ,Chromosome
+11161,Q8IWB6    ,Kinetochore
+11163,Q8IWB6    ,Centromeric Region
+11164,Q8IWB6    ,Cytoplasm
+11165,Q8IWB6    ,Midbody
+11167,Q8IWB6    ,Condensed Chromosome Kinetochore
+11168,Q8IWB6    ,Extracellular Exosome
+11169,Q8IWB6    ,Intercellular Bridge
+11171,Q8IWB6    ,Cell
+11181,Q9UKI8    ,Nucleus
+11184,Q9UKI8    ,Nucleoplasm
+11188,Q86UE8    ,Perinuclear Region Of Cytoplasm
+11189,Q86UE8    ,Intermediate Filament
+11190,Q86UE8    ,Nucleus
+11194,Q86UE8    ,Cytoskeleton
+11195,Q86UE8    ,Cytoplasm
+11201,Q96S44    ,Cytoplasm
+11202,Q96S44    ,Nucleus
+11206,Q96S44    ,Nucleoplasm
+11212,P33981    ,Cytoplasm
+11213,P33981    ,Membrane
+11214,P33981    ,Spindle
+11216,P33981    ,Nucleus
+11217,P33981    ,Kinetochore
+11220,Q8TAS1    ,Neuronal Ribonucleoprotein Granule
+11221,Q8TAS1    ,Dendrite Cytoplasm
+11222,Q8TAS1    ,Axon
+11223,Q8TAS1    ,Nucleus
+11225,Q8TAS1    ,Cytoplasm
+11227,Q8TAS1    ,Midbody
+11228,Q8TAS1    ,Golgi Apparatus
+11229,Q8TAS1    ,Nucleoplasm
+11236,O75385    ,Guanyl-Nucleotide Exchange Factor Complex
+11237,O75385    ,Extrinsic Component Of Autophagosome Membrane
+11238,O75385    ,Extrinsic Component Of Omegasome Membrane
+11239,O75385    ,Phagophore Assembly Site Membrane
+11240,O75385    ,Cytosol
+11241,O75385    ,Autophagosome
+11242,O75385    ,Cytoplasm
+11243,O75385    ,Membrane
+11245,O75385    ,Phagophore Assembly Site
+11246,O75385    ,Recycling Endosome
+11259,O75385    ,Endoplasmic Reticulum Membrane
+11262,O75385    ,Mitochondrial Outer Membrane
+11265,O75385    ,Axon
+11270,Q8IYT8    ,Phagophore Assembly Site Membrane
+11271,Q8IYT8    ,Membrane
+11272,Q8IYT8    ,Cytosol
+11273,Q8IYT8    ,Phagophore Assembly Site
+11276,Q8IYT8    ,Cytoplasmic Vesicle
+11277,Q8IYT8    ,Cytoplasmic Vesicle Membrane
+11279,Q6PHR2    ,Cytoplasm
+11280,Q6PHR2    ,Phagophore Assembly Site
+11281,Q6PHR2    ,Ciliary Tip
+11288,P30291    ,Nucleus
+11290,P30291    ,Nucleoplasm
+11294,P30291    ,Nucleolus
+11295,P30291    ,Cytoplasm
+11300,P0C1S8    ,Nucleus
+11304,P0C1S8    ,Nucleoplasm
+11305,P0C1S8    ,Cytoplasm
+11308,Q9H4A3    ,Cytoplasm
+11310,Q9H4A3    ,Membrane
+11311,Q9H4A3    ,Cytosol
+11317,Q9Y3S1    ,Plasma Membrane
+11318,Q9Y3S1    ,Membrane
+11319,Q9Y3S1    ,Cytoplasm
+11323,Q9Y3S1    ,Cytosol
+11327,Q9BYP7    ,Bicellular Tight Junction
+11328,Q9BYP7    ,Adherens Junction
+11329,Q9BYP7    ,Cytoplasm
+11330,Q9BYP7    ,Cytosol
+11337,Q96J92    ,Membrane
+11338,Q96J92    ,Cytosol
+11339,Q96J92    ,Bicellular Tight Junction
+11341,Q96J92    ,Cytoplasm
+11346,Q96J92    ,Cell Junction
+11350,Q86TW2        ,Extracellular Region
+11353,Q7Z695        ,Integral Component Of Membrane
+11354,Q7Z695        ,Membrane
+11357,Q3MIX3        ,Membrane
+11358,Q3MIX3        ,Integral Component Of Membrane
+11361,Q8NI60        ,Mitochondrion
+11362,Q8NI60        ,Extrinsic Component Of Mitochondrial Inner Membrane
+11365,Q8NI60        ,Integral Component Of Membrane
+11368,Q8NI60        ,Membrane
+11372,Q96D53        ,Mitochondrion
+11373,Q96D53        ,Plasma Membrane
+11374,Q96D53        ,Cytoplasm
+11375,Q96D53        ,Membrane
+11377,Q96D53        ,Integral Component Of Membrane
+11379,Q96D53        ,Mitochondrial Membrane
+11380,Q96D53        ,Cytosol
+11381,Q96D53        ,Extrinsic Component Of Mitochondrial Inner Membrane
+11385,Q96QP1        ,Cytosol
+11386,Q96QP1        ,Cytoplasm
+11389,Q86TB3        ,Basolateral Plasma Membrane
+11390,Q86TB3        ,Plasma Membrane
+11391,Q86TB3        ,Membrane
+11394,Q96L96        ,Nucleus
+11399,O00418        ,Cytoplasm
+11400,O00418        ,Cytosol
+11401,O00418        ,Dendritic Spine
+11402,O00418        ,Postsynaptic Density
+11404,Q9BX84        ,Plasma Membrane
+11405,Q9BX84        ,Brush Border Membrane
+11406,Q9BX84        ,Apical Plasma Membrane
+11407,Q9BX84        ,Membrane
+11408,Q9BX84        ,Integral Component Of Membrane
+11414,Q96QT4        ,Plasma Membrane
+11415,Q96QT4        ,Cell
+11417,Q96QT4        ,Ruffle
+11418,Q96QT4        ,Membrane
+11419,Q96QT4        ,Integral Component Of Membrane
+11424,Q14296,Mitochondrion
+11425,Q14296,Mitochondrial Matrix
+11429,Q15118,Mitochondrion
+11430,Q15118,Mitochondrial Matrix
+11435,Q15118,Nucleolus
+11436,Q15118,Nucleoplasm
+11437,Q15118,Mitochondrial Pyruvate Dehydrogenase Complex
+11439,Q15119,Mitochondrial Pyruvate Dehydrogenase Complex
+11440,Q15119,Mitochondrion
+11441,Q15119,Mitochondrial Matrix
+11443,Q15119,Cytosol
+11445,Q15119,Nucleoplasm
+11451,Q15120,Mitochondrial Matrix
+11452,Q15120,Mitochondrion
+11456,Q15120,Nucleolus
+11457,Q15120,Cell
+11461,Q16654,Mitochondrion
+11463,Q16654,Mitochondrial Matrix
+11467,Q13315,Nucleolus
+11468,Q13315,Nucleus
+11469,Q13315,Nuclear Chromosome
+11470,Q13315,Telomeric Region
+11471,Q13315,Chromosome
+11474,Q13315,Nucleoplasm
+11555,Q13315,Dna Repair Complex
+11556,Q13315,Intracellular Membrane-Bounded Organelle
+11558,Q13315,Cell
+11559,Q13315,Cytoplasm
+11561,Q13315,Spindle
+11562,Q13315,Cytoplasmic Vesicle
+11566,Q13535,Nucleus
+11567,Q13535,Chromosome
+11570,Q13535,Pml Body
+11571,Q13535,Nuclear Chromosome
+11572,Q13535,Telomeric Region
+11576,Q13535,Nucleoplasm
+11594,Q13535,Golgi Apparatus
+11597,P42345,Mitochondrion
+11598,P42345,Mitochondrial Outer Membrane
+11599,P42345,Golgi Apparatus
+11600,P42345,Nucleus
+11601,P42345,Endoplasmic Reticulum
+11602,P42345,Intracellular Membrane-Bounded Organelle
+11603,P42345,Lysosome
+11604,P42345,Cytoplasm
+11607,P42345,Organelle Membrane
+11608,P42345,Pml Body
+11609,P42345,Golgi Membrane
+11610,P42345,Endoplasmic Reticulum Membrane
+11611,P42345,Lysosomal Membrane
+11612,P42345,Nuclear Envelope
+11616,P42345,Endomembrane System
+11618,P42345,Membrane
+11627,P42345,Cytosol
+11646,P42345,Nucleoplasm
+11647,P42345,Postsynaptic Cytosol
+11648,P42345,Glutamatergic Synapse
+11649,P42345,Neuronal Cell Body
+11650,P42345,Protein-Containing Complex
+11651,P42345,Dendrite
+11661,P42336,Membrane
+11662,P42336,Plasma Membrane
+11663,P42336,Cytoplasm
+11664,P42336,Cytosol
+11749,P42336,Cell
+11750,P42336,Lamellipodium
+11752,P42338,Membrane
+11753,P42338,Plasma Membrane
+11754,P42338,Cytoplasm
+11755,P42338,Cytosol
+11786,P42338,Intracellular Membrane-Bounded Organelle
+11787,P42338,Midbody
+11788,P42338,Nucleolus
+11789,P42338,Nucleoplasm
+11791,P42338,Nucleus
+11795,O00329 ,Cytoplasm
+11796,O00329 ,Membrane
+11797,O00329 ,Plasma Membrane
+11809,O00329 ,Cytosol
+11815,O00329 ,Mast Cell Granule
+11818,P48736,Membrane
+11820,P48736,Cytoplasm
+11822,P48736,Plasma Membrane
+11824,P48736,Cytosol
+11835,P48736,Cell
+11836,P48736,Mast Cell Granule
+11843,P78527,Nucleolus
+11844,P78527,Protein-Dna Complex
+11845,P78527,Protein-Containing Complex
+11846,P78527,Nucleus
+11847,P78527,Nonhomologous End Joining Complex
+11848,P78527,Nuclear Chromosome
+11849,P78527,Telomeric Region
+11850,P78527,Membrane
+11851,P78527,Transcription Factor Complex
+11854,P78527,Cytosol
+11857,P78527,Nucleoplasm
+11873,Q96Q15 ,Nucleus
+11874,Q96Q15 ,Cytoplasm
+11882,Q96Q15 ,Cytosol
+11885,Q96Q15 ,Nucleoplasm
+11887,Q9BRS2,Cytoplasm
+11888,Q9BRS2,Cytosol
+11889,Q9BRS2,Methyltransferase Complex
+11890,Q9BRS2,Preribosome
+11891,Q9BRS2,Small Subunit Precursor
+11897,Q9BRS2,Nucleoplasm
+11899,Q9BVS4,Cytoplasm
+11901,Q9BVS4,Preribosome
+11902,Q9BVS4,Small Subunit Precursor
+11906,Q9BVS4,Cytosol
+11907,Q9BVS4,Nucleus
+11909,Q9BVS4,Nucleoplasm
+11911,O14730,Preribosome
+11912,O14730,Small Subunit Precursor
+11917,O14730,Cytosol
+11919,O14730,Cytoplasm
