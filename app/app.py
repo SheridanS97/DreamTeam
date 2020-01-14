@@ -1,9 +1,7 @@
 from flask import Flask, render_template, url_for, flash, redirect
-from forms import RegistrationForm, LoginForm
+from forms import LoginForm
 from flask_wtf import FlaskForm
-from wtforms import validators
-
-from wtforms import StringField, SubmitField
+from wtforms import validators, StringField, SubmitField
 
 app = Flask(__name__)
 
@@ -15,17 +13,17 @@ app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 def home():
     return render_template('home.html', title= "Welcome to PhosphoView")
 
+
 @app.route("/upload")
 def Data_Upload():
     return render_template('dataUpload.html', title='Data Upload')
 
 
-
-@app.route("/kinaselist")
-def Listkinases():
-    return render_template('ListHumanKinases.html', title='List of Human Kinases')
-
-
+@app.route("/HumanKinaseList")
+def HumanKinaseList():
+    form=LoginForm() 
+    return render_template('ListHumanKinases.html', title='List of Human Kinases', form=form)
+                                                       
 
 @app.route("/about")
 def about():
