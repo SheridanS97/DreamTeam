@@ -1,513 +1,513 @@
-Uniprot_number,Gene_name,Protein_name,Gene_aliases
-P31749,AKT1,RAC-alpha serine/threonine-protein kinase,"['AKT1', 'PKB', 'RAC']"
-P31751,AKT2,RAC-beta serine/threonine-protein kinase,['AKT2']
-Q9Y243,AKT3,RAC-gamma serine/threonine-protein kinase,"['AKT3', 'PKBG']"
-Q5VT25,CDC42BPA,Serine/threonine-protein kinase MRCK alpha,"['CDC42BPA', 'KIAA0451']"
-Q9Y5S2,CDC42BPB,Serine/threonine-protein kinase MRCK beta,"['CDC42BPB', 'KIAA1124']"
-Q6DT37,CDC42BPG,Serine/threonine-protein kinase MRCK gamma,"['CDC42BPG', 'DMPK2']"
-O14578,CIT,Citron Rho-interacting kinase,"['CIT', 'CRIK', 'KIAA0949', 'STK21']"
-Q09013,DMPK,Myotonin-protein kinase,"['DMPK', 'DM1PK', 'MDPK']"
-Q15835,GRK1,Rhodopsin kinase GRK1,"['GRK1', 'RHOK']"
-P25098,GRK2,Beta-adrenergic receptor kinase 1,"['GRK2', 'ADRBK1', 'BARK', 'BARK1']"
-P35626,GRK3,Beta-adrenergic receptor kinase 2,"['GRK3', 'ADRBK2', 'BARK2']"
-P32298,GRK4,G protein-coupled receptor kinase 4,"['GRK4', 'GPRK2L', 'GPRK4']"
-P34947,GRK5,G protein-coupled receptor kinase 5,"['GRK5', 'GPRK5']"
-P43250,GRK6,G protein-coupled receptor kinase 6,"['GRK6', 'GPRK6']"
-Q8WTQ7,GRK7,Rhodopsin kinase GRK7,"['GRK7', 'GPRK7']"
-O95835,LATS1,Serine/threonine-protein kinase LATS1,"['LATS1', 'WARTS']"
-Q9NRM7,LATS2,Serine/threonine-protein kinase LATS2,"['LATS2', 'KPM']"
-Q9Y2H9,MAST1,Microtubule-associated serine/threonine-protein kinase 1,"['MAST1', 'KIAA0973', 'SAST']"
-Q6P0Q8,MAST2,Microtubule-associated serine/threonine-protein kinase 2,"['MAST2', 'KIAA0807', 'MAST205']"
-O60307,MAST3,Microtubule-associated serine/threonine-protein kinase 3,"['MAST3', 'KIAA0561']"
-O15021,MAST4,Microtubule-associated serine/threonine-protein kinase 4,"['MAST4', 'KIAA0303']"
-Q96GX5,MASTL,Serine/threonine-protein kinase greatwall,"['MASTL', 'GW', 'GWL', 'THC2']"
-O15530,PDPK1,3-phosphoinositide-dependent protein kinase 1,"['PDPK1', 'PDK1']"
-Q6A1A2,PDPK2P,Putative 3-phosphoinositide-dependent protein kinase 2,"['PDPK2P', 'PDPK2']"
-Q16512,PKN1,Serine/threonine-protein kinase N1,"['PKN1', 'PAK1', 'PKN', 'PRK1', 'PRKCL1']"
-Q16513,PKN2,Serine/threonine-protein kinase N2,"['PKN2', 'PRK2', 'PRKCL2']"
-Q6P5Z2,PKN3,Serine/threonine-protein kinase N3,"['PKN3', 'PKNBETA']"
-P17612,PRKACA,cAMP-dependent protein kinase catalytic subunit alpha,"['PRKACA', 'PKACA']"
-P22694,PRKACB,cAMP-dependent protein kinase catalytic subunit beta,['PRKACB']
-P22612,PRKACG,cAMP-dependent protein kinase catalytic subunit gamma,['PRKACG']
-P17252,PRKCA,Protein kinase C alpha type,"['PRKCA', 'PKCA', 'PRKACA']"
-P05771,PRKCB,Protein kinase C beta type,"['PRKCB', 'PKCB', 'PRKCB1']"
-Q05655,PRKCD,Protein kinase C delta type,['PRKCD']
-Q02156,PRKCE,Protein kinase C epsilon type,"['PRKCE', 'PKCE']"
-P05129,PRKCG,Protein kinase C gamma type,"['PRKCG', 'PKCG']"
-P24723,PRKCH,Protein kinase C eta type,"['PRKCH', 'PKCL', 'PRKCL']"
-P41743,PRKCI,Protein kinase C iota type,"['PRKCI', 'DXS1179E']"
-Q04759,PRKCQ,Protein kinase C theta type,"['PRKCQ', 'PRKCT']"
-Q05513,PRKCZ,Protein kinase C zeta type,"['PRKCZ', 'PKC2']"
-Q13976,PRKG1,cGMP-dependent protein kinase 1,"['PRKG1', 'PRKG1B', 'PRKGR1A', 'PRKGR1B']"
-Q13237,PRKG2,cGMP-dependent protein kinase 2,"['PRKG2', 'PRKGR2']"
-P51817,PRKX,cAMP-dependent protein kinase catalytic subunit PRKX,"['PRKX', 'PKX1']"
-O43930,PRKY,Putative serine/threonine-protein kinase PRKY,['PRKY']
-Q13464,ROCK1,Rho-associated protein kinase 1,['ROCK1']
-O75116,ROCK2,Rho-associated protein kinase 2,"['ROCK2', 'KIAA0619']"
-Q15418,RPS6KA1,Ribosomal protein S6 kinase alpha-1,"['RPS6KA1', 'MAPKAPK1A', 'RSK1']"
-Q15349,RPS6KA2,Ribosomal protein S6 kinase alpha-2,"['RPS6KA2', 'MAPKAPK1C', 'RSK3']"
-P51812,RPS6KA3,Ribosomal protein S6 kinase alpha-3,"['RPS6KA3', 'ISPK1', 'MAPKAPK1B', 'RSK2']"
-O75676,RPS6KA4,Ribosomal protein S6 kinase alpha-4,"['RPS6KA4', 'MSK2']"
-O75582,RPS6KA5,Ribosomal protein S6 kinase alpha-5,"['RPS6KA5', 'MSK1']"
-Q9UK32,RPS6KA6,Ribosomal protein S6 kinase alpha-6,"['RPS6KA6', 'RSK4']"
-P23443,RPS6KB1,Ribosomal protein S6 kinase beta-1,"['RPS6KB1', 'STK14A']"
-Q9UBS0,RPS6KB2,Ribosomal protein S6 kinase beta-2,"['RPS6KB2', 'STK14B']"
-O00141,SGK1,Serine/threonine-protein kinase Sgk1,"['SGK1', 'SGK']"
-Q9HBY8,SGK2,Serine/threonine-protein kinase Sgk2,['SGK2']
-Q96BR1,SGK3,Serine/threonine-protein kinase Sgk3,"['SGK3', 'CISK', 'SGKL']"
-Q15208,STK38,Serine/threonine-protein kinase 38,"['STK38', 'NDR1']"
-Q9Y2H1,STK38L,Serine/threonine-protein kinase 38-like,"['STK38L', 'KIAA0965', 'NDR2']"
-Q8TDC3,BRSK1,Serine/threonine-protein kinase BRSK1,"['BRSK1', 'KIAA1811', 'SAD1', 'SADB']"
-Q8IWQ3,BRSK2,Serine/threonine-protein kinase BRSK2,"['BRSK2', 'C11orf7', 'PEN11B', 'SADA', 'STK29', 'HUSSY-12']"
-Q14012,CAMK1,Calcium/calmodulin-dependent protein kinase type 1,['CAMK1']
-Q8IU85,CAMK1D,Calcium/calmodulin-dependent protein kinase type 1D,"['CAMK1D', 'CAMKID']"
-Q96NX5,CAMK1G,Calcium/calmodulin-dependent protein kinase type 1G,"['CAMK1G', 'CLICK3', 'VWS1']"
-Q9UQM7,CAMK2A,Calcium/calmodulin-dependent protein kinase type II subunit alpha,"['CAMK2A', 'CAMKA', 'KIAA0968']"
-Q13554,CAMK2B,Calcium/calmodulin-dependent protein kinase type II subunit beta,"['CAMK2B', 'CAM2', 'CAMK2', 'CAMKB']"
-Q13557,CAMK2D,Calcium/calmodulin-dependent protein kinase type II subunit delta,"['CAMK2D', 'CAMKD']"
-Q13555,CAMK2G,Calcium/calmodulin-dependent protein kinase type II subunit gamma,"['CAMK2G', 'CAMK', 'CAMK-II', 'CAMKG']"
-Q16566,CAMK4,Calcium/calmodulin-dependent protein kinase type IV,"['CAMK4', 'CAMK', 'CAMK-GR', 'CAMKIV']"
-Q8NCB2,CAMKV,CaM kinase-like vesicle-associated protein,['CAMKV']
-O14936,CASK,Peripheral plasma membrane protein CASK,"['CASK', 'LIN2']"
-O14757,CHEK1,Serine/threonine-protein kinase Chk1,"['CHEK1', 'CHK1']"
-O96017,CHEK2,Serine/threonine-protein kinase Chk2,"['CHEK2', 'CDS1', 'CHK2', 'RAD53']"
-P53355,DAPK1,Death-associated protein kinase 1,"['DAPK1', 'DAPK']"
-Q9UIK4,DAPK2,Death-associated protein kinase 2,['DAPK2']
-O43293,DAPK3,Death-associated protein kinase 3,"['DAPK3', 'ZIPK']"
-O15075,DCLK1,Serine/threonine-protein kinase DCLK1,"['DCLK1', 'DCAMKL1', 'DCDC3A', 'KIAA0369']"
-Q8N568,DCLK2,Serine/threonine-protein kinase DCLK2,"['DCLK2', 'DCAMKL2', 'DCDC3B', 'DCK2']"
-Q9C098,DCLK3,Serine/threonine-protein kinase DCLK3,"['DCLK3', 'DCAMKL3', 'DCDC3C', 'KIAA1765']"
-P57058,HUNK,Hormonally up-regulated neu tumor-associated kinase,"['HUNK', 'MAKV']"
-O60229,KALRN,Kalirin,"['KALRN', 'DUET', 'DUO', 'HAPIP', 'TRAD']"
-P49137,MAPKAPK2,MAP kinase-activated protein kinase 2,['MAPKAPK2']
-Q16644,MAPKAPK3,MAP kinase-activated protein kinase 3,['MAPKAPK3']
-Q8IW41,MAPKAPK5,MAP kinase-activated protein kinase 5,"['MAPKAPK5', 'PRAK']"
-Q9P0L2,MARK1,Serine/threonine-protein kinase MARK1,"['MARK1', 'KIAA1477', 'MARK']"
-Q7KZI7,MARK2,Serine/threonine-protein kinase MARK2,"['MARK2', 'EMK1']"
-P27448,MARK3,MAP/microtubule affinity-regulating kinase 3,"['MARK3', 'CTAK1', 'EMK2']"
-Q96L34,MARK4,MAP/microtubule affinity-regulating kinase 4,"['MARK4', 'KIAA1860', 'MARKL1']"
-Q14680,MELK,Maternal embryonic leucine zipper kinase,"['MELK', 'KIAA0175']"
-Q9BUB5,MKNK1,MAP kinase-interacting serine/threonine-protein kinase 1,"['MKNK1', 'MNK1']"
-Q9HBH9,MKNK2,MAP kinase-interacting serine/threonine-protein kinase 2,"['MKNK2', 'GPRK7', 'MNK2']"
-Q15746,MYLK,"Myosin light chain kinase, smooth muscle","['MYLK', 'MLCK', 'MLCK1', 'MYLK1']"
-Q9H1R3,MYLK2,"Myosin light chain kinase 2, skeletal/cardiac muscle",['MYLK2']
-Q32MK0,MYLK3,Myosin light chain kinase 3,"['MYLK3', 'MLCK']"
-Q86YV6,MYLK4,Myosin light chain kinase family member 4,"['MYLK4', 'SGK085']"
-Q8IY84,NIM1K,Serine/threonine-protein kinase NIM1,"['NIM1K', 'NIM1']"
-O60285,NUAK1,NUAK family SNF1-like kinase 1,"['NUAK1', 'ARK5', 'KIAA0537', 'OMPHK1']"
-Q9H093,NUAK2,NUAK family SNF1-like kinase 2,"['NUAK2', 'OMPHK2', 'SNARK']"
-Q5VST9,OBSCN,Obscurin,"['OBSCN', 'KIAA1556', 'KIAA1639']"
-Q96RG2,PASK,PAS domain-containing serine/threonine-protein kinase,"['PASK', 'KIAA0135']"
-Q16816,PHKG1,"Phosphorylase b kinase gamma catalytic chain, skeletal muscle/heart isoform","['PHKG1', 'PHKG']"
-P15735,PHKG2,"Phosphorylase b kinase gamma catalytic chain, liver/testis isoform",['PHKG2']
-P11309,PIM1,Serine/threonine-protein kinase pim-1,['PIM1']
-Q9P1W9,PIM2,Serine/threonine-protein kinase pim-2,['PIM2']
-Q86V86,PIM3,Serine/threonine-protein kinase pim-3,['PIM3']
-Q6P2M8,PNCK,Calcium/calmodulin-dependent protein kinase type 1B,['PNCK']
-Q13131,PRKAA1,5'-AMP-activated protein kinase catalytic subunit alpha-1,"['PRKAA1', 'AMPK1']"
-P54646,PRKAA2,5'-AMP-activated protein kinase catalytic subunit alpha-2,"['PRKAA2', 'AMPK', 'AMPK2']"
-Q15139,PRKD1,Serine/threonine-protein kinase D1,"['PRKD1', 'PKD', 'PKD1', 'PRKCM']"
-Q9BZL6,PRKD2,Serine/threonine-protein kinase D2,"['PRKD2', 'PKD2', 'HSPC187']"
-O94806,PRKD3,Serine/threonine-protein kinase D3,"['PRKD3', 'EPK2', 'PRKCN']"
-P11801,PSKH1,Serine/threonine-protein kinase H1,['PSKH1']
-Q96QS6,PSKH2,Serine/threonine-protein kinase H2,['PSKH2']
-P57059,SIK1,Serine/threonine-protein kinase SIK1,"['SIK1', 'SIK', 'SNF1LK']"
-A0A0B4J2F2,SIK1B,Probable serine/threonine-protein kinase SIK1B,['SIK1B']
-Q9H0K1,SIK2,Serine/threonine-protein kinase SIK2,"['SIK2', 'KIAA0781', 'QIK', 'SNF1LK2']"
-Q9Y2K2,SIK3,Serine/threonine-protein kinase SIK3,"['SIK3', 'KIAA0999', 'QSK', 'L19']"
-Q9NRH2,SNRK,SNF-related serine/threonine-protein kinase,"['SNRK', 'KIAA0096', 'SNFRK']"
-Q15772,SPEG,Striated muscle preferentially expressed protein kinase,"['SPEG', 'APEG1', 'KIAA1297']"
-Q15831,STK11,Serine/threonine-protein kinase STK11,"['STK11', 'LKB1', 'PJS']"
-Q9UEE5,STK17A,Serine/threonine-protein kinase 17A,"['STK17A', 'DRAK1']"
-O94768,STK17B,Serine/threonine-protein kinase 17B,"['STK17B', 'DRAK2']"
-Q9BYT3,STK33,Serine/threonine-protein kinase 33,['STK33']
-Q8N2I9,STK40,Serine/threonine-protein kinase 40,"['STK40', 'SGK495', 'SHIK']"
-Q96RU8,TRIB1,Tribbles homolog 1,"['TRIB1', 'C8FW', 'GIG2', 'TRB1']"
-Q92519,TRIB2,Tribbles homolog 2,"['TRIB2', 'TRB2']"
-Q96RU7,TRIB3,Tribbles homolog 3,"['TRIB3', 'C20orf97', 'NIPK', 'SKIP3', 'TRB3']"
-O75962,TRIO,Triple functional domain protein,['TRIO']
-Q9BXA7,TSSK1B,Testis-specific serine/threonine-protein kinase 1,"['TSSK1B', 'SPOGA1', 'SPOGA4', 'STK22A', 'STK22D', 'TSSK1', 'FKSG81']"
-Q96PF2,TSSK2,Testis-specific serine/threonine-protein kinase 2,"['TSSK2', 'DGSG', 'SPOGA2', 'STK22B']"
-Q96PN8,TSSK3,Testis-specific serine/threonine-protein kinase 3,"['TSSK3', 'SPOGA3', 'STK22C']"
-Q6SA08,TSSK4,Testis-specific serine/threonine-protein kinase 4,"['TSSK4', 'C14orf20', 'STK22E', 'TSSK5']"
-Q9BXA6,TSSK6,Testis-specific serine/threonine-protein kinase 6,"['TSSK6', 'SSTK', 'FKSG82']"
-Q8WZ42,TTN,Titin,['TTN']
-P48729,CSNK1A1,Casein kinase I isoform alpha,['CSNK1A1']
-Q8N752,CSNK1A1L,Casein kinase I isoform alpha-like,['CSNK1A1L']
-P48730,CSNK1D,Casein kinase I isoform delta,"['CSNK1D', 'HCKID']"
-P49674,CSNK1E,Casein kinase I isoform epsilon,['CSNK1E']
-Q9HCP0,CSNK1G1,Casein kinase I isoform gamma-1,['CSNK1G1']
-P78368,CSNK1G2,Casein kinase I isoform gamma-2,"['CSNK1G2', 'CK1G2']"
-Q9Y6M4,CSNK1G3,Casein kinase I isoform gamma-3,['CSNK1G3']
-Q5TCY1,TTBK1,Tau-tubulin kinase 1,"['TTBK1', 'BDTK', 'KIAA1855']"
-Q6IQ55,TTBK2,Tau-tubulin kinase 2,"['TTBK2', 'KIAA0847']"
-Q99986,VRK1,Serine/threonine-protein kinase VRK1,['VRK1']
-Q86Y07,VRK2,Serine/threonine-protein kinase VRK2,['VRK2']
-Q8IV63,VRK3,Inactive serine/threonine-protein kinase VRK3,['VRK3']
-P06493,CDK1,Cyclin-dependent kinase 1,"['CDK1', 'CDC2', 'CDC28A', 'CDKN1', 'P34CDC2']"
-Q15131,CDK10,Cyclin-dependent kinase 10,['CDK10']
-Q9UQ88,CDK11A,Cyclin-dependent kinase 11A,"['CDK11A', 'CDC2L2', 'CDC2L3', 'PITSLREB']"
-P21127,CDK11B,Cyclin-dependent kinase 11B,"['CDK11B', 'CDC2L1', 'CDK11', 'PITSLREA', 'PK58']"
-Q9NYV4,CDK12,Cyclin-dependent kinase 12,"['CDK12', 'CRK7', 'CRKRS', 'KIAA0904']"
-Q14004,CDK13,Cyclin-dependent kinase 13,"['CDK13', 'CDC2L', 'CDC2L5', 'CHED', 'KIAA1791']"
-O94921,CDK14,Cyclin-dependent kinase 14,"['CDK14', 'KIAA0834', 'PFTK1']"
-Q96Q40,CDK15,Cyclin-dependent kinase 15,"['CDK15', 'ALS2CR7', 'PFTK2']"
-Q00536,CDK16,Cyclin-dependent kinase 16,"['CDK16', 'PCTAIRE1', 'PCTK1']"
-Q00537,CDK17,Cyclin-dependent kinase 17,"['CDK17', 'PCTAIRE2', 'PCTK2']"
-Q07002,CDK18,Cyclin-dependent kinase 18,"['CDK18', 'PCTAIRE3', 'PCTK3']"
-Q9BWU1,CDK19,Cyclin-dependent kinase 19,"['CDK19', 'CDC2L6', 'CDK11', 'KIAA1028']"
-P24941,CDK2,Cyclin-dependent kinase 2,"['CDK2', 'CDKN2']"
-Q8IZL9,CDK20,Cyclin-dependent kinase 20,"['CDK20', 'CCRK', 'CDCH']"
-Q00526,CDK3,Cyclin-dependent kinase 3,"['CDK3', 'CDKN3']"
-P11802,CDK4,Cyclin-dependent kinase 4,['CDK4']
-Q00535,CDK5,Cyclin-dependent-like kinase 5,"['CDK5', 'CDKN5']"
-Q00534,CDK6,Cyclin-dependent kinase 6,"['CDK6', 'CDKN6']"
-P50613,CDK7,Cyclin-dependent kinase 7,"['CDK7', 'CAK', 'CAK1', 'CDKN7', 'MO15', 'STK1']"
-P49336,CDK8,Cyclin-dependent kinase 8,['CDK8']
-P50750,CDK9,Cyclin-dependent kinase 9,"['CDK9', 'CDC2L4', 'TAK']"
-Q00532,CDKL1,Cyclin-dependent kinase-like 1,['CDKL1']
-Q92772,CDKL2,Cyclin-dependent kinase-like 2,['CDKL2']
-Q8IVW4,CDKL3,Cyclin-dependent kinase-like 3,"['CDKL3', 'NKIAMRE']"
-Q5MAI5,CDKL4,Cyclin-dependent kinase-like 4,['CDKL4']
-O76039,CDKL5,Cyclin-dependent kinase-like 5,"['CDKL5', 'STK9']"
-P49759,CLK1,Dual specificity protein kinase CLK1,"['CLK1', 'CLK']"
-P49760,CLK2,Dual specificity protein kinase CLK2,['CLK2']
-P49761,CLK3,Dual specificity protein kinase CLK3,['CLK3']
-Q9HAZ1,CLK4,Dual specificity protein kinase CLK4,['CLK4']
-Q13627,DYRK1A,Dual specificity tyrosine-phosphorylation-regulated kinase 1A,"['DYRK1A', 'DYRK', 'MNB', 'MNBH']"
-Q9Y463,DYRK1B,Dual specificity tyrosine-phosphorylation-regulated kinase 1B,"['DYRK1B', 'MIRK']"
-Q92630,DYRK2,Dual specificity tyrosine-phosphorylation-regulated kinase 2,['DYRK2']
-O43781,DYRK3,Dual specificity tyrosine-phosphorylation-regulated kinase 3,['DYRK3']
-Q9NR20,DYRK4,Dual specificity tyrosine-phosphorylation-regulated kinase 4,['DYRK4']
-P49840,GSK3A,Glycogen synthase kinase-3 alpha,['GSK3A']
-P49841,GSK3B,Glycogen synthase kinase-3 beta,['GSK3B']
-Q86Z02,HIPK1,Homeodomain-interacting protein kinase 1,"['HIPK1', 'KIAA0630', 'MYAK', 'NBAK2']"
-Q9H2X6,HIPK2,Homeodomain-interacting protein kinase 2,['HIPK2']
-Q9H422,HIPK3,Homeodomain-interacting protein kinase 3,"['HIPK3', 'DYRK6', 'FIST3', 'PKY']"
-Q8NE63,HIPK4,Homeodomain-interacting protein kinase 4,['HIPK4']
-Q9UPZ9,ICK,Serine/threonine-protein kinase ICK,"['ICK', 'KIAA0936']"
-P20794,MAK,Serine/threonine-protein kinase MAK,['MAK']
-P28482,MAPK1,Mitogen-activated protein kinase 1,"['MAPK1', 'ERK2', 'PRKM1', 'PRKM2']"
-P53779,MAPK10,Mitogen-activated protein kinase 10,"['MAPK10', 'JNK3', 'JNK3A', 'PRKM10', 'SAPK1B']"
-Q15759,MAPK11,Mitogen-activated protein kinase 11,"['MAPK11', 'PRKM11', 'SAPK2', 'SAPK2B']"
-P53778,MAPK12,Mitogen-activated protein kinase 12,"['MAPK12', 'ERK6', 'SAPK3']"
-O15264,MAPK13,Mitogen-activated protein kinase 13,"['MAPK13', 'PRKM13', 'SAPK4']"
-Q16539,MAPK14,Mitogen-activated protein kinase 14,"['MAPK14', 'CSBP', 'CSBP1', 'CSBP2', 'CSPB1', 'MXI2', 'SAPK2A']"
-Q8TD08,MAPK15,Mitogen-activated protein kinase 15,"['MAPK15', 'ERK7', 'ERK8']"
-P27361,MAPK3,Mitogen-activated protein kinase 3,"['MAPK3', 'ERK1', 'PRKM3']"
-P31152,MAPK4,Mitogen-activated protein kinase 4,"['MAPK4', 'ERK4', 'PRKM4']"
-Q16659,MAPK6,Mitogen-activated protein kinase 6,"['MAPK6', 'ERK3', 'PRKM6']"
-Q13164,MAPK7,Mitogen-activated protein kinase 7,"['MAPK7', 'BMK1', 'ERK5', 'PRKM7']"
-P45983,MAPK8,Mitogen-activated protein kinase 8,"['MAPK8', 'JNK1', 'PRKM8', 'SAPK1', 'SAPK1C']"
-P45984,MAPK9,Mitogen-activated protein kinase 9,"['MAPK9', 'JNK2', 'PRKM9', 'SAPK1A']"
-Q9UQ07,MOK,MAPK/MAK/MRK overlapping kinase,"['MOK', 'RAGE', 'RAGE1']"
-Q9UBE8,NLK,Serine/threonine-protein kinase NLK,"['NLK', 'LAK1']"
-Q13523,PRPF4B,Serine/threonine-protein kinase PRP4 homolog,"['PRPF4B', 'KIAA0536', 'PRP4', 'PRP4H', 'PRP4K']"
-Q96SB4,SRPK1,SRSF protein kinase 1,['SRPK1']
-P78362,SRPK2,SRSF protein kinase 2,['SRPK2']
-Q9UPE1,SRPK3,SRSF protein kinase 3,"['SRPK3', 'MSSK1', 'STK23']"
-Q96PY6,NEK1,Serine/threonine-protein kinase Nek1,"['NEK1', 'KIAA1901']"
-Q6ZWH5,NEK10,Serine/threonine-protein kinase Nek10,['NEK10']
-Q8NG66,NEK11,Serine/threonine-protein kinase Nek11,['NEK11']
-P51955,NEK2,Serine/threonine-protein kinase Nek2,"['NEK2', 'NEK2A', 'NLK1']"
-P51956,NEK3,Serine/threonine-protein kinase Nek3,['NEK3']
-P51957,NEK4,Serine/threonine-protein kinase Nek4,"['NEK4', 'STK2']"
-Q6P3R8,NEK5,Serine/threonine-protein kinase Nek5,['NEK5']
-Q9HC98,NEK6,Serine/threonine-protein kinase Nek6,['NEK6']
-Q8TDX7,NEK7,Serine/threonine-protein kinase Nek7,['NEK7']
-Q86SG6,NEK8,Serine/threonine-protein kinase Nek8,"['NEK8', 'JCK', 'NEK12A']"
-Q8TD19,NEK9,Serine/threonine-protein kinase Nek9,"['NEK9', 'KIAA1995', 'NEK8', 'NERCC']"
-P25092,GUCY2C,Heat-stable enterotoxin receptor,"['GUCY2C', 'GUC2C', 'STAR']"
-Q02846,GUCY2D,Retinal guanylyl cyclase 1,"['GUCY2D', 'CORD6', 'GUC1A4', 'GUC2D', 'RETGC', 'RETGC1']"
-P51841,GUCY2F,Retinal guanylyl cyclase 2,"['GUCY2F', 'GUC2F', 'RETGC2']"
-P16066,NPR1,Atrial natriuretic peptide receptor 1,"['NPR1', 'ANPRA']"
-P20594,NPR2,Atrial natriuretic peptide receptor 2,"['NPR2', 'ANPRB']"
-Q02750,MAP2K1,Dual specificity mitogen-activated protein kinase kinase 1,"['MAP2K1', 'MEK1', 'PRKMK1']"
-P36507,MAP2K2,Dual specificity mitogen-activated protein kinase kinase 2,"['MAP2K2', 'MEK2', 'MKK2', 'PRKMK2']"
-P46734,MAP2K3,Dual specificity mitogen-activated protein kinase kinase 3,"['MAP2K3', 'MEK3', 'MKK3', 'PRKMK3', 'SKK2']"
-P45985,MAP2K4,Dual specificity mitogen-activated protein kinase kinase 4,"['MAP2K4', 'JNKK1', 'MEK4', 'MKK4', 'PRKMK4', 'SEK1', 'SERK1', 'SKK1']"
-Q13163,MAP2K5,Dual specificity mitogen-activated protein kinase kinase 5,"['MAP2K5', 'MEK5', 'MKK5', 'PRKMK5']"
-P52564,MAP2K6,Dual specificity mitogen-activated protein kinase kinase 6,"['MAP2K6', 'MEK6', 'MKK6', 'PRKMK6', 'SKK3']"
-O14733,MAP2K7,Dual specificity mitogen-activated protein kinase kinase 7,"['MAP2K7', 'JNKK2', 'MEK7', 'MKK7', 'PRKMK7', 'SKK4']"
-Q13233,MAP3K1,Mitogen-activated protein kinase kinase kinase 1,"['MAP3K1', 'MAPKKK1', 'MEKK', 'MEKK1']"
-Q02779,MAP3K10,Mitogen-activated protein kinase kinase kinase 10,"['MAP3K10', 'MLK2', 'MST']"
-Q16584,MAP3K11,Mitogen-activated protein kinase kinase kinase 11,"['MAP3K11', 'MLK3', 'PTK1', 'SPRK']"
-Q12852,MAP3K12,Mitogen-activated protein kinase kinase kinase 12,"['MAP3K12', 'ZPK']"
-O43283,MAP3K13,Mitogen-activated protein kinase kinase kinase 13,"['MAP3K13', 'LZK']"
-Q99558,MAP3K14,Mitogen-activated protein kinase kinase kinase 14,"['MAP3K14', 'NIK']"
-Q6ZN16,MAP3K15,Mitogen-activated protein kinase kinase kinase 15,"['MAP3K15', 'ASK3']"
-Q56UN5,MAP3K19,Mitogen-activated protein kinase kinase kinase 19,"['MAP3K19', 'RCK', 'YSK4']"
-Q9Y2U5,MAP3K2,Mitogen-activated protein kinase kinase kinase 2,"['MAP3K2', 'MAPKKK2', 'MEKK2']"
-Q9NYL2,MAP3K20,Mitogen-activated protein kinase kinase kinase 20,"['MAP3K20', 'MLTK', 'ZAK', 'HCCS4']"
-Q5TCX8,MAP3K21,Mitogen-activated protein kinase kinase kinase 21,"['MAP3K21', 'KIAA1804', 'MLK4']"
-Q99759,MAP3K3,Mitogen-activated protein kinase kinase kinase 3,"['MAP3K3', 'MAPKKK3', 'MEKK3']"
-Q9Y6R4,MAP3K4,Mitogen-activated protein kinase kinase kinase 4,"['MAP3K4', 'KIAA0213', 'MAPKKK4', 'MEKK4', 'MTK1']"
-Q99683,MAP3K5,Mitogen-activated protein kinase kinase kinase 5,"['MAP3K5', 'ASK1', 'MAPKKK5', 'MEKK5']"
-O95382,MAP3K6,Mitogen-activated protein kinase kinase kinase 6,"['MAP3K6', 'ASK2', 'MAPKKK6', 'MEKK6']"
-O43318,MAP3K7,Mitogen-activated protein kinase kinase kinase 7,"['MAP3K7', 'TAK1']"
-P41279,MAP3K8,Mitogen-activated protein kinase kinase kinase 8,"['MAP3K8', 'COT', 'ESTF']"
-P80192,MAP3K9,Mitogen-activated protein kinase kinase kinase 9,"['MAP3K9', 'MLK1', 'PRKE1']"
-Q92918,MAP4K1,Mitogen-activated protein kinase kinase kinase kinase 1,"['MAP4K1', 'HPK1']"
-Q12851,MAP4K2,Mitogen-activated protein kinase kinase kinase kinase 2,"['MAP4K2', 'GCK', 'RAB8IP']"
-Q8IVH8,MAP4K3,Mitogen-activated protein kinase kinase kinase kinase 3,"['MAP4K3', 'RAB8IPL1']"
-O95819,MAP4K4,Mitogen-activated protein kinase kinase kinase kinase 4,"['MAP4K4', 'HGK', 'KIAA0687', 'NIK']"
-Q9Y4K4,MAP4K5,Mitogen-activated protein kinase kinase kinase kinase 5,['MAP4K5']
-Q8N4C8,MINK1,Misshapen-like kinase 1,"['MINK1', 'B55', 'MAP4K6', 'MINK', 'YSK2', 'ZC3']"
-Q8NEV4,MYO3A,Myosin-IIIa,['MYO3A']
-Q8WXR4,MYO3B,Myosin-IIIb,['MYO3B']
-Q7Z2Y5,NRK,Nik-related protein kinase,['NRK']
-O95747,OXSR1,Serine/threonine-protein kinase OSR1,"['OXSR1', 'KIAA1101', 'OSR1']"
-Q13153,PAK1,Serine/threonine-protein kinase PAK 1,['PAK1']
-Q13177,PAK2,Serine/threonine-protein kinase PAK 2,['PAK2']
-O75914,PAK3,Serine/threonine-protein kinase PAK 3,"['PAK3', 'OPHN3']"
-O96013,PAK4,Serine/threonine-protein kinase PAK 4,"['PAK4', 'KIAA1142']"
-Q9P286,PAK5,Serine/threonine-protein kinase PAK 5,"['PAK5', 'KIAA1264', 'PAK7']"
-Q9NQU5,PAK6,Serine/threonine-protein kinase PAK 6,"['PAK6', 'PAK5']"
-Q96KB5,PBK,Lymphokine-activated killer T-cell-originated protein kinase,"['PBK', 'TOPK']"
-Q9H2G2,SLK,STE20-like serine/threonine-protein kinase,"['SLK', 'KIAA0204', 'STK2']"
-O94804,STK10,Serine/threonine-protein kinase 10,"['STK10', 'LOK']"
-Q9Y6E0,STK24,Serine/threonine-protein kinase 24,"['STK24', 'MST3', 'STK3']"
-O00506,STK25,Serine/threonine-protein kinase 25,"['STK25', 'SOK1', 'YSK1']"
-Q9P289,STK26,Serine/threonine-protein kinase 26,"['STK26', 'MASK', 'MST4']"
-Q13188,STK3,Serine/threonine-protein kinase 3,"['STK3', 'KRS1', 'MST2']"
-Q9UEW8,STK39,STE20/SPS1-related proline-alanine-rich protein kinase,"['STK39', 'SPAK']"
-Q13043,STK4,Serine/threonine-protein kinase 4,"['STK4', 'KRS2', 'MST1']"
-Q7RTN6,STRADA,STE20-related kinase adapter protein alpha,"['STRADA', 'LYK5', 'STRAD']"
-Q9C0K7,STRADB,STE20-related kinase adapter protein beta,"['STRADB', 'ALS2CR2', 'ILPIP', 'PRO1038']"
-Q7L7X3,TAOK1,Serine/threonine-protein kinase TAO1,"['TAOK1', 'KIAA1361', 'MAP3K16', 'MARKK']"
-Q9UL54,TAOK2,Serine/threonine-protein kinase TAO2,"['TAOK2', 'KIAA0881', 'MAP3K17', 'PSK', 'PSK1', 'UNQ2971/PRO7431']"
-Q9H2K8,TAOK3,Serine/threonine-protein kinase TAO3,"['TAOK3', 'DPK', 'JIK', 'KDS', 'MAP3K18']"
-Q9UKE5,TNIK,TRAF2 and NCK-interacting protein kinase,"['TNIK', 'KIAA0551']"
-Q04771,ACVR1,Activin receptor type-1,"['ACVR1', 'ACVRLK2']"
-P36896,ACVR1B,Activin receptor type-1B,"['ACVR1B', 'ACVRLK4', 'ALK4']"
-Q8NER5,ACVR1C,Activin receptor type-1C,"['ACVR1C', 'ALK7']"
-P27037,ACVR2A,Activin receptor type-2A,"['ACVR2A', 'ACVR2']"
-Q13705,ACVR2B,Activin receptor type-2B,['ACVR2B']
-P37023,ACVRL1,Serine/threonine-protein kinase receptor R3,"['ACVRL1', 'ACVRLK1', 'ALK1']"
-Q16671,AMHR2,Anti-Muellerian hormone type-2 receptor,"['AMHR2', 'AMHR', 'MISR2']"
-Q8NFD2,ANKK1,Ankyrin repeat and protein kinase domain-containing protein 1,"['ANKK1', 'PKK2', 'SGK288']"
-P10398,ARAF,Serine/threonine-protein kinase A-Raf,"['ARAF', 'ARAF1', 'PKS', 'PKS2']"
-P36894,BMPR1A,Bone morphogenetic protein receptor type-1A,"['BMPR1A', 'ACVRLK3', 'ALK3']"
-O00238,BMPR1B,Bone morphogenetic protein receptor type-1B,['BMPR1B']
-Q13873,BMPR2,Bone morphogenetic protein receptor type-2,"['BMPR2', 'PPH1']"
-P15056,BRAF,Serine/threonine-protein kinase B-raf,"['BRAF', 'BRAF1', 'RAFB1']"
-Q13418,ILK,Integrin-linked protein kinase,"['ILK', 'ILK1', 'ILK2']"
-P51617,IRAK1,Interleukin-1 receptor-associated kinase 1,"['IRAK1', 'IRAK']"
-O43187,IRAK2,Interleukin-1 receptor-associated kinase-like 2,['IRAK2']
-Q9Y616,IRAK3,Interleukin-1 receptor-associated kinase 3,['IRAK3']
-Q9NWZ3,IRAK4,Interleukin-1 receptor-associated kinase 4,['IRAK4']
-Q8IVT5,KSR1,Kinase suppressor of Ras 1,"['KSR1', 'KSR']"
-Q6VAB6,KSR2,Kinase suppressor of Ras 2,['KSR2']
-P53667,LIMK1,LIM domain kinase 1,"['LIMK1', 'LIMK']"
-P53671,LIMK2,LIM domain kinase 2,['LIMK2']
-Q38SD2,LRRK1,Leucine-rich repeat serine/threonine-protein kinase 1,"['LRRK1', 'KIAA1790']"
-Q5S007,LRRK2,Leucine-rich repeat serine/threonine-protein kinase 2,"['LRRK2', 'PARK8']"
-P04049,RAF1,RAF proto-oncogene serine/threonine-protein kinase,"['RAF1', 'RAF']"
-Q13546,RIPK1,Receptor-interacting serine/threonine-protein kinase 1,"['RIPK1', 'RIP', 'RIP1']"
-O43353,RIPK2,Receptor-interacting serine/threonine-protein kinase 2,"['RIPK2', 'CARDIAK', 'RICK', 'RIP2', 'UNQ277/PRO314/PRO34092']"
-Q9Y572,RIPK3,Receptor-interacting serine/threonine-protein kinase 3,"['RIPK3', 'RIP3']"
-P57078,RIPK4,Receptor-interacting serine/threonine-protein kinase 4,"['RIPK4', 'ANKRD3', 'DIK']"
-Q15569,TESK1,Dual specificity testis-specific protein kinase 1,['TESK1']
-Q96S53,TESK2,Dual specificity testis-specific protein kinase 2,['TESK2']
-P36897,TGFBR1,TGF-beta receptor type-1,"['TGFBR1', 'ALK5', 'SKR4']"
-P37173,TGFBR2,TGF-beta receptor type-2,['TGFBR2']
-Q59H18,TNNI3K,Serine/threonine-protein kinase TNNI3K,"['TNNI3K', 'CARK']"
-Q6ZMQ8,AATK,Serine/threonine-protein kinase LMTK1,"['AATK', 'AATYK', 'KIAA0641', 'LMR1', 'LMTK1']"
-P00519,ABL1,Tyrosine-protein kinase ABL1,"['ABL1', 'ABL', 'JTK7']"
-P42684,ABL2,Tyrosine-protein kinase ABL2,"['ABL2', 'ABLL', 'ARG']"
-Q9UM73,ALK,ALK tyrosine kinase receptor,['ALK']
-P30530,AXL,Tyrosine-protein kinase receptor UFO,"['AXL', 'UFO']"
-P51451,BLK,Tyrosine-protein kinase Blk,['BLK']
-P51813,BMX,Cytoplasmic tyrosine-protein kinase BMX,['BMX']
-Q06187,BTK,Tyrosine-protein kinase BTK,"['BTK', 'AGMX1', 'ATK', 'BPK']"
-P07333,CSF1R,Macrophage colony-stimulating factor 1 receptor,"['CSF1R', 'FMS']"
-P41240,CSK,Tyrosine-protein kinase CSK,['CSK']
-Q08345,DDR1,Epithelial discoidin domain-containing receptor 1,"['DDR1', 'CAK', 'EDDR1', 'NEP', 'NTRK4', 'PTK3A', 'RTK6', 'TRKE']"
-Q16832,DDR2,Discoidin domain-containing receptor 2,"['DDR2', 'NTRKR3', 'TKT', 'TYRO10']"
-P00533,EGFR,Epidermal growth factor receptor,"['EGFR', 'ERBB', 'ERBB1', 'HER1']"
-P21709,EPHA1,Ephrin type-A receptor 1,"['EPHA1', 'EPH', 'EPHT', 'EPHT1']"
-Q5JZY3,EPHA10,Ephrin type-A receptor 10,['EPHA10']
-P29317,EPHA2,Ephrin type-A receptor 2,"['EPHA2', 'ECK']"
-P29320,EPHA3,Ephrin type-A receptor 3,"['EPHA3', 'ETK', 'ETK1', 'HEK', 'TYRO4']"
-P54764,EPHA4,Ephrin type-A receptor 4,"['EPHA4', 'HEK8', 'SEK', 'TYRO1']"
-P54756,EPHA5,Ephrin type-A receptor 5,"['EPHA5', 'BSK', 'EHK1', 'HEK7', 'TYRO4']"
-Q9UF33,EPHA6,Ephrin type-A receptor 6,"['EPHA6', 'EHK2', 'HEK12']"
-Q15375,EPHA7,Ephrin type-A receptor 7,"['EPHA7', 'EHK3', 'HEK11']"
-P29322,EPHA8,Ephrin type-A receptor 8,"['EPHA8', 'EEK', 'HEK3', 'KIAA1459']"
-P54762,EPHB1,Ephrin type-B receptor 1,"['EPHB1', 'ELK', 'EPHT2', 'HEK6', 'NET']"
-P29323,EPHB2,Ephrin type-B receptor 2,"['EPHB2', 'DRT', 'EPHT3', 'EPTH3', 'ERK', 'HEK5', 'TYRO5']"
-P54753,EPHB3,Ephrin type-B receptor 3,"['EPHB3', 'ETK2', 'HEK2', 'TYRO6']"
-P54760,EPHB4,Ephrin type-B receptor 4,"['EPHB4', 'HTK', 'MYK1', 'TYRO11']"
-O15197,EPHB6,Ephrin type-B receptor 6,['EPHB6']
-P04626,ERBB2,Receptor tyrosine-protein kinase erbB-2,"['ERBB2', 'HER2', 'MLN19', 'NEU', 'NGL']"
-P21860,ERBB3,Receptor tyrosine-protein kinase erbB-3,"['ERBB3', 'HER3']"
-Q15303,ERBB4,Receptor tyrosine-protein kinase erbB-4,"['ERBB4', 'HER4']"
-P16591,FER,Tyrosine-protein kinase Fer,"['FER', 'TYK3']"
-P07332,FES,Tyrosine-protein kinase Fes/Fps,"['FES', 'FPS']"
-P11362,FGFR1,Fibroblast growth factor receptor 1,"['FGFR1', 'BFGFR', 'CEK', 'FGFBR', 'FLG', 'FLT2', 'HBGFR']"
-P21802,FGFR2,Fibroblast growth factor receptor 2,"['FGFR2', 'BEK', 'KGFR', 'KSAM']"
-P22607,FGFR3,Fibroblast growth factor receptor 3,"['FGFR3', 'JTK4']"
-P22455,FGFR4,Fibroblast growth factor receptor 4,"['FGFR4', 'JTK2', 'TKF']"
-P09769,FGR,Tyrosine-protein kinase Fgr,"['FGR', 'SRC2']"
-P17948,FLT1,Vascular endothelial growth factor receptor 1,"['FLT1', 'FLT', 'FRT', 'VEGFR1']"
-P36888,FLT3,Receptor-type tyrosine-protein kinase FLT3,"['FLT3', 'CD135', 'FLK2', 'STK1']"
-P35916,FLT4,Vascular endothelial growth factor receptor 3,"['FLT4', 'VEGFR3']"
-P42685,FRK,Tyrosine-protein kinase FRK,"['FRK', 'PTK5', 'RAK']"
-P06241,FYN,Tyrosine-protein kinase Fyn,['FYN']
-P08631,HCK,Tyrosine-protein kinase HCK,['HCK']
-P08069,IGF1R,Insulin-like growth factor 1 receptor,['IGF1R']
-P06213,INSR,Insulin receptor,['INSR']
-P14616,INSRR,Insulin receptor-related protein,"['INSRR', 'IRR']"
-Q08881,ITK,Tyrosine-protein kinase ITK/TSK,"['ITK', 'EMT', 'LYK']"
-P23458,JAK1,Tyrosine-protein kinase JAK1,"['JAK1', 'JAK1A', 'JAK1B']"
-O60674,JAK2,Tyrosine-protein kinase JAK2,['JAK2']
-P52333,JAK3,Tyrosine-protein kinase JAK3,['JAK3']
-P35968,KDR,Vascular endothelial growth factor receptor 2,"['KDR', 'FLK1', 'VEGFR2']"
-P10721,KIT,Mast/stem cell growth factor receptor Kit,"['KIT', 'SCFR']"
-P06239,LCK,Tyrosine-protein kinase Lck,['LCK']
-Q8IWU2,LMTK2,Serine/threonine-protein kinase LMTK2,"['LMTK2', 'AATYK2', 'BREK', 'KIAA1079', 'KPI2', 'LMR2']"
-Q96Q04,LMTK3,Serine/threonine-protein kinase LMTK3,"['LMTK3', 'KIAA1883', 'TYKLM3']"
-P29376,LTK,Leukocyte tyrosine kinase receptor,"['LTK', 'TYK1']"
-P07948,LYN,Tyrosine-protein kinase Lyn,"['LYN', 'JTK8']"
-P42679,MATK,Megakaryocyte-associated tyrosine-protein kinase,"['MATK', 'CTK', 'HYL']"
-Q12866,MERTK,Tyrosine-protein kinase Mer,"['MERTK', 'MER']"
-P08581,MET,Hepatocyte growth factor receptor,['MET']
-Q04912,MST1R,Macrophage-stimulating protein receptor,"['MST1R', 'PTK8', 'RON']"
-O15146,MUSK,"Muscle, skeletal receptor tyrosine-protein kinase",['MUSK']
-P04629,NTRK1,High affinity nerve growth factor receptor,"['NTRK1', 'MTC', 'TRK', 'TRKA']"
-Q16620,NTRK2,BDNF/NT-3 growth factors receptor,"['NTRK2', 'TRKB']"
-Q16288,NTRK3,NT-3 growth factor receptor,"['NTRK3', 'TRKC']"
-P16234,PDGFRA,Platelet-derived growth factor receptor alpha,"['PDGFRA', 'PDGFR2', 'RHEPDGFRA']"
-P09619,PDGFRB,Platelet-derived growth factor receptor beta,"['PDGFRB', 'PDGFR', 'PDGFR1']"
-Q05397,PTK2,Focal adhesion kinase 1,"['PTK2', 'FAK', 'FAK1']"
-Q14289,PTK2B,Protein-tyrosine kinase 2-beta,"['PTK2B', 'FAK2', 'PYK2', 'RAFTK']"
-Q13882,PTK6,Protein-tyrosine kinase 6,"['PTK6', 'BRK']"
-Q13308,PTK7,Inactive tyrosine-protein kinase 7,"['PTK7', 'CCK4']"
-P07949,RET,Proto-oncogene tyrosine-protein kinase receptor Ret,"['RET', 'CDHF12', 'CDHR16', 'PTC', 'RET51']"
-Q01973,ROR1,Inactive tyrosine-protein kinase transmembrane receptor ROR1,"['ROR1', 'NTRKR1']"
-Q01974,ROR2,Tyrosine-protein kinase transmembrane receptor ROR2,"['ROR2', 'NTRKR2']"
-P08922,ROS1,Proto-oncogene tyrosine-protein kinase ROS,"['ROS1', 'MCF3', 'ROS']"
-P34925,RYK,Tyrosine-protein kinase RYK,"['RYK', 'JTK5A']"
-P12931,SRC,Proto-oncogene tyrosine-protein kinase Src,"['SRC', 'SRC1']"
-Q9H3Y6,SRMS,Tyrosine-protein kinase Srms,"['SRMS', 'C20orf148']"
-Q6J9G0,STYK1,Tyrosine-protein kinase STYK1,"['STYK1', 'NOK']"
-P43405,SYK,Tyrosine-protein kinase SYK,['SYK']
-P42680,TEC,Tyrosine-protein kinase Tec,"['TEC', 'PSCTK4']"
-Q02763,TEK,Angiopoietin-1 receptor,"['TEK', 'TIE2', 'VMCM', 'VMCM1']"
-P35590,TIE1,Tyrosine-protein kinase receptor Tie-1,"['TIE1', 'TIE']"
-Q13470,TNK1,Non-receptor tyrosine-protein kinase TNK1,['TNK1']
-Q07912,TNK2,Activated CDC42 kinase 1,"['TNK2', 'ACK1']"
-P42681,TXK,Tyrosine-protein kinase TXK,"['TXK', 'PTK4', 'RLK']"
-P29597,TYK2,Non-receptor tyrosine-protein kinase TYK2,['TYK2']
-Q06418,TYRO3,Tyrosine-protein kinase receptor TYRO3,"['TYRO3', 'BYK', 'DTK', 'RSE', 'SKY', 'TIF']"
-P07947,YES1,Tyrosine-protein kinase Yes,"['YES1', 'YES']"
-P43403,ZAP70,Tyrosine-protein kinase ZAP-70,"['ZAP70', 'SRK']"
-Q2M2I8,AAK1,AP2-associated protein kinase 1,"['AAK1', 'KIAA1048']"
-O14965,AURKA,Aurora kinase A,"['AURKA', 'AIK', 'AIRK1', 'ARK1', 'AURA', 'AYK1', 'BTAK', 'IAK1', 'STK15', 'STK6']"
-Q96GD4,AURKB,Aurora kinase B,"['AURKB', 'AIK2', 'AIM1', 'AIRK2', 'ARK2', 'STK1', 'STK12', 'STK5']"
-Q9UQB9,AURKC,Aurora kinase C,"['AURKC', 'AIE2', 'AIK3', 'AIRK3', 'ARK3', 'STK13']"
-Q9NSY1,BMP2K,BMP-2-inducible protein kinase,"['BMP2K', 'BIKE', 'HRIHFB2017']"
-O43683,BUB1,Mitotic checkpoint serine/threonine-protein kinase BUB1,"['BUB1', 'BUB1L']"
-O60566,BUB1B,Mitotic checkpoint serine/threonine-protein kinase BUB1 beta,"['BUB1B', 'BUBR1', 'MAD3L', 'SSK1']"
-Q8N5S9,CAMKK1,Calcium/calmodulin-dependent protein kinase kinase 1,"['CAMKK1', 'CAMKKA']"
-Q96RR4,CAMKK2,Calcium/calmodulin-dependent protein kinase kinase 2,"['CAMKK2', 'CAMKKB', 'KIAA0787']"
-O00311,CDC7,Cell division cycle 7-related protein kinase,"['CDC7', 'CDC7L1']"
-O15111,CHUK,Inhibitor of nuclear factor kappa-B kinase subunit alpha,"['CHUK', 'IKKA', 'TCF16']"
-P68400,CSNK2A1,Casein kinase II subunit alpha,"['CSNK2A1', 'CK2A1']"
-P19784,CSNK2A2,Casein kinase II subunit alpha',"['CSNK2A2', 'CK2A2']"
-Q8NEV1,CSNK2A3,Casein kinase II subunit alpha 3,"['CSNK2A3', 'CSNK2A1P']"
-Q6XUX3,DSTYK,Dual serine/threonine and tyrosine protein kinase,"['DSTYK', 'KIAA0472', 'RIP5', 'RIPK5', 'SGK496', 'HDCMD38P']"
-Q9BQI3,EIF2AK1,Eukaryotic translation initiation factor 2-alpha kinase 1,"['EIF2AK1', 'HRI', 'KIAA1369', 'PRO1362']"
-P19525,EIF2AK2,"Interferon-induced, double-stranded RNA-activated protein kinase","['EIF2AK2', 'PKR', 'PRKR']"
-Q9NZJ5,EIF2AK3,Eukaryotic translation initiation factor 2-alpha kinase 3,"['EIF2AK3', 'PEK', 'PERK']"
-Q9P2K8,EIF2AK4,eIF-2-alpha kinase GCN2,"['EIF2AK4', 'GCN2', 'KIAA1338']"
-O75460,ERN1,Serine/threonine-protein kinase/endoribonuclease IRE1,"['ERN1', 'IRE1']"
-Q76MJ5,ERN2,Serine/threonine-protein kinase/endoribonuclease IRE2,"['ERN2', 'IRE2']"
-O14976,GAK,Cyclin-G-associated kinase,['GAK']
-Q8TF76,HASPIN,Serine/threonine-protein kinase haspin,"['HASPIN', 'GSG2']"
-O14920,IKBKB,Inhibitor of nuclear factor kappa-B kinase subunit beta,"['IKBKB', 'IKKB']"
-Q14164,IKBKE,Inhibitor of nuclear factor kappa-B kinase subunit epsilon,"['IKBKE', 'IKKE', 'IKKI', 'KIAA0151']"
-Q8NB16,MLKL,Mixed lineage kinase domain-like protein,['MLKL']
-P00540,MOS,Proto-oncogene serine/threonine-protein kinase mos,['MOS']
-Q9UHY1,NRBP1,Nuclear receptor-binding protein,"['NRBP1', 'BCON3', 'NRBP']"
-Q9NSY0,NRBP2,Nuclear receptor-binding protein 2,"['NRBP2', 'PP9320', 'TRG16']"
-Q58A45,PAN3,PAN2-PAN3 deadenylation complex subunit PAN3,['PAN3']
-Q8N165,PDIK1L,Serine/threonine-protein kinase PDIK1L,"['PDIK1L', 'CLIK1L']"
-Q9H792,PEAK1,Inactive tyrosine-protein kinase PEAK1,"['PEAK1', 'KIAA2002']"
-Q99570,PIK3R4,Phosphoinositide 3-kinase regulatory subunit 4,"['PIK3R4', 'VPS15']"
-Q9BXM7,PINK1,"Serine/threonine-protein kinase PINK1, mitochondrial",['PINK1']
-Q504Y2,PKDCC,Extracellular tyrosine-protein kinase PKDCC,"['PKDCC', 'SGK493', 'VLK']"
-Q99640,PKMYT1,Membrane-associated tyrosine- and threonine-specific cdc2-inhibitory kinase,"['PKMYT1', 'MYT1']"
-P53350,PLK1,Serine/threonine-protein kinase PLK1,"['PLK1', 'PLK']"
-Q9NYY3,PLK2,Serine/threonine-protein kinase PLK2,"['PLK2', 'SNK']"
-Q9H4B4,PLK3,Serine/threonine-protein kinase PLK3,"['PLK3', 'CNK', 'FNK', 'PRK']"
-O00444,PLK4,Serine/threonine-protein kinase PLK4,"['PLK4', 'SAK', 'STK18']"
-Q496M5,PLK5,Inactive serine/threonine-protein kinase PLK5,"['PLK5', 'PLK5P', 'FG060302']"
-Q9H5K3,POMK,Protein O-mannose kinase,"['POMK', 'SGK196']"
-Q86YV5,PRAG1,Inactive tyrosine-protein kinase PRAG1,"['PRAG1', 'SGK223']"
-Q7Z7A4,PXK,PX domain-containing protein kinase-like protein,['PXK']
-Q05823,RNASEL,2-5A-dependent ribonuclease,"['RNASEL', 'RNS4']"
-Q96S38,RPS6KC1,Ribosomal protein S6 kinase delta-1,"['RPS6KC1', 'RPK118']"
-Q9Y6S9,RPS6KL1,Ribosomal protein S6 kinase-like 1,['RPS6KL1']
-Q96LW2,RSKR,Ribosomal protein S6 kinase-related protein,"['RSKR', 'SGK494']"
-Q52WX2,SBK1,Serine/threonine-protein kinase SBK1,['SBK1']
-P0C263,SBK2,Serine/threonine-protein kinase SBK2,"['SBK2', 'SGK069']"
-P0C264,SBK3,Uncharacterized serine/threonine-protein kinase SBK3,"['SBK3', 'SGK110']"
-Q96KG9,SCYL1,N-terminal kinase-like protein,"['SCYL1', 'CVAK90', 'GKLP', 'NTKL', 'TAPK', 'TEIF', 'TRAP', 'HT019']"
-Q6P3W7,SCYL2,SCY1-like protein 2,"['SCYL2', 'CVAK104', 'KIAA1360']"
-Q8IZE3,SCYL3,Protein-associating with the carboxyl-terminal domain of ezrin,"['SCYL3', 'PACE1']"
-O75716,STK16,Serine/threonine-protein kinase 16,"['STK16', 'MPSK1', 'PKL12', 'TSF1']"
-Q9BXU1,STK31,Serine/threonine-protein kinase 31,"['STK31', 'SGK396']"
-Q8WU08,STK32A,Serine/threonine-protein kinase 32A,"['STK32A', 'YANK1']"
-Q9NY57,STK32B,Serine/threonine-protein kinase 32B,"['STK32B', 'YANK2', 'UNQ3003/PRO9744']"
-Q86UX6,STK32C,Serine/threonine-protein kinase 32C,"['STK32C', 'YANK3']"
-Q8TDR2,STK35,Serine/threonine-protein kinase 35,"['STK35', 'CLIK1', 'PDIK1', 'STK35L1']"
-Q9NRP7,STK36,Serine/threonine-protein kinase 36,"['STK36', 'KIAA1278']"
-Q8NE28,STKLD1,Serine/threonine kinase-like domain-containing protein STKLD1,"['STKLD1', 'C9orf96', 'SGK071']"
-Q8TEA7,TBCK,TBC domain-containing protein kinase-like protein,"['TBCK', 'TBCKL', 'HSPC302']"
-Q9UHD2,TBK1,Serine/threonine-protein kinase TBK1,"['TBK1', 'NAK']"
-Q8IWB6,TEX14,Inactive serine/threonine-protein kinase TEX14,"['TEX14', 'SGK307']"
-Q9UKI8,TLK1,Serine/threonine-protein kinase tousled-like 1,"['TLK1', 'KIAA0137']"
-Q86UE8,TLK2,Serine/threonine-protein kinase tousled-like 2,['TLK2']
-Q96S44,TP53RK,EKC/KEOPS complex subunit TP53RK,"['TP53RK', 'C20orf64', 'PRPK']"
-P33981,TTK,Dual specificity protein kinase TTK,"['TTK', 'MPS1', 'MPS1L1']"
-Q8TAS1,UHMK1,Serine/threonine-protein kinase Kist,"['UHMK1', 'KIS', 'KIST']"
-O75385,ULK1,Serine/threonine-protein kinase ULK1,"['ULK1', 'KIAA0722']"
-Q8IYT8,ULK2,Serine/threonine-protein kinase ULK2,"['ULK2', 'KIAA0623']"
-Q6PHR2,ULK3,Serine/threonine-protein kinase ULK3,['ULK3']
-Q96C45,ULK4,Serine/threonine-protein kinase ULK4,['ULK4']
-P30291,WEE1,Wee1-like protein kinase,['WEE1']
-P0C1S8,WEE2,Wee1-like protein kinase 2,"['WEE2', 'WEE1B']"
-Q9H4A3,WNK1,Serine/threonine-protein kinase WNK1,"['WNK1', 'HSN2', 'KDP', 'KIAA0344', 'PRKWNK1']"
-Q9Y3S1,WNK2,Serine/threonine-protein kinase WNK2,"['WNK2', 'KIAA1760', 'PRKWNK2', 'SDCCAG43', 'P/OKcl.13']"
-Q9BYP7,WNK3,Serine/threonine-protein kinase WNK3,"['WNK3', 'KIAA1566', 'PRKWNK3']"
-Q96J92,WNK4,Serine/threonine-protein kinase WNK4,"['WNK4', 'PRKWNK4']"
-Q86TW2,ADCK1,AarF domain-containing protein kinase 1,['ADCK1']
-Q7Z695,ADCK2,Uncharacterized aarF domain-containing protein kinase 2,"['ADCK2', 'AARF']"
-Q3MIX3,ADCK5,Uncharacterized aarF domain-containing protein kinase 5,['ADCK5']
-Q8NI60,COQ8A,"Atypical kinase COQ8A, mitochondrial","['COQ8A', 'ADCK3', 'CABC1', 'PP265']"
-Q96D53,COQ8B,"Atypical kinase COQ8B, mitochondrial","['COQ8B', 'ADCK4']"
-Q96QP1,ALPK1,Alpha-protein kinase 1,"['ALPK1', 'KIAA1527', 'LAK']"
-Q86TB3,ALPK2,Alpha-protein kinase 2,"['ALPK2', 'HAK']"
-Q96L96,ALPK3,Alpha-protein kinase 3,"['ALPK3', 'KIAA1330', 'MAK']"
-O00418,EEF2K,Eukaryotic elongation factor 2 kinase,['EEF2K']
-Q9BX84,TRPM6,Transient receptor potential cation channel subfamily M member 6,"['TRPM6', 'CHAK2']"
-Q96QT4,TRPM7,Transient receptor potential cation channel subfamily M member 7,"['TRPM7', 'CHAK1', 'LTRPC7']"
-Q14296,FASTK,Fas-activated serine/threonine kinase,['FASTK']
-Q14874,,Merged into P13497.,[]
-Q15118,PDK1,[Pyruvate dehydrogenase,"['PDK1', 'PDHK1']"
-Q15119,PDK2,[Pyruvate dehydrogenase,"['PDK2', 'PDHK2']"
-Q15120,PDK3,[Pyruvate dehydrogenase,"['PDK3', 'PDHK3']"
-Q16654,PDK4,[Pyruvate dehydrogenase,"['PDK4', 'PDHK4']"
-Q13315,ATM,Serine-protein kinase ATM,['ATM']
-Q13535,ATR,Serine/threonine-protein kinase ATR,"['ATR', 'FRP1']"
-P42345,MTOR,Serine/threonine-protein kinase mTOR,"['MTOR', 'FRAP', 'FRAP1', 'FRAP2', 'RAFT1', 'RAPT1']"
-P42336,PIK3CA,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform",['PIK3CA']
-P42338,PIK3CB,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit beta isoform","['PIK3CB', 'PIK3C1']"
-O00329,PIK3CD,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit delta isoform",['PIK3CD']
-P48736,PIK3CG,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit gamma isoform",['PIK3CG']
-P78527,PRKDC,DNA-dependent protein kinase catalytic subunit,"['PRKDC', 'HYRC', 'HYRC1']"
-Q96Q15,SMG1,Serine/threonine-protein kinase SMG1,"['SMG1', 'ATX', 'KIAA0421', 'LIP']"
-Q9BRS2,RIOK1,Serine/threonine-protein kinase RIO1,"['RIOK1', 'RIO1']"
-Q9BVS4,RIOK2,Serine/threonine-protein kinase RIO2,"['RIOK2', 'RIO2']"
-O14730,RIOK3,Serine/threonine-protein kinase RIO3,"['RIOK3', 'SUDD']"
+Uniprot_number,Gene_name,Protein_name,Gene_aliases,Uniprot_entry
+P31749,AKT1,RAC-alpha serine/threonine-protein kinase,"['AKT1', 'PKB', 'RAC']",AKT1_HUMAN
+P31751,AKT2,RAC-beta serine/threonine-protein kinase,['AKT2'],AKT2_HUMAN
+Q9Y243,AKT3,RAC-gamma serine/threonine-protein kinase,"['AKT3', 'PKBG']",AKT3_HUMAN
+Q5VT25,CDC42BPA,Serine/threonine-protein kinase MRCK alpha,"['CDC42BPA', 'KIAA0451']",MRCKA_HUMAN
+Q9Y5S2,CDC42BPB,Serine/threonine-protein kinase MRCK beta,"['CDC42BPB', 'KIAA1124']",MRCKB_HUMAN
+Q6DT37,CDC42BPG,Serine/threonine-protein kinase MRCK gamma,"['CDC42BPG', 'DMPK2']",MRCKG_HUMAN
+O14578,CIT,Citron Rho-interacting kinase,"['CIT', 'CRIK', 'KIAA0949', 'STK21']",CTRO_HUMAN
+Q09013,DMPK,Myotonin-protein kinase,"['DMPK', 'DM1PK', 'MDPK']",DMPK_HUMAN
+Q15835,GRK1,Rhodopsin kinase GRK1,"['GRK1', 'RHOK']",GRK1_HUMAN
+P25098,GRK2,Beta-adrenergic receptor kinase 1,"['GRK2', 'ADRBK1', 'BARK', 'BARK1']",ARBK1_HUMAN
+P35626,GRK3,Beta-adrenergic receptor kinase 2,"['GRK3', 'ADRBK2', 'BARK2']",ARBK2_HUMAN
+P32298,GRK4,G protein-coupled receptor kinase 4,"['GRK4', 'GPRK2L', 'GPRK4']",GRK4_HUMAN
+P34947,GRK5,G protein-coupled receptor kinase 5,"['GRK5', 'GPRK5']",GRK5_HUMAN
+P43250,GRK6,G protein-coupled receptor kinase 6,"['GRK6', 'GPRK6']",GRK6_HUMAN
+Q8WTQ7,GRK7,Rhodopsin kinase GRK7,"['GRK7', 'GPRK7']",GRK7_HUMAN
+O95835,LATS1,Serine/threonine-protein kinase LATS1,"['LATS1', 'WARTS']",LATS1_HUMAN
+Q9NRM7,LATS2,Serine/threonine-protein kinase LATS2,"['LATS2', 'KPM']",LATS2_HUMAN
+Q9Y2H9,MAST1,Microtubule-associated serine/threonine-protein kinase 1,"['MAST1', 'KIAA0973', 'SAST']",MAST1_HUMAN
+Q6P0Q8,MAST2,Microtubule-associated serine/threonine-protein kinase 2,"['MAST2', 'KIAA0807', 'MAST205']",MAST2_HUMAN
+O60307,MAST3,Microtubule-associated serine/threonine-protein kinase 3,"['MAST3', 'KIAA0561']",MAST3_HUMAN
+O15021,MAST4,Microtubule-associated serine/threonine-protein kinase 4,"['MAST4', 'KIAA0303']",MAST4_HUMAN
+Q96GX5,MASTL,Serine/threonine-protein kinase greatwall,"['MASTL', 'GW', 'GWL', 'THC2']",GWL_HUMAN
+O15530,PDPK1,3-phosphoinositide-dependent protein kinase 1,"['PDPK1', 'PDK1']",PDPK1_HUMAN
+Q6A1A2,PDPK2P,Putative 3-phosphoinositide-dependent protein kinase 2,"['PDPK2P', 'PDPK2']",PDPK2_HUMAN
+Q16512,PKN1,Serine/threonine-protein kinase N1,"['PKN1', 'PAK1', 'PKN', 'PRK1', 'PRKCL1']",PKN1_HUMAN
+Q16513,PKN2,Serine/threonine-protein kinase N2,"['PKN2', 'PRK2', 'PRKCL2']",PKN2_HUMAN
+Q6P5Z2,PKN3,Serine/threonine-protein kinase N3,"['PKN3', 'PKNBETA']",PKN3_HUMAN
+P17612,PRKACA,cAMP-dependent protein kinase catalytic subunit alpha,"['PRKACA', 'PKACA']",KAPCA_HUMAN
+P22694,PRKACB,cAMP-dependent protein kinase catalytic subunit beta,['PRKACB'],KAPCB_HUMAN
+P22612,PRKACG,cAMP-dependent protein kinase catalytic subunit gamma,['PRKACG'],KAPCG_HUMAN
+P17252,PRKCA,Protein kinase C alpha type,"['PRKCA', 'PKCA', 'PRKACA']",KPCA_HUMAN
+P05771,PRKCB,Protein kinase C beta type,"['PRKCB', 'PKCB', 'PRKCB1']",KPCB_HUMAN
+Q05655,PRKCD,Protein kinase C delta type,['PRKCD'],KPCD_HUMAN
+Q02156,PRKCE,Protein kinase C epsilon type,"['PRKCE', 'PKCE']",KPCE_HUMAN
+P05129,PRKCG,Protein kinase C gamma type,"['PRKCG', 'PKCG']",KPCG_HUMAN
+P24723,PRKCH,Protein kinase C eta type,"['PRKCH', 'PKCL', 'PRKCL']",KPCL_HUMAN
+P41743,PRKCI,Protein kinase C iota type,"['PRKCI', 'DXS1179E']",KPCI_HUMAN
+Q04759,PRKCQ,Protein kinase C theta type,"['PRKCQ', 'PRKCT']",KPCT_HUMAN
+Q05513,PRKCZ,Protein kinase C zeta type,"['PRKCZ', 'PKC2']",KPCZ_HUMAN
+Q13976,PRKG1,cGMP-dependent protein kinase 1,"['PRKG1', 'PRKG1B', 'PRKGR1A', 'PRKGR1B']",KGP1_HUMAN
+Q13237,PRKG2,cGMP-dependent protein kinase 2,"['PRKG2', 'PRKGR2']",KGP2_HUMAN
+P51817,PRKX,cAMP-dependent protein kinase catalytic subunit PRKX,"['PRKX', 'PKX1']",PRKX_HUMAN
+O43930,PRKY,Putative serine/threonine-protein kinase PRKY,['PRKY'],PRKY_HUMAN
+Q13464,ROCK1,Rho-associated protein kinase 1,['ROCK1'],ROCK1_HUMAN
+O75116,ROCK2,Rho-associated protein kinase 2,"['ROCK2', 'KIAA0619']",ROCK2_HUMAN
+Q15418,RPS6KA1,Ribosomal protein S6 kinase alpha-1,"['RPS6KA1', 'MAPKAPK1A', 'RSK1']",KS6A1_HUMAN
+Q15349,RPS6KA2,Ribosomal protein S6 kinase alpha-2,"['RPS6KA2', 'MAPKAPK1C', 'RSK3']",KS6A2_HUMAN
+P51812,RPS6KA3,Ribosomal protein S6 kinase alpha-3,"['RPS6KA3', 'ISPK1', 'MAPKAPK1B', 'RSK2']",KS6A3_HUMAN
+O75676,RPS6KA4,Ribosomal protein S6 kinase alpha-4,"['RPS6KA4', 'MSK2']",KS6A4_HUMAN
+O75582,RPS6KA5,Ribosomal protein S6 kinase alpha-5,"['RPS6KA5', 'MSK1']",KS6A5_HUMAN
+Q9UK32,RPS6KA6,Ribosomal protein S6 kinase alpha-6,"['RPS6KA6', 'RSK4']",KS6A6_HUMAN
+P23443,RPS6KB1,Ribosomal protein S6 kinase beta-1,"['RPS6KB1', 'STK14A']",KS6B1_HUMAN
+Q9UBS0,RPS6KB2,Ribosomal protein S6 kinase beta-2,"['RPS6KB2', 'STK14B']",KS6B2_HUMAN
+O00141,SGK1,Serine/threonine-protein kinase Sgk1,"['SGK1', 'SGK']",SGK1_HUMAN
+Q9HBY8,SGK2,Serine/threonine-protein kinase Sgk2,['SGK2'],SGK2_HUMAN
+Q96BR1,SGK3,Serine/threonine-protein kinase Sgk3,"['SGK3', 'CISK', 'SGKL']",SGK3_HUMAN
+Q15208,STK38,Serine/threonine-protein kinase 38,"['STK38', 'NDR1']",STK38_HUMAN
+Q9Y2H1,STK38L,Serine/threonine-protein kinase 38-like,"['STK38L', 'KIAA0965', 'NDR2']",ST38L_HUMAN
+Q8TDC3,BRSK1,Serine/threonine-protein kinase BRSK1,"['BRSK1', 'KIAA1811', 'SAD1', 'SADB']",BRSK1_HUMAN
+Q8IWQ3,BRSK2,Serine/threonine-protein kinase BRSK2,"['BRSK2', 'C11orf7', 'PEN11B', 'SADA', 'STK29', 'HUSSY-12']",BRSK2_HUMAN
+Q14012,CAMK1,Calcium/calmodulin-dependent protein kinase type 1,['CAMK1'],KCC1A_HUMAN
+Q8IU85,CAMK1D,Calcium/calmodulin-dependent protein kinase type 1D,"['CAMK1D', 'CAMKID']",KCC1D_HUMAN
+Q96NX5,CAMK1G,Calcium/calmodulin-dependent protein kinase type 1G,"['CAMK1G', 'CLICK3', 'VWS1']",KCC1G_HUMAN
+Q9UQM7,CAMK2A,Calcium/calmodulin-dependent protein kinase type II subunit alpha,"['CAMK2A', 'CAMKA', 'KIAA0968']",KCC2A_HUMAN
+Q13554,CAMK2B,Calcium/calmodulin-dependent protein kinase type II subunit beta,"['CAMK2B', 'CAM2', 'CAMK2', 'CAMKB']",KCC2B_HUMAN
+Q13557,CAMK2D,Calcium/calmodulin-dependent protein kinase type II subunit delta,"['CAMK2D', 'CAMKD']",KCC2D_HUMAN
+Q13555,CAMK2G,Calcium/calmodulin-dependent protein kinase type II subunit gamma,"['CAMK2G', 'CAMK', 'CAMK-II', 'CAMKG']",KCC2G_HUMAN
+Q16566,CAMK4,Calcium/calmodulin-dependent protein kinase type IV,"['CAMK4', 'CAMK', 'CAMK-GR', 'CAMKIV']",KCC4_HUMAN
+Q8NCB2,CAMKV,CaM kinase-like vesicle-associated protein,['CAMKV'],CAMKV_HUMAN
+O14936,CASK,Peripheral plasma membrane protein CASK,"['CASK', 'LIN2']",CSKP_HUMAN
+O14757,CHEK1,Serine/threonine-protein kinase Chk1,"['CHEK1', 'CHK1']",CHK1_HUMAN
+O96017,CHEK2,Serine/threonine-protein kinase Chk2,"['CHEK2', 'CDS1', 'CHK2', 'RAD53']",CHK2_HUMAN
+P53355,DAPK1,Death-associated protein kinase 1,"['DAPK1', 'DAPK']",DAPK1_HUMAN
+Q9UIK4,DAPK2,Death-associated protein kinase 2,['DAPK2'],DAPK2_HUMAN
+O43293,DAPK3,Death-associated protein kinase 3,"['DAPK3', 'ZIPK']",DAPK3_HUMAN
+O15075,DCLK1,Serine/threonine-protein kinase DCLK1,"['DCLK1', 'DCAMKL1', 'DCDC3A', 'KIAA0369']",DCLK1_HUMAN
+Q8N568,DCLK2,Serine/threonine-protein kinase DCLK2,"['DCLK2', 'DCAMKL2', 'DCDC3B', 'DCK2']",DCLK2_HUMAN
+Q9C098,DCLK3,Serine/threonine-protein kinase DCLK3,"['DCLK3', 'DCAMKL3', 'DCDC3C', 'KIAA1765']",DCLK3_HUMAN
+P57058,HUNK,Hormonally up-regulated neu tumor-associated kinase,"['HUNK', 'MAKV']",HUNK_HUMAN
+O60229,KALRN,Kalirin,"['KALRN', 'DUET', 'DUO', 'HAPIP', 'TRAD']",KALRN_HUMAN
+P49137,MAPKAPK2,MAP kinase-activated protein kinase 2,['MAPKAPK2'],MAPK2_HUMAN
+Q16644,MAPKAPK3,MAP kinase-activated protein kinase 3,['MAPKAPK3'],MAPK3_HUMAN
+Q8IW41,MAPKAPK5,MAP kinase-activated protein kinase 5,"['MAPKAPK5', 'PRAK']",MAPK5_HUMAN
+Q9P0L2,MARK1,Serine/threonine-protein kinase MARK1,"['MARK1', 'KIAA1477', 'MARK']",MARK1_HUMAN
+Q7KZI7,MARK2,Serine/threonine-protein kinase MARK2,"['MARK2', 'EMK1']",MARK2_HUMAN
+P27448,MARK3,MAP/microtubule affinity-regulating kinase 3,"['MARK3', 'CTAK1', 'EMK2']",MARK3_HUMAN
+Q96L34,MARK4,MAP/microtubule affinity-regulating kinase 4,"['MARK4', 'KIAA1860', 'MARKL1']",MARK4_HUMAN
+Q14680,MELK,Maternal embryonic leucine zipper kinase,"['MELK', 'KIAA0175']",MELK_HUMAN
+Q9BUB5,MKNK1,MAP kinase-interacting serine/threonine-protein kinase 1,"['MKNK1', 'MNK1']",MKNK1_HUMAN
+Q9HBH9,MKNK2,MAP kinase-interacting serine/threonine-protein kinase 2,"['MKNK2', 'GPRK7', 'MNK2']",MKNK2_HUMAN
+Q15746,MYLK,"Myosin light chain kinase, smooth muscle","['MYLK', 'MLCK', 'MLCK1', 'MYLK1']",MYLK_HUMAN
+Q9H1R3,MYLK2,"Myosin light chain kinase 2, skeletal/cardiac muscle",['MYLK2'],MYLK2_HUMAN
+Q32MK0,MYLK3,Myosin light chain kinase 3,"['MYLK3', 'MLCK']",MYLK3_HUMAN
+Q86YV6,MYLK4,Myosin light chain kinase family member 4,"['MYLK4', 'SGK085']",MYLK4_HUMAN
+Q8IY84,NIM1K,Serine/threonine-protein kinase NIM1,"['NIM1K', 'NIM1']",NIM1_HUMAN
+O60285,NUAK1,NUAK family SNF1-like kinase 1,"['NUAK1', 'ARK5', 'KIAA0537', 'OMPHK1']",NUAK1_HUMAN
+Q9H093,NUAK2,NUAK family SNF1-like kinase 2,"['NUAK2', 'OMPHK2', 'SNARK']",NUAK2_HUMAN
+Q5VST9,OBSCN,Obscurin,"['OBSCN', 'KIAA1556', 'KIAA1639']",OBSCN_HUMAN
+Q96RG2,PASK,PAS domain-containing serine/threonine-protein kinase,"['PASK', 'KIAA0135']",PASK_HUMAN
+Q16816,PHKG1,"Phosphorylase b kinase gamma catalytic chain, skeletal muscle/heart isoform","['PHKG1', 'PHKG']",PHKG1_HUMAN
+P15735,PHKG2,"Phosphorylase b kinase gamma catalytic chain, liver/testis isoform",['PHKG2'],PHKG2_HUMAN
+P11309,PIM1,Serine/threonine-protein kinase pim-1,['PIM1'],PIM1_HUMAN
+Q9P1W9,PIM2,Serine/threonine-protein kinase pim-2,['PIM2'],PIM2_HUMAN
+Q86V86,PIM3,Serine/threonine-protein kinase pim-3,['PIM3'],PIM3_HUMAN
+Q6P2M8,PNCK,Calcium/calmodulin-dependent protein kinase type 1B,['PNCK'],KCC1B_HUMAN
+Q13131,PRKAA1,5'-AMP-activated protein kinase catalytic subunit alpha-1,"['PRKAA1', 'AMPK1']",AAPK1_HUMAN
+P54646,PRKAA2,5'-AMP-activated protein kinase catalytic subunit alpha-2,"['PRKAA2', 'AMPK', 'AMPK2']",AAPK2_HUMAN
+Q15139,PRKD1,Serine/threonine-protein kinase D1,"['PRKD1', 'PKD', 'PKD1', 'PRKCM']",KPCD1_HUMAN
+Q9BZL6,PRKD2,Serine/threonine-protein kinase D2,"['PRKD2', 'PKD2', 'HSPC187']",KPCD2_HUMAN
+O94806,PRKD3,Serine/threonine-protein kinase D3,"['PRKD3', 'EPK2', 'PRKCN']",KPCD3_HUMAN
+P11801,PSKH1,Serine/threonine-protein kinase H1,['PSKH1'],KPSH1_HUMAN
+Q96QS6,PSKH2,Serine/threonine-protein kinase H2,['PSKH2'],KPSH2_HUMAN
+P57059,SIK1,Serine/threonine-protein kinase SIK1,"['SIK1', 'SIK', 'SNF1LK']",SIK1_HUMAN
+A0A0B4J2F2,SIK1B,Probable serine/threonine-protein kinase SIK1B,['SIK1B'],SIK1B_HUMAN
+Q9H0K1,SIK2,Serine/threonine-protein kinase SIK2,"['SIK2', 'KIAA0781', 'QIK', 'SNF1LK2']",SIK2_HUMAN
+Q9Y2K2,SIK3,Serine/threonine-protein kinase SIK3,"['SIK3', 'KIAA0999', 'QSK', 'L19']",SIK3_HUMAN
+Q9NRH2,SNRK,SNF-related serine/threonine-protein kinase,"['SNRK', 'KIAA0096', 'SNFRK']",SNRK_HUMAN
+Q15772,SPEG,Striated muscle preferentially expressed protein kinase,"['SPEG', 'APEG1', 'KIAA1297']",SPEG_HUMAN
+Q15831,STK11,Serine/threonine-protein kinase STK11,"['STK11', 'LKB1', 'PJS']",STK11_HUMAN
+Q9UEE5,STK17A,Serine/threonine-protein kinase 17A,"['STK17A', 'DRAK1']",ST17A_HUMAN
+O94768,STK17B,Serine/threonine-protein kinase 17B,"['STK17B', 'DRAK2']",ST17B_HUMAN
+Q9BYT3,STK33,Serine/threonine-protein kinase 33,['STK33'],STK33_HUMAN
+Q8N2I9,STK40,Serine/threonine-protein kinase 40,"['STK40', 'SGK495', 'SHIK']",STK40_HUMAN
+Q96RU8,TRIB1,Tribbles homolog 1,"['TRIB1', 'C8FW', 'GIG2', 'TRB1']",TRIB1_HUMAN
+Q92519,TRIB2,Tribbles homolog 2,"['TRIB2', 'TRB2']",TRIB2_HUMAN
+Q96RU7,TRIB3,Tribbles homolog 3,"['TRIB3', 'C20orf97', 'NIPK', 'SKIP3', 'TRB3']",TRIB3_HUMAN
+O75962,TRIO,Triple functional domain protein,['TRIO'],TRIO_HUMAN
+Q9BXA7,TSSK1B,Testis-specific serine/threonine-protein kinase 1,"['TSSK1B', 'SPOGA1', 'SPOGA4', 'STK22A', 'STK22D', 'TSSK1', 'FKSG81']",TSSK1_HUMAN
+Q96PF2,TSSK2,Testis-specific serine/threonine-protein kinase 2,"['TSSK2', 'DGSG', 'SPOGA2', 'STK22B']",TSSK2_HUMAN
+Q96PN8,TSSK3,Testis-specific serine/threonine-protein kinase 3,"['TSSK3', 'SPOGA3', 'STK22C']",TSSK3_HUMAN
+Q6SA08,TSSK4,Testis-specific serine/threonine-protein kinase 4,"['TSSK4', 'C14orf20', 'STK22E', 'TSSK5']",TSSK4_HUMAN
+Q9BXA6,TSSK6,Testis-specific serine/threonine-protein kinase 6,"['TSSK6', 'SSTK', 'FKSG82']",TSSK6_HUMAN
+Q8WZ42,TTN,Titin,['TTN'],TITIN_HUMAN
+P48729,CSNK1A1,Casein kinase I isoform alpha,['CSNK1A1'],KC1A_HUMAN
+Q8N752,CSNK1A1L,Casein kinase I isoform alpha-like,['CSNK1A1L'],KC1AL_HUMAN
+P48730,CSNK1D,Casein kinase I isoform delta,"['CSNK1D', 'HCKID']",KC1D_HUMAN
+P49674,CSNK1E,Casein kinase I isoform epsilon,['CSNK1E'],KC1E_HUMAN
+Q9HCP0,CSNK1G1,Casein kinase I isoform gamma-1,['CSNK1G1'],KC1G1_HUMAN
+P78368,CSNK1G2,Casein kinase I isoform gamma-2,"['CSNK1G2', 'CK1G2']",KC1G2_HUMAN
+Q9Y6M4,CSNK1G3,Casein kinase I isoform gamma-3,['CSNK1G3'],KC1G3_HUMAN
+Q5TCY1,TTBK1,Tau-tubulin kinase 1,"['TTBK1', 'BDTK', 'KIAA1855']",TTBK1_HUMAN
+Q6IQ55,TTBK2,Tau-tubulin kinase 2,"['TTBK2', 'KIAA0847']",TTBK2_HUMAN
+Q99986,VRK1,Serine/threonine-protein kinase VRK1,['VRK1'],VRK1_HUMAN
+Q86Y07,VRK2,Serine/threonine-protein kinase VRK2,['VRK2'],VRK2_HUMAN
+Q8IV63,VRK3,Inactive serine/threonine-protein kinase VRK3,['VRK3'],VRK3_HUMAN
+P06493,CDK1,Cyclin-dependent kinase 1,"['CDK1', 'CDC2', 'CDC28A', 'CDKN1', 'P34CDC2']",CDK1_HUMAN
+Q15131,CDK10,Cyclin-dependent kinase 10,['CDK10'],CDK10_HUMAN
+Q9UQ88,CDK11A,Cyclin-dependent kinase 11A,"['CDK11A', 'CDC2L2', 'CDC2L3', 'PITSLREB']",CD11A_HUMAN
+P21127,CDK11B,Cyclin-dependent kinase 11B,"['CDK11B', 'CDC2L1', 'CDK11', 'PITSLREA', 'PK58']",CD11B_HUMAN
+Q9NYV4,CDK12,Cyclin-dependent kinase 12,"['CDK12', 'CRK7', 'CRKRS', 'KIAA0904']",CDK12_HUMAN
+Q14004,CDK13,Cyclin-dependent kinase 13,"['CDK13', 'CDC2L', 'CDC2L5', 'CHED', 'KIAA1791']",CDK13_HUMAN
+O94921,CDK14,Cyclin-dependent kinase 14,"['CDK14', 'KIAA0834', 'PFTK1']",CDK14_HUMAN
+Q96Q40,CDK15,Cyclin-dependent kinase 15,"['CDK15', 'ALS2CR7', 'PFTK2']",CDK15_HUMAN
+Q00536,CDK16,Cyclin-dependent kinase 16,"['CDK16', 'PCTAIRE1', 'PCTK1']",CDK16_HUMAN
+Q00537,CDK17,Cyclin-dependent kinase 17,"['CDK17', 'PCTAIRE2', 'PCTK2']",CDK17_HUMAN
+Q07002,CDK18,Cyclin-dependent kinase 18,"['CDK18', 'PCTAIRE3', 'PCTK3']",CDK18_HUMAN
+Q9BWU1,CDK19,Cyclin-dependent kinase 19,"['CDK19', 'CDC2L6', 'CDK11', 'KIAA1028']",CDK19_HUMAN
+P24941,CDK2,Cyclin-dependent kinase 2,"['CDK2', 'CDKN2']",CDK2_HUMAN
+Q8IZL9,CDK20,Cyclin-dependent kinase 20,"['CDK20', 'CCRK', 'CDCH']",CDK20_HUMAN
+Q00526,CDK3,Cyclin-dependent kinase 3,"['CDK3', 'CDKN3']",CDK3_HUMAN
+P11802,CDK4,Cyclin-dependent kinase 4,['CDK4'],CDK4_HUMAN
+Q00535,CDK5,Cyclin-dependent-like kinase 5,"['CDK5', 'CDKN5']",CDK5_HUMAN
+Q00534,CDK6,Cyclin-dependent kinase 6,"['CDK6', 'CDKN6']",CDK6_HUMAN
+P50613,CDK7,Cyclin-dependent kinase 7,"['CDK7', 'CAK', 'CAK1', 'CDKN7', 'MO15', 'STK1']",CDK7_HUMAN
+P49336,CDK8,Cyclin-dependent kinase 8,['CDK8'],CDK8_HUMAN
+P50750,CDK9,Cyclin-dependent kinase 9,"['CDK9', 'CDC2L4', 'TAK']",CDK9_HUMAN
+Q00532,CDKL1,Cyclin-dependent kinase-like 1,['CDKL1'],CDKL1_HUMAN
+Q92772,CDKL2,Cyclin-dependent kinase-like 2,['CDKL2'],CDKL2_HUMAN
+Q8IVW4,CDKL3,Cyclin-dependent kinase-like 3,"['CDKL3', 'NKIAMRE']",CDKL3_HUMAN
+Q5MAI5,CDKL4,Cyclin-dependent kinase-like 4,['CDKL4'],CDKL4_HUMAN
+O76039,CDKL5,Cyclin-dependent kinase-like 5,"['CDKL5', 'STK9']",CDKL5_HUMAN
+P49759,CLK1,Dual specificity protein kinase CLK1,"['CLK1', 'CLK']",CLK1_HUMAN
+P49760,CLK2,Dual specificity protein kinase CLK2,['CLK2'],CLK2_HUMAN
+P49761,CLK3,Dual specificity protein kinase CLK3,['CLK3'],CLK3_HUMAN
+Q9HAZ1,CLK4,Dual specificity protein kinase CLK4,['CLK4'],CLK4_HUMAN
+Q13627,DYRK1A,Dual specificity tyrosine-phosphorylation-regulated kinase 1A,"['DYRK1A', 'DYRK', 'MNB', 'MNBH']",DYR1A_HUMAN
+Q9Y463,DYRK1B,Dual specificity tyrosine-phosphorylation-regulated kinase 1B,"['DYRK1B', 'MIRK']",DYR1B_HUMAN
+Q92630,DYRK2,Dual specificity tyrosine-phosphorylation-regulated kinase 2,['DYRK2'],DYRK2_HUMAN
+O43781,DYRK3,Dual specificity tyrosine-phosphorylation-regulated kinase 3,['DYRK3'],DYRK3_HUMAN
+Q9NR20,DYRK4,Dual specificity tyrosine-phosphorylation-regulated kinase 4,['DYRK4'],DYRK4_HUMAN
+P49840,GSK3A,Glycogen synthase kinase-3 alpha,['GSK3A'],GSK3A_HUMAN
+P49841,GSK3B,Glycogen synthase kinase-3 beta,['GSK3B'],GSK3B_HUMAN
+Q86Z02,HIPK1,Homeodomain-interacting protein kinase 1,"['HIPK1', 'KIAA0630', 'MYAK', 'NBAK2']",HIPK1_HUMAN
+Q9H2X6,HIPK2,Homeodomain-interacting protein kinase 2,['HIPK2'],HIPK2_HUMAN
+Q9H422,HIPK3,Homeodomain-interacting protein kinase 3,"['HIPK3', 'DYRK6', 'FIST3', 'PKY']",HIPK3_HUMAN
+Q8NE63,HIPK4,Homeodomain-interacting protein kinase 4,['HIPK4'],HIPK4_HUMAN
+Q9UPZ9,ICK,Serine/threonine-protein kinase ICK,"['ICK', 'KIAA0936']",ICK_HUMAN
+P20794,MAK,Serine/threonine-protein kinase MAK,['MAK'],MAK_HUMAN
+P28482,MAPK1,Mitogen-activated protein kinase 1,"['MAPK1', 'ERK2', 'PRKM1', 'PRKM2']",MK01_HUMAN
+P53779,MAPK10,Mitogen-activated protein kinase 10,"['MAPK10', 'JNK3', 'JNK3A', 'PRKM10', 'SAPK1B']",MK10_HUMAN
+Q15759,MAPK11,Mitogen-activated protein kinase 11,"['MAPK11', 'PRKM11', 'SAPK2', 'SAPK2B']",MK11_HUMAN
+P53778,MAPK12,Mitogen-activated protein kinase 12,"['MAPK12', 'ERK6', 'SAPK3']",MK12_HUMAN
+O15264,MAPK13,Mitogen-activated protein kinase 13,"['MAPK13', 'PRKM13', 'SAPK4']",MK13_HUMAN
+Q16539,MAPK14,Mitogen-activated protein kinase 14,"['MAPK14', 'CSBP', 'CSBP1', 'CSBP2', 'CSPB1', 'MXI2', 'SAPK2A']",MK14_HUMAN
+Q8TD08,MAPK15,Mitogen-activated protein kinase 15,"['MAPK15', 'ERK7', 'ERK8']",MK15_HUMAN
+P27361,MAPK3,Mitogen-activated protein kinase 3,"['MAPK3', 'ERK1', 'PRKM3']",MK03_HUMAN
+P31152,MAPK4,Mitogen-activated protein kinase 4,"['MAPK4', 'ERK4', 'PRKM4']",MK04_HUMAN
+Q16659,MAPK6,Mitogen-activated protein kinase 6,"['MAPK6', 'ERK3', 'PRKM6']",MK06_HUMAN
+Q13164,MAPK7,Mitogen-activated protein kinase 7,"['MAPK7', 'BMK1', 'ERK5', 'PRKM7']",MK07_HUMAN
+P45983,MAPK8,Mitogen-activated protein kinase 8,"['MAPK8', 'JNK1', 'PRKM8', 'SAPK1', 'SAPK1C']",MK08_HUMAN
+P45984,MAPK9,Mitogen-activated protein kinase 9,"['MAPK9', 'JNK2', 'PRKM9', 'SAPK1A']",MK09_HUMAN
+Q9UQ07,MOK,MAPK/MAK/MRK overlapping kinase,"['MOK', 'RAGE', 'RAGE1']",MOK_HUMAN
+Q9UBE8,NLK,Serine/threonine-protein kinase NLK,"['NLK', 'LAK1']",NLK_HUMAN
+Q13523,PRPF4B,Serine/threonine-protein kinase PRP4 homolog,"['PRPF4B', 'KIAA0536', 'PRP4', 'PRP4H', 'PRP4K']",PRP4B_HUMAN
+Q96SB4,SRPK1,SRSF protein kinase 1,['SRPK1'],SRPK1_HUMAN
+P78362,SRPK2,SRSF protein kinase 2,['SRPK2'],SRPK2_HUMAN
+Q9UPE1,SRPK3,SRSF protein kinase 3,"['SRPK3', 'MSSK1', 'STK23']",SRPK3_HUMAN
+Q96PY6,NEK1,Serine/threonine-protein kinase Nek1,"['NEK1', 'KIAA1901']",NEK1_HUMAN
+Q6ZWH5,NEK10,Serine/threonine-protein kinase Nek10,['NEK10'],NEK10_HUMAN
+Q8NG66,NEK11,Serine/threonine-protein kinase Nek11,['NEK11'],NEK11_HUMAN
+P51955,NEK2,Serine/threonine-protein kinase Nek2,"['NEK2', 'NEK2A', 'NLK1']",NEK2_HUMAN
+P51956,NEK3,Serine/threonine-protein kinase Nek3,['NEK3'],NEK3_HUMAN
+P51957,NEK4,Serine/threonine-protein kinase Nek4,"['NEK4', 'STK2']",NEK4_HUMAN
+Q6P3R8,NEK5,Serine/threonine-protein kinase Nek5,['NEK5'],NEK5_HUMAN
+Q9HC98,NEK6,Serine/threonine-protein kinase Nek6,['NEK6'],NEK6_HUMAN
+Q8TDX7,NEK7,Serine/threonine-protein kinase Nek7,['NEK7'],NEK7_HUMAN
+Q86SG6,NEK8,Serine/threonine-protein kinase Nek8,"['NEK8', 'JCK', 'NEK12A']",NEK8_HUMAN
+Q8TD19,NEK9,Serine/threonine-protein kinase Nek9,"['NEK9', 'KIAA1995', 'NEK8', 'NERCC']",NEK9_HUMAN
+P25092,GUCY2C,Heat-stable enterotoxin receptor,"['GUCY2C', 'GUC2C', 'STAR']",GUC2C_HUMAN
+Q02846,GUCY2D,Retinal guanylyl cyclase 1,"['GUCY2D', 'CORD6', 'GUC1A4', 'GUC2D', 'RETGC', 'RETGC1']",GUC2D_HUMAN
+P51841,GUCY2F,Retinal guanylyl cyclase 2,"['GUCY2F', 'GUC2F', 'RETGC2']",GUC2F_HUMAN
+P16066,NPR1,Atrial natriuretic peptide receptor 1,"['NPR1', 'ANPRA']",ANPRA_HUMAN
+P20594,NPR2,Atrial natriuretic peptide receptor 2,"['NPR2', 'ANPRB']",ANPRB_HUMAN
+Q02750,MAP2K1,Dual specificity mitogen-activated protein kinase kinase 1,"['MAP2K1', 'MEK1', 'PRKMK1']",MP2K1_HUMAN
+P36507,MAP2K2,Dual specificity mitogen-activated protein kinase kinase 2,"['MAP2K2', 'MEK2', 'MKK2', 'PRKMK2']",MP2K2_HUMAN
+P46734,MAP2K3,Dual specificity mitogen-activated protein kinase kinase 3,"['MAP2K3', 'MEK3', 'MKK3', 'PRKMK3', 'SKK2']",MP2K3_HUMAN
+P45985,MAP2K4,Dual specificity mitogen-activated protein kinase kinase 4,"['MAP2K4', 'JNKK1', 'MEK4', 'MKK4', 'PRKMK4', 'SEK1', 'SERK1', 'SKK1']",MP2K4_HUMAN
+Q13163,MAP2K5,Dual specificity mitogen-activated protein kinase kinase 5,"['MAP2K5', 'MEK5', 'MKK5', 'PRKMK5']",MP2K5_HUMAN
+P52564,MAP2K6,Dual specificity mitogen-activated protein kinase kinase 6,"['MAP2K6', 'MEK6', 'MKK6', 'PRKMK6', 'SKK3']",MP2K6_HUMAN
+O14733,MAP2K7,Dual specificity mitogen-activated protein kinase kinase 7,"['MAP2K7', 'JNKK2', 'MEK7', 'MKK7', 'PRKMK7', 'SKK4']",MP2K7_HUMAN
+Q13233,MAP3K1,Mitogen-activated protein kinase kinase kinase 1,"['MAP3K1', 'MAPKKK1', 'MEKK', 'MEKK1']",M3K1_HUMAN
+Q02779,MAP3K10,Mitogen-activated protein kinase kinase kinase 10,"['MAP3K10', 'MLK2', 'MST']",M3K10_HUMAN
+Q16584,MAP3K11,Mitogen-activated protein kinase kinase kinase 11,"['MAP3K11', 'MLK3', 'PTK1', 'SPRK']",M3K11_HUMAN
+Q12852,MAP3K12,Mitogen-activated protein kinase kinase kinase 12,"['MAP3K12', 'ZPK']",M3K12_HUMAN
+O43283,MAP3K13,Mitogen-activated protein kinase kinase kinase 13,"['MAP3K13', 'LZK']",M3K13_HUMAN
+Q99558,MAP3K14,Mitogen-activated protein kinase kinase kinase 14,"['MAP3K14', 'NIK']",M3K14_HUMAN
+Q6ZN16,MAP3K15,Mitogen-activated protein kinase kinase kinase 15,"['MAP3K15', 'ASK3']",M3K15_HUMAN
+Q56UN5,MAP3K19,Mitogen-activated protein kinase kinase kinase 19,"['MAP3K19', 'RCK', 'YSK4']",M3K19_HUMAN
+Q9Y2U5,MAP3K2,Mitogen-activated protein kinase kinase kinase 2,"['MAP3K2', 'MAPKKK2', 'MEKK2']",M3K2_HUMAN
+Q9NYL2,MAP3K20,Mitogen-activated protein kinase kinase kinase 20,"['MAP3K20', 'MLTK', 'ZAK', 'HCCS4']",M3K20_HUMAN
+Q5TCX8,MAP3K21,Mitogen-activated protein kinase kinase kinase 21,"['MAP3K21', 'KIAA1804', 'MLK4']",M3K21_HUMAN
+Q99759,MAP3K3,Mitogen-activated protein kinase kinase kinase 3,"['MAP3K3', 'MAPKKK3', 'MEKK3']",M3K3_HUMAN
+Q9Y6R4,MAP3K4,Mitogen-activated protein kinase kinase kinase 4,"['MAP3K4', 'KIAA0213', 'MAPKKK4', 'MEKK4', 'MTK1']",M3K4_HUMAN
+Q99683,MAP3K5,Mitogen-activated protein kinase kinase kinase 5,"['MAP3K5', 'ASK1', 'MAPKKK5', 'MEKK5']",M3K5_HUMAN
+O95382,MAP3K6,Mitogen-activated protein kinase kinase kinase 6,"['MAP3K6', 'ASK2', 'MAPKKK6', 'MEKK6']",M3K6_HUMAN
+O43318,MAP3K7,Mitogen-activated protein kinase kinase kinase 7,"['MAP3K7', 'TAK1']",M3K7_HUMAN
+P41279,MAP3K8,Mitogen-activated protein kinase kinase kinase 8,"['MAP3K8', 'COT', 'ESTF']",M3K8_HUMAN
+P80192,MAP3K9,Mitogen-activated protein kinase kinase kinase 9,"['MAP3K9', 'MLK1', 'PRKE1']",M3K9_HUMAN
+Q92918,MAP4K1,Mitogen-activated protein kinase kinase kinase kinase 1,"['MAP4K1', 'HPK1']",M4K1_HUMAN
+Q12851,MAP4K2,Mitogen-activated protein kinase kinase kinase kinase 2,"['MAP4K2', 'GCK', 'RAB8IP']",M4K2_HUMAN
+Q8IVH8,MAP4K3,Mitogen-activated protein kinase kinase kinase kinase 3,"['MAP4K3', 'RAB8IPL1']",M4K3_HUMAN
+O95819,MAP4K4,Mitogen-activated protein kinase kinase kinase kinase 4,"['MAP4K4', 'HGK', 'KIAA0687', 'NIK']",M4K4_HUMAN
+Q9Y4K4,MAP4K5,Mitogen-activated protein kinase kinase kinase kinase 5,['MAP4K5'],M4K5_HUMAN
+Q8N4C8,MINK1,Misshapen-like kinase 1,"['MINK1', 'B55', 'MAP4K6', 'MINK', 'YSK2', 'ZC3']",MINK1_HUMAN
+Q8NEV4,MYO3A,Myosin-IIIa,['MYO3A'],MYO3A_HUMAN
+Q8WXR4,MYO3B,Myosin-IIIb,['MYO3B'],MYO3B_HUMAN
+Q7Z2Y5,NRK,Nik-related protein kinase,['NRK'],NRK_HUMAN
+O95747,OXSR1,Serine/threonine-protein kinase OSR1,"['OXSR1', 'KIAA1101', 'OSR1']",OXSR1_HUMAN
+Q13153,PAK1,Serine/threonine-protein kinase PAK 1,['PAK1'],PAK1_HUMAN
+Q13177,PAK2,Serine/threonine-protein kinase PAK 2,['PAK2'],PAK2_HUMAN
+O75914,PAK3,Serine/threonine-protein kinase PAK 3,"['PAK3', 'OPHN3']",PAK3_HUMAN
+O96013,PAK4,Serine/threonine-protein kinase PAK 4,"['PAK4', 'KIAA1142']",PAK4_HUMAN
+Q9P286,PAK5,Serine/threonine-protein kinase PAK 5,"['PAK5', 'KIAA1264', 'PAK7']",PAK5_HUMAN
+Q9NQU5,PAK6,Serine/threonine-protein kinase PAK 6,"['PAK6', 'PAK5']",PAK6_HUMAN
+Q96KB5,PBK,Lymphokine-activated killer T-cell-originated protein kinase,"['PBK', 'TOPK']",TOPK_HUMAN
+Q9H2G2,SLK,STE20-like serine/threonine-protein kinase,"['SLK', 'KIAA0204', 'STK2']",SLK_HUMAN
+O94804,STK10,Serine/threonine-protein kinase 10,"['STK10', 'LOK']",STK10_HUMAN
+Q9Y6E0,STK24,Serine/threonine-protein kinase 24,"['STK24', 'MST3', 'STK3']",STK24_HUMAN
+O00506,STK25,Serine/threonine-protein kinase 25,"['STK25', 'SOK1', 'YSK1']",STK25_HUMAN
+Q9P289,STK26,Serine/threonine-protein kinase 26,"['STK26', 'MASK', 'MST4']",STK26_HUMAN
+Q13188,STK3,Serine/threonine-protein kinase 3,"['STK3', 'KRS1', 'MST2']",STK3_HUMAN
+Q9UEW8,STK39,STE20/SPS1-related proline-alanine-rich protein kinase,"['STK39', 'SPAK']",STK39_HUMAN
+Q13043,STK4,Serine/threonine-protein kinase 4,"['STK4', 'KRS2', 'MST1']",STK4_HUMAN
+Q7RTN6,STRADA,STE20-related kinase adapter protein alpha,"['STRADA', 'LYK5', 'STRAD']",STRAA_HUMAN
+Q9C0K7,STRADB,STE20-related kinase adapter protein beta,"['STRADB', 'ALS2CR2', 'ILPIP', 'PRO1038']",STRAB_HUMAN
+Q7L7X3,TAOK1,Serine/threonine-protein kinase TAO1,"['TAOK1', 'KIAA1361', 'MAP3K16', 'MARKK']",TAOK1_HUMAN
+Q9UL54,TAOK2,Serine/threonine-protein kinase TAO2,"['TAOK2', 'KIAA0881', 'MAP3K17', 'PSK', 'PSK1', 'UNQ2971/PRO7431']",TAOK2_HUMAN
+Q9H2K8,TAOK3,Serine/threonine-protein kinase TAO3,"['TAOK3', 'DPK', 'JIK', 'KDS', 'MAP3K18']",TAOK3_HUMAN
+Q9UKE5,TNIK,TRAF2 and NCK-interacting protein kinase,"['TNIK', 'KIAA0551']",TNIK_HUMAN
+Q04771,ACVR1,Activin receptor type-1,"['ACVR1', 'ACVRLK2']",ACVR1_HUMAN
+P36896,ACVR1B,Activin receptor type-1B,"['ACVR1B', 'ACVRLK4', 'ALK4']",ACV1B_HUMAN
+Q8NER5,ACVR1C,Activin receptor type-1C,"['ACVR1C', 'ALK7']",ACV1C_HUMAN
+P27037,ACVR2A,Activin receptor type-2A,"['ACVR2A', 'ACVR2']",AVR2A_HUMAN
+Q13705,ACVR2B,Activin receptor type-2B,['ACVR2B'],AVR2B_HUMAN
+P37023,ACVRL1,Serine/threonine-protein kinase receptor R3,"['ACVRL1', 'ACVRLK1', 'ALK1']",ACVL1_HUMAN
+Q16671,AMHR2,Anti-Muellerian hormone type-2 receptor,"['AMHR2', 'AMHR', 'MISR2']",AMHR2_HUMAN
+Q8NFD2,ANKK1,Ankyrin repeat and protein kinase domain-containing protein 1,"['ANKK1', 'PKK2', 'SGK288']",ANKK1_HUMAN
+P10398,ARAF,Serine/threonine-protein kinase A-Raf,"['ARAF', 'ARAF1', 'PKS', 'PKS2']",ARAF_HUMAN
+P36894,BMPR1A,Bone morphogenetic protein receptor type-1A,"['BMPR1A', 'ACVRLK3', 'ALK3']",BMR1A_HUMAN
+O00238,BMPR1B,Bone morphogenetic protein receptor type-1B,['BMPR1B'],BMR1B_HUMAN
+Q13873,BMPR2,Bone morphogenetic protein receptor type-2,"['BMPR2', 'PPH1']",BMPR2_HUMAN
+P15056,BRAF,Serine/threonine-protein kinase B-raf,"['BRAF', 'BRAF1', 'RAFB1']",BRAF_HUMAN
+Q13418,ILK,Integrin-linked protein kinase,"['ILK', 'ILK1', 'ILK2']",ILK_HUMAN
+P51617,IRAK1,Interleukin-1 receptor-associated kinase 1,"['IRAK1', 'IRAK']",IRAK1_HUMAN
+O43187,IRAK2,Interleukin-1 receptor-associated kinase-like 2,['IRAK2'],IRAK2_HUMAN
+Q9Y616,IRAK3,Interleukin-1 receptor-associated kinase 3,['IRAK3'],IRAK3_HUMAN
+Q9NWZ3,IRAK4,Interleukin-1 receptor-associated kinase 4,['IRAK4'],IRAK4_HUMAN
+Q8IVT5,KSR1,Kinase suppressor of Ras 1,"['KSR1', 'KSR']",KSR1_HUMAN
+Q6VAB6,KSR2,Kinase suppressor of Ras 2,['KSR2'],KSR2_HUMAN
+P53667,LIMK1,LIM domain kinase 1,"['LIMK1', 'LIMK']",LIMK1_HUMAN
+P53671,LIMK2,LIM domain kinase 2,['LIMK2'],LIMK2_HUMAN
+Q38SD2,LRRK1,Leucine-rich repeat serine/threonine-protein kinase 1,"['LRRK1', 'KIAA1790']",LRRK1_HUMAN
+Q5S007,LRRK2,Leucine-rich repeat serine/threonine-protein kinase 2,"['LRRK2', 'PARK8']",LRRK2_HUMAN
+P04049,RAF1,RAF proto-oncogene serine/threonine-protein kinase,"['RAF1', 'RAF']",RAF1_HUMAN
+Q13546,RIPK1,Receptor-interacting serine/threonine-protein kinase 1,"['RIPK1', 'RIP', 'RIP1']",RIPK1_HUMAN
+O43353,RIPK2,Receptor-interacting serine/threonine-protein kinase 2,"['RIPK2', 'CARDIAK', 'RICK', 'RIP2', 'UNQ277/PRO314/PRO34092']",RIPK2_HUMAN
+Q9Y572,RIPK3,Receptor-interacting serine/threonine-protein kinase 3,"['RIPK3', 'RIP3']",RIPK3_HUMAN
+P57078,RIPK4,Receptor-interacting serine/threonine-protein kinase 4,"['RIPK4', 'ANKRD3', 'DIK']",RIPK4_HUMAN
+Q15569,TESK1,Dual specificity testis-specific protein kinase 1,['TESK1'],TESK1_HUMAN
+Q96S53,TESK2,Dual specificity testis-specific protein kinase 2,['TESK2'],TESK2_HUMAN
+P36897,TGFBR1,TGF-beta receptor type-1,"['TGFBR1', 'ALK5', 'SKR4']",TGFR1_HUMAN
+P37173,TGFBR2,TGF-beta receptor type-2,['TGFBR2'],TGFR2_HUMAN
+Q59H18,TNNI3K,Serine/threonine-protein kinase TNNI3K,"['TNNI3K', 'CARK']",TNI3K_HUMAN
+Q6ZMQ8,AATK,Serine/threonine-protein kinase LMTK1,"['AATK', 'AATYK', 'KIAA0641', 'LMR1', 'LMTK1']",LMTK1_HUMAN
+P00519,ABL1,Tyrosine-protein kinase ABL1,"['ABL1', 'ABL', 'JTK7']",ABL1_HUMAN
+P42684,ABL2,Tyrosine-protein kinase ABL2,"['ABL2', 'ABLL', 'ARG']",ABL2_HUMAN
+Q9UM73,ALK,ALK tyrosine kinase receptor,['ALK'],ALK_HUMAN
+P30530,AXL,Tyrosine-protein kinase receptor UFO,"['AXL', 'UFO']",UFO_HUMAN
+P51451,BLK,Tyrosine-protein kinase Blk,['BLK'],BLK_HUMAN
+P51813,BMX,Cytoplasmic tyrosine-protein kinase BMX,['BMX'],BMX_HUMAN
+Q06187,BTK,Tyrosine-protein kinase BTK,"['BTK', 'AGMX1', 'ATK', 'BPK']",BTK_HUMAN
+P07333,CSF1R,Macrophage colony-stimulating factor 1 receptor,"['CSF1R', 'FMS']",CSF1R_HUMAN
+P41240,CSK,Tyrosine-protein kinase CSK,['CSK'],CSK_HUMAN
+Q08345,DDR1,Epithelial discoidin domain-containing receptor 1,"['DDR1', 'CAK', 'EDDR1', 'NEP', 'NTRK4', 'PTK3A', 'RTK6', 'TRKE']",DDR1_HUMAN
+Q16832,DDR2,Discoidin domain-containing receptor 2,"['DDR2', 'NTRKR3', 'TKT', 'TYRO10']",DDR2_HUMAN
+P00533,EGFR,Epidermal growth factor receptor,"['EGFR', 'ERBB', 'ERBB1', 'HER1']",EGFR_HUMAN
+P21709,EPHA1,Ephrin type-A receptor 1,"['EPHA1', 'EPH', 'EPHT', 'EPHT1']",EPHA1_HUMAN
+Q5JZY3,EPHA10,Ephrin type-A receptor 10,['EPHA10'],EPHAA_HUMAN
+P29317,EPHA2,Ephrin type-A receptor 2,"['EPHA2', 'ECK']",EPHA2_HUMAN
+P29320,EPHA3,Ephrin type-A receptor 3,"['EPHA3', 'ETK', 'ETK1', 'HEK', 'TYRO4']",EPHA3_HUMAN
+P54764,EPHA4,Ephrin type-A receptor 4,"['EPHA4', 'HEK8', 'SEK', 'TYRO1']",EPHA4_HUMAN
+P54756,EPHA5,Ephrin type-A receptor 5,"['EPHA5', 'BSK', 'EHK1', 'HEK7', 'TYRO4']",EPHA5_HUMAN
+Q9UF33,EPHA6,Ephrin type-A receptor 6,"['EPHA6', 'EHK2', 'HEK12']",EPHA6_HUMAN
+Q15375,EPHA7,Ephrin type-A receptor 7,"['EPHA7', 'EHK3', 'HEK11']",EPHA7_HUMAN
+P29322,EPHA8,Ephrin type-A receptor 8,"['EPHA8', 'EEK', 'HEK3', 'KIAA1459']",EPHA8_HUMAN
+P54762,EPHB1,Ephrin type-B receptor 1,"['EPHB1', 'ELK', 'EPHT2', 'HEK6', 'NET']",EPHB1_HUMAN
+P29323,EPHB2,Ephrin type-B receptor 2,"['EPHB2', 'DRT', 'EPHT3', 'EPTH3', 'ERK', 'HEK5', 'TYRO5']",EPHB2_HUMAN
+P54753,EPHB3,Ephrin type-B receptor 3,"['EPHB3', 'ETK2', 'HEK2', 'TYRO6']",EPHB3_HUMAN
+P54760,EPHB4,Ephrin type-B receptor 4,"['EPHB4', 'HTK', 'MYK1', 'TYRO11']",EPHB4_HUMAN
+O15197,EPHB6,Ephrin type-B receptor 6,['EPHB6'],EPHB6_HUMAN
+P04626,ERBB2,Receptor tyrosine-protein kinase erbB-2,"['ERBB2', 'HER2', 'MLN19', 'NEU', 'NGL']",ERBB2_HUMAN
+P21860,ERBB3,Receptor tyrosine-protein kinase erbB-3,"['ERBB3', 'HER3']",ERBB3_HUMAN
+Q15303,ERBB4,Receptor tyrosine-protein kinase erbB-4,"['ERBB4', 'HER4']",ERBB4_HUMAN
+P16591,FER,Tyrosine-protein kinase Fer,"['FER', 'TYK3']",FER_HUMAN
+P07332,FES,Tyrosine-protein kinase Fes/Fps,"['FES', 'FPS']",FES_HUMAN
+P11362,FGFR1,Fibroblast growth factor receptor 1,"['FGFR1', 'BFGFR', 'CEK', 'FGFBR', 'FLG', 'FLT2', 'HBGFR']",FGFR1_HUMAN
+P21802,FGFR2,Fibroblast growth factor receptor 2,"['FGFR2', 'BEK', 'KGFR', 'KSAM']",FGFR2_HUMAN
+P22607,FGFR3,Fibroblast growth factor receptor 3,"['FGFR3', 'JTK4']",FGFR3_HUMAN
+P22455,FGFR4,Fibroblast growth factor receptor 4,"['FGFR4', 'JTK2', 'TKF']",FGFR4_HUMAN
+P09769,FGR,Tyrosine-protein kinase Fgr,"['FGR', 'SRC2']",FGR_HUMAN
+P17948,FLT1,Vascular endothelial growth factor receptor 1,"['FLT1', 'FLT', 'FRT', 'VEGFR1']",VGFR1_HUMAN
+P36888,FLT3,Receptor-type tyrosine-protein kinase FLT3,"['FLT3', 'CD135', 'FLK2', 'STK1']",FLT3_HUMAN
+P35916,FLT4,Vascular endothelial growth factor receptor 3,"['FLT4', 'VEGFR3']",VGFR3_HUMAN
+P42685,FRK,Tyrosine-protein kinase FRK,"['FRK', 'PTK5', 'RAK']",FRK_HUMAN
+P06241,FYN,Tyrosine-protein kinase Fyn,['FYN'],FYN_HUMAN
+P08631,HCK,Tyrosine-protein kinase HCK,['HCK'],HCK_HUMAN
+P08069,IGF1R,Insulin-like growth factor 1 receptor,['IGF1R'],IGF1R_HUMAN
+P06213,INSR,Insulin receptor,['INSR'],INSR_HUMAN
+P14616,INSRR,Insulin receptor-related protein,"['INSRR', 'IRR']",INSRR_HUMAN
+Q08881,ITK,Tyrosine-protein kinase ITK/TSK,"['ITK', 'EMT', 'LYK']",ITK_HUMAN
+P23458,JAK1,Tyrosine-protein kinase JAK1,"['JAK1', 'JAK1A', 'JAK1B']",JAK1_HUMAN
+O60674,JAK2,Tyrosine-protein kinase JAK2,['JAK2'],JAK2_HUMAN
+P52333,JAK3,Tyrosine-protein kinase JAK3,['JAK3'],JAK3_HUMAN
+P35968,KDR,Vascular endothelial growth factor receptor 2,"['KDR', 'FLK1', 'VEGFR2']",VGFR2_HUMAN
+P10721,KIT,Mast/stem cell growth factor receptor Kit,"['KIT', 'SCFR']",KIT_HUMAN
+P06239,LCK,Tyrosine-protein kinase Lck,['LCK'],LCK_HUMAN
+Q8IWU2,LMTK2,Serine/threonine-protein kinase LMTK2,"['LMTK2', 'AATYK2', 'BREK', 'KIAA1079', 'KPI2', 'LMR2']",LMTK2_HUMAN
+Q96Q04,LMTK3,Serine/threonine-protein kinase LMTK3,"['LMTK3', 'KIAA1883', 'TYKLM3']",LMTK3_HUMAN
+P29376,LTK,Leukocyte tyrosine kinase receptor,"['LTK', 'TYK1']",LTK_HUMAN
+P07948,LYN,Tyrosine-protein kinase Lyn,"['LYN', 'JTK8']",LYN_HUMAN
+P42679,MATK,Megakaryocyte-associated tyrosine-protein kinase,"['MATK', 'CTK', 'HYL']",MATK_HUMAN
+Q12866,MERTK,Tyrosine-protein kinase Mer,"['MERTK', 'MER']",MERTK_HUMAN
+P08581,MET,Hepatocyte growth factor receptor,['MET'],MET_HUMAN
+Q04912,MST1R,Macrophage-stimulating protein receptor,"['MST1R', 'PTK8', 'RON']",RON_HUMAN
+O15146,MUSK,"Muscle, skeletal receptor tyrosine-protein kinase",['MUSK'],MUSK_HUMAN
+P04629,NTRK1,High affinity nerve growth factor receptor,"['NTRK1', 'MTC', 'TRK', 'TRKA']",NTRK1_HUMAN
+Q16620,NTRK2,BDNF/NT-3 growth factors receptor,"['NTRK2', 'TRKB']",NTRK2_HUMAN
+Q16288,NTRK3,NT-3 growth factor receptor,"['NTRK3', 'TRKC']",NTRK3_HUMAN
+P16234,PDGFRA,Platelet-derived growth factor receptor alpha,"['PDGFRA', 'PDGFR2', 'RHEPDGFRA']",PGFRA_HUMAN
+P09619,PDGFRB,Platelet-derived growth factor receptor beta,"['PDGFRB', 'PDGFR', 'PDGFR1']",PGFRB_HUMAN
+Q05397,PTK2,Focal adhesion kinase 1,"['PTK2', 'FAK', 'FAK1']",FAK1_HUMAN
+Q14289,PTK2B,Protein-tyrosine kinase 2-beta,"['PTK2B', 'FAK2', 'PYK2', 'RAFTK']",FAK2_HUMAN
+Q13882,PTK6,Protein-tyrosine kinase 6,"['PTK6', 'BRK']",PTK6_HUMAN
+Q13308,PTK7,Inactive tyrosine-protein kinase 7,"['PTK7', 'CCK4']",PTK7_HUMAN
+P07949,RET,Proto-oncogene tyrosine-protein kinase receptor Ret,"['RET', 'CDHF12', 'CDHR16', 'PTC', 'RET51']",RET_HUMAN
+Q01973,ROR1,Inactive tyrosine-protein kinase transmembrane receptor ROR1,"['ROR1', 'NTRKR1']",ROR1_HUMAN
+Q01974,ROR2,Tyrosine-protein kinase transmembrane receptor ROR2,"['ROR2', 'NTRKR2']",ROR2_HUMAN
+P08922,ROS1,Proto-oncogene tyrosine-protein kinase ROS,"['ROS1', 'MCF3', 'ROS']",ROS1_HUMAN
+P34925,RYK,Tyrosine-protein kinase RYK,"['RYK', 'JTK5A']",RYK_HUMAN
+P12931,SRC,Proto-oncogene tyrosine-protein kinase Src,"['SRC', 'SRC1']",SRC_HUMAN
+Q9H3Y6,SRMS,Tyrosine-protein kinase Srms,"['SRMS', 'C20orf148']",SRMS_HUMAN
+Q6J9G0,STYK1,Tyrosine-protein kinase STYK1,"['STYK1', 'NOK']",STYK1_HUMAN
+P43405,SYK,Tyrosine-protein kinase SYK,['SYK'],KSYK_HUMAN
+P42680,TEC,Tyrosine-protein kinase Tec,"['TEC', 'PSCTK4']",TEC_HUMAN
+Q02763,TEK,Angiopoietin-1 receptor,"['TEK', 'TIE2', 'VMCM', 'VMCM1']",TIE2_HUMAN
+P35590,TIE1,Tyrosine-protein kinase receptor Tie-1,"['TIE1', 'TIE']",TIE1_HUMAN
+Q13470,TNK1,Non-receptor tyrosine-protein kinase TNK1,['TNK1'],TNK1_HUMAN
+Q07912,TNK2,Activated CDC42 kinase 1,"['TNK2', 'ACK1']",ACK1_HUMAN
+P42681,TXK,Tyrosine-protein kinase TXK,"['TXK', 'PTK4', 'RLK']",TXK_HUMAN
+P29597,TYK2,Non-receptor tyrosine-protein kinase TYK2,['TYK2'],TYK2_HUMAN
+Q06418,TYRO3,Tyrosine-protein kinase receptor TYRO3,"['TYRO3', 'BYK', 'DTK', 'RSE', 'SKY', 'TIF']",TYRO3_HUMAN
+P07947,YES1,Tyrosine-protein kinase Yes,"['YES1', 'YES']",YES_HUMAN
+P43403,ZAP70,Tyrosine-protein kinase ZAP-70,"['ZAP70', 'SRK']",ZAP70_HUMAN
+Q2M2I8,AAK1,AP2-associated protein kinase 1,"['AAK1', 'KIAA1048']",AAK1_HUMAN
+O14965,AURKA,Aurora kinase A,"['AURKA', 'AIK', 'AIRK1', 'ARK1', 'AURA', 'AYK1', 'BTAK', 'IAK1', 'STK15', 'STK6']",AURKA_HUMAN
+Q96GD4,AURKB,Aurora kinase B,"['AURKB', 'AIK2', 'AIM1', 'AIRK2', 'ARK2', 'STK1', 'STK12', 'STK5']",AURKB_HUMAN
+Q9UQB9,AURKC,Aurora kinase C,"['AURKC', 'AIE2', 'AIK3', 'AIRK3', 'ARK3', 'STK13']",AURKC_HUMAN
+Q9NSY1,BMP2K,BMP-2-inducible protein kinase,"['BMP2K', 'BIKE', 'HRIHFB2017']",BMP2K_HUMAN
+O43683,BUB1,Mitotic checkpoint serine/threonine-protein kinase BUB1,"['BUB1', 'BUB1L']",BUB1_HUMAN
+O60566,BUB1B,Mitotic checkpoint serine/threonine-protein kinase BUB1 beta,"['BUB1B', 'BUBR1', 'MAD3L', 'SSK1']",BUB1B_HUMAN
+Q8N5S9,CAMKK1,Calcium/calmodulin-dependent protein kinase kinase 1,"['CAMKK1', 'CAMKKA']",KKCC1_HUMAN
+Q96RR4,CAMKK2,Calcium/calmodulin-dependent protein kinase kinase 2,"['CAMKK2', 'CAMKKB', 'KIAA0787']",KKCC2_HUMAN
+O00311,CDC7,Cell division cycle 7-related protein kinase,"['CDC7', 'CDC7L1']",CDC7_HUMAN
+O15111,CHUK,Inhibitor of nuclear factor kappa-B kinase subunit alpha,"['CHUK', 'IKKA', 'TCF16']",IKKA_HUMAN
+P68400,CSNK2A1,Casein kinase II subunit alpha,"['CSNK2A1', 'CK2A1']",CSK21_HUMAN
+P19784,CSNK2A2,Casein kinase II subunit alpha',"['CSNK2A2', 'CK2A2']",CSK22_HUMAN
+Q8NEV1,CSNK2A3,Casein kinase II subunit alpha 3,"['CSNK2A3', 'CSNK2A1P']",CSK23_HUMAN
+Q6XUX3,DSTYK,Dual serine/threonine and tyrosine protein kinase,"['DSTYK', 'KIAA0472', 'RIP5', 'RIPK5', 'SGK496', 'HDCMD38P']",DUSTY_HUMAN
+Q9BQI3,EIF2AK1,Eukaryotic translation initiation factor 2-alpha kinase 1,"['EIF2AK1', 'HRI', 'KIAA1369', 'PRO1362']",E2AK1_HUMAN
+P19525,EIF2AK2,"Interferon-induced, double-stranded RNA-activated protein kinase","['EIF2AK2', 'PKR', 'PRKR']",E2AK2_HUMAN
+Q9NZJ5,EIF2AK3,Eukaryotic translation initiation factor 2-alpha kinase 3,"['EIF2AK3', 'PEK', 'PERK']",E2AK3_HUMAN
+Q9P2K8,EIF2AK4,eIF-2-alpha kinase GCN2,"['EIF2AK4', 'GCN2', 'KIAA1338']",E2AK4_HUMAN
+O75460,ERN1,Serine/threonine-protein kinase/endoribonuclease IRE1,"['ERN1', 'IRE1']",ERN1_HUMAN
+Q76MJ5,ERN2,Serine/threonine-protein kinase/endoribonuclease IRE2,"['ERN2', 'IRE2']",ERN2_HUMAN
+O14976,GAK,Cyclin-G-associated kinase,['GAK'],GAK_HUMAN
+Q8TF76,HASPIN,Serine/threonine-protein kinase haspin,"['HASPIN', 'GSG2']",HASP_HUMAN
+O14920,IKBKB,Inhibitor of nuclear factor kappa-B kinase subunit beta,"['IKBKB', 'IKKB']",IKKB_HUMAN
+Q14164,IKBKE,Inhibitor of nuclear factor kappa-B kinase subunit epsilon,"['IKBKE', 'IKKE', 'IKKI', 'KIAA0151']",IKKE_HUMAN
+Q8NB16,MLKL,Mixed lineage kinase domain-like protein,['MLKL'],MLKL_HUMAN
+P00540,MOS,Proto-oncogene serine/threonine-protein kinase mos,['MOS'],MOS_HUMAN
+Q9UHY1,NRBP1,Nuclear receptor-binding protein,"['NRBP1', 'BCON3', 'NRBP']",NRBP_HUMAN
+Q9NSY0,NRBP2,Nuclear receptor-binding protein 2,"['NRBP2', 'PP9320', 'TRG16']",NRBP2_HUMAN
+Q58A45,PAN3,PAN2-PAN3 deadenylation complex subunit PAN3,['PAN3'],PAN3_HUMAN
+Q8N165,PDIK1L,Serine/threonine-protein kinase PDIK1L,"['PDIK1L', 'CLIK1L']",PDK1L_HUMAN
+Q9H792,PEAK1,Inactive tyrosine-protein kinase PEAK1,"['PEAK1', 'KIAA2002']",PEAK1_HUMAN
+Q99570,PIK3R4,Phosphoinositide 3-kinase regulatory subunit 4,"['PIK3R4', 'VPS15']",PI3R4_HUMAN
+Q9BXM7,PINK1,"Serine/threonine-protein kinase PINK1, mitochondrial",['PINK1'],PINK1_HUMAN
+Q504Y2,PKDCC,Extracellular tyrosine-protein kinase PKDCC,"['PKDCC', 'SGK493', 'VLK']",PKDCC_HUMAN
+Q99640,PKMYT1,Membrane-associated tyrosine- and threonine-specific cdc2-inhibitory kinase,"['PKMYT1', 'MYT1']",PMYT1_HUMAN
+P53350,PLK1,Serine/threonine-protein kinase PLK1,"['PLK1', 'PLK']",PLK1_HUMAN
+Q9NYY3,PLK2,Serine/threonine-protein kinase PLK2,"['PLK2', 'SNK']",PLK2_HUMAN
+Q9H4B4,PLK3,Serine/threonine-protein kinase PLK3,"['PLK3', 'CNK', 'FNK', 'PRK']",PLK3_HUMAN
+O00444,PLK4,Serine/threonine-protein kinase PLK4,"['PLK4', 'SAK', 'STK18']",PLK4_HUMAN
+Q496M5,PLK5,Inactive serine/threonine-protein kinase PLK5,"['PLK5', 'PLK5P', 'FG060302']",PLK5_HUMAN
+Q9H5K3,POMK,Protein O-mannose kinase,"['POMK', 'SGK196']",SG196_HUMAN
+Q86YV5,PRAG1,Inactive tyrosine-protein kinase PRAG1,"['PRAG1', 'SGK223']",PRAG1_HUMAN
+Q7Z7A4,PXK,PX domain-containing protein kinase-like protein,['PXK'],PXK_HUMAN
+Q05823,RNASEL,2-5A-dependent ribonuclease,"['RNASEL', 'RNS4']",RN5A_HUMAN
+Q96S38,RPS6KC1,Ribosomal protein S6 kinase delta-1,"['RPS6KC1', 'RPK118']",KS6C1_HUMAN
+Q9Y6S9,RPS6KL1,Ribosomal protein S6 kinase-like 1,['RPS6KL1'],RPKL1_HUMAN
+Q96LW2,RSKR,Ribosomal protein S6 kinase-related protein,"['RSKR', 'SGK494']",KS6R_HUMAN
+Q52WX2,SBK1,Serine/threonine-protein kinase SBK1,['SBK1'],SBK1_HUMAN
+P0C263,SBK2,Serine/threonine-protein kinase SBK2,"['SBK2', 'SGK069']",SBK2_HUMAN
+P0C264,SBK3,Uncharacterized serine/threonine-protein kinase SBK3,"['SBK3', 'SGK110']",SBK3_HUMAN
+Q96KG9,SCYL1,N-terminal kinase-like protein,"['SCYL1', 'CVAK90', 'GKLP', 'NTKL', 'TAPK', 'TEIF', 'TRAP', 'HT019']",SCYL1_HUMAN
+Q6P3W7,SCYL2,SCY1-like protein 2,"['SCYL2', 'CVAK104', 'KIAA1360']",SCYL2_HUMAN
+Q8IZE3,SCYL3,Protein-associating with the carboxyl-terminal domain of ezrin,"['SCYL3', 'PACE1']",PACE1_HUMAN
+O75716,STK16,Serine/threonine-protein kinase 16,"['STK16', 'MPSK1', 'PKL12', 'TSF1']",STK16_HUMAN
+Q9BXU1,STK31,Serine/threonine-protein kinase 31,"['STK31', 'SGK396']",STK31_HUMAN
+Q8WU08,STK32A,Serine/threonine-protein kinase 32A,"['STK32A', 'YANK1']",ST32A_HUMAN
+Q9NY57,STK32B,Serine/threonine-protein kinase 32B,"['STK32B', 'YANK2', 'UNQ3003/PRO9744']",ST32B_HUMAN
+Q86UX6,STK32C,Serine/threonine-protein kinase 32C,"['STK32C', 'YANK3']",ST32C_HUMAN
+Q8TDR2,STK35,Serine/threonine-protein kinase 35,"['STK35', 'CLIK1', 'PDIK1', 'STK35L1']",STK35_HUMAN
+Q9NRP7,STK36,Serine/threonine-protein kinase 36,"['STK36', 'KIAA1278']",STK36_HUMAN
+Q8NE28,STKLD1,Serine/threonine kinase-like domain-containing protein STKLD1,"['STKLD1', 'C9orf96', 'SGK071']",STKL1_HUMAN
+Q8TEA7,TBCK,TBC domain-containing protein kinase-like protein,"['TBCK', 'TBCKL', 'HSPC302']",TBCK_HUMAN
+Q9UHD2,TBK1,Serine/threonine-protein kinase TBK1,"['TBK1', 'NAK']",TBK1_HUMAN
+Q8IWB6,TEX14,Inactive serine/threonine-protein kinase TEX14,"['TEX14', 'SGK307']",TEX14_HUMAN
+Q9UKI8,TLK1,Serine/threonine-protein kinase tousled-like 1,"['TLK1', 'KIAA0137']",TLK1_HUMAN
+Q86UE8,TLK2,Serine/threonine-protein kinase tousled-like 2,['TLK2'],TLK2_HUMAN
+Q96S44,TP53RK,EKC/KEOPS complex subunit TP53RK,"['TP53RK', 'C20orf64', 'PRPK']",PRPK_HUMAN
+P33981,TTK,Dual specificity protein kinase TTK,"['TTK', 'MPS1', 'MPS1L1']",TTK_HUMAN
+Q8TAS1,UHMK1,Serine/threonine-protein kinase Kist,"['UHMK1', 'KIS', 'KIST']",UHMK1_HUMAN
+O75385,ULK1,Serine/threonine-protein kinase ULK1,"['ULK1', 'KIAA0722']",ULK1_HUMAN
+Q8IYT8,ULK2,Serine/threonine-protein kinase ULK2,"['ULK2', 'KIAA0623']",ULK2_HUMAN
+Q6PHR2,ULK3,Serine/threonine-protein kinase ULK3,['ULK3'],ULK3_HUMAN
+Q96C45,ULK4,Serine/threonine-protein kinase ULK4,['ULK4'],ULK4_HUMAN
+P30291,WEE1,Wee1-like protein kinase,['WEE1'],WEE1_HUMAN
+P0C1S8,WEE2,Wee1-like protein kinase 2,"['WEE2', 'WEE1B']",WEE2_HUMAN
+Q9H4A3,WNK1,Serine/threonine-protein kinase WNK1,"['WNK1', 'HSN2', 'KDP', 'KIAA0344', 'PRKWNK1']",WNK1_HUMAN
+Q9Y3S1,WNK2,Serine/threonine-protein kinase WNK2,"['WNK2', 'KIAA1760', 'PRKWNK2', 'SDCCAG43', 'P/OKcl.13']",WNK2_HUMAN
+Q9BYP7,WNK3,Serine/threonine-protein kinase WNK3,"['WNK3', 'KIAA1566', 'PRKWNK3']",WNK3_HUMAN
+Q96J92,WNK4,Serine/threonine-protein kinase WNK4,"['WNK4', 'PRKWNK4']",WNK4_HUMAN
+Q86TW2,ADCK1,AarF domain-containing protein kinase 1,['ADCK1'],ADCK1_HUMAN
+Q7Z695,ADCK2,Uncharacterized aarF domain-containing protein kinase 2,"['ADCK2', 'AARF']",ADCK2_HUMAN
+Q3MIX3,ADCK5,Uncharacterized aarF domain-containing protein kinase 5,['ADCK5'],ADCK5_HUMAN
+Q8NI60,COQ8A,"Atypical kinase COQ8A, mitochondrial","['COQ8A', 'ADCK3', 'CABC1', 'PP265']",COQ8A_HUMAN
+Q96D53,COQ8B,"Atypical kinase COQ8B, mitochondrial","['COQ8B', 'ADCK4']",COQ8B_HUMAN
+Q96QP1,ALPK1,Alpha-protein kinase 1,"['ALPK1', 'KIAA1527', 'LAK']",ALPK1_HUMAN
+Q86TB3,ALPK2,Alpha-protein kinase 2,"['ALPK2', 'HAK']",ALPK2_HUMAN
+Q96L96,ALPK3,Alpha-protein kinase 3,"['ALPK3', 'KIAA1330', 'MAK']",ALPK3_HUMAN
+O00418,EEF2K,Eukaryotic elongation factor 2 kinase,['EEF2K'],EF2K_HUMAN
+Q9BX84,TRPM6,Transient receptor potential cation channel subfamily M member 6,"['TRPM6', 'CHAK2']",TRPM6_HUMAN
+Q96QT4,TRPM7,Transient receptor potential cation channel subfamily M member 7,"['TRPM7', 'CHAK1', 'LTRPC7']",TRPM7_HUMAN
+Q14296,FASTK,Fas-activated serine/threonine kinase,['FASTK'],FASTK_HUMAN
+O14874,BCKDK,"[3-methyl-2-oxobutanoate dehydrogenase [lipoamide]] kinase, mitochondrial",['BCKDK'],BCKD_HUMAN
+Q15118,PDK1,[Pyruvate dehydrogenase,"['PDK1', 'PDHK1']",PDK1_HUMAN
+Q15119,PDK2,[Pyruvate dehydrogenase,"['PDK2', 'PDHK2']",PDK2_HUMAN
+Q15120,PDK3,[Pyruvate dehydrogenase,"['PDK3', 'PDHK3']",PDK3_HUMAN
+Q16654,PDK4,[Pyruvate dehydrogenase,"['PDK4', 'PDHK4']",PDK4_HUMAN
+Q13315,ATM,Serine-protein kinase ATM,['ATM'],ATM_HUMAN
+Q13535,ATR,Serine/threonine-protein kinase ATR,"['ATR', 'FRP1']",ATR_HUMAN
+P42345,MTOR,Serine/threonine-protein kinase mTOR,"['MTOR', 'FRAP', 'FRAP1', 'FRAP2', 'RAFT1', 'RAPT1']",MTOR_HUMAN
+P42336,PIK3CA,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform",['PIK3CA'],PK3CA_HUMAN
+P42338,PIK3CB,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit beta isoform","['PIK3CB', 'PIK3C1']",PK3CB_HUMAN
+O00329,PIK3CD,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit delta isoform",['PIK3CD'],PK3CD_HUMAN
+P48736,PIK3CG,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit gamma isoform",['PIK3CG'],PK3CG_HUMAN
+P78527,PRKDC,DNA-dependent protein kinase catalytic subunit,"['PRKDC', 'HYRC', 'HYRC1']",PRKDC_HUMAN
+Q96Q15,SMG1,Serine/threonine-protein kinase SMG1,"['SMG1', 'ATX', 'KIAA0421', 'LIP']",SMG1_HUMAN
+Q9BRS2,RIOK1,Serine/threonine-protein kinase RIO1,"['RIOK1', 'RIO1']",RIOK1_HUMAN
+Q9BVS4,RIOK2,Serine/threonine-protein kinase RIO2,"['RIOK2', 'RIO2']",RIOK2_HUMAN
+O14730,RIOK3,Serine/threonine-protein kinase RIO3,"['RIOK3', 'SUDD']",RIOK3_HUMAN
