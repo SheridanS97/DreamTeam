@@ -1,0 +1,513 @@
+family,gene_name,uniprot_identifier,uniprot_number
+AGC Ser/Thr protein kinase family,AKT1,AKT1_HUMAN,P31749
+AGC Ser/Thr protein kinase family,AKT2,AKT2_HUMAN,P31751
+AGC Ser/Thr protein kinase family,AKT3,AKT3_HUMAN,Q9Y243
+AGC Ser/Thr protein kinase family,CDC42BPA,MRCKA_HUMAN,Q5VT25
+AGC Ser/Thr protein kinase family,CDC42BPB,MRCKB_HUMAN,Q9Y5S2
+AGC Ser/Thr protein kinase family,CDC42BPG,MRCKG_HUMAN,Q6DT37
+AGC Ser/Thr protein kinase family,CIT,CTRO_HUMAN,O14578
+AGC Ser/Thr protein kinase family,DMPK,DMPK_HUMAN,Q09013
+AGC Ser/Thr protein kinase family,GRK1,GRK1_HUMAN,Q15835
+AGC Ser/Thr protein kinase family,GRK2,ARBK1_HUMAN,P25098
+AGC Ser/Thr protein kinase family,GRK3,ARBK2_HUMAN,P35626
+AGC Ser/Thr protein kinase family,GRK4,GRK4_HUMAN,P32298
+AGC Ser/Thr protein kinase family,GRK5,GRK5_HUMAN,P34947
+AGC Ser/Thr protein kinase family,GRK6,GRK6_HUMAN,P43250
+AGC Ser/Thr protein kinase family,GRK7,GRK7_HUMAN,Q8WTQ7
+AGC Ser/Thr protein kinase family,LATS1,LATS1_HUMAN,O95835
+AGC Ser/Thr protein kinase family,LATS2,LATS2_HUMAN,Q9NRM7
+AGC Ser/Thr protein kinase family,MAST1,MAST1_HUMAN,Q9Y2H9
+AGC Ser/Thr protein kinase family,MAST2,MAST2_HUMAN,Q6P0Q8
+AGC Ser/Thr protein kinase family,MAST3,MAST3_HUMAN,O60307
+AGC Ser/Thr protein kinase family,MAST4,MAST4_HUMAN,O15021
+AGC Ser/Thr protein kinase family,MASTL,GWL_HUMAN,Q96GX5
+AGC Ser/Thr protein kinase family,PDPK1,PDPK1_HUMAN,O15530
+AGC Ser/Thr protein kinase family,PDPK2P,PDPK2_HUMAN,Q6A1A2
+AGC Ser/Thr protein kinase family,PKN1,PKN1_HUMAN,Q16512
+AGC Ser/Thr protein kinase family,PKN2,PKN2_HUMAN,Q16513
+AGC Ser/Thr protein kinase family,PKN3,PKN3_HUMAN,Q6P5Z2
+AGC Ser/Thr protein kinase family,PRKACA,KAPCA_HUMAN,P17612
+AGC Ser/Thr protein kinase family,PRKACB,KAPCB_HUMAN,P22694
+AGC Ser/Thr protein kinase family,PRKACG,KAPCG_HUMAN,P22612
+AGC Ser/Thr protein kinase family,PRKCA,KPCA_HUMAN,P17252
+AGC Ser/Thr protein kinase family,PRKCB,KPCB_HUMAN,P05771
+AGC Ser/Thr protein kinase family,PRKCD,KPCD_HUMAN,Q05655
+AGC Ser/Thr protein kinase family,PRKCE,KPCE_HUMAN,Q02156
+AGC Ser/Thr protein kinase family,PRKCG,KPCG_HUMAN,P05129
+AGC Ser/Thr protein kinase family,PRKCH,KPCL_HUMAN,P24723
+AGC Ser/Thr protein kinase family,PRKCI,KPCI_HUMAN,P41743
+AGC Ser/Thr protein kinase family,PRKCQ,KPCT_HUMAN,Q04759
+AGC Ser/Thr protein kinase family,PRKCZ,KPCZ_HUMAN,Q05513
+AGC Ser/Thr protein kinase family,PRKG1,KGP1_HUMAN,Q13976
+AGC Ser/Thr protein kinase family,PRKG2,KGP2_HUMAN,Q13237
+AGC Ser/Thr protein kinase family,PRKX,PRKX_HUMAN,P51817
+AGC Ser/Thr protein kinase family,PRKY,PRKY_HUMAN,O43930
+AGC Ser/Thr protein kinase family,ROCK1,ROCK1_HUMAN,Q13464
+AGC Ser/Thr protein kinase family,ROCK2,ROCK2_HUMAN,O75116
+AGC Ser/Thr protein kinase family,RPS6KA1,KS6A1_HUMAN,Q15418
+AGC Ser/Thr protein kinase family,RPS6KA2,KS6A2_HUMAN,Q15349
+AGC Ser/Thr protein kinase family,RPS6KA3,KS6A3_HUMAN,P51812
+AGC Ser/Thr protein kinase family,RPS6KA4,KS6A4_HUMAN,O75676
+AGC Ser/Thr protein kinase family,RPS6KA5,KS6A5_HUMAN,O75582
+AGC Ser/Thr protein kinase family,RPS6KA6,KS6A6_HUMAN,Q9UK32
+AGC Ser/Thr protein kinase family,RPS6KB1,KS6B1_HUMAN,P23443
+AGC Ser/Thr protein kinase family,RPS6KB2,KS6B2_HUMAN,Q9UBS0
+AGC Ser/Thr protein kinase family,SGK1,SGK1_HUMAN,O00141
+AGC Ser/Thr protein kinase family,SGK2,SGK2_HUMAN,Q9HBY8
+AGC Ser/Thr protein kinase family,SGK3,SGK3_HUMAN,Q96BR1
+AGC Ser/Thr protein kinase family,STK38,STK38_HUMAN,Q15208
+AGC Ser/Thr protein kinase family,STK38L,ST38L_HUMAN,Q9Y2H1
+CAMK Ser/Thr protein kinase family,BRSK1,BRSK1_HUMAN,Q8TDC3
+CAMK Ser/Thr protein kinase family,BRSK2,BRSK2_HUMAN,Q8IWQ3
+CAMK Ser/Thr protein kinase family,CAMK1,KCC1A_HUMAN,Q14012
+CAMK Ser/Thr protein kinase family,CAMK1D,KCC1D_HUMAN,Q8IU85
+CAMK Ser/Thr protein kinase family,CAMK1G,KCC1G_HUMAN,Q96NX5
+CAMK Ser/Thr protein kinase family,CAMK2A,KCC2A_HUMAN,Q9UQM7
+CAMK Ser/Thr protein kinase family,CAMK2B,KCC2B_HUMAN,Q13554
+CAMK Ser/Thr protein kinase family,CAMK2D,KCC2D_HUMAN,Q13557
+CAMK Ser/Thr protein kinase family,CAMK2G,KCC2G_HUMAN,Q13555
+CAMK Ser/Thr protein kinase family,CAMK4,KCC4_HUMAN,Q16566
+CAMK Ser/Thr protein kinase family,CAMKV,CAMKV_HUMAN,Q8NCB2
+CAMK Ser/Thr protein kinase family,CASK,CSKP_HUMAN,O14936
+CAMK Ser/Thr protein kinase family,CHEK1,CHK1_HUMAN,O14757
+CAMK Ser/Thr protein kinase family,CHEK2,CHK2_HUMAN,O96017
+CAMK Ser/Thr protein kinase family,DAPK1,DAPK1_HUMAN,P53355
+CAMK Ser/Thr protein kinase family,DAPK2,DAPK2_HUMAN,Q9UIK4
+CAMK Ser/Thr protein kinase family,DAPK3,DAPK3_HUMAN,O43293
+CAMK Ser/Thr protein kinase family,DCLK1,DCLK1_HUMAN,O15075
+CAMK Ser/Thr protein kinase family,DCLK2,DCLK2_HUMAN,Q8N568
+CAMK Ser/Thr protein kinase family,DCLK3,DCLK3_HUMAN,Q9C098
+CAMK Ser/Thr protein kinase family,HUNK,HUNK_HUMAN,P57058
+CAMK Ser/Thr protein kinase family,KALRN,KALRN_HUMAN,O60229
+CAMK Ser/Thr protein kinase family,MAPKAPK2,MAPK2_HUMAN,P49137
+CAMK Ser/Thr protein kinase family,MAPKAPK3,MAPK3_HUMAN,Q16644
+CAMK Ser/Thr protein kinase family,MAPKAPK5,MAPK5_HUMAN,Q8IW41
+CAMK Ser/Thr protein kinase family,MARK1,MARK1_HUMAN,Q9P0L2
+CAMK Ser/Thr protein kinase family,MARK2,MARK2_HUMAN,Q7KZI7
+CAMK Ser/Thr protein kinase family,MARK3,MARK3_HUMAN,P27448
+CAMK Ser/Thr protein kinase family,MARK4,MARK4_HUMAN,Q96L34
+CAMK Ser/Thr protein kinase family,MELK,MELK_HUMAN,Q14680
+CAMK Ser/Thr protein kinase family,MKNK1,MKNK1_HUMAN,Q9BUB5
+CAMK Ser/Thr protein kinase family,MKNK2,MKNK2_HUMAN,Q9HBH9
+CAMK Ser/Thr protein kinase family,MYLK,MYLK_HUMAN,Q15746
+CAMK Ser/Thr protein kinase family,MYLK2,MYLK2_HUMAN,Q9H1R3
+CAMK Ser/Thr protein kinase family,MYLK3,MYLK3_HUMAN,Q32MK0
+CAMK Ser/Thr protein kinase family,MYLK4,MYLK4_HUMAN,Q86YV6
+CAMK Ser/Thr protein kinase family,NIM1K,NIM1_HUMAN,Q8IY84
+CAMK Ser/Thr protein kinase family,NUAK1,NUAK1_HUMAN,O60285
+CAMK Ser/Thr protein kinase family,NUAK2,NUAK2_HUMAN,Q9H093
+CAMK Ser/Thr protein kinase family,OBSCN,OBSCN_HUMAN,Q5VST9
+CAMK Ser/Thr protein kinase family,PASK,PASK_HUMAN,Q96RG2
+CAMK Ser/Thr protein kinase family,PHKG1,PHKG1_HUMAN,Q16816
+CAMK Ser/Thr protein kinase family,PHKG2,PHKG2_HUMAN,P15735
+CAMK Ser/Thr protein kinase family,PIM1,PIM1_HUMAN,P11309
+CAMK Ser/Thr protein kinase family,PIM2,PIM2_HUMAN,Q9P1W9
+CAMK Ser/Thr protein kinase family,PIM3,PIM3_HUMAN,Q86V86
+CAMK Ser/Thr protein kinase family,PNCK,KCC1B_HUMAN,Q6P2M8
+CAMK Ser/Thr protein kinase family,PRKAA1,AAPK1_HUMAN,Q13131
+CAMK Ser/Thr protein kinase family,PRKAA2,AAPK2_HUMAN,P54646
+CAMK Ser/Thr protein kinase family,PRKD1,KPCD1_HUMAN,Q15139
+CAMK Ser/Thr protein kinase family,PRKD2,KPCD2_HUMAN,Q9BZL6
+CAMK Ser/Thr protein kinase family,PRKD3,KPCD3_HUMAN,O94806
+CAMK Ser/Thr protein kinase family,PSKH1,KPSH1_HUMAN,P11801
+CAMK Ser/Thr protein kinase family,PSKH2,KPSH2_HUMAN,Q96QS6
+CAMK Ser/Thr protein kinase family,SIK1,SIK1_HUMAN,P57059
+CAMK Ser/Thr protein kinase family,SIK1B,SIK1B_HUMAN,A0A0B4J2F2
+CAMK Ser/Thr protein kinase family,SIK2,SIK2_HUMAN,Q9H0K1
+CAMK Ser/Thr protein kinase family,SIK3,SIK3_HUMAN,Q9Y2K2
+CAMK Ser/Thr protein kinase family,SNRK,SNRK_HUMAN,Q9NRH2
+CAMK Ser/Thr protein kinase family,SPEG,SPEG_HUMAN,Q15772
+CAMK Ser/Thr protein kinase family,STK11,STK11_HUMAN,Q15831
+CAMK Ser/Thr protein kinase family,STK17A,ST17A_HUMAN,Q9UEE5
+CAMK Ser/Thr protein kinase family,STK17B,ST17B_HUMAN,O94768
+CAMK Ser/Thr protein kinase family,STK33,STK33_HUMAN,Q9BYT3
+CAMK Ser/Thr protein kinase family,STK40,STK40_HUMAN,Q8N2I9
+CAMK Ser/Thr protein kinase family,TRIB1,TRIB1_HUMAN,Q96RU8
+CAMK Ser/Thr protein kinase family,TRIB2,TRIB2_HUMAN,Q92519
+CAMK Ser/Thr protein kinase family,TRIB3,TRIB3_HUMAN,Q96RU7
+CAMK Ser/Thr protein kinase family,TRIO,TRIO_HUMAN,O75962
+CAMK Ser/Thr protein kinase family,TSSK1B,TSSK1_HUMAN,Q9BXA7
+CAMK Ser/Thr protein kinase family,TSSK2,TSSK2_HUMAN,Q96PF2
+CAMK Ser/Thr protein kinase family,TSSK3,TSSK3_HUMAN,Q96PN8
+CAMK Ser/Thr protein kinase family,TSSK4,TSSK4_HUMAN,Q6SA08
+CAMK Ser/Thr protein kinase family,TSSK6,TSSK6_HUMAN,Q9BXA6
+CAMK Ser/Thr protein kinase family,TTN,TITIN_HUMAN,Q8WZ42
+CK1 Ser/Thr protein kinase family,CSNK1A1,KC1A_HUMAN,P48729
+CK1 Ser/Thr protein kinase family,CSNK1A1L,KC1AL_HUMAN,Q8N752
+CK1 Ser/Thr protein kinase family,CSNK1D,KC1D_HUMAN,P48730
+CK1 Ser/Thr protein kinase family,CSNK1E,KC1E_HUMAN,P49674
+CK1 Ser/Thr protein kinase family,CSNK1G1,KC1G1_HUMAN,Q9HCP0
+CK1 Ser/Thr protein kinase family,CSNK1G2,KC1G2_HUMAN,P78368
+CK1 Ser/Thr protein kinase family,CSNK1G3,KC1G3_HUMAN,Q9Y6M4
+CK1 Ser/Thr protein kinase family,TTBK1,TTBK1_HUMAN,Q5TCY1
+CK1 Ser/Thr protein kinase family,TTBK2,TTBK2_HUMAN,Q6IQ55
+CK1 Ser/Thr protein kinase family,VRK1,VRK1_HUMAN,Q99986
+CK1 Ser/Thr protein kinase family,VRK2,VRK2_HUMAN,Q86Y07
+CK1 Ser/Thr protein kinase family,VRK3,VRK3_HUMAN,Q8IV63
+CMGC Ser/Thr protein kinase family,CDK1,CDK1_HUMAN,P06493
+CMGC Ser/Thr protein kinase family,CDK10,CDK10_HUMAN,Q15131
+CMGC Ser/Thr protein kinase family,CDK11A,CD11A_HUMAN,Q9UQ88
+CMGC Ser/Thr protein kinase family,CDK11B,CD11B_HUMAN,P21127
+CMGC Ser/Thr protein kinase family,CDK12,CDK12_HUMAN,Q9NYV4
+CMGC Ser/Thr protein kinase family,CDK13,CDK13_HUMAN,Q14004
+CMGC Ser/Thr protein kinase family,CDK14,CDK14_HUMAN,O94921
+CMGC Ser/Thr protein kinase family,CDK15,CDK15_HUMAN,Q96Q40
+CMGC Ser/Thr protein kinase family,CDK16,CDK16_HUMAN,Q00536
+CMGC Ser/Thr protein kinase family,CDK17,CDK17_HUMAN,Q00537
+CMGC Ser/Thr protein kinase family,CDK18,CDK18_HUMAN,Q07002
+CMGC Ser/Thr protein kinase family,CDK19,CDK19_HUMAN,Q9BWU1
+CMGC Ser/Thr protein kinase family,CDK2,CDK2_HUMAN,P24941
+CMGC Ser/Thr protein kinase family,CDK20,CDK20_HUMAN,Q8IZL9
+CMGC Ser/Thr protein kinase family,CDK3,CDK3_HUMAN,Q00526
+CMGC Ser/Thr protein kinase family,CDK4,CDK4_HUMAN,P11802
+CMGC Ser/Thr protein kinase family,CDK5,CDK5_HUMAN,Q00535
+CMGC Ser/Thr protein kinase family,CDK6,CDK6_HUMAN,Q00534
+CMGC Ser/Thr protein kinase family,CDK7,CDK7_HUMAN,P50613
+CMGC Ser/Thr protein kinase family,CDK8,CDK8_HUMAN,P49336
+CMGC Ser/Thr protein kinase family,CDK9,CDK9_HUMAN,P50750
+CMGC Ser/Thr protein kinase family,CDKL1,CDKL1_HUMAN,Q00532
+CMGC Ser/Thr protein kinase family,CDKL2,CDKL2_HUMAN,Q92772
+CMGC Ser/Thr protein kinase family,CDKL3,CDKL3_HUMAN,Q8IVW4
+CMGC Ser/Thr protein kinase family,CDKL4,CDKL4_HUMAN,Q5MAI5
+CMGC Ser/Thr protein kinase family,CDKL5,CDKL5_HUMAN,O76039
+CMGC Ser/Thr protein kinase family,CLK1,CLK1_HUMAN,P49759
+CMGC Ser/Thr protein kinase family,CLK2,CLK2_HUMAN,P49760
+CMGC Ser/Thr protein kinase family,CLK3,CLK3_HUMAN,P49761
+CMGC Ser/Thr protein kinase family,CLK4,CLK4_HUMAN,Q9HAZ1
+CMGC Ser/Thr protein kinase family,DYRK1A,DYR1A_HUMAN,Q13627
+CMGC Ser/Thr protein kinase family,DYRK1B,DYR1B_HUMAN,Q9Y463
+CMGC Ser/Thr protein kinase family,DYRK2,DYRK2_HUMAN,Q92630
+CMGC Ser/Thr protein kinase family,DYRK3,DYRK3_HUMAN,O43781
+CMGC Ser/Thr protein kinase family,DYRK4,DYRK4_HUMAN,Q9NR20
+CMGC Ser/Thr protein kinase family,GSK3A,GSK3A_HUMAN,P49840
+CMGC Ser/Thr protein kinase family,GSK3B,GSK3B_HUMAN,P49841
+CMGC Ser/Thr protein kinase family,HIPK1,HIPK1_HUMAN,Q86Z02
+CMGC Ser/Thr protein kinase family,HIPK2,HIPK2_HUMAN,Q9H2X6
+CMGC Ser/Thr protein kinase family,HIPK3,HIPK3_HUMAN,Q9H422
+CMGC Ser/Thr protein kinase family,HIPK4,HIPK4_HUMAN,Q8NE63
+CMGC Ser/Thr protein kinase family,ICK,ICK_HUMAN,Q9UPZ9
+CMGC Ser/Thr protein kinase family,MAK,MAK_HUMAN,P20794
+CMGC Ser/Thr protein kinase family,MAPK1,MK01_HUMAN,P28482
+CMGC Ser/Thr protein kinase family,MAPK10,MK10_HUMAN,P53779
+CMGC Ser/Thr protein kinase family,MAPK11,MK11_HUMAN,Q15759
+CMGC Ser/Thr protein kinase family,MAPK12,MK12_HUMAN,P53778
+CMGC Ser/Thr protein kinase family,MAPK13,MK13_HUMAN,O15264
+CMGC Ser/Thr protein kinase family,MAPK14,MK14_HUMAN,Q16539
+CMGC Ser/Thr protein kinase family,MAPK15,MK15_HUMAN,Q8TD08
+CMGC Ser/Thr protein kinase family,MAPK3,MK03_HUMAN,P27361
+CMGC Ser/Thr protein kinase family,MAPK4,MK04_HUMAN,P31152
+CMGC Ser/Thr protein kinase family,MAPK6,MK06_HUMAN,Q16659
+CMGC Ser/Thr protein kinase family,MAPK7,MK07_HUMAN,Q13164
+CMGC Ser/Thr protein kinase family,MAPK8,MK08_HUMAN,P45983
+CMGC Ser/Thr protein kinase family,MAPK9,MK09_HUMAN,P45984
+CMGC Ser/Thr protein kinase family,MOK,MOK_HUMAN,Q9UQ07
+CMGC Ser/Thr protein kinase family,NLK,NLK_HUMAN,Q9UBE8
+CMGC Ser/Thr protein kinase family,PRPF4B,PRP4B_HUMAN,Q13523
+CMGC Ser/Thr protein kinase family,SRPK1,SRPK1_HUMAN,Q96SB4
+CMGC Ser/Thr protein kinase family,SRPK2,SRPK2_HUMAN,P78362
+CMGC Ser/Thr protein kinase family,SRPK3,SRPK3_HUMAN,Q9UPE1
+NEK Ser/Thr protein kinase family,NEK1,NEK1_HUMAN,Q96PY6
+NEK Ser/Thr protein kinase family,NEK10,NEK10_HUMAN,Q6ZWH5
+NEK Ser/Thr protein kinase family,NEK11,NEK11_HUMAN,Q8NG66
+NEK Ser/Thr protein kinase family,NEK2,NEK2_HUMAN,P51955
+NEK Ser/Thr protein kinase family,NEK3,NEK3_HUMAN,P51956
+NEK Ser/Thr protein kinase family,NEK4,NEK4_HUMAN,P51957
+NEK Ser/Thr protein kinase family,NEK5,NEK5_HUMAN,Q6P3R8
+NEK Ser/Thr protein kinase family,NEK6,NEK6_HUMAN,Q9HC98
+NEK Ser/Thr protein kinase family,NEK7,NEK7_HUMAN,Q8TDX7
+NEK Ser/Thr protein kinase family,NEK8,NEK8_HUMAN,Q86SG6
+NEK Ser/Thr protein kinase family,NEK9,NEK9_HUMAN,Q8TD19
+RGC kinase: adenylyl cyclase class-4/guanylyl cyclase,GUCY2C,GUC2C_HUMAN,P25092
+RGC kinase: adenylyl cyclase class-4/guanylyl cyclase,GUCY2D,GUC2D_HUMAN,Q02846
+RGC kinase: adenylyl cyclase class-4/guanylyl cyclase,GUCY2F,GUC2F_HUMAN,P51841
+RGC kinase: adenylyl cyclase class-4/guanylyl cyclase,NPR1,ANPRA_HUMAN,P16066
+RGC kinase: adenylyl cyclase class-4/guanylyl cyclase,NPR2,ANPRB_HUMAN,P20594
+STE Ser/Thr protein kinase family,MAP2K1,MP2K1_HUMAN,Q02750
+STE Ser/Thr protein kinase family,MAP2K2,MP2K2_HUMAN,P36507
+STE Ser/Thr protein kinase family,MAP2K3,MP2K3_HUMAN,P46734
+STE Ser/Thr protein kinase family,MAP2K4,MP2K4_HUMAN,P45985
+STE Ser/Thr protein kinase family,MAP2K5,MP2K5_HUMAN,Q13163
+STE Ser/Thr protein kinase family,MAP2K6,MP2K6_HUMAN,P52564
+STE Ser/Thr protein kinase family,MAP2K7,MP2K7_HUMAN,O14733
+STE Ser/Thr protein kinase family,MAP3K1,M3K1_HUMAN,Q13233
+STE Ser/Thr protein kinase family,MAP3K10,M3K10_HUMAN,Q02779
+STE Ser/Thr protein kinase family,MAP3K11,M3K11_HUMAN,Q16584
+STE Ser/Thr protein kinase family,MAP3K12,M3K12_HUMAN,Q12852
+STE Ser/Thr protein kinase family,MAP3K13,M3K13_HUMAN,O43283
+STE Ser/Thr protein kinase family,MAP3K14,M3K14_HUMAN,Q99558
+STE Ser/Thr protein kinase family,MAP3K15,M3K15_HUMAN,Q6ZN16
+STE Ser/Thr protein kinase family,MAP3K19,M3K19_HUMAN,Q56UN5
+STE Ser/Thr protein kinase family,MAP3K2,M3K2_HUMAN,Q9Y2U5
+STE Ser/Thr protein kinase family,MAP3K20,M3K20_HUMAN,Q9NYL2
+STE Ser/Thr protein kinase family,MAP3K21,M3K21_HUMAN,Q5TCX8
+STE Ser/Thr protein kinase family,MAP3K3,M3K3_HUMAN,Q99759
+STE Ser/Thr protein kinase family,MAP3K4,M3K4_HUMAN,Q9Y6R4
+STE Ser/Thr protein kinase family,MAP3K5,M3K5_HUMAN,Q99683
+STE Ser/Thr protein kinase family,MAP3K6,M3K6_HUMAN,O95382
+STE Ser/Thr protein kinase family,MAP3K7,M3K7_HUMAN,O43318
+STE Ser/Thr protein kinase family,MAP3K8,M3K8_HUMAN,P41279
+STE Ser/Thr protein kinase family,MAP3K9,M3K9_HUMAN,P80192
+STE Ser/Thr protein kinase family,MAP4K1,M4K1_HUMAN,Q92918
+STE Ser/Thr protein kinase family,MAP4K2,M4K2_HUMAN,Q12851
+STE Ser/Thr protein kinase family,MAP4K3,M4K3_HUMAN,Q8IVH8
+STE Ser/Thr protein kinase family,MAP4K4,M4K4_HUMAN,O95819
+STE Ser/Thr protein kinase family,MAP4K5,M4K5_HUMAN,Q9Y4K4
+STE Ser/Thr protein kinase family,MINK1,MINK1_HUMAN,Q8N4C8
+STE Ser/Thr protein kinase family,MYO3A,MYO3A_HUMAN,Q8NEV4
+STE Ser/Thr protein kinase family,MYO3B,MYO3B_HUMAN,Q8WXR4
+STE Ser/Thr protein kinase family,NRK,NRK_HUMAN,Q7Z2Y5
+STE Ser/Thr protein kinase family,OXSR1,OXSR1_HUMAN,O95747
+STE Ser/Thr protein kinase family,PAK1,PAK1_HUMAN,Q13153
+STE Ser/Thr protein kinase family,PAK2,PAK2_HUMAN,Q13177
+STE Ser/Thr protein kinase family,PAK3,PAK3_HUMAN,O75914
+STE Ser/Thr protein kinase family,PAK4,PAK4_HUMAN,O96013
+STE Ser/Thr protein kinase family,PAK5,PAK5_HUMAN,Q9P286
+STE Ser/Thr protein kinase family,PAK6,PAK6_HUMAN,Q9NQU5
+STE Ser/Thr protein kinase family,PBK,TOPK_HUMAN,Q96KB5
+STE Ser/Thr protein kinase family,SLK,SLK_HUMAN,Q9H2G2
+STE Ser/Thr protein kinase family,STK10,STK10_HUMAN,O94804
+STE Ser/Thr protein kinase family,STK24,STK24_HUMAN,Q9Y6E0
+STE Ser/Thr protein kinase family,STK25,STK25_HUMAN,O00506
+STE Ser/Thr protein kinase family,STK26,STK26_HUMAN,Q9P289
+STE Ser/Thr protein kinase family,STK3,STK3_HUMAN,Q13188
+STE Ser/Thr protein kinase family,STK39,STK39_HUMAN,Q9UEW8
+STE Ser/Thr protein kinase family,STK4,STK4_HUMAN,Q13043
+STE Ser/Thr protein kinase family,STRADA,STRAA_HUMAN,Q7RTN6
+STE Ser/Thr protein kinase family,STRADB,STRAB_HUMAN,Q9C0K7
+STE Ser/Thr protein kinase family,TAOK1,TAOK1_HUMAN,Q7L7X3
+STE Ser/Thr protein kinase family,TAOK2,TAOK2_HUMAN,Q9UL54
+STE Ser/Thr protein kinase family,TAOK3,TAOK3_HUMAN,Q9H2K8
+STE Ser/Thr protein kinase family,TNIK,TNIK_HUMAN,Q9UKE5
+TKL Ser/Thr protein kinase family,ACVR1,ACVR1_HUMAN,Q04771
+TKL Ser/Thr protein kinase family,ACVR1B,ACV1B_HUMAN,P36896
+TKL Ser/Thr protein kinase family,ACVR1C,ACV1C_HUMAN,Q8NER5
+TKL Ser/Thr protein kinase family,ACVR2A,AVR2A_HUMAN,P27037
+TKL Ser/Thr protein kinase family,ACVR2B,AVR2B_HUMAN,Q13705
+TKL Ser/Thr protein kinase family,ACVRL1,ACVL1_HUMAN,P37023
+TKL Ser/Thr protein kinase family,AMHR2,AMHR2_HUMAN,Q16671
+TKL Ser/Thr protein kinase family,ANKK1,ANKK1_HUMAN,Q8NFD2
+TKL Ser/Thr protein kinase family,ARAF,ARAF_HUMAN,P10398
+TKL Ser/Thr protein kinase family,BMPR1A,BMR1A_HUMAN,P36894
+TKL Ser/Thr protein kinase family,BMPR1B,BMR1B_HUMAN,O00238
+TKL Ser/Thr protein kinase family,BMPR2,BMPR2_HUMAN,Q13873
+TKL Ser/Thr protein kinase family,BRAF,BRAF_HUMAN,P15056
+TKL Ser/Thr protein kinase family,ILK,ILK_HUMAN,Q13418
+TKL Ser/Thr protein kinase family,IRAK1,IRAK1_HUMAN,P51617
+TKL Ser/Thr protein kinase family,IRAK2,IRAK2_HUMAN,O43187
+TKL Ser/Thr protein kinase family,IRAK3,IRAK3_HUMAN,Q9Y616
+TKL Ser/Thr protein kinase family,IRAK4,IRAK4_HUMAN,Q9NWZ3
+TKL Ser/Thr protein kinase family,KSR1,KSR1_HUMAN,Q8IVT5
+TKL Ser/Thr protein kinase family,KSR2,KSR2_HUMAN,Q6VAB6
+TKL Ser/Thr protein kinase family,LIMK1,LIMK1_HUMAN,P53667
+TKL Ser/Thr protein kinase family,LIMK2,LIMK2_HUMAN,P53671
+TKL Ser/Thr protein kinase family,LRRK1,LRRK1_HUMAN,Q38SD2
+TKL Ser/Thr protein kinase family,LRRK2,LRRK2_HUMAN,Q5S007
+TKL Ser/Thr protein kinase family,RAF1,RAF1_HUMAN,P04049
+TKL Ser/Thr protein kinase family,RIPK1,RIPK1_HUMAN,Q13546
+TKL Ser/Thr protein kinase family,RIPK2,RIPK2_HUMAN,O43353
+TKL Ser/Thr protein kinase family,RIPK3,RIPK3_HUMAN,Q9Y572
+TKL Ser/Thr protein kinase family,RIPK4,RIPK4_HUMAN,P57078
+TKL Ser/Thr protein kinase family,TESK1,TESK1_HUMAN,Q15569
+TKL Ser/Thr protein kinase family,TESK2,TESK2_HUMAN,Q96S53
+TKL Ser/Thr protein kinase family,TGFBR1,TGFR1_HUMAN,P36897
+TKL Ser/Thr protein kinase family,TGFBR2,TGFR2_HUMAN,P37173
+TKL Ser/Thr protein kinase family,TNNI3K,TNI3K_HUMAN,Q59H18
+Tyr protein kinase family,AATK,LMTK1_HUMAN,Q6ZMQ8
+Tyr protein kinase family,ABL1,ABL1_HUMAN,P00519
+Tyr protein kinase family,ABL2,ABL2_HUMAN,P42684
+Tyr protein kinase family,ALK,ALK_HUMAN,Q9UM73
+Tyr protein kinase family,AXL,UFO_HUMAN,P30530
+Tyr protein kinase family,BLK,BLK_HUMAN,P51451
+Tyr protein kinase family,BMX,BMX_HUMAN,P51813
+Tyr protein kinase family,BTK,BTK_HUMAN,Q06187
+Tyr protein kinase family,CSF1R,CSF1R_HUMAN,P07333
+Tyr protein kinase family,CSK,CSK_HUMAN,P41240
+Tyr protein kinase family,DDR1,DDR1_HUMAN,Q08345
+Tyr protein kinase family,DDR2,DDR2_HUMAN,Q16832
+Tyr protein kinase family,EGFR,EGFR_HUMAN,P00533
+Tyr protein kinase family,EPHA1,EPHA1_HUMAN,P21709
+Tyr protein kinase family,EPHA10,EPHAA_HUMAN,Q5JZY3
+Tyr protein kinase family,EPHA2,EPHA2_HUMAN,P29317
+Tyr protein kinase family,EPHA3,EPHA3_HUMAN,P29320
+Tyr protein kinase family,EPHA4,EPHA4_HUMAN,P54764
+Tyr protein kinase family,EPHA5,EPHA5_HUMAN,P54756
+Tyr protein kinase family,EPHA6,EPHA6_HUMAN,Q9UF33
+Tyr protein kinase family,EPHA7,EPHA7_HUMAN,Q15375
+Tyr protein kinase family,EPHA8,EPHA8_HUMAN,P29322
+Tyr protein kinase family,EPHB1,EPHB1_HUMAN,P54762
+Tyr protein kinase family,EPHB2,EPHB2_HUMAN,P29323
+Tyr protein kinase family,EPHB3,EPHB3_HUMAN,P54753
+Tyr protein kinase family,EPHB4,EPHB4_HUMAN,P54760
+Tyr protein kinase family,EPHB6,EPHB6_HUMAN,O15197
+Tyr protein kinase family,ERBB2,ERBB2_HUMAN,P04626
+Tyr protein kinase family,ERBB3,ERBB3_HUMAN,P21860
+Tyr protein kinase family,ERBB4,ERBB4_HUMAN,Q15303
+Tyr protein kinase family,FER,FER_HUMAN,P16591
+Tyr protein kinase family,FES,FES_HUMAN,P07332
+Tyr protein kinase family,FGFR1,FGFR1_HUMAN,P11362
+Tyr protein kinase family,FGFR2,FGFR2_HUMAN,P21802
+Tyr protein kinase family,FGFR3,FGFR3_HUMAN,P22607
+Tyr protein kinase family,FGFR4,FGFR4_HUMAN,P22455
+Tyr protein kinase family,FGR,FGR_HUMAN,P09769
+Tyr protein kinase family,FLT1,VGFR1_HUMAN,P17948
+Tyr protein kinase family,FLT3,FLT3_HUMAN,P36888
+Tyr protein kinase family,FLT4,VGFR3_HUMAN,P35916
+Tyr protein kinase family,FRK,FRK_HUMAN,P42685
+Tyr protein kinase family,FYN,FYN_HUMAN,P06241
+Tyr protein kinase family,HCK,HCK_HUMAN,P08631
+Tyr protein kinase family,IGF1R,IGF1R_HUMAN,P08069
+Tyr protein kinase family,INSR,INSR_HUMAN,P06213
+Tyr protein kinase family,INSRR,INSRR_HUMAN,P14616
+Tyr protein kinase family,ITK,ITK_HUMAN,Q08881
+Tyr protein kinase family,JAK1,JAK1_HUMAN,P23458
+Tyr protein kinase family,JAK2,JAK2_HUMAN,O60674
+Tyr protein kinase family,JAK3,JAK3_HUMAN,P52333
+Tyr protein kinase family,KDR,VGFR2_HUMAN,P35968
+Tyr protein kinase family,KIT,KIT_HUMAN,P10721
+Tyr protein kinase family,LCK,LCK_HUMAN,P06239
+Tyr protein kinase family,LMTK2,LMTK2_HUMAN,Q8IWU2
+Tyr protein kinase family,LMTK3,LMTK3_HUMAN,Q96Q04
+Tyr protein kinase family,LTK,LTK_HUMAN,P29376
+Tyr protein kinase family,LYN,LYN_HUMAN,P07948
+Tyr protein kinase family,MATK,MATK_HUMAN,P42679
+Tyr protein kinase family,MERTK,MERTK_HUMAN,Q12866
+Tyr protein kinase family,MET,MET_HUMAN,P08581
+Tyr protein kinase family,MST1R,RON_HUMAN,Q04912
+Tyr protein kinase family,MUSK,MUSK_HUMAN,O15146
+Tyr protein kinase family,NTRK1,NTRK1_HUMAN,P04629
+Tyr protein kinase family,NTRK2,NTRK2_HUMAN,Q16620
+Tyr protein kinase family,NTRK3,NTRK3_HUMAN,Q16288
+Tyr protein kinase family,PDGFRA,PGFRA_HUMAN,P16234
+Tyr protein kinase family,PDGFRB,PGFRB_HUMAN,P09619
+Tyr protein kinase family,PTK2,FAK1_HUMAN,Q05397
+Tyr protein kinase family,PTK2B,FAK2_HUMAN,Q14289
+Tyr protein kinase family,PTK6,PTK6_HUMAN,Q13882
+Tyr protein kinase family,PTK7,PTK7_HUMAN,Q13308
+Tyr protein kinase family,RET,RET_HUMAN,P07949
+Tyr protein kinase family,ROR1,ROR1_HUMAN,Q01973
+Tyr protein kinase family,ROR2,ROR2_HUMAN,Q01974
+Tyr protein kinase family,ROS1,ROS1_HUMAN,P08922
+Tyr protein kinase family,RYK,RYK_HUMAN,P34925
+Tyr protein kinase family,SRC,SRC_HUMAN,P12931
+Tyr protein kinase family,SRMS,SRMS_HUMAN,Q9H3Y6
+Tyr protein kinase family,STYK1,STYK1_HUMAN,Q6J9G0
+Tyr protein kinase family,SYK,KSYK_HUMAN,P43405
+Tyr protein kinase family,TEC,TEC_HUMAN,P42680
+Tyr protein kinase family,TEK,TIE2_HUMAN,Q02763
+Tyr protein kinase family,TIE1,TIE1_HUMAN,P35590
+Tyr protein kinase family,TNK1,TNK1_HUMAN,Q13470
+Tyr protein kinase family,TNK2,ACK1_HUMAN,Q07912
+Tyr protein kinase family,TXK,TXK_HUMAN,P42681
+Tyr protein kinase family,TYK2,TYK2_HUMAN,P29597
+Tyr protein kinase family,TYRO3,TYRO3_HUMAN,Q06418
+Tyr protein kinase family,YES1,YES_HUMAN,P07947
+Tyr protein kinase family,ZAP70,ZAP70_HUMAN,P43403
+Other,AAK1,AAK1_HUMAN,Q2M2I8
+Other,AURKA,AURKA_HUMAN,O14965
+Other,AURKB,AURKB_HUMAN,Q96GD4
+Other,AURKC,AURKC_HUMAN,Q9UQB9
+Other,BMP2K,BMP2K_HUMAN,Q9NSY1
+Other,BUB1,BUB1_HUMAN,O43683
+Other,BUB1B,BUB1B_HUMAN,O60566
+Other,CAMKK1,KKCC1_HUMAN,Q8N5S9
+Other,CAMKK2,KKCC2_HUMAN,Q96RR4
+Other,CDC7,CDC7_HUMAN,O00311
+Other,CHUK,IKKA_HUMAN,O15111
+Other,CSNK2A1,CSK21_HUMAN,P68400
+Other,CSNK2A2,CSK22_HUMAN,P19784
+Other,CSNK2A3,CSK23_HUMAN,Q8NEV1
+Other,DSTYK,DUSTY_HUMAN,Q6XUX3
+Other,EIF2AK1,E2AK1_HUMAN,Q9BQI3
+Other,EIF2AK2,E2AK2_HUMAN,P19525
+Other,EIF2AK3,E2AK3_HUMAN,Q9NZJ5
+Other,EIF2AK4,E2AK4_HUMAN,Q9P2K8
+Other,ERN1,ERN1_HUMAN,O75460
+Other,ERN2,ERN2_HUMAN,Q76MJ5
+Other,GAK,GAK_HUMAN,O14976
+Other,HASPIN,HASP_HUMAN,Q8TF76
+Other,IKBKB,IKKB_HUMAN,O14920
+Other,IKBKE,IKKE_HUMAN,Q14164
+Other,MLKL,MLKL_HUMAN,Q8NB16
+Other,MOS,MOS_HUMAN,P00540
+Other,NRBP1,NRBP_HUMAN,Q9UHY1
+Other,NRBP2,NRBP2_HUMAN,Q9NSY0
+Other,PAN3,PAN3_HUMAN,Q58A45
+Other,PDIK1L,PDK1L_HUMAN,Q8N165
+Other,PEAK1,PEAK1_HUMAN,Q9H792
+Other,PIK3R4,PI3R4_HUMAN,Q99570
+Other,PINK1,PINK1_HUMAN,Q9BXM7
+Other,PKDCC,PKDCC_HUMAN,Q504Y2
+Other,PKMYT1,PMYT1_HUMAN,Q99640
+Other,PLK1,PLK1_HUMAN,P53350
+Other,PLK2,PLK2_HUMAN,Q9NYY3
+Other,PLK3,PLK3_HUMAN,Q9H4B4
+Other,PLK4,PLK4_HUMAN,O00444
+Other,PLK5,PLK5_HUMAN,Q496M5
+Other,POMK,SG196_HUMAN,Q9H5K3
+Other,PRAG1,PRAG1_HUMAN,Q86YV5
+Other,PXK,PXK_HUMAN,Q7Z7A4
+Other,RNASEL,RN5A_HUMAN,Q05823
+Other,RPS6KC1,KS6C1_HUMAN,Q96S38
+Other,RPS6KL1,RPKL1_HUMAN,Q9Y6S9
+Other,RSKR,KS6R_HUMAN,Q96LW2
+Other,SBK1,SBK1_HUMAN,Q52WX2
+Other,SBK2,SBK2_HUMAN,P0C263
+Other,SBK3,SBK3_HUMAN,P0C264
+Other,SCYL1,SCYL1_HUMAN,Q96KG9
+Other,SCYL2,SCYL2_HUMAN,Q6P3W7
+Other,SCYL3,PACE1_HUMAN,Q8IZE3
+Other,STK16,STK16_HUMAN,O75716
+Other,STK31,STK31_HUMAN,Q9BXU1
+Other,STK32A,ST32A_HUMAN,Q8WU08
+Other,STK32B,ST32B_HUMAN,Q9NY57
+Other,STK32C,ST32C_HUMAN,Q86UX6
+Other,STK35,STK35_HUMAN,Q8TDR2
+Other,STK36,STK36_HUMAN,Q9NRP7
+Other,STKLD1,STKL1_HUMAN,Q8NE28
+Other,TBCK,TBCK_HUMAN,Q8TEA7
+Other,TBK1,TBK1_HUMAN,Q9UHD2
+Other,TEX14,TEX14_HUMAN,Q8IWB6
+Other,TLK1,TLK1_HUMAN,Q9UKI8
+Other,TLK2,TLK2_HUMAN,Q86UE8
+Other,TP53RK,PRPK_HUMAN,Q96S44
+Other,TTK,TTK_HUMAN,P33981
+Other,UHMK1,UHMK1_HUMAN,Q8TAS1
+Other,ULK1,ULK1_HUMAN,O75385
+Other,ULK2,ULK2_HUMAN,Q8IYT8
+Other,ULK3,ULK3_HUMAN,Q6PHR2
+Other,ULK4,ULK4_HUMAN,Q96C45
+Other,WEE1,WEE1_HUMAN,P30291
+Other,WEE2,WEE2_HUMAN,P0C1S8
+Other,WNK1,WNK1_HUMAN,Q9H4A3
+Other,WNK2,WNK2_HUMAN,Q9Y3S1
+Other,WNK3,WNK3_HUMAN,Q9BYP7
+Other,WNK4,WNK4_HUMAN,Q96J92
+Atypical: ADCK protein kinase family,ADCK1,ADCK1_HUMAN,Q86TW2
+Atypical: ADCK protein kinase family,ADCK2,ADCK2_HUMAN,Q7Z695
+Atypical: ADCK protein kinase family,ADCK5,ADCK5_HUMAN,Q3MIX3
+Atypical: ADCK protein kinase family,COQ8A,COQ8A_HUMAN,Q8NI60
+Atypical: ADCK protein kinase family,COQ8B,COQ8B_HUMAN,Q96D53
+Atypical: Alpha-type protein kinase family,ALPK1,ALPK1_HUMAN,Q96QP1
+Atypical: Alpha-type protein kinase family,ALPK2,ALPK2_HUMAN,Q86TB3
+Atypical: Alpha-type protein kinase family,ALPK3,ALPK3_HUMAN,Q96L96
+Atypical: Alpha-type protein kinase family,EEF2K,EF2K_HUMAN,O00418
+Atypical: Alpha-type protein kinase family,TRPM6,TRPM6_HUMAN,Q9BX84
+Atypical: Alpha-type protein kinase family,TRPM7,TRPM7_HUMAN,Q96QT4
+Atypical: FAST protein kinase family,FASTK,FASTK_HUMAN,Q14296
+Atypical: PDK/BCKDK protein kinase family,BCKDK,BCKD_HUMAN,O14874
+Atypical: PDK/BCKDK protein kinase family,PDK1,PDK1_HUMAN,Q15118
+Atypical: PDK/BCKDK protein kinase family,PDK2,PDK2_HUMAN,Q15119
+Atypical: PDK/BCKDK protein kinase family,PDK3,PDK3_HUMAN,Q15120
+Atypical: PDK/BCKDK protein kinase family,PDK4,PDK4_HUMAN,Q16654
+Atypical: PI3/PI4-kinase family,ATM,ATM_HUMAN,Q13315
+Atypical: PI3/PI4-kinase family,ATR,ATR_HUMAN,Q13535
+Atypical: PI3/PI4-kinase family,MTOR,MTOR_HUMAN,P42345
+Atypical: PI3/PI4-kinase family,PIK3CA,PK3CA_HUMAN,P42336
+Atypical: PI3/PI4-kinase family,PIK3CB,PK3CB_HUMAN,P42338
+Atypical: PI3/PI4-kinase family,PIK3CD,PK3CD_HUMAN,O00329
+Atypical: PI3/PI4-kinase family,PIK3CG,PK3CG_HUMAN,P48736
+Atypical: PI3/PI4-kinase family,PRKDC,PRKDC_HUMAN,P78527
+Atypical: PI3/PI4-kinase family,SMG1,SMG1_HUMAN,Q96Q15
+Atypical: RIO-type Ser/Thr kinase family,RIOK1,RIOK1_HUMAN,Q9BRS2
+Atypical: RIO-type Ser/Thr kinase family,RIOK2,RIOK2_HUMAN,Q9BVS4
+Atypical: RIO-type Ser/Thr kinase family,RIOK3,RIOK3_HUMAN,O14730
