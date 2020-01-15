@@ -17,6 +17,7 @@ Base = declarative_base()
 
 #setting up the class for the table
 class gene_meta(Base):
+    __tablename__ = 'gene_meta'
     gene_id = Column(Integer, primary_key = True)
     protein_name = Column(String)
     uniprot_number = Column(String)
@@ -29,11 +30,24 @@ class gene_names(Base):
     gene_names = Column(String)
 
 class genomic_location(Base):
-    pass
+    __tablename__ = 'genomic_location'
+    kinase = Column(String)
+    substrate = Column(String)
+    substrate_gene_id = Column(Integer, primary_key=True)
+    phosphosite = Column(String)
+    chromosome = Column(Integer)
+    karyotype_band = Column(String)
+    strand = Column(Integer)
+    start_position = Column(Integer)
+    end_position = Column(Integer)
 
 class subcellular_location(Base):
-    pass
+    gene_id = Column(Integer, primary_key=True, ForeignKey(gene_meta.gene_id))
+    uniprot_number = Column(Integer)
+    subcellular_location = Column(String)
 
 class phosphosites(Base):
     pass
 
+class inhibitor(Base):
+    pass
