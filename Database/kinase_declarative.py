@@ -26,55 +26,60 @@ class gene_meta(Base):
 
 class gene_names(Base):
     __tablename__ = 'gene_names'
-    gene_name = Column(String, ForeignKey(gene_meta.gene_name))
-    gene_aliases = Column(String, primary_key=True)
+    gene_name = Column(String, ForeignKey('gene_meta.gene_name'))
+    gene_alias = Column(String, primary_key=True)
+    kinase_meta = relationship('gene_meta')
 
 class subcellular_location(Base):
-    gene_name = Column(String, primary_key=True, 
-                       ForeignKey(gene_meta.gene_name),
-                       primary_key=True)
+    __tablename__ = 'subcellular_location'
+    subcellular_location_id = Column(Integer, primary_key = True)
+    gene_name = Column(String, ForeignKey('gene_names.gene_alias'))
     subcellular_location = Column(String)
-    
+    kinase_meta = relationship('gene_names')
+
+"""    
 class kinase_substrate(Base):
     __tablename_ = 'kinase_substrate'
-    kinase_gene_name = Column(String, ForeignKey(gene_meta.gene_name),
+    ######might need a new primary_key
+    kinase_gene_name = Column(String, ForeignKey('gene_names.gene_alias'),
                               primary_key=True)
     substrate_name = Column(String)
+    kinase_meta = relationship('gene_names')
+"""
     
-class substrate_phosphosite(Base):
+class kinase_substrate_phosphosite(Base):
     __tablename__ = 'substrate_phosphosite'
-    #there no unique values in this table, an index generated will have to be the primary_key
-    substrate_phosphosite_id = Column(Integer, primary_key=True)
-    substrate_name = Column(String, ForeignKey(kinase_substrate.substrate_name))
+    kinase_substrate_id = Column(Integer, primary_key = True)
+    kinase_gene_name = Column(String, ForeignKey('gene_names.gene_alias'))
+    substrate_name = Column(String)
     substrate_gene_name = Column(String)
     substrate_uniprot_entry = Column(String)
     substrate_uniprot_number = Column(Integer)
     phosphosite = Column(String)
     neighbouring_sequences = Column(String)
+    kinase = relationship('gene_names')
     
 class genomic_location(Base):
     __tablename__ = 'genomic_location'
-    substrate_gene_name = Column(String, 
-                                 ForeignKey(substrate_phosphosite.substrate_gene_name))
-    phosphosite = Column(String, ForeignKey(substrate_phosphosite.phosphosite))
+    kinase_substrate_id = Column(Integer, 
+                                 ForeignKey('kinase_substrate_phosphosite.kinase_substrate_id'))
     chromosome = Column(Integer)
     karyotype_band = Column(String)
     strand = Column(Integer)
     start_position = Column(Integer)
     end_position = Column(Integer)
+    substrate = relationship('kinase_substrate_phosphosite')
 
 class inhibitor(Base):
     __tablename__ = 'inhibitor'
     inhibitor = Column(String, primary_key = True)
-    antagonizes_gene = Column(String, ForeignKey(gene_meta.gene_name))
+    antagonizes_gene = Column(String, ForeignKey('gene_names.gene_alias'))
     molecular_weight = Column(Integer)
     images_url = Column(String)
     empirical_formula = Column(String)
     references = Column(String)
+    kinase = relationship('gene_names')
     
-
-
-
 
 #create an engine that stores the data in the local directory's kinase_database.db 
 engine = create_engine('sqlite:///kinase_database.db')
