@@ -1,3 +1,14 @@
 Documentation for protein names and aliases
 
-The list of human kinases were retrieved from a uniprot page (https://www.uniprot.org/docs/pkinfam, accessed on 14th January, 2019). The uniprot number were then used to query for the protein names from Uniprot through bioservices library available in Python 3.7. The gene aliases are other names that have been given for the same gene. These aliases were retrieved using the same method. Uniprot has been known to be a secure site for biological information. Each entry annotated has at least a degree of evidence to it. As such, the site is deemed a trustable source of information for biological data.
+The list of human kinases were retrieved from a uniprot page 
+(https://www.uniprot.org/docs/pkinfam, accessed on 14th January, 2019).
+
+The protein names and uniprot entry name for the kinases as well as other synonyms for the genes were 
+then retrieved programmatically using the library bioservices, available 
+through python3.7.
+
+Uniprot has been known to be a secure site for biological 
+information. Each entry annotated has at least a degree of evidence to it. As 
+such, the site is deemed a trustable source of information for biological data.
+
+The information for the phosphosites were taken from PhosphoSitePlus(https://www.phosphosite.org/staticDownloads). However, it was found that that the kinases in the data do not match the list of kinases retrieved from Uniprot. Upon inspection, those kinases that did not match the uniprot's list were found to be either mutation or protein that are not kinases. These entries were then dropped from the data.
