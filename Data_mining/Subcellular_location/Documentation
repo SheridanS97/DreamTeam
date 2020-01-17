@@ -1,0 +1,3 @@
+Subcellular location was retrieved using QuickGO REST API. Only subcellular locations which had evidence were retrieved. As there were a 
+number of sources of evidence for each kinase, there were often duplicates in the data for each kinase, these duplicated subcellular 
+locations were removed from the dataframe.
