@@ -82,10 +82,12 @@ s.commit()
 with open(phosphosites) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        kinase_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["GENE"]).all()
-        if kinase_match == []:
-            print(kinase_match.name)
+        kinase_matches = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["GENE"]).all()
+        if kinase_matches == []:
+            print(row)
             continue
+        else:
+            kinase_name = kinase_matches[-1]
         #deduplication
         substrate_match = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_uniprot_number==row["SUB_ACC_ID"]).all()
         if substrate_match != []:
@@ -95,7 +97,7 @@ with open(phosphosites) as f:
                             substrate_gene_name=row["SUB_GENE"],
                             substrate_uniprot_entry=row["SUB_ENTRY_NAME"],
                             substrate_uniprot_number=row["SUB_ACC_ID"])
-        obj.kinases.append(kinase_match)
+        obj.kinases.append(kinase_name)
         s.add(obj)
 s.commit()
     
