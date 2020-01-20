@@ -77,16 +77,25 @@ with open(subcellular_location) as f:
         gene_name_match.subcellular_locations.append(obj)
         s.add(obj)
 s.commit()
-            
+
+#creating a SubstrateMeta table            
 with open(phosphosites) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        gene_name_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["GENE"]).one()
-        obj = SubstrateMeta(substrate_id=row["SUBSTRATE"], 
+        kinase_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["GENE"]).all()
+        if kinase_match == []:
+            print(kinase_match.name)
+            continue
+        #deduplication
+        substrate_match = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_uniprot_number==row["SUB_ACC_ID"]).all()
+        if substrate_match != []:
+            obj = substrate_match[-1]
+        else:
+            obj = SubstrateMeta(substrate_name=row["SUBSTRATE"], 
                             substrate_gene_name=row["SUB_GENE"],
                             substrate_uniprot_entry=row["SUB_ENTRY_NAME"],
                             substrate_uniprot_number=row["SUB_ACC_ID"])
-        gene_name_match.substrates.append(obj)
+        obj.kinases.append(kinase_match)
         s.add(obj)
 s.commit()
     
