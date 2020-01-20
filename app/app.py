@@ -1,7 +1,11 @@
 from flask import Flask, render_template, url_for, flash, redirect
-from forms import LoginForm
+from werkzeug.utils import secure_filename
+from forms import LoginForm, FileForm, Inhibitor
 from flask_wtf import FlaskForm
+from flask_wtf.file import FileField, FileAllowed, FileRequired
 from wtforms import validators, StringField, SubmitField
+import os
+
 
 app = Flask(__name__)
 
@@ -14,9 +18,10 @@ def home():
     return render_template('home.html', title= "Welcome to PhosphoView")
 
 
-@app.route("/upload")
+@app.route("/upload", methods=['GET', 'POST'])
 def Data_Upload():
-    return render_template('dataUpload.html', title='Data Upload')
+    form=FileForm()
+    return render_template('Data_Upload.html', title='Data Upload', form=form)
 
 
 @app.route("/HumanKinaseList")
@@ -65,19 +70,12 @@ def Documentation():
 def AdvancedSearch():
     return render_template('advancedSearch.html', title='Advanced Search')
 
-@app.route("/inhibitors")
+@app.route("/Inhibitors")
 def Inhibitors():
-    return render_template('inhibitors.html', title='Inhibitors')
+    form=Inhibitor()
+    return render_template('inhibitors.html', title='Inhibitors', form=form)
 
-@app.route("/login")
-def login():
-    form = LoginForm()
-    return render_template('login.html', title='Login', form=form)
 
-@app.route("/register")
-def register():
-    form = RegistrationForm()
-    return render_template('register.html', title='Register', form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)

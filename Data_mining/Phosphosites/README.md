@@ -1,0 +1,5 @@
+The information for the phosphosites in DreamTeam/Data_mining/Phosphosites were taken from PhosphoSitePlus(https://www.phosphosite.org/staticDownloads). The file is clean_human_kinase_substrates.csv. The code is in Phosphosites.ipynb.
+
+However, it was found that that the kinases in the data do not match the list of kinases retrieved from Uniprot. Upon inspection, those kinases that did not match the uniprot's list were found to be either mutation or protein that are not kinases. These entries were then dropped from the data. The new dataframe is then saved as mohan_kinase_substrate.csv. The codes and list of unmatched kinases is in DreamTeam/Data_mining/Protein_name_and_aliases.
+
+The data was then edited to include the uniprot entry name for both the kinases and the substrates. Data cleaning is performed on the data without the matching kinases as there were some errors in annotation of the protein in the substrates. The codes is in new_clean_human_kinase_substrates.ipynb. The output of the finalized kinase-substrates data is in new_clean_human_kinase_substrates.csv.
