@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class ="content-section">
      {% for post in posts%}
+
 	       <h1>{{post.Name}}</h1>
 	       <p>{{post.Description}}</p>
 	    {% endfor %}
