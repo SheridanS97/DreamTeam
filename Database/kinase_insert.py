@@ -26,6 +26,8 @@ base_dir = home + "/Projects/Uni/BioInformaticsGroupPorject/DreamTeam/Data_minin
 protein_names_and_aliases = base_dir + "Protein_names_and_aliases/"
 clean_human_kinase = protein_names_and_aliases + "clean_human_kinase.csv"
 gene_aliases = protein_names_and_aliases + "meta_names.csv"
+subcellular_location = base_dir + "Subcellular_location/Subcellular_location.csv"
+phosphosites = base_dir + "Phosphosites/new_clean_human_kinase_substrates.csv"
 
 #import the data into the database
 #creating KinaseGeneMeta table
@@ -66,5 +68,31 @@ with open(gene_aliases) as f:
         s.add(kinase_meta) # Done editing KinaseGeneMeta, so save it
 s.commit() # Write changes to DB
             
+#creating the KinaseSubcellularLocation table
+with open(subcellular_location) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        gene_name_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["Gene Name"]).one()
+        obj = KinaseSubcellularLocation(gene_name=row["Gene Name"], subcellular_location=row["Subcellular Location"])
+        gene_name_match.subcellular_locations.append(obj)
+        s.add(obj)
+s.commit()
             
-            
+with open(phosphosites) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        gene_name_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["GENE"]).one()
+        obj = SubstrateMeta(substrate_id=row["SUBSTRATE"], 
+                            substrate_gene_name=row["SUB_GENE"],
+                            substrate_uniprot_entry=row["SUB_ENTRY_NAME"],
+                            substrate_uniprot_number=row["SUB_ACC_ID"])
+        gene_name_match.substrates.append(obj)
+        s.add(obj)
+s.commit()
+    
+    
+    
+    
+    
+    
+    
