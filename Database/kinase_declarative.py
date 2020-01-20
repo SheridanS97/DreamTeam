@@ -23,6 +23,7 @@ class KinaseGeneMeta(Base):
     uniprot_entry = Column(String)
     gene_name = Column(String, primary_key=True)
     kinase_family = Column(String)
+    # gene_aliases <from backref in KinaseGeneName>
 
 
 class KinaseGeneName(Base):
@@ -30,7 +31,7 @@ class KinaseGeneName(Base):
     gene_name = Column(String, ForeignKey('kinase_gene_meta.gene_name'))
     gene_alias = Column(String, primary_key=True)
     meta = relationship('KinaseGeneMeta', backref=backref('gene_aliases', uselist=True))
-    substrates = relationship('substrate_meta', secondary='kinase_substrate_relations')
+    substrates = relationship('SubstrateMeta', secondary='kinase_substrate_relations')
 
 
 class KinaseSubcellularLocation(Base):
@@ -55,7 +56,7 @@ class KinaseSubstrateRelations(Base):
     #a many to many relationship table between substrates and kinases
     __tablename__ = 'kinase_substrate_relations'
     substrate_id = Column(Integer, ForeignKey('substrate_meta.substrate_id'), primary_key=True)
-    kinase_gene_alias = Column(String, ForeignKey('kinase_gene_names.gene_alias'), primary_key=True)
+    kinase_gene_id = Column(String, ForeignKey('kinase_gene_names.gene_alias'), primary_key=True)
     
     
 class PhosphositeMeta(Base):
