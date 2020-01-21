@@ -74,13 +74,14 @@ class PhosphositeMeta(Base):
 
 class Inhibitor(Base):
     __tablename__ = 'inhibitor'
-    inhibitor = Column(String, primary_key = True)
+    inhibitor_id = Column(Integer, primary_key=True)
+    inhibitor = Column(String)
     antagonizes_gene = Column(String, ForeignKey('kinase_gene_names.gene_alias'))
     kinases = relationship('KinaseGeneName', backref=backref('inhibitors', uselist=True))
     molecular_weight = Column(Integer)
     images_url = Column(String)
     empirical_formula = Column(String)
-    references = Column(String)
+    #references = Column(String)
 
     
 
