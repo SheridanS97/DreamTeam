@@ -1,9 +1,9 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, validators, TextField
-from wtforms.validators import DataRequired, Length, Email, EqualTo
+from wtforms.validators import DataRequired, Length, Email, EqualTo, Required
+from flask_wtf.file import FileField, FileAllowed, FileRequired
 from wtforms.fields.html5 import EmailField
 from flask_wtf import Form
-from wtforms.validators import Required
 
 # use this python module for creating python forms and user input 
 # import stringfields  so the user can input strings
@@ -16,4 +16,12 @@ class LoginForm(FlaskForm):
 	submit = SubmitField('Search')
 
 
+class Inhibitor(FlaskForm):		
+	search = StringField('Enter a Inhibitor of a Kinase name', validators=[DataRequired()])
+	submit = SubmitField('Search')
+
+
+class FileForm(FlaskForm):
+    file = FileField(validators=[FileRequired(), FileAllowed(['csv', 'tsv'], "Please Upload only a tsv or csv")])
+    submit = SubmitField('Submit')
 
