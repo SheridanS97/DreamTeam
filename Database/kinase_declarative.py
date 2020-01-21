@@ -24,6 +24,13 @@ class KinaseGeneMeta(Base):
     gene_name = Column(String, primary_key=True)
     kinase_family = Column(String)
     # gene_aliases <from backref in KinaseGeneName>
+    
+    def to_dict(self):
+        output = {
+               "protein_name": self.protein_name,
+               ...
+                }
+        return output
 
 
 class KinaseGeneName(Base):
@@ -31,7 +38,7 @@ class KinaseGeneName(Base):
     gene_name = Column(String, ForeignKey('kinase_gene_meta.gene_name'))
     gene_alias = Column(String, primary_key=True)
     meta = relationship('KinaseGeneMeta', backref=backref('gene_aliases', uselist=True))
-    substrates = relationship('SubstrateMeta', secondary='kinase_substrate_relations')
+    phosphosites = relationship('PhosphositeMeta', secondary='kinase_phosphosite_relations')
 
 
 class KinaseSubcellularLocation(Base):
@@ -49,13 +56,12 @@ class SubstrateMeta(Base):
     substrate_gene_name = Column(String)
     substrate_uniprot_entry = Column(String)
     substrate_uniprot_number = Column(Integer)
-    kinases = relationship('KinaseGeneName', secondary='kinase_substrate_relations')
     
     
-class KinaseSubstrateRelations(Base):
-    #a many to many relationship table between substrates and kinases
-    __tablename__ = 'kinase_substrate_relations'
-    substrate_id = Column(Integer, ForeignKey('substrate_meta.substrate_id'), primary_key=True)
+class KinasePhosphositeRelations(Base):
+    # a many to many relationship table between substrates and kinases
+    __tablename__ = "kinase_phosphosite_relations"
+    phosphosite_id = Column(Integer, ForeignKey('phosphosite_meta.phosphosite_meta_id'), primary_key=True)
     kinase_gene_id = Column(String, ForeignKey('kinase_gene_names.gene_alias'), primary_key=True)
     
     
@@ -64,12 +70,14 @@ class PhosphositeMeta(Base):
     phosphosite_meta_id = Column(Integer, primary_key=True)
     substrate_meta_id = Column(Integer, ForeignKey('substrate_meta.substrate_id'))
     substrate = relationship("SubstrateMeta", backref=backref('phosphosites', uselist=True))
+    phosphosite = Column(String)
     chromosome = Column(Integer)
     karyotype_band = Column(String)
     strand = Column(Integer)
     start_position = Column(Integer)
     end_position = Column(Integer)
     neighbouring_sequences = Column(String)
+    kinases = relationship('KinaseGeneName', secondary='kinase_phosphosite_relations')
     
 
 class Inhibitor(Base):

@@ -89,23 +89,14 @@ s.commit()
 with open(substrates) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        kinase_matches = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["GENE"]).all()
-        if kinase_matches == []:
-            #print(row) #debug code to find out which line was it that was returning empty
-            continue
-        else:
-            kinase_name = kinase_matches[-1]
         #deduplication
         substrate_match = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_uniprot_number==row["SUB_ACC_ID"]).all() #
-        if substrate_match != []:   #####why am i trying to deduplicate it?? in csv, I have multiple rows with the substrate don't i??###############################
-            obj = substrate_match[-1]
-        else:
+        if substrate_match == []:
             obj = SubstrateMeta(substrate_name=row["SUBSTRATE"], 
                             substrate_gene_name=row["SUB_GENE"],
                             substrate_uniprot_entry=row["SUB_ENTRY_NAME"],
                             substrate_uniprot_number=row["SUB_ACC_ID"])
-        obj.kinases.append(kinase_name)
-        s.add(obj)
+            s.add(obj)
 s.commit()
     
 
@@ -113,24 +104,35 @@ s.commit()
 with open(phosphosites) as f:
     reader = csv.DictReader(f)
     for row in reader:
+        kinase_matches = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias == row["Kinase gene"]).all()
+        if kinase_matches == []:
+            # print(row) #debug code to find out which line was it that was returning empty
+            continue
+        else:
+            kinase_name = kinase_matches[-1]
         substrate_match_list = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_gene_name==row["SUB_GENE"]).all()
         if substrate_match_list == []:
             continue
         else:
             substrate_match = substrate_match_list[-1]
         #deduplication
-        phosphosite_match = s.query(PhosphositeMeta).filter(PhosphositeMeta.substrate_meta_id==substrate_match.substrate_id).all()
+        query = s.query(PhosphositeMeta)
+        query = query.filter(PhosphositeMeta.substrate_meta_id==substrate_match.substrate_id)
+        query = query.filter(PhosphositeMeta.phosphosite==row["PS"])
+        phosphosite_match = query.all()
         if phosphosite_match != []:
             obj = phosphosite_match[-1]
         else:
             obj = PhosphositeMeta(substrate_meta_id=substrate_match.substrate_id,
+                                  phosphosite=row["PS"],
                                   chromosome=row["Chromosome"],
                                   karyotype_band=row["Karyotype band"],
                                   strand=row["Strand"],
                                   start_position=row["Start co"],
                                   end_position=row["End co"],
                                   neighbouring_sequences=row["Neighbouring amino acids +/-7"])
-        substrate_match.phosphosites.append(obj)
+            substrate_match.phosphosites.append(obj)
+        obj.kinases.append(kinase_name)
         s.add(obj)
 s.commit()       
 
