@@ -22,12 +22,15 @@ Base.metadata.bind = engine
 session = sessionmaker()
 s = session()
 home = os.path.expanduser("~")
-base_dir = home + "/Projects/Uni/BioInformaticsGroupPorject/DreamTeam/Data_mining/"
+base_dir = home + "/Projects/Uni/BioInformaticsGroupPorject/DreamTeam/Data_mining/" #change base_dir to appropriate dir
 protein_names_and_aliases = base_dir + "Protein_names_and_aliases/"
 clean_human_kinase = protein_names_and_aliases + "clean_human_kinase.csv"
 gene_aliases = protein_names_and_aliases + "meta_names.csv"
 subcellular_location = base_dir + "Subcellular_location/Subcellular_location.csv"
-phosphosites = base_dir + "Phosphosites/new_clean_human_kinase_substrates.csv"
+substrates = base_dir + "Phosphosites/new_clean_human_kinase_substrates.csv"
+inhibitors = base_dir + "Inhibitor/Final_inhibitors.csv"
+phosphosites = base_dir + "Genomic_location_of_PS/GL_and_neighbouring_aa_of_Sub_PS_final.csv"
+
 
 #import the data into the database
 #creating KinaseGeneMeta table
@@ -41,6 +44,7 @@ with open(clean_human_kinase, "r") as f:
         s.add(obj)
 s.commit()
         
+
 #creating KinaseGeneName table
 with open(gene_aliases) as f:
     reader = csv.DictReader(f)
@@ -68,6 +72,7 @@ with open(gene_aliases) as f:
         s.add(kinase_meta) # Done editing KinaseGeneMeta, so save it
 s.commit() # Write changes to DB
             
+
 #creating the KinaseSubcellularLocation table
 with open(subcellular_location) as f:
     reader = csv.DictReader(f)
@@ -78,32 +83,81 @@ with open(subcellular_location) as f:
         s.add(obj)
 s.commit()
 
+
+#uncomment this during production
 #creating a SubstrateMeta table            
-with open(phosphosites) as f:
+with open(substrates) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        kinase_matches = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["GENE"]).all()
-        if kinase_matches == []:
-            print(row)
-            continue
-        else:
-            kinase_name = kinase_matches[-1]
         #deduplication
-        substrate_match = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_uniprot_number==row["SUB_ACC_ID"]).all()
-        if substrate_match != []:
-            obj = substrate_match[-1]
-        else:
+        substrate_match = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_uniprot_number==row["SUB_ACC_ID"]).all() #
+        if substrate_match == []:
             obj = SubstrateMeta(substrate_name=row["SUBSTRATE"], 
                             substrate_gene_name=row["SUB_GENE"],
                             substrate_uniprot_entry=row["SUB_ENTRY_NAME"],
                             substrate_uniprot_number=row["SUB_ACC_ID"])
-        obj.kinases.append(kinase_name)
-        s.add(obj)
+            s.add(obj)
 s.commit()
     
-    
-    
-    
-    
-    
-    
+
+#creating a PhosphositeMeta table
+with open(phosphosites) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        kinase_matches = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias == row["Kinase gene"]).all()
+        if kinase_matches == []:
+            # print(row) #debug code to find out which line was it that was returning empty
+            continue
+        else:
+            kinase_name = kinase_matches[-1]
+        substrate_match_list = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_gene_name==row["SUB_GENE"]).all()
+        if substrate_match_list == []:
+            continue
+        else:
+            substrate_match = substrate_match_list[-1]
+        #deduplication
+        query = s.query(PhosphositeMeta)
+        query = query.filter(PhosphositeMeta.substrate_meta_id==substrate_match.substrate_id)
+        query = query.filter(PhosphositeMeta.phosphosite==row["PS"])
+        phosphosite_match = query.all()
+        if phosphosite_match != []:
+            obj = phosphosite_match[-1]
+        else:
+            obj = PhosphositeMeta(substrate_meta_id=substrate_match.substrate_id,
+                                  phosphosite=row["PS"],
+                                  chromosome=row["Chromosome"],
+                                  karyotype_band=row["Karyotype band"],
+                                  strand=row["Strand"],
+                                  start_position=row["Start co"],
+                                  end_position=row["End co"],
+                                  neighbouring_sequences=row["Neighbouring amino acids +/-7"])
+            substrate_match.phosphosites.append(obj)
+        obj.kinases.append(kinase_name)
+        s.add(obj)
+s.commit()       
+
+
+#creating a Inhibitor table
+with open(inhibitors) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        gene_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["Target"]).all()
+        #print(row["Target"])
+        if gene_match == []:
+            print(row["Target"])
+            continue
+        else:
+            gene_name = gene_match[-1]
+        
+        inhibitor_match = s.query(Inhibitor).filter(Inhibitor.inhibitor==row["Inhibitor"]).all()
+        if inhibitor_match != []: 
+            obj = inhibitor_match[-1]
+        else:
+            obj = Inhibitor(inhibitor=row["Inhibitor"],
+                            antagonizes_gene=row["Target"],
+                            molecular_weight=row["MW"],
+                            empirical_formula=row["Emperical Formula"],
+                            images_url=row["Images"])
+        gene_name.inhibitors.append(obj)
+        s.add(obj)
+s.commit()    
