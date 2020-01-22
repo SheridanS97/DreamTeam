@@ -22,7 +22,8 @@
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="/HumanKinaseList">Kinases</a>
               <a class="nav-item nav-link" href="/Inhibitors">Inhibitors</a>
-              <a class="nav-item nav-link" href="/Advanced_Search">Phosphosite Search</a>
+              <a class="nav-item nav-link" href="/Inhibitors_one">Inhibitors_one</a>
+              <a class="nav-item nav-link" href="/Phosphosite">Phosphosite Search</a>
               <a class="nav-item nav-link" href="/upload">Data Upload</a>
               <a class="nav-item nav-link" href="/documentation">Documentation</a>
               <a class="nav-item nav-link" href="/about">About</a>
@@ -34,7 +35,17 @@
     <main role="main" class="container">
       <div class="row">
         <div class="col-md-8">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
           {% block content %}{% endblock %}
+        </div>
       </div>
     </main>
     <!-- Optional JavaScript -->
