@@ -94,7 +94,8 @@ class SubstrateMeta(Base):
                 "substrate_name": self.substrate_name,
                 "substrate_gene_name": self.substrate_gene_name,
                 "substrate_uniprot_entry": self.substrate_uniprot_entry,
-                "substrate_uniprot_number": self.substrate_uniprot_number
+                "substrate_uniprot_number": self.substrate_uniprot_number,
+                "phosphosites": [phosphosite.to_dict() for phosphosite in self.phosphosites]
                 }
         return output
     
