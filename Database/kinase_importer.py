@@ -144,7 +144,7 @@ with open(inhibitors) as f:
         gene_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["Target"]).all()
         #print(row["Target"])
         if gene_match == []:
-            print(row["Target"])
+            #print(row["Target"])
             continue
         else:
             gene_name = gene_match[-1]
