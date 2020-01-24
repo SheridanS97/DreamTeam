@@ -46,6 +46,7 @@ class KinaseGeneName(Base):
     gene_alias = Column(String, primary_key=True)
     meta = relationship('KinaseGeneMeta', backref=backref('gene_aliases', uselist=True))
     phosphosites = relationship('PhosphositeMeta', secondary='kinase_phosphosite_relations')
+    inhibitors = relationship("Inhibitors", secondary="kinase_inhibitor_relations" )
     
     def to_dict(self):
         """
@@ -136,14 +137,22 @@ class PhosphositeMeta(Base):
                 "neighbouring_sequences": self.neighbouring_sequences,
                 }
         return output
-    
 
+
+class KinaseInhibitorRelations(Base):
+    # a many to many relationship table between kinase and the inhibitors
+    __tablename__ = "kinase_inhibitor_relations"
+    pass
+    
+    
+    
+    
+    
 class Inhibitor(Base):
     __tablename__ = 'inhibitor'
     inhibitor_id = Column(Integer, primary_key=True)
     inhibitor = Column(String)
-    antagonizes_gene = Column(String, ForeignKey('kinase_gene_names.gene_alias'))
-    kinases = relationship('KinaseGeneName', backref=backref('inhibitors', uselist=True))
+    kinases = relationship('KinaseGeneName', secondary="kinase_inhibitor_relations")
     molecular_weight = Column(Integer)
     images_url = Column(String)
     empirical_formula = Column(String)

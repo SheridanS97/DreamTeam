@@ -148,11 +148,14 @@ with open(inhibitors) as f:
             continue
         else:
             gene_name = gene_match[-1]
-        obj = Inhibitor(inhibitor=row["Inhibitor"],
-                        antagonizes_gene=row["Target"],
-                        molecular_weight=row["MW"],
-                        empirical_formula=row["Emperical Formula"],
-                        images_url=row["Images"])
+        inhibitor_query = s.query(Inhibitor).filter(Inhibitor.inhibitor==row["Inhibitor"]).all()
+        if inhibitor_query != []:
+            obj = inhibitor_query[-1]
+        else:
+            obj = Inhibitor(inhibitor=row["Inhibitor"],
+                            molecular_weight=row["MW"],
+                            empirical_formula=row["Emperical Formula"],
+                            images_url=row["Images"])
         gene_name.inhibitors.append(obj)
         s.add(obj)
 s.commit()    
