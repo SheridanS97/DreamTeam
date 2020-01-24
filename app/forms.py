@@ -23,7 +23,7 @@ class Inhibitor(FlaskForm):
 
 
 class FileForm(FlaskForm):
-    file = FileField(validators=[FileRequired(), FileAllowed(['csv', 'tsv'], "Please Upload only a tsv or csv")])
+    file = FileField(validators=[FileRequired(), FileAllowed('csv', 'tsv')])
     submit = SubmitField('Submit')
 
 class Phosphosite(FlaskForm):
