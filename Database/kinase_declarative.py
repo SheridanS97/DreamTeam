@@ -35,7 +35,8 @@ class KinaseGeneMeta(Base):
                "uniprot_number": self.uniprot_number,
                "uniprot_entry":self.uniprot_entry,
                "gene_name": self.gene_name,
-               "kinase_family": self.kinase_family
+               "kinase_family": self.kinase_family,
+               "gene_aliases": [alias.gene_alias for alias in self.gene_aliases]
                 }
         return output
     
