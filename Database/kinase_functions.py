@@ -106,3 +106,4 @@ def get_substrates_phosphosites_from_gene(kinase_gene):
         else:
             tmp[gene] = [phosphosite.to_dict()]
     return tmp
+
