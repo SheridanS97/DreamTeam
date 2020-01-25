@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, flash, redirect
+from flask import Flask, render_template, url_for, flash, redirect, request
 from werkzeug.utils import secure_filename
 from forms import Kinase, FileForm, Inhibitor
 from flask_wtf import FlaskForm
@@ -6,9 +6,6 @@ from flask_wtf.file import FileField, FileAllowed, FileRequired
 from wtforms import validators, StringField, SubmitField
 import os
 #from wtforms_sqlalchemy.fields import QuerySelectField
-
-
-
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
@@ -20,9 +17,26 @@ def home():
     return render_template('home.html', title= "Welcome to LhosphoView")
 
 
+ALLOWED_EXTENSIONS = {'tsv', 'csv'}
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 @app.route("/upload", methods=['GET', 'POST'])
 def Data_Upload():
     form=FileForm()
+    if request.method == "POST":
+            if request.files:
+                InputFile = request.files["InputFile"]
+                if InputFile.filename == '':
+                    flash('No selected file', 'danger')
+                if InputFile and allowed_file(InputFile.filename):
+                    uploads_dir = os.path.join(app.instance_path, 'Data_Upload')
+                    if not os.path.exists(uploads_dir):
+                        os.makedirs(uploads_dir)
+                    InputFile.save(os.path.join(uploads_dir, secure_filename(InputFile.filename)))
+                    return redirect(url_for('home'))
     return render_template('Data_Upload.html', title='Data Upload', form=form)
 
 
@@ -88,18 +102,7 @@ def Phosphosite():
 
 @app.route("/Inhibitors", methods = ['GET', 'POST'])
 def Inhibitors():
-    form=Inhibitor()
-    if form.validate_on_submit():
-        if form.search.data in 'oxo':
-            return redirect(url_for('results_inhibitor'))
-        else: 
-            flash('Inhibitor not found. Please check and try again.', 'danger')
-    return render_template('Inhibitors.html', title='Inhibitors', form=form)
-
-@app.route("/Inhibitors_one", methods = ['GET', 'POST'])
-def Inhibitors_one():
-    return render_template('Inhibitors_one.html', title='Inhibitors')
-
+    return render_template('Inhibitors.html', title='Inhibitors')
 
 
 
