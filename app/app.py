@@ -60,19 +60,20 @@ def HumanKinases():
         for x in range(len(list_aliases)):
             if search_kinase.upper() in list_aliases[x]:
 
-                def get_gene_protein_name(kinase_input):
+                def get_gene_alias_protein_name(kinase_input):
                     like_kin = "%{}%".format(kinase_input)
                     tmp = []
                     kinase_query = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(or_(KinaseGeneName.gene_alias.like(like_kin), KinaseGeneMeta.uniprot_entry.like(like_kin),\
                                                    KinaseGeneMeta.uniprot_number.like(like_kin), KinaseGeneMeta.protein_name.like(like_kin))).all()
-                    for row in kinase_query:
+                    for meta in kinase_query:
                         results = {}
-                        results["Gene_Name"] = row.to_dict()["gene_name"]
-                        results["Protein_Name"] = row.to_dict()["protein_name"]
+                        results["Gene_Name"] = meta.to_dict()["gene_name"]
+                        results["Gene aliases"] = meta.to_dict()["gene_aliases"]
+                        results["Protein_Name"] = meta.to_dict()["protein_name"]
                         tmp.append(results)
                     return tmp
-                
-                dictionary = get_gene_protein_name(search_kinase)
+
+                dictionary = get_gene_alias_protein_name(search_kinase)
                 return render_template('results_kinases.html', search_kinase=search_kinase, dictionary=dictionary)
 
         else:
@@ -80,6 +81,40 @@ def HumanKinases():
     
     return render_template('HumanKinases.html', title='List of Human Kinases', form=form)
       
+
+@app.route("/Individual_kinase")
+def Individual_kinase():
+    def get_gene_metadata_from_gene(kinase_str):
+        kinase_obj = s.query(KinaseGeneMeta).filter(KinaseGeneMeta.gene_name==kinase_str).one()
+        return kinase_obj.to_dict()
+
+    def get_subcellular_location_from_gene(kinase_gene):
+        tmp = []
+        results = {}
+        results["Gene_Name"] = kinase_gene
+        kinase_query = s.query(KinaseSubcellularLocation).join(KinaseGeneName).filter(KinaseGeneName.gene_alias==kinase_gene).all()
+        for row in kinase_query:
+            tmp.append(row.subcellular_location)
+        results["Subcellular_Locations"] = tmp
+        return results
+    
+    def get_substrates_phosphosites_from_gene(kinase_gene):
+        tmp = {}
+        kinase_obj = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==kinase_gene).one()
+        for phosphosite in kinase_obj.phosphosites:
+            gene = phosphosite.substrate.substrate_name
+            if gene in tmp:
+                tmp[gene].append(phosphosite.to_dict())
+            else:
+                tmp[gene] = [phosphosite.to_dict()]
+        return tmp
+
+
+    Information = get_gene_metadata_from_gene("MAPK1")
+    subcellular_location = (get_subcellular_location_from_gene('MAPK1'))
+    substrate_phosphosites = get_substrates_phosphosites_from_gene('MAPK1')
+    return render_template('Individual_kinase.html', title='Individual Kinase Page', Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
+
 
 @app.route("/Phosphosite")
 def Phosphosite():
