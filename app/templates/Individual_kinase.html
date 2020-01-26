@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- {{ Information }} gives protein name, number, entry, gene name, kinase family as a dictionary -->
+<p> {{ Information }}</p>
+
+
+
+<p> {{ subcellular_location }} </p>
+
+
+<p> {{ substrate_phosphosites }} </p>
+<!-- to give u better idea.  output of this function is like this but condenced on the webpage. 
+{u'CENPE': [{'chromosome': 4,
+             'end_position': 103108897,
+             'karyotype_band': u'q24',
+             'neighbouring_sequences': u'QDPVPKEsPkSCFFD',
+             'phosphosite': u'S2639',
+             'phosphosite_meta_id': 2176,
+             'start_position': 103108899,
+             'strand': -1,
+             'substrate_meta_id': 1829}],
+ u'DUSP16': [{'chromosome': 12,
+              'end_position': 12477493,
+              'karyotype_band': u'p13.2',
+              'neighbouring_sequences': u'TNKLCQFsPVQELSE',
+              'phosphosite': u'S446',
+              'phosphosite_meta_id': 605,
+              'start_position': 12477495,
+              'strand': -1,
+              'substrate_meta_id': 1831}],
+
+{% endblock content %}}
