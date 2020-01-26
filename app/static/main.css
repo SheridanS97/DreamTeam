@@ -78,3 +78,92 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
 }
+
+.file-custom:after {
+    content: attr(data-content);
+}
+
+
+    .input-default-js{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+}
+    .input-default-js + label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    color: #000;
+}
+
+.input-default-js:focus + label {
+    border-color: #80bdff;
+    outline: 0 ;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.15);
+}
+.input-default-js + label {
+    border: 1px solid rgba(33, 47, 41, .2);
+    background-color: transparent;
+    padding: 0;
+}
+
+.input-default-js + label span{
+    padding: 0.425rem .7rem;
+    color: #495057;
+}
+
+.input-default-js + label span:not(.span-browse) {
+    width: 200px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.input-default-js + label .span-browse {
+    height: 100%;
+    color: #000;
+    background-color: #E8EBEF;
+    border-left: 1px solid rgba(33, 47, 41, .2);
+    display: inline-block;
+    padding: 0.425rem .8rem;
+    color: #495057;
+}
+
+@media screen and (max-width: 50em) {
+  .input-default-js + label .span-browse {
+    display: block;
+  }
+}
+
+.label-for-default-js{
+  width: 100%;
+  height: calc(2.25rem + 2px);
+}
+
+#customFile .custom-file-control:lang(en)::after {
+  content: "Select file...";
+}
+
+#customFile .custom-file-control:lang(en)::before {
+  content: "Click me";
+}
+
+/*when a value is selected, this class removes the content */
+.custom-file-control.selected:lang(en)::after {
+  content: "" !important;
+}
+
+.custom-file {
+  overflow: hidden;
+}
+.custom-file-control {
+  white-space: nowrap;
+}
