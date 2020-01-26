@@ -16,19 +16,18 @@ from pprint import pprint #don't really need this if running in script
 #A list of functions is available on Database query II
 
 #Intermediate kinase results page
-def get_aliases_protein_name(kinase_input):
+def get_gene_alias_protein_name(kinase_input):
     """
     Returns a list of dictionary.
     In the dictionary, there are gene name and protein name.
     Returns empty list when no match is found.
     >> kin = "AKT"
-    >> get_aliases_protein_name(kin)
-    [{'Gene aliases': ['AKT1', 'PKB', 'RAC'], 'Protein_Name': 'RAC-alpha serine/threonine-protein kinase'}, 
-    {'Gene aliases': ['AKT2'], 'Protein_Name': 'RAC-beta serine/threonine-protein kinase'}, 
-    {'Gene aliases': ['AKT3', 'PKBG'], 'Protein_Name': 'RAC-gamma serine/threonine-protein kinase'}]
+    >> get_gene_alias_protein_name(kin)
+    [{'Gene_Name': 'AKT1', 'Gene aliases': ['AKT1', 'PKB', 'RAC'], 'Protein_Name': 'RAC-alpha serine/threonine-protein kinase'}, 
+    {'Gene_Name': 'AKT2', 'Gene aliases': ['AKT2'], 'Protein_Name': 'RAC-beta serine/threonine-protein kinase'}, 
+    {'Gene_Name': 'AKT3', 'Gene aliases': ['AKT3', 'PKBG'], 'Protein_Name': 'RAC-gamma serine/threonine-protein kinase'}]
+    >> get_gene_alias_protein_name("Q9Y243")
     [{'Gene_Name': 'AKT3', 'Gene aliases': ['AKT3', 'PKBG'], 'Protein_Name': 'RAC-gamma serine/threonine-protein kinase'}]
-    >> get_aliases_protein_name("Q9Y243")
-    [{'Gene aliases': ['AKT3', 'PKBG'], 'Protein_Name': 'RAC-gamma serine/threonine-protein kinase'}]
     """
     like_kin = "%{}%".format(kinase_input)
     tmp = []
@@ -36,7 +35,7 @@ def get_aliases_protein_name(kinase_input):
                                    KinaseGeneMeta.uniprot_number.like(like_kin), KinaseGeneMeta.protein_name.like(like_kin))).all()
     for meta in kinase_query:
         results = {}
-        #results["Gene_Name"] = meta.to_dict()["gene_name"]
+        results["Gene_Name"] = meta.to_dict()["gene_name"]
         results["Gene aliases"] = meta.to_dict()["gene_aliases"]
         results["Protein_Name"] = meta.to_dict()["protein_name"]
         tmp.append(results)
@@ -138,4 +137,4 @@ def get_kinase_substrate_phosphosite(sub, pho):
             tmp["substrate"] = sub
             tmp["phosphosite"] = pho
     return tmp
-print(get_kinase_substrate_phosphosite("RRN3_HUMAN", "T200"))
+
