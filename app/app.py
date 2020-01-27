@@ -58,9 +58,7 @@ def HumanKinases():
     if form.validate_on_submit():
         for x in range(len(list_aliases)):
             if search_kinase.upper() in list_aliases[x]:
-
-                dictionary = get_gene_alias_protein_name(search_kinase)
-                return render_template('results_kinases.html', search_kinase=search_kinase, dictionary=dictionary)
+                return redirect(url_for('results_kinases', search_kinase=search_kinase))
 
         else:
             flash('Kinase not found. Please check and try again.', 'danger')
@@ -68,12 +66,18 @@ def HumanKinases():
     return render_template('HumanKinases.html', title='List of Human Kinases', form=form)
       
 
-@app.route("/Individual_kinase")
-def Individual_kinase():
+@app.route("/HumanKinases/results_kinases/<string:search_kinase>")
+def results_kinases(search_kinase):
+    dictionary = get_gene_alias_protein_name(search_kinase)
+    return render_template('results_kinases.html', dictionary=dictionary, search_kinase=search_kinase)
 
-    Information = get_gene_metadata_from_gene("MAPK1")
-    subcellular_location = (get_subcellular_location_from_gene('MAPK1'))
-    substrate_phosphosites = get_substrates_phosphosites_from_gene('MAPK1')
+
+@app.route("/HumanKinases/results_kinases/<string:search_kinase>/Individual_kinase")
+def Individual_kinase(search_kinase):
+    gene= "MAPK1"
+    Information = get_gene_metadata_from_gene(gene)
+    subcellular_location = (get_subcellular_location_from_gene(gene))
+    substrate_phosphosites = get_substrates_phosphosites_from_gene(gene)
     return render_template('Individual_kinase.html', title='Individual Kinase Page', Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
 
 
