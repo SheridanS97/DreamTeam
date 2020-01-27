@@ -11,9 +11,9 @@ To install <PhosphoView>, follow these steps:
 
 Thanks to the following people who have contributed to this project:
 
-* [Anastasia](https://github.com/Anastasia-pav) 
+* [Anastasia](https://media2.giphy.com/media/W1MpLPewB8StAWNPSO/giphy.gif) 
 * [Alisha](https://github.com/AlishaAng)
-* [Han](https://github.com/hannz88) 🐛
+* [Han](https://media0.giphy.com/media/jgXUomjhA6F2M/giphy.gif) 🐛
 * [Mohamed](https://github.com/MO105) 
 * [Sheridan](https://github.com/SheridanS97) 
 
