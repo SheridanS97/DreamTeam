@@ -77,9 +77,9 @@ s.commit() # Write changes to DB
 with open(subcellular_location) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        gene_name_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["Gene Name"]).one()
+        gene_meta_match = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).filter(KinaseGeneName.gene_alias==row["Gene Name"]).one()
         obj = KinaseSubcellularLocation(gene_name=row["Gene Name"], subcellular_location=row["Subcellular Location"])
-        gene_name_match.subcellular_locations.append(obj)
+        gene_meta_match.subcellular_locations.append(obj)
         s.add(obj)
 s.commit()
 
@@ -104,12 +104,12 @@ s.commit()
 with open(phosphosites) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        kinase_matches = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias == row["Kinase gene"]).all()
+        kinase_matches = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).filter(KinaseGeneName.gene_alias == row["Kinase gene"]).all()
         if kinase_matches == []:
             # print(row) #debug code to find out which line was it that was returning empty
             continue
         else:
-            kinase_name = kinase_matches[-1]
+            kinase_meta = kinase_matches[-1]
         substrate_match_list = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_gene_name==row["SUB_GENE"]).all()
         if substrate_match_list == []:
             continue
@@ -132,7 +132,7 @@ with open(phosphosites) as f:
                                   end_position=row["End co"],
                                   neighbouring_sequences=row["Neighbouring amino acids +/-7"])
             substrate_match.phosphosites.append(obj)
-        obj.kinases.append(kinase_name)
+        obj.kinases.append(kinase_meta)
         s.add(obj)
 s.commit()       
 
@@ -141,13 +141,13 @@ s.commit()
 with open(inhibitors) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        gene_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["Target"]).all()
+        gene_match = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).filter(KinaseGeneName.gene_alias==row["Target"]).all()
         #print(row["Target"])
         if gene_match == []:
             #print(row["Target"])
             continue
         else:
-            gene_name = gene_match[-1]
+            gene_meta = gene_match[-1]
         inhibitor_query = s.query(Inhibitor).filter(Inhibitor.inhibitor==row["Inhibitor"]).all()
         if inhibitor_query != []:
             obj = inhibitor_query[-1]
@@ -156,6 +156,6 @@ with open(inhibitors) as f:
                             molecular_weight=row["MW"],
                             empirical_formula=row["Emperical Formula"],
                             images_url=row["Images"])
-        gene_name.inhibitors.append(obj)
+        gene_meta.inhibitors.append(obj)
         s.add(obj)
 s.commit()    
