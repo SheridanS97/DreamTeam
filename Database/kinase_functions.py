@@ -152,3 +152,45 @@ def get_kinase_substrate_phosphosite(sub, pho):
             tmp["phosphosite"] = pho
     return tmp
 
+#Function to return all the meta details of all inhibitor
+def get_all_inhibitors_meta():
+    """
+    Return all the meta details of every inhibitor in a list of dictionary.
+    >> get_all_inhibitors_meta()
+    [{'inhibitor_id': 1,
+    'inhibitor': 'GSK650394A',
+    'molecular_weight': 382.45,
+    'images_url': 'http://www.kinase-screen.mrc.ac.uk/system/files/compounds/jpg/gsk-50394_5.jpg',
+    'empirical_formula': 'C25H22N2O2',
+    'kinases': [{'gene_name': 'SGK1', 'gene_alias': ['SGK1', 'SGK']}]},...]
+    """
+    results = []
+    inhibitors = s.query(Inhibitor).all()
+    for inhibitor in inhibitors:
+        results.append(inhibitor.to_dict())
+    return results
+
+#Function to return the meta details of an inhibitor associated with a kinase
+#This function might not be needed
+def get_inhibitor_meta_from_gene(kinase):
+    """
+    Take in a kinase gene name and return a list of dictionaries.
+    Returns empty list if there is not inhibitor for the kinase.
+    >> kinase = "SGK1"
+    >> get_inhibitor_meta_from_gene(kinase)
+    [{'inhibitor_id': 1,
+    'inhibitor': 'GSK650394A',
+    'molecular_weight': 382.45,
+    'images_url': 'http://www.kinase-screen.mrc.ac.uk/system/files/compounds/jpg/gsk-50394_5.jpg',
+    'empirical_formula': 'C25H22N2O2',
+    'kinases': [{'gene_name': 'SGK1', 'gene_alias': ['SGK1', 'SGK']}]},...]
+    """
+    results = []
+    kinase_query = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).\
+    filter(KinaseGeneName.gene_alias==kinase).all()
+    if kinase_query == []:
+        return []
+    for inhibitor in kinase_query[-1].inhibitors:
+        results.append(inhibitor.to_dict())
+    return results
+
