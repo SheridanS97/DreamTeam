@@ -7,7 +7,7 @@ from wtforms import validators, StringField, SubmitField
 import os
 from sqlalchemy import create_engine, or_, and_
 from kinase_functions import *
-
+from db_setup import s 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
@@ -68,17 +68,18 @@ def HumanKinases():
 
 @app.route("/HumanKinases/results_kinases/<string:search_kinase>")
 def results_kinases(search_kinase):
+    gene= "AKT1"
     dictionary = get_gene_alias_protein_name(search_kinase)
-    return render_template('results_kinases.html', dictionary=dictionary, search_kinase=search_kinase)
+    return render_template('results_kinases.html', gene = gene, dictionary=dictionary, search_kinase=search_kinase)
 
 
-@app.route("/HumanKinases/results_kinases/<string:search_kinase>/Individual_kinase")
-def Individual_kinase(search_kinase):
-    gene= "MAPK1"
+@app.route("/HumanKinases/results_kinases/<string:search_kinase>/Individual_kinase/<string:gene>")
+def Individual_kinase(search_kinase, gene):
     Information = get_gene_metadata_from_gene(gene)
     subcellular_location = (get_subcellular_location_from_gene(gene))
     substrate_phosphosites = get_substrates_phosphosites_from_gene(gene)
-    return render_template('Individual_kinase.html', title='Individual Kinase Page', Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
+    Inhibitor = get_inhibitors_from_gene(gene)
+    return render_template('Individual_kinase.html', title='Individual Kinase Page', Inhibitor= Inhibitor, gene = gene, Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
 
 
 @app.route("/Phosphosite")
@@ -88,6 +89,7 @@ def Phosphosite():
 
 @app.route("/Inhibitors", methods = ['GET', 'POST'])
 def Inhibitors():
+    
     return render_template('Inhibitors.html', title='Inhibitors')
 
 
