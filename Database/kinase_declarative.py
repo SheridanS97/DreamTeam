@@ -167,13 +167,28 @@ class Inhibitor(Base):
                 "molecular_weight": self.molecular_weight,
                 "images_url": self.images_url,
                 "empirical_formula": self.empirical_formula,
-                "kinases": self.get_kinases_list()
+                "kinases": self.get_kinase_list()
                 }
         return output
     
+    def get_kinase_list(self):
+        """
+        Return a list of dictionary.
+        The dictionary contains the gene name and its gene aliases.
+        """
+        results = []
+        for kinase_obj in self.kinases:
+            tmp ={}
+            tmp_list = []
+            tmp["gene_name"] = kinase_obj.gene_name
+            for alias_obj in kinase_obj.gene_aliases:
+                tmp_list.append(alias_obj.gene_alias)
+            tmp["gene_alias"] = tmp_list
+            results.append(tmp)
+        return results
+    
+    """
     def get_kinases_list(self):
-        """
-        """
         raw_kinases = [kinase.to_dict() for kinase in self.kinases]
         kinases = {}
         for kin in raw_kinases:
@@ -182,7 +197,7 @@ class Inhibitor(Base):
             else:
                 kinases[kin["gene_name"]] = [kin["gene_alias"]]
         return kinases
-        
+    """   
         
 
 #create an engine that stores the data in the local directory's kinase_database.db 
