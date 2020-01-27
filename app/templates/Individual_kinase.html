@@ -1,33 +1,93 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<!-- {{ Information }} gives protein name, number, entry, gene name, kinase family as a dictionary -->
-<p> {{ Information }}</p>
+
+<div class ="content-section">
+    <div class ="content-section">
+    <fieldset class="form-group">
+        <legend class="border-bottom mb-4">{{Information["gene_name"]}}</legend>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#BI">Background Information</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#PS">Phosphorylation Sites</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#GW">Genome Browser</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="BI">
+    
+    <table class="table table-hover">
+      <tr>
+        <th scope="row">Protein Name</th>
+        <td>{{Information["protein_name"]}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Uniprot Number</th>
+        <td>{{Information["uniprot_number"]}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Uniprot Entry</th>
+        <td>{{Information["uniprot_entry"]}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Gene Name</th>
+        <td>{{Information["gene_name"]}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Kinase Family</th>
+        <td>{{Information["kinase_family"]}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Gene Aliases</th>
+        <td>{{Information["gene_aliases"]}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Subcellular Location</th>
+        <td>{{subcellular_location["Subcellular_Locations"]}}</td>
+      </tr>
+    </table>
 
 
+  </div>
+  <div class="tab-pane container fade" id="PS">
+   <table class="table table-hover">
+           <tr>
+            <th rowspan="2">Substrate</th>
+            <th rowspan="2">Phosphosite </th>
+            <th colspan="4">Genomic Location</th>
+           </tr>
+           <tr>
+            <th>Chr</th>
+            <th>Karyotype</th>
+            <th>Strand</th>
+            <th>Position</th>
+           </tr>
+           <tr>
+            <td></td>
+            <td>85</td>
+            <td>78</td>
+            <td>82</td>
+            <td>77</td>
+            <td>81</td>
+           </tr>
+          </table>
 
-<p> {{ subcellular_location }} </p>
+  </div>
+  <div class="tab-pane container fade" id="GB"></div>
+          </div>
+
+          
 
 
-<p> {{ substrate_phosphosites }} </p>
-<!-- to give u better idea.  output of this function is like this but condenced on the webpage. 
-{u'CENPE': [{'chromosome': 4,
-             'end_position': 103108897,
-             'karyotype_band': u'q24',
-             'neighbouring_sequences': u'QDPVPKEsPkSCFFD',
-             'phosphosite': u'S2639',
-             'phosphosite_meta_id': 2176,
-             'start_position': 103108899,
-             'strand': -1,
-             'substrate_meta_id': 1829}],
- u'DUSP16': [{'chromosome': 12,
-              'end_position': 12477493,
-              'karyotype_band': u'p13.2',
-              'neighbouring_sequences': u'TNKLCQFsPVQELSE',
-              'phosphosite': u'S446',
-              'phosphosite_meta_id': 605,
-              'start_position': 12477495,
-              'strand': -1,
-              'substrate_meta_id': 1831}],
 
 {% endblock content %}}
+
+
