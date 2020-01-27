@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class ="content-section">
+        <form method="POST" action="">
+            {{form.hidden_tag()}}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Search for Human Kinases </legend>
+                <div class="form-group">
+                    {{ form.search.label(class="form-control-label") }}
+                    {% if form.search.errors %}
+                        {{ form.search(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.search.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.search(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+        </form>
+    </div>
+    <div class="border-top pt-1">
+                            <small class="text-muted"> Need Guidance  ? <a class="ml-2" href="{{ url_for('Documentation') }}">Refer to our Help section</a>
+                             </small>
+    </div>
+
+{% endblock content %}

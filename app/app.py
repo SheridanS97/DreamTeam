@@ -1,11 +1,13 @@
-from flask import Flask, render_template, url_for, flash, redirect, request
+from flask import Flask, render_template, url_for, flash, redirect
 from werkzeug.utils import secure_filename
 from forms import Kinase, FileForm, Inhibitor
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed, FileRequired
 from wtforms import validators, StringField, SubmitField
 import os
-#from wtforms_sqlalchemy.fields import QuerySelectField
+from sqlalchemy import create_engine, or_, and_
+from kinase_functions import *
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
@@ -22,6 +24,7 @@ ALLOWED_EXTENSIONS = {'tsv', 'csv'}
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 
 @app.route("/upload", methods=['GET', 'POST'])
 def Data_Upload():
@@ -40,16 +43,58 @@ def Data_Upload():
     return render_template('Data_Upload.html', title='Data Upload', form=form)
 
 
-@app.route("/HumanKinaseList", methods = ['GET', 'POST'])
-def HumanKinaseList():
+
+@app.route("/HumanKinases", methods = ['GET', 'POST'])
+def HumanKinases():
     form=Kinase() 
+    search_kinase = form.search.data
+    GeneName = s.query(KinaseGeneName).all()
+    list_aliases = []
+    
+    for gene in GeneName:
+        gene_aliases = gene.gene_alias
+        list_aliases.append(gene_aliases)
+
     if form.validate_on_submit():
-        if form.search.data in 'oxo':
-            return redirect(url_for('home'))
-        else: 
+        for x in range(len(list_aliases)):
+            if search_kinase.upper() in list_aliases[x]:
+                return redirect(url_for('results_kinases', search_kinase=search_kinase))
+
+        else:
             flash('Kinase not found. Please check and try again.', 'danger')
-    return render_template('ListHumanKinases.html', title='List of Human Kinases', form=form)
-                                                       
+    
+    return render_template('HumanKinases.html', title='List of Human Kinases', form=form)
+      
+
+@app.route("/HumanKinases/results_kinases/<string:search_kinase>")
+def results_kinases(search_kinase):
+    dictionary = get_gene_alias_protein_name(search_kinase)
+    return render_template('results_kinases.html', dictionary=dictionary, search_kinase=search_kinase)
+
+
+@app.route("/HumanKinases/results_kinases/<string:search_kinase>/Individual_kinase")
+def Individual_kinase(search_kinase):
+    gene= "MAPK1"
+    Information = get_gene_metadata_from_gene(gene)
+    subcellular_location = (get_subcellular_location_from_gene(gene))
+    substrate_phosphosites = get_substrates_phosphosites_from_gene(gene)
+    return render_template('Individual_kinase.html', title='Individual Kinase Page', Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
+
+
+@app.route("/Phosphosite")
+def Phosphosite():
+    return render_template('Phosphosite.html', title='Phosphosite Search')
+
+
+@app.route("/Inhibitors", methods = ['GET', 'POST'])
+def Inhibitors():
+    return render_template('Inhibitors.html', title='Inhibitors')
+
+
+@app.route("/documentation")
+def Documentation():
+    return render_template('documentation.html', title='Documentation')
+
 
 @app.route("/about")
 def about():
@@ -82,33 +127,6 @@ def about():
             ]
 
     return render_template('about.html', posts=posts, title = " About")
-
-
-
-@app.route("/documentation")
-def Documentation():
-    return render_template('documentation.html', title='Documentation')
-
-
-@app.route("/Phosphosite")
-def Phosphosite():
-#    form = ChoiceForm()
-#    form.opts.query = Choice.query.filter(Choice.id > 1)
-#    if form.validate_on_submit():
-#        return '<html><h1>{}</h1></html>'.format(form.opts.data)
-    return render_template('Phosphosite.html', title='Phosphosite Search')
-
-
-
-@app.route("/Inhibitors", methods = ['GET', 'POST'])
-def Inhibitors():
-    return render_template('Inhibitors.html', title='Inhibitors')
-
-
-
-@app.route("/results_inhibitor")
-def results_inhibitor():
-    return render_template('results_inhibitor.html', title='Inhibitor results')
 
 
 
