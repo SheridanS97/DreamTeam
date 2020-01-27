@@ -13,7 +13,7 @@ Thanks to the following people who have contributed to this project:
 
 * [Anastasia](https://media2.giphy.com/media/W1MpLPewB8StAWNPSO/giphy.gif) 
 * [Alisha](https://media.tenor.com/images/47851be5f91384a549945a5e8aa3d915/tenor.gif)
-* [Han](https://media0.giphy.com/media/jgXUomjhA6F2M/giphy.gif) 🐛
+* [Han](https://media.giphy.com/media/jgXUomjhA6F2M/giphy.gif) 🐛
 * [Mohamed](https://github.com/MO105) 
 * [Sheridan](https://github.com/SheridanS97) 
 
