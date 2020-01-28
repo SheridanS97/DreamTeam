@@ -26,7 +26,8 @@ tr:nth-child(even) {
 
   {% for items in dictionary %}
   <tr>
-    <td ><a href ="{{url_for('Individual_kinase', search_kinase=search_kinase, gene = gene )}}">{{ items.Gene_Name }}</a> </td>
+    <td >
+      <a href ="/HumanKinases/results_kinases/{{search_kinase}}/{{items.Gene_Name}}">{{ items.Gene_Name }}</a> </td>
     <td> {{ items.Gene_aliases }} </td>
     <td> {{ items.Protein_Name }} </td>
   </tr>
