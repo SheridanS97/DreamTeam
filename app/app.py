@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, flash, redirect
+from flask import Flask, render_template, url_for, flash, redirect, request
 from werkzeug.utils import secure_filename
 from forms import Kinase, FileForm, Inhibitor
 from flask_wtf import FlaskForm
@@ -66,15 +66,14 @@ def HumanKinases():
     return render_template('HumanKinases.html', title='List of Human Kinases', form=form)
       
 
-@app.route("/HumanKinases/results_kinases/<string:search_kinase>")
+@app.route("/HumanKinases/results_kinases/<search_kinase>")
 def results_kinases(search_kinase):
-    gene= "AKT1"
     dictionary = get_gene_alias_protein_name(search_kinase)
-    return render_template('results_kinases.html', gene = gene, dictionary=dictionary, search_kinase=search_kinase)
+    return render_template('results_kinases.html', dictionary=dictionary, search_kinase=search_kinase)
 
 
-@app.route("/HumanKinases/results_kinases/<string:search_kinase>/Individual_kinase/<string:gene>")
-def Individual_kinase(search_kinase, gene):
+@app.route("/HumanKinases/results_kinases/<search_kinase>/<gene>")
+def Individual_kinase(search_kinase,gene):
     Information = get_gene_metadata_from_gene(gene)
     subcellular_location = (get_subcellular_location_from_gene(gene))
     substrate_phosphosites = get_substrates_phosphosites_from_gene(gene)
@@ -84,12 +83,13 @@ def Individual_kinase(search_kinase, gene):
 
 @app.route("/Phosphosite")
 def Phosphosite():
+    form = Phosphosite()
     return render_template('Phosphosite.html', title='Phosphosite Search')
 
 
 @app.route("/Inhibitors", methods = ['GET', 'POST'])
 def Inhibitors():
-    
+#   ALL_inhibitors = ()
     return render_template('Inhibitors.html', title='Inhibitors')
 
 
