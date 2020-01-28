@@ -16,7 +16,7 @@ app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('home.html', title= "Welcome to LhosphoView")
+    return render_template('home.html', title= "Welcome to PhosphoView")
 
 
 ALLOWED_EXTENSIONS = {'tsv', 'csv'}
