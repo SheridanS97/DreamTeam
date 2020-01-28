@@ -152,7 +152,7 @@ def get_kinase_substrate_phosphosite(sub, pho):
             tmp["phosphosite"] = pho
     return tmp
 
-#Function to return all the meta details of all inhibitor
+#Function to return ALL the meta details of ALL inhibitor
 def get_all_inhibitors_meta():
     """
     Return all the meta details of every inhibitor in a list of dictionary.
