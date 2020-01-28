@@ -162,7 +162,7 @@ class Inhibitor(Base):
         Return Inhibitor as a dictionary.
         """
         output = {
-                "inhibitor_id": self.inhibitor_id,
+                #"inhibitor_id": self.inhibitor_id,
                 "inhibitor": self.inhibitor,
                 "molecular_weight": self.molecular_weight,
                 "images_url": self.images_url,
