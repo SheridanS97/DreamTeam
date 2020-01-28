@@ -27,5 +27,6 @@ class FileForm(FlaskForm):
     submit = SubmitField('Submit')
 
 class Phosphosite(FlaskForm):
-	chromosome_number = SelectField('chromosome_number', choices=['1', '2'])
+	chromosome_number = SelectField('chromosome_number', choices=[('1', '2'),('3', '4')])
+	karyotypes = SelectField('karyotypes', choices=[])
 	submit = SubmitField('Search')

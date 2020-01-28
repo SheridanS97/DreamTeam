@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for, flash, redirect, request
 from werkzeug.utils import secure_filename
-from forms import Kinase, FileForm, Inhibitor
+from forms import *
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed, FileRequired
 from wtforms import validators, StringField, SubmitField
@@ -82,15 +82,15 @@ def Individual_kinase(search_kinase,gene):
 
 
 @app.route("/Phosphosite")
-def Phosphosite():
+def Phosphosites():
     form = Phosphosite()
-    return render_template('Phosphosite.html', title='Phosphosite Search')
+    return render_template('Phosphosite.html', title='Phosphosite Search', form=form)
 
 
 @app.route("/Inhibitors", methods = ['GET', 'POST'])
 def Inhibitors():
-#   ALL_inhibitors = ()
-    return render_template('Inhibitors.html', title='Inhibitors')
+    ALL_inhibitors = get_all_inhibitors_meta()
+    return render_template('Inhibitors.html', title='Inhibitors', ALL_inhibitors=ALL_inhibitors)
 
 
 @app.route("/documentation")

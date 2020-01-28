@@ -12,58 +12,24 @@ tr:nth-child(even) {
 }
 </style>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-<table id="myTable" class="table table-hover table-bordered table-sm" width="100%">
-  <thead>
-    <tr>
-      <th class="th-sm">Inhibitor
-      </th>
-      <th class="th-sm">Target
-      </th>
-      <th class="th-sm">Molecular Weight
-      </th>
-      <th class="th-sm">Emperical Formula 
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>GSK650394A</td>
-      <td>SGK1</td>
-      <td>382.45</td>
-      <td>C25H22N2O2</td>
-    </tr>
-    <tr>
-      <td>Oxo OXO</td>
-      <td>Accountant</td>
-      <td>Tokyo</td>
-      <td>63</td>
-    </tr>
-    <tr>
-      <td>Ashton Cox</td>
-      <td>Junior Technical Author</td>
-      <td>San Francisco</td>
-      <td>66</td>
-    </tr>
-    <tr>
-      <td>Cedric Kelly</td>
-      <td>Senior Javascript Developer</td>
-      <td>Edinburgh</td>
-      <td>22</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th>Inhibitor
-      </th>
-      <th>Target
-      </th>
-      <th>Molecular Weight
-      </th>
-      <th>Emperical Formula
-      </th>
-    </tr>
-  </tfoot>
-    <script>
+<table id="myTable" class="table table-hover table-bordered table-sm">
+  {% if ALL_inhibitors %}
+  <tr>
+     {% for key in ALL_inhibitors[0] %}
+     <th> {{ key }} </th>
+     {% endfor %}
+  </tr>
+  {% endif %}
+  
+  {% for dict_item in ALL_inhibitors %}
+  <tr>
+     {% for value in dict_item.values() %}
+     <td> {{ value }} </td>
+     {% endfor %}
+  </tr>
+  {% endfor %}
+
+  <script>
 function myFunction() {
   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
@@ -74,7 +40,7 @@ function myFunction() {
 
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
+    td = tr[i].getElementsByTagName("td")[1];
     if (td) {
       txtValue = td.textContent || td.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -87,4 +53,5 @@ function myFunction() {
 }
 </script>
 </table>
+</html>
 {% endblock content %}
