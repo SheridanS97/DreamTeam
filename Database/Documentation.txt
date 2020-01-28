@@ -1,13 +1,34 @@
 ﻿Documentation for database
   
+Database design 
+The database is designed with the intent that user will look up a gene. We understand that a lot genes have several aliases as different laboratories have found the same gene without realizing that it has been annotated before. Therefore, we have a KinaseGeneName table which align each alias with its respective preferred gene known in Uniprot.
 
-There is a many-to-many relationship between kinase and phosphosite; between kinase and inhibitor, and between kinase and subcellular location. Thus, a relationship was drawn between kinase and phosphosites as well as between kinase and inhibitor. No relationship table was drawn between subcellular location and kinase because the trade-off between the time saved from using a relationship table and hassle of creating it is not worth it. 
+Each entry in KinaseGeneName would be connected to its respective entry in KinaseGeneMeta where the details such as the protein name, the uniprot entry name and the uniprot number are stored. This way, by joining KinaseGeneMeta and KinaseGeneName, we can allow user to search for an entry via 4 different ways: gene name, gene alias, uniprot number and uniprot entry name.
 
+There is a many-to-many relationship between kinase and phosphosite; between 
+kinase and inhibitor, and between kinase and subcellular location. Thus, a 
+relationship was drawn between kinase and phosphosites as well as between kinase 
+and inhibitor. No relationship table was drawn between subcellular location and 
+kinase because the trade-off between the time saved from using a relationship 
+table and hassle of creating it is not worth it. 
 
-There is a one-to-many relationship between substrate and phosphosites as each phosphosites belong to a substrate. Therefore, a foreign key and a backref pointing towards the Substrate table from the PhosphositeMeta table is sufficient. 
+There is a one-to-many relationship between substrate and phosphosites as each 
+phosphosites belong to a substrate. Therefore, a foreign key and a backref 
+pointing towards the Substrate table from the PhosphositeMeta table is 
+sufficient. 
 
+The relationship between the KinaseGeneName and KinaseGeneMeta is a many-to-one 
+relationship. Thus, a foreign key is enough.
 
-The relationship between the KinaseGeneName and KinaseGeneMeta is a many-to-one relationship. Thus, a foreign key is enough.
+Database creation and querying
+For the relatively small scale of the project, SQLAlchemy is chosen with sqlite. 
+This means the database created will be on local machine rather than on 
+web-based server. This has multiple advantages over the use of other database 
+languages like MySQL. One of it being that SQLAlchemy is  one of the object 
+relational mapping tools that allows user to minimise the necessity for tedious 
+and error-prone SQL statements. 
 
+SQLAlchemy is an object-relational mapping tool also allows the user to employ object-oriented progamming method to manipulate and query data from database. Python 3.7 was therefore used for the purpose of this project because of the versatility as well as the accessibility for beginners. On top of that, sqlalchemy is already a library that can be accessed easily through Python 3.7. Web-based SQL also has a limit on how 
+much data the user can store and importing the data to the web-based server is 
+normally unencrypted.
 
-For the relatively small scale of the project, SQLAlchemy is chosen with sqlite. This means the database created will be on local machine rather than on web-based server. This has multiple advantages over the use of other database languages like MySQL. One of it being that SQLAlchemy is  one of the object relational mapping tools that allows user to minimise the necessity for tedious and erroneous SQL statements. SQLAlchemy also allows the user to employ python in creating the database and query it. Web-based SQL also has a limit on how much data the user can store and importing the data to the web-based server is normally unencrypted.
