@@ -81,7 +81,7 @@ def Individual_kinase(search_kinase,gene):
     return render_template('Individual_kinase.html', title='Individual Kinase Page', Inhibitor= Inhibitor, gene = gene, Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
 
 
-@app.route("/Phosphosite")
+@app.route("/Phosphosite", methods= ['GET', 'POST'])
 def Phosphosites():
     form = Phosphosite()
     return render_template('Phosphosite.html', title='Phosphosite Search', form=form)
@@ -91,6 +91,12 @@ def Phosphosites():
 def Inhibitors():
     ALL_inhibitors = get_all_inhibitors_meta()
     return render_template('Inhibitors.html', title='Inhibitors', ALL_inhibitors=ALL_inhibitors)
+
+@app.route("/Inhibitors/final")
+def Individual_Inhibitors():
+    inhibitor = "GSK650394A"
+    Individual_Inhibitor = get_inhibitor_meta_from_inhibitor(inhibitor)
+    return render_template('Individual_inhibitor.html', title='Individual Inhibitors', Individual_Inhibitor=Individual_Inhibitor)
 
 
 @app.route("/documentation")
