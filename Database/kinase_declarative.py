@@ -147,15 +147,17 @@ class KinaseInhibitorRelations(Base):
     inhibitor_id = Column(Integer, ForeignKey("inhibitor.inhibitor_id"), primary_key=True)
     
     
-class Inhibitor(Base):
-    __tablename__ = 'inhibitor'
+class InhibitorMeta(Base):
+    __tablename__ = 'inhibitor_meta'
     inhibitor_id = Column(Integer, primary_key=True)
-    inhibitor = Column(String)
-    kinases = relationship('KinaseGeneMeta', secondary="kinase_inhibitor_relations")
+    inhibitor_name = Column(String)
     molecular_weight = Column(Integer)
+    smiles = Column(String)
+    pubchem_id = Column(Integer)
+    inchi = Column(String)
     images_url = Column(String)
     empirical_formula = Column(String)
-    #references = Column(String)
+    kinases = relationship('KinaseGeneMeta', secondary="kinase_inhibitor_relations")
     
     def to_dict(self):
         """
@@ -186,20 +188,25 @@ class Inhibitor(Base):
             tmp["gene_alias"] = tmp_list
             results.append(tmp)
         return results
-    
-    """
-    def get_kinases_list(self):
-        raw_kinases = [kinase.to_dict() for kinase in self.kinases]
-        kinases = {}
-        for kin in raw_kinases:
-            if kin["gene_name"] in kinases:
-                kinases[kin["gene_name"]].append(kin["gene_alias"])
-            else:
-                kinases[kin["gene_name"]] = [kin["gene_alias"]]
-        return kinases
-    """   
+     
         
-
+class InhibitorName(Base):
+    __tablename__ = 'inhibitor_names'
+    inhibitor_name = Column(String, ForeignKey('inhibitor_meta.inhibitor_name'))
+    inhibitor_alias = Column(String, primary_key=True)
+    inhibitormeta = relationship('InhibitorMeta', backref=backref('inhibitor_aliases', uselist=True))
+    
+    def to_dict(self):
+        """
+        Returns the InhibitorName as a dictionary:
+        """
+        output = {
+                "inhibitor_name" : self.inhibitor_name,
+                "inhibitor_alias" : self.inhibitor_alias
+                }
+        return output
+    
+    
 #create an engine that stores the data in the local directory's kinase_database.db 
 engine = create_engine('sqlite:///kinase_database.db')
 
