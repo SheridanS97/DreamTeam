@@ -12,6 +12,14 @@ from sqlalchemy import create_engine, or_, and_
 from sqlalchemy.orm import sessionmaker
 from pprint import pprint #don't really need this if running in script
 
+#create engine and bine the engine
+engine = create_engine("sqlite:///kinase_database.db")
+Base.metadata.bind = engine
+
+#create a session object
+session = sessionmaker(bind=engine)
+s = session()
+
 #Please refer to Database_query_II for more information
 #A list of functions is available on Database query II
 
@@ -95,22 +103,6 @@ def get_inhibitors_from_gene(kinase_gene):
     for inhibitor in kinase_query[-1].inhibitors:
         results.append(inhibitor.inhibitor)
     return results
-
-#Function to return the meta details of the inhibitor from an inhibitor
-def get_inhibitor_meta_from_inhibitor(inhibitor_name):
-    """(str) --> dict
-    Returns the meta data of the inhibitor.
-    >> get_inhibitor_meta_from_inhibitor("PD 184352 (CI-1040)")
-    {'inhibitor': 'PD 184352 (CI-1040)', 
-    'molecular_weight': 478.66,
-    'images_url': 'http://www.kinase-screen.mrc.ac.uk/system/files/compounds/jpg/pd-184352_5.jpg',
-    'empirical_formula': 'C17H14ClF2IN2O2',
-    'kinases': [{'gene_name': 'YES1', 'gene_alias': ['YES1', 'YES']},
-    {'gene_name': 'MAPK3', 'gene_alias': ['MAPK3', 'ERK1', 'PRKM3']},
-    {'gene_name': 'MAP2K1', 'gene_alias': ['MAP2K1', 'MEK1', 'PRKMK1']}]}
-    """
-    inhibitor_query = s.query(Inhibitor).filter(Inhibitor.inhibitor==inhibitor_name).one()
-    return inhibitor_query.to_dict()
     
 #Function to return substrates and phosphosites from a kinase
 def get_substrates_phosphosites_from_gene(kinase_gene):
@@ -185,6 +177,22 @@ def get_all_inhibitors_meta():
     for inhibitor in inhibitors:
         results.append(inhibitor.to_dict())
     return results
+
+#Function to return the meta details of the inhibitor from an inhibitor
+def get_inhibitor_meta_from_inhibitor(inhibitor_name):
+    """(str) --> dict
+    Returns the meta data of the inhibitor.
+    >> get_inhibitor_meta_from_inhibitor("PD 184352 (CI-1040)")
+    {'inhibitor': 'PD 184352 (CI-1040)', 
+    'molecular_weight': 478.66,
+    'images_url': 'http://www.kinase-screen.mrc.ac.uk/system/files/compounds/jpg/pd-184352_5.jpg',
+    'empirical_formula': 'C17H14ClF2IN2O2',
+    'kinases': [{'gene_name': 'YES1', 'gene_alias': ['YES1', 'YES']},
+    {'gene_name': 'MAPK3', 'gene_alias': ['MAPK3', 'ERK1', 'PRKM3']},
+    {'gene_name': 'MAP2K1', 'gene_alias': ['MAP2K1', 'MEK1', 'PRKMK1']}]}
+    """
+    inhibitor_query = s.query(Inhibitor).filter(Inhibitor.inhibitor==inhibitor_name).one()
+    return inhibitor_query.to_dict()
 
 #Function to return the meta details of an inhibitor associated with a kinase
 #This function might not be needed
