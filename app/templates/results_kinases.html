@@ -1,39 +1,30 @@
 {% extends "layout.html" %}
 {% block content %}
-<!DOCTYPE html>
-<html>
-<head>
-<h1>Kinase results for: "{{search_kinase}}" </h1>
-<p>List of Kinases.</p>
-</head>
 
-
-<style>
-tr:nth-child(even) {
-  background-color: #f2f2f2;}
-</style>
-
+<div class ="content-section">
+        <legend class="border-bottom mb-4">List of Kinase Results for: "{{search_kinase}}"</legend>
 
 <table id="myTable" class="table table-hover table-bordered table-sm">
 
-  {% if dictionary %}
   <tr>
-    {% for key in dictionary[0] %}
-    <th> {{ key }} </th>
-    {% endfor %}
+    
+    <th>Gene Name</th>
+    <th>Gene Aliases</th>
+    <th>Protein Name</th>
+
   </tr>
-  {% endif %}
+
 
   {% for items in dictionary %}
   <tr>
-    <td ><a href ="{{url_for('Individual_kinase', search_kinase=search_kinase, gene = gene )}}">{{ items.Gene_Name }}</a> </td>
-    <td> {{ items.Gene_aliases }} </td>
+    <td >
+      <a href ="/HumanKinases/results_kinases/{{search_kinase}}/{{items.Gene_Name}}">{{ items.Gene_Name }}</a> </td>
+    <td> {{ ", ".join(items.Gene_aliases) }} </td>
     <td> {{ items.Protein_Name }} </td>
   </tr>
   {% endfor %}
 
 </table>
-</html>
 {% endblock content %}
 
 
