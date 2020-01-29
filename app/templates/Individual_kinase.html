@@ -1,12 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
-<head>
-{{Inhibitor}}
-</head>
+
 
 <div class ="content-section">
-    <div class ="content-section">
-    <fieldset class="form-group">
         <legend class="border-bottom mb-4">{{Information["gene_name"]}}</legend>
 
 <!-- Nav tabs -->
@@ -49,13 +45,14 @@
       </tr>
       <tr>
         <th scope="row">Gene Aliases</th>
-        <td>{{Information["gene_aliases"]}}</td>
+        <td>{{",  ".join(Information["gene_aliases"])}}</td>
       </tr>
       <tr>
         <th scope="row">Subcellular Location</th>
-        <td>{{subcellular_location["Subcellular_Locations"]}}</td>
+        <td>{{",  ".join(subcellular_location["Subcellular_Locations"])}}</td>
       </tr>
     </table>
+
 
 
   </div>
@@ -65,7 +62,7 @@
             <th rowspan="2">Substrate</th>
             <th rowspan="2">Phosphosite </th>
             <th colspan="4">Genomic Location</th>
-           </tr>
+           </tr>   
            <tr>
             <th>Chr</th>
             <th>Karyotype</th>
@@ -81,6 +78,19 @@
             <td>81</td>
            </tr>
           </table>
+
+      <div> 
+      {% for name, age in substrate_phosphosites.items() %}
+        <li>{{ name }}: {{ age }}</li>
+        {% endfor %}
+      </div>
+
+  {% for key, segment in substrate_phosphosites.items() %}
+    <tr>
+      <td>{{ key }}</td>
+      <td>{{ segment }}</td>
+    </tr>
+  {% endfor %}
 
   </div>
   <div class="tab-pane container fade" id="GB"></div>
