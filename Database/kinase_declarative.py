@@ -158,18 +158,23 @@ class InhibitorMeta(Base):
     images_url = Column(String)
     empirical_formula = Column(String)
     kinases = relationship('KinaseGeneMeta', secondary="kinase_inhibitor_relations")
+    #inhibitor_aliases (backref)
     
     def to_dict(self):
         """
         Return Inhibitor as a dictionary.
         """
         output = {
-                #"inhibitor_id": self.inhibitor_id,
-                "inhibitor": self.inhibitor,
+                "inhibitor_id": self.inhibitor_id,
+                "inhibitor_name": self.inhibitor_name,
                 "molecular_weight": self.molecular_weight,
+                "smiles": self.smiles,
+                "pubchem_id": self.pubchem_id,
+                "inchi": self.inchi,
                 "images_url": self.images_url,
                 "empirical_formula": self.empirical_formula,
-                "kinases": self.get_kinase_list()
+                "kinases": self.get_kinase_list(),
+                "inhibitor_aliases": [alias.inhibitor_alias for alias in self.inhibitor_aliases]
                 }
         return output
     
@@ -189,6 +194,10 @@ class InhibitorMeta(Base):
             results.append(tmp)
         return results
      
+    def get_inhibitor_alias(self):
+        """
+        """
+        pass
         
 class InhibitorName(Base):
     __tablename__ = 'inhibitor_names'
