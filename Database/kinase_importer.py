@@ -104,25 +104,27 @@ s.commit()
 with open(phosphosites) as f:
     reader = csv.DictReader(f)
     for row in reader:
+        #get the kinase obj that matches the kinase for the row
         kinase_matches = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).filter(KinaseGeneName.gene_alias == row["Kinase gene"]).all()
-        if kinase_matches == []:
+        if kinase_matches == []: #if the kinase name is not found in the alias or gene name of the database
             # print(row) #debug code to find out which line was it that was returning empty
-            continue
+            continue #skip that row
         else:
-            kinase_meta = kinase_matches[-1]
+            kinase_meta = kinase_matches[-1] #otherwise get the obj; -1 because .all returns a list of memory address
+        #get the substrate_object that matched the gene name of the substrate
         substrate_match_list = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_gene_name==row["SUB_GENE"]).all()
-        if substrate_match_list == []:
-            continue
+        if substrate_match_list == []: #if there is no such substrate in the database, it will return an empty list
+            continue #skip it if there's no such substrate
         else:
-            substrate_match = substrate_match_list[-1]
+            substrate_match = substrate_match_list[-1] #if there's such substrate, we're betting on that there's no duplication of the substrate
         #deduplication
-        query = s.query(PhosphositeMeta)
+        query = s.query(PhosphositeMeta) # query the PhosphositeMeta table for the existence of phosphosite with the same substrate name as the substrate_object
         query = query.filter(PhosphositeMeta.substrate_meta_id==substrate_match.substrate_id)
         query = query.filter(PhosphositeMeta.phosphosite==row["PS"])
         phosphosite_match = query.all()
-        if phosphosite_match != []:
+        if phosphosite_match != []: #if the phosphosite_obj is not empty, ie it already exists; retrieve it
             obj = phosphosite_match[-1]
-        else:
+        else:   #if it doesn't yet exist, create the obj as an instance of PhosphositeMeta
             obj = PhosphositeMeta(substrate_meta_id=substrate_match.substrate_id,
                                   phosphosite=row["PS"],
                                   chromosome=row["Chromosome"],
@@ -131,8 +133,8 @@ with open(phosphosites) as f:
                                   start_position=row["Start co"],
                                   end_position=row["End co"],
                                   neighbouring_sequences=row["Neighbouring amino acids +/-7"])
-            substrate_match.phosphosites.append(obj)
-        obj.kinases.append(kinase_meta)
+            substrate_match.phosphosites.append(obj) #append the phosphosite_obj to the phosphosites backref column in the corresponding substrate_obj
+        obj.kinases.append(kinase_meta) #append the kinase_obj in the kinases column of the relationship table between phosphosite and kinase
         s.add(obj)
 s.commit()       
 
