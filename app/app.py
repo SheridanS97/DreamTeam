@@ -92,11 +92,10 @@ def Inhibitors():
     ALL_inhibitors = get_all_inhibitors_meta()
     return render_template('Inhibitors.html', title='Inhibitors', ALL_inhibitors=ALL_inhibitors)
 
-@app.route("/Inhibitors/final")
-def Individual_Inhibitors():
-    inhibitor = "GSK650394A"
+@app.route("/Inhibitors/<inhibitor>")
+def Individual_Inhibitors(inhibitor):
     Individual_Inhibitor = get_inhibitor_meta_from_inhibitor(inhibitor)
-    return render_template('Individual_inhibitor.html', title='Individual Inhibitors', Individual_Inhibitor=Individual_Inhibitor)
+    return render_template('Individual_inhibitor.html', title='Individual Inhibitors', Individual_Inhibitor=Individual_Inhibitor, inhibitor=inhibitor)
 
 
 @app.route("/documentation")

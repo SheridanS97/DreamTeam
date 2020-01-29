@@ -5,6 +5,7 @@
 
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
 <table id="myTable" class="table table-hover table-bordered table-sm">
 
   <tr>
@@ -17,7 +18,7 @@
 
   {% for dict_item in ALL_inhibitors %}
   <tr>
-     <td> {{ dict_item['inhibitor'] }}</td>
+     <td> <a href = "/Inhibitors/{{dict_item['inhibitor']}}">{{ dict_item['inhibitor'] }}</a></td>
      <td> {{ dict_item['molecular_weight'] }}</td>
      <td> {{ dict_item['empirical_formula'] }}</td>
      {% for item in dict_item.kinases %}
@@ -27,27 +28,35 @@
   {% endfor %}
 
   <script>
-function myFunction() {
-  // Declare variables
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
+  // function used in the table to filter via user search 
+  function myFunction() {
+      // Declare variables 
+      var input, filter, table, tr, td, i, occurrence;
 
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+
+     // loops through all the rows
+     for (i = 0; i < tr.length; i++) {
+         occurrence = false; 
+         td = tr[i].getElementsByTagName("td"); //search through all the values
+         for(var j=0; j< td.length; j++){                
+             currentTd = td[j];
+             if (currentTd ) {
+                 if (currentTd.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                     tr[i].style.display = "";
+                     occurrence = true;
+                 } 
+             }
+         }
+         if(!occurrence){
+             tr[i].style.display = "none";
+         } 
+     }
+   }
+
 </script>
 </table>
 {% endblock content %}
