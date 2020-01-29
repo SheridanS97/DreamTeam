@@ -1,0 +1,2 @@
+The information for the inhibitors such as the list of inhibitors with its properties such as molecular mass, emperical formila, and its kinase target were retrieved as a csv file from http://www.kinase-screen.mrc.ac.uk/ on the 13th of Janurary. 
+The csv file is stored as "kinase_inhibitor_list". All the inhibitors that did not contain a value for the "Action" column were removed along with inhibitors that had no reference. 
