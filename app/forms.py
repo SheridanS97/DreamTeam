@@ -1,8 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, validators, TextField
-from wtforms.validators import DataRequired, Length, Email, EqualTo, Required
+from wtforms.validators import DataRequired, Length, EqualTo, Required
 from flask_wtf.file import FileField, FileAllowed, FileRequired
-from wtforms.fields.html5 import EmailField
 from flask_wtf import Form
 from wtforms import SelectField
 
@@ -23,9 +22,10 @@ class Inhibitor(FlaskForm):
 
 
 class FileForm(FlaskForm):
-    file = FileField(validators=[FileRequired(), FileAllowed('csv', 'tsv')])
+    file = FileField(validators=[FileRequired()])
     submit = SubmitField('Submit')
 
 class Phosphosite(FlaskForm):
-	chromosome_number = SelectField('chromosome_number', choices=['1', '2'])
+	chromosome_number = SelectField('chromosome_number', choices=[('one', '1'),('two', '2'), ('three', '3')])
+	karyotypes = SelectField('karyotypes', choices=[('q','c'), ('r','t')])
 	submit = SubmitField('Search')

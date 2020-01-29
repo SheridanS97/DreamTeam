@@ -1,90 +1,62 @@
 {% extends "layout.html" %}
 {% block content %}
-<!DOCTYPE html>
-<html>
-<head>
-<h1>List of Inhibitors</h1>
-<p>List of Inhibitors.</p>
-</head>
-<style>
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-</style>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-<table id="myTable" class="table table-hover table-bordered table-sm" width="100%">
-  <thead>
-    <tr>
-      <th class="th-sm">Inhibitor
-      </th>
-      <th class="th-sm">Target
-      </th>
-      <th class="th-sm">Molecular Weight
-      </th>
-      <th class="th-sm">Emperical Formula 
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>GSK650394A</td>
-      <td>SGK1</td>
-      <td>382.45</td>
-      <td>C25H22N2O2</td>
-    </tr>
-    <tr>
-      <td>Oxo OXO</td>
-      <td>Accountant</td>
-      <td>Tokyo</td>
-      <td>63</td>
-    </tr>
-    <tr>
-      <td>Ashton Cox</td>
-      <td>Junior Technical Author</td>
-      <td>San Francisco</td>
-      <td>66</td>
-    </tr>
-    <tr>
-      <td>Cedric Kelly</td>
-      <td>Senior Javascript Developer</td>
-      <td>Edinburgh</td>
-      <td>22</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th>Inhibitor
-      </th>
-      <th>Target
-      </th>
-      <th>Molecular Weight
-      </th>
-      <th>Emperical Formula
-      </th>
-    </tr>
-  </tfoot>
-    <script>
-function myFunction() {
-  // Declare variables
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
+<div class ="content-section">
+        <legend class="border-bottom mb-4">List of Inhibitors</legend>
 
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table id="myTable" class="table table-hover table-bordered table-sm">
+
+  <tr>
+     
+     <th> Inhibitors </th>
+     <th> Molecular Weight </th>
+     <th> Empirical Formula </th>
+     <th> Target </th>
+  </tr>
+
+  {% for dict_item in ALL_inhibitors %}
+  <tr>
+     <td> <a href = "/Inhibitors/{{dict_item['inhibitor']}}">{{ dict_item['inhibitor'] }}</a></td>
+     <td> {{ dict_item['molecular_weight'] }}</td>
+     <td> {{ dict_item['empirical_formula'] }}</td>
+     {% for item in dict_item.kinases %}
+     <td> {{item['gene_name']}}</td>
+          {% endfor %}
+  </tr>
+  {% endfor %}
+
+  <script>
+  // function used in the table to filter via user search 
+  function myFunction() {
+      // Declare variables 
+      var input, filter, table, tr, td, i, occurrence;
+
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+
+     // loops through all the rows
+     for (i = 0; i < tr.length; i++) {
+         occurrence = false; 
+         td = tr[i].getElementsByTagName("td"); //search through all the values
+         for(var j=0; j< td.length; j++){                
+             currentTd = td[j];
+             if (currentTd ) {
+                 if (currentTd.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                     tr[i].style.display = "";
+                     occurrence = true;
+                 } 
+             }
+         }
+         if(!occurrence){
+             tr[i].style.display = "none";
+         } 
+     }
+   }
+
 </script>
 </table>
 {% endblock content %}

@@ -1,13 +1,13 @@
-from flask import Flask, render_template, url_for, flash, redirect
+from flask import Flask, render_template, url_for, flash, redirect, request
 from werkzeug.utils import secure_filename
-from forms import Kinase, FileForm, Inhibitor
+from forms import *
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed, FileRequired
 from wtforms import validators, StringField, SubmitField
 import os
 from sqlalchemy import create_engine, or_, and_
 from kinase_functions import *
-
+from db_setup import s 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
@@ -16,7 +16,7 @@ app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('home.html', title= "Welcome to LhosphoView")
+    return render_template('home.html', title= "Welcome to PhosphoView")
 
 
 ALLOWED_EXTENSIONS = {'tsv', 'csv'}
@@ -66,29 +66,36 @@ def HumanKinases():
     return render_template('HumanKinases.html', title='List of Human Kinases', form=form)
       
 
-@app.route("/HumanKinases/results_kinases/<string:search_kinase>")
+@app.route("/HumanKinases/results_kinases/<search_kinase>")
 def results_kinases(search_kinase):
     dictionary = get_gene_alias_protein_name(search_kinase)
     return render_template('results_kinases.html', dictionary=dictionary, search_kinase=search_kinase)
 
 
-@app.route("/HumanKinases/results_kinases/<string:search_kinase>/Individual_kinase")
-def Individual_kinase(search_kinase):
-    gene= "MAPK1"
+@app.route("/HumanKinases/results_kinases/<search_kinase>/<gene>")
+def Individual_kinase(search_kinase,gene):
     Information = get_gene_metadata_from_gene(gene)
     subcellular_location = (get_subcellular_location_from_gene(gene))
     substrate_phosphosites = get_substrates_phosphosites_from_gene(gene)
-    return render_template('Individual_kinase.html', title='Individual Kinase Page', Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
+    Inhibitor = get_inhibitors_from_gene(gene)
+    return render_template('Individual_kinase.html', title='Individual Kinase Page', Inhibitor= Inhibitor, gene = gene, Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
 
 
-@app.route("/Phosphosite")
-def Phosphosite():
-    return render_template('Phosphosite.html', title='Phosphosite Search')
+@app.route("/Phosphosite", methods= ['GET', 'POST'])
+def Phosphosites():
+    form = Phosphosite()
+    return render_template('Phosphosite.html', title='Phosphosite Search', form=form)
 
 
 @app.route("/Inhibitors", methods = ['GET', 'POST'])
 def Inhibitors():
-    return render_template('Inhibitors.html', title='Inhibitors')
+    ALL_inhibitors = get_all_inhibitors_meta()
+    return render_template('Inhibitors.html', title='Inhibitors', ALL_inhibitors=ALL_inhibitors)
+
+@app.route("/Inhibitors/<inhibitor>")
+def Individual_Inhibitors(inhibitor):
+    Individual_Inhibitor = get_inhibitor_meta_from_inhibitor(inhibitor)
+    return render_template('Individual_inhibitor.html', title='Individual Inhibitors', Individual_Inhibitor=Individual_Inhibitor, inhibitor=inhibitor)
 
 
 @app.route("/documentation")

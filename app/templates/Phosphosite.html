@@ -1,8 +1,28 @@
 {% extends "layout.html" %}
 {% block content %}
-   <div class ="content-section">
-    <fieldset class="form-group">
-				<legend class="border-bottom mb-4">Phosphosite Data</legend>
+ 
+
+<body>
+	<form method = "POST">
+		<fieldset class="form-group">
+                <legend class="border-bottom mb-4">Phosphosite search by location </legend>
+
+                <div class="form-group">
+                    {{ form.chromosome_number.label(class="form-control-label") }}
+                     {{ form.chromosome_number(class="form-control form-control-lg") }}
+                </div>
+              	<div class="form-group">
+                    {{ form.karyotypes.label(class="form-control-label") }}
+                     {{ form.karyotypes(class="form-control form-control-lg") }}
+                </div>
+            </fieldset>
+		<div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+	</form>
+    <div class="border-top pt-1">
+                            <small class="text-muted"> Need Guidance  ? <a class="ml-2" href="{{ url_for('Documentation') }}">Refer to our Help section</a>
+                             </small>
+    </div>
 {% endblock content %}
 
 
