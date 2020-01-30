@@ -98,9 +98,9 @@ def Individual_Inhibitors(inhibitor):
     return render_template('Individual_inhibitor.html', title='Individual Inhibitors', Individual_Inhibitor=Individual_Inhibitor, inhibitor=inhibitor)
 
 
-@app.route("/documentation")
-def Documentation():
-    return render_template('documentation.html', title='Documentation')
+@app.route("/help")
+def Help():
+    return render_template('help.html', title='Help')
 
 
 @app.route("/about")
