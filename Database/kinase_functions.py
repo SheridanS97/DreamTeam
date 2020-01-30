@@ -12,6 +12,14 @@ from sqlalchemy import create_engine, or_, and_
 from sqlalchemy.orm import sessionmaker
 from pprint import pprint #don't really need this if running in script
 
+#create engine and bine the engine
+engine = create_engine("sqlite:///kinase_database.db")
+Base.metadata.bind = engine
+
+#create a session object
+session = sessionmaker(bind=engine)
+s = session()
+
 #Please refer to Database_query_II for more information
 #A list of functions is available on Database query II
 
@@ -95,22 +103,6 @@ def get_inhibitors_from_gene(kinase_gene):
     for inhibitor in kinase_query[-1].inhibitors:
         results.append(inhibitor.inhibitor)
     return results
-
-#Function to return the meta details of the inhibitor from an inhibitor
-def get_inhibitor_meta_from_inhibitor(inhibitor_name):
-    """(str) --> dict
-    Returns the meta data of the inhibitor.
-    >> get_inhibitor_meta_from_inhibitor("PD 184352 (CI-1040)")
-    {'inhibitor': 'PD 184352 (CI-1040)', 
-    'molecular_weight': 478.66,
-    'images_url': 'http://www.kinase-screen.mrc.ac.uk/system/files/compounds/jpg/pd-184352_5.jpg',
-    'empirical_formula': 'C17H14ClF2IN2O2',
-    'kinases': [{'gene_name': 'YES1', 'gene_alias': ['YES1', 'YES']},
-    {'gene_name': 'MAPK3', 'gene_alias': ['MAPK3', 'ERK1', 'PRKM3']},
-    {'gene_name': 'MAP2K1', 'gene_alias': ['MAP2K1', 'MEK1', 'PRKMK1']}]}
-    """
-    inhibitor_query = s.query(Inhibitor).filter(Inhibitor.inhibitor==inhibitor_name).one()
-    return inhibitor_query.to_dict()
     
 #Function to return substrates and phosphosites from a kinase
 def get_substrates_phosphosites_from_gene(kinase_gene):
@@ -150,22 +142,31 @@ def get_kinase_substrate_phosphosite(sub, pho):
     Returns empty list if there are no match found.
     Each dictionary contains the kinase, substrate and phosphosite.
     >> get_kinase_substrate_phosphosite("RRN3_HUMAN", "T200")
-    {'kinase': 'CSNK2A1', 'substrate': 'RRN3_HUMAN', 'phosphosite': 'T200'}
+    {'kinase': ['MAPK9'], 'substrate': 'RRN3_HUMAN', 'phosphosite': 'T200'}
     >> get_kinase_substrate_phosphosite("empty", "T200")
     []
+    >> get_kinase_substrate_phosphosite("Q9UQL6", "S498")
+    {'kinase': ['CAMK1', 'CAMK2A', 'CAMK4', 'PRKAA1', 'PRKAA2', 'PRKD1', 'PRKD2', 'PRKD3'], 
+    'substrate': 'Q9UQL6', 
+    'phosphosite': 'S498'}
     """
     tmp = {}
+    #substrate of query could be substrate gene name, substrate name, substrate uniprot entry name or 
+    #substrate uniprot number
     sub_pho_query = s.query(PhosphositeMeta).join(SubstrateMeta).filter(PhosphositeMeta.phosphosite==pho).\
     filter(SubstrateMeta.substrate_id==PhosphositeMeta.substrate_meta_id).\
     filter(or_(SubstrateMeta.substrate_gene_name==sub, SubstrateMeta.substrate_name==sub,\
                SubstrateMeta.substrate_uniprot_entry==sub, SubstrateMeta.substrate_uniprot_number==sub)).all()
+    #if  there are no entry in database an empty list will be returned
     if sub_pho_query == []:
         return []
     for phosphosite in sub_pho_query:
+        kinase_list = []
         for kinase in phosphosite.kinases:
-            tmp["kinase"] = kinase.gene_name
-            tmp["substrate"] = sub
-            tmp["phosphosite"] = pho
+            kinase_list.append(kinase.gene_name)
+        tmp["kinase"] = kinase_list
+        tmp["substrate"] = sub
+        tmp["phosphosite"] = pho
     return tmp
 
 #Function to return ALL the meta details of ALL inhibitor
@@ -186,6 +187,23 @@ def get_all_inhibitors_meta():
         results.append(inhibitor.to_dict())
     return results
 
+#Function to return the meta details of the inhibitor from an inhibitor
+def get_inhibitor_meta_from_inhibitor(inhibitor_name):
+    """(str) --> dict
+    Returns the meta data of the inhibitor.
+    >> get_inhibitor_meta_from_inhibitor("PD 184352 (CI-1040)")
+    {'inhibitor': 'PD 184352 (CI-1040)', 
+    'molecular_weight': 478.66,
+    'images_url': 'http://www.kinase-screen.mrc.ac.uk/system/files/compounds/jpg/pd-184352_5.jpg',
+    'empirical_formula': 'C17H14ClF2IN2O2',
+    'kinases': [{'gene_name': 'YES1', 'gene_alias': ['YES1', 'YES']},
+    {'gene_name': 'MAPK3', 'gene_alias': ['MAPK3', 'ERK1', 'PRKM3']},
+    {'gene_name': 'MAP2K1', 'gene_alias': ['MAP2K1', 'MEK1', 'PRKMK1']}]}
+    """
+    inhibitor_query = s.query(Inhibitor).filter(Inhibitor.inhibitor==inhibitor_name).one()
+    return inhibitor_query.to_dict()
+
+#Additional functions which might come in handy later
 #Function to return the meta details of an inhibitor associated with a kinase
 #This function might not be needed
 def get_inhibitor_meta_from_gene(kinase):
@@ -210,3 +228,30 @@ def get_inhibitor_meta_from_gene(kinase):
         results.append(inhibitor.to_dict())
     return results
 
+#Function to return the phosphosite meta data from a substrate
+def get_phosphosite_meta_from_substrate(substrate_input):
+    """
+    Returns a list of dictionaries.
+    Each dictionary contains the meta details of the phosphosite for the same substrate.
+    Returns empty list if no data was found for the substrate.
+    >> get_phosphosite_meta_from_substrate("P50895")
+    [{'phosphosite_meta_id': 128,
+    'substrate_meta_id': 232,
+    'phosphosite': 'S598',
+    'chromosome': 19,
+    'karyotype_band': 'q13.32',
+    'strand': 1,
+    'start_position': 44820733,
+    'end_position': 44820735,
+    'neighbouring_sequences': 'GEPGLsHsGsEQPEQ'},...]
+    """
+    results = []
+    phosphosite_query = s.query(PhosphositeMeta)\
+    .filter(PhosphositeMeta.substrate_meta_id==SubstrateMeta.substrate_id)\
+    .filter(or_(SubstrateMeta.substrate_gene_name==substrate_input, SubstrateMeta.substrate_name==substrate_input,\
+                SubstrateMeta.substrate_uniprot_entry==substrate_input, SubstrateMeta.substrate_uniprot_number==substrate_input)).all()
+    if phosphosite_query == []:
+        return []
+    for row in phosphosite_query:
+        results.append(row.to_dict())
+    return results
