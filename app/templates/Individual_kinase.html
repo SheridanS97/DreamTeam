@@ -14,7 +14,7 @@
     <a class="nav-link" data-toggle="tab" href="#PS">Phosphorylation Sites</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#GW">Genome Browser</a>
+    <a class="nav-link" data-toggle="tab" href="#GW">Protein Browser</a>
   </li>
 </ul>
 
@@ -57,35 +57,78 @@
 
   </div>
   <div class="tab-pane container fade" id="PS">
+
+
    <table class="table table-hover">
            <tr>
             <th rowspan="2">Substrate</th>
             <th rowspan="2">Phosphosite </th>
-            <th colspan="4">Genomic Location</th>
+            <th colspan="5">Genomic Location</th>
            </tr>   
            <tr>
             <th>Chr</th>
             <th>Karyotype</th>
             <th>Strand</th>
-            <th>Position</th>
+            <th>Start Position</th>
+            <th>End Position</th>
            </tr>
            <tr>
+            {% for key, value in substrate_phosphosites.items() %}
+            <td>{{key}}</td>
+            {%for item in value%}
+            <td>{{item["phosphosite"]}}</td>
+            <td>{{item["chromosome"]}}</td>
+            <td>{{item["karyotype_band"]}}</td>
+            <td>{{item["strand"]}}</td>
+            <td>{{item["start_position"]}}</td>
+            <td>{{item["end_position"]}}</td>
             <td></td>
-            <td>85</td>
-            <td>78</td>
-            <td>82</td>
-            <td>77</td>
-            <td>81</td>
            </tr>
+             {% endfor %}
+            {% endfor %}
+    
           </table>
 
-    
+
+
 
 
 
   </div>
-  <div class="tab-pane container fade" id="GB"></div>
-          </div>
+  <div class="tab-pane container fade" id="GW">
+    
+    <script src="http://ebi-uniprot.github.io/CDN/protvista/protvista.js"></script> <!-- protvista script source -->
+    <link href="http://ebi-uniprot.github.io/CDN/protvista/css/main.css" rel="stylesheet"/> <!-- protvista CSS -->
+
+      <!-- Kinase Annotation -->
+    <section id="annot" class="tab-panel">
+      <h4 class="w3-border-bottom w3-border-light-grey w3-padding-12 w3-light-grey">{{Information["gene_name"]}} Protein Sequence Features </h4>
+      <!-- Provista javascript -->
+      <div id="yourDiv" style="width:1024px; margin:auto;"></div>
+      <center><script>
+          window.onload = function() {
+              var yourDiv = document.getElementById('yourDiv');
+              var ProtVista = require('ProtVista');
+              var instance = new ProtVista({
+                  el: yourDiv,
+                  uniprotacc: '{{Information["uniprot_number"]}}',
+
+                  //These categories will **not** be rendered.
+                  exclusions: ['SEQUENCE_INFORMATION', 'STRUCTURAL', 'TOPOLOGY', 'MUTAGENESIS', 'MOLECULE_PROCESSING']
+              });
+          }
+      </script></center>
+    </section>
+
+
+
+
+  </div>
+          
+
+
+
+</div>
 
           
 
