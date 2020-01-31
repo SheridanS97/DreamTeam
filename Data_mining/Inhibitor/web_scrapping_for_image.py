@@ -44,11 +44,12 @@ def each_page(url_):
 			final_image = image_link[0].a["href"]
 
 			#adding the results to the file
-			f.write((inhibitor) + "," + final_image + "\n")
+			f.write('"{}","{}"'.format(inhibitor, final_image)+ "\n")
+
 
 		except:     #if no image/error then empty space
 			final_image = ""
-			f.write((inhibitor) + "," + final_image + "\n")
+			f.write('"{}","{}"'.format(inhibitor, final_image)+ "\n")
 
 		
 	for every in even:
@@ -61,11 +62,13 @@ def each_page(url_):
 			final_image = image_link[0].a["href"]
 			
 			#adding the results to the file
-			f.write((inhibitor) + "," + final_image + "\n")
+			f.write('"{}","{}"'.format(inhibitor, final_image)+"\n")
+	
 
 		except:        #if there is no image link then empty space
 			final_image = ""
-			f.write((inhibitor) + "," + final_image + "\n")
+			f.write('"{}","{}"'.format(inhibitor, final_image)+"\n")
+	
 
 		
 

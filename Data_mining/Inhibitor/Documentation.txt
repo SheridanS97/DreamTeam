@@ -1,2 +1,7 @@
-The information for the inhibitors such as the list of inhibitors with its properties such as molecular mass, emperical formila, and its kinase target were retrieved as a csv file from http://www.kinase-screen.mrc.ac.uk/ on the 13th of Janurary. 
-The csv file is stored as "kinase_inhibitor_list". All the inhibitors that did not contain a value for the "Action" column were removed along with inhibitors that had no reference. 
+The information for the inhibitors such as the list of inhibitors with its targets were retrieved as a csv file from http://www.kinase-screen.mrc.ac.uk/ on the 29th of Janurary. 
+The csv file is stored as "kinase_inhibitor_list". All the inhibitors that did not contain a value for the "Action" column were removed. 
+
+The column of PubChem CID was extracted into a new csv called "Pubchem" without the header. The reason for this is because to upload a list of ID's to pubchem, csv file has to contain one id per line and it must only consist of integers. Therefore, the header was removed.
+All the blank spaces were deleted in excel. This list of CIDs was uploaded to pubchem and a csv file was downloaded which contained many information about that CID. 
+
+The link for the images were obtained from http://www.kinase-screen.mrc.ac.uk/ by web scrapping using Beautiful soup. The reason for this is because the link of the inhibitor images had different names to the inhibitor.  
