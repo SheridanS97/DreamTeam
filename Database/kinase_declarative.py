@@ -147,27 +147,34 @@ class KinaseInhibitorRelations(Base):
     inhibitor_id = Column(Integer, ForeignKey("inhibitor.inhibitor_id"), primary_key=True)
     
     
-class Inhibitor(Base):
-    __tablename__ = 'inhibitor'
+class InhibitorMeta(Base):
+    __tablename__ = 'inhibitor_meta'
     inhibitor_id = Column(Integer, primary_key=True)
-    inhibitor = Column(String)
-    kinases = relationship('KinaseGeneMeta', secondary="kinase_inhibitor_relations")
+    inhibitor_name = Column(String)
     molecular_weight = Column(Integer)
+    smiles = Column(String)
+    pubchem_id = Column(Integer)
+    inchi = Column(String)
     images_url = Column(String)
     empirical_formula = Column(String)
-    #references = Column(String)
+    kinases = relationship('KinaseGeneMeta', secondary="kinase_inhibitor_relations")
+    #inhibitor_aliases (backref)
     
     def to_dict(self):
         """
         Return Inhibitor as a dictionary.
         """
         output = {
-                #"inhibitor_id": self.inhibitor_id,
-                "inhibitor": self.inhibitor,
+                "inhibitor_id": self.inhibitor_id,
+                "inhibitor_name": self.inhibitor_name,
                 "molecular_weight": self.molecular_weight,
+                "smiles": self.smiles,
+                "pubchem_id": self.pubchem_id,
+                "inchi": self.inchi,
                 "images_url": self.images_url,
                 "empirical_formula": self.empirical_formula,
-                "kinases": self.get_kinase_list()
+                "kinases": self.get_kinase_list(),
+                "inhibitor_aliases": [alias.inhibitor_alias for alias in self.inhibitor_aliases]
                 }
         return output
     
@@ -186,20 +193,29 @@ class Inhibitor(Base):
             tmp["gene_alias"] = tmp_list
             results.append(tmp)
         return results
-    
-    """
-    def get_kinases_list(self):
-        raw_kinases = [kinase.to_dict() for kinase in self.kinases]
-        kinases = {}
-        for kin in raw_kinases:
-            if kin["gene_name"] in kinases:
-                kinases[kin["gene_name"]].append(kin["gene_alias"])
-            else:
-                kinases[kin["gene_name"]] = [kin["gene_alias"]]
-        return kinases
-    """   
+     
+    def get_inhibitor_alias(self):
+        """
+        """
+        pass
         
-
+class InhibitorName(Base):
+    __tablename__ = 'inhibitor_names'
+    inhibitor_name = Column(String, ForeignKey('inhibitor_meta.inhibitor_name'))
+    inhibitor_alias = Column(String, primary_key=True)
+    inhibitormeta = relationship('InhibitorMeta', backref=backref('inhibitor_aliases', uselist=True))
+    
+    def to_dict(self):
+        """
+        Returns the InhibitorName as a dictionary:
+        """
+        output = {
+                "inhibitor_name" : self.inhibitor_name,
+                "inhibitor_alias" : self.inhibitor_alias
+                }
+        return output
+    
+    
 #create an engine that stores the data in the local directory's kinase_database.db 
 engine = create_engine('sqlite:///kinase_database.db')
 
