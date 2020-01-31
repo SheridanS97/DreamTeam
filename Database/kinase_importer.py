@@ -188,15 +188,13 @@ with open(inhibitors) as f:
             continue  #skip it
         else:
             inhibitor_meta_obj = inhibitor_meta_match[-1] #teachnically, if there is already one, there should only be one but all returns a list;-1 or 0 will return the obj within the list
-        inhibitor_aliases = json.reader(row[""]) #the aliases will be in a string of list; json reader will parse that into multiple strings
-        if row[""] in inhibitor_aliases: #look for self-referencing alias; ie one of the name in the gene alias has to be itself
-            pass
-        else:
+        inhibitor_aliases = row["Alt Name"].split(",") #the aliases will be in a string of list into multiple strings
+        if row[""] not in inhibitor_aliases: #look for self-referencing alias; ie one of the name in the gene alias has to be itself
             inhibitor_name_obj = InhibitorName(gene_alias=row[""])
             inhibitor_meta_obj.inhibitor_aliases.append(inhibitor_name_obj)
             s.add(inhibitor_name_obj)
         for alias in inhibitor_aliases: #loop through each alias in the inhibitor_aliases
-            inhibitor_alias_match = s.query(InhibitorName).filter(InhibitorName.inhibitor_alias==row[""]).all() #check for the previous records of such aliases
+            inhibitor_alias_match = s.query(InhibitorName).filter(InhibitorName.inhibitor_alias==alias).all() #check for the previous records of such aliases
             if inhibitor_alias_match != []: #if it already exists; skip it
                 continue
             inhibitor_name_obj = InhibitorName(gene_alias=alias) #otherwise, create it as an instance of InhibitorName
