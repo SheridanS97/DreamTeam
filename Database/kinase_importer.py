@@ -182,15 +182,15 @@ with open(inhibitors) as f:
     reader = csv.DictReader(f)
     for row in reader:
         #check for the existence of the entry in InhibitorMeta with the same inhibitor name as the name in the csv
-        inhibitor_meta_match = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor_name==row[""]).all()
+        inhibitor_meta_match = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor_name==row["Target"]).all()
         #if there is no such entry, it will return an empty list
         if inhibitor_meta_match == []: 
             continue  #skip it
         else:
             inhibitor_meta_obj = inhibitor_meta_match[-1] #teachnically, if there is already one, there should only be one but all returns a list;-1 or 0 will return the obj within the list
-        inhibitor_aliases = row["Alt Name"].split(",") #the aliases will be in a string of list into multiple strings
-        if row[""] not in inhibitor_aliases: #look for self-referencing alias; ie one of the name in the gene alias has to be itself
-            inhibitor_name_obj = InhibitorName(gene_alias=row[""])
+        inhibitor_aliases = row["Synonymns"].split(",") #the aliases will be in a string of list into multiple strings
+        if row["Inhibitor"] not in inhibitor_aliases: #look for self-referencing alias; ie one of the name in the gene alias has to be itself
+            inhibitor_name_obj = InhibitorName(gene_alias=row["Inhibitor"])
             inhibitor_meta_obj.inhibitor_aliases.append(inhibitor_name_obj)
             s.add(inhibitor_name_obj)
         for alias in inhibitor_aliases: #loop through each alias in the inhibitor_aliases
