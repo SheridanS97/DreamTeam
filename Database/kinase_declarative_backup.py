@@ -23,6 +23,8 @@ class KinaseGeneMeta(Base):
     uniprot_entry = Column(String)
     gene_name = Column(String, primary_key=True)
     kinase_family = Column(String)
+    phosphosites = relationship('PhosphositeMeta', secondary='kinase_phosphosite_relations')
+    inhibitors = relationship("Inhibitor", secondary="kinase_inhibitor_relations" )
     # gene_aliases <from backref in KinaseGeneName>
     
     #create a function to return the object as dictionary
@@ -35,7 +37,8 @@ class KinaseGeneMeta(Base):
                "uniprot_number": self.uniprot_number,
                "uniprot_entry":self.uniprot_entry,
                "gene_name": self.gene_name,
-               "kinase_family": self.kinase_family
+               "kinase_family": self.kinase_family,
+               "gene_aliases": [alias.gene_alias for alias in self.gene_aliases]
                 }
         return output
     
@@ -45,7 +48,6 @@ class KinaseGeneName(Base):
     gene_name = Column(String, ForeignKey('kinase_gene_meta.gene_name'))
     gene_alias = Column(String, primary_key=True)
     meta = relationship('KinaseGeneMeta', backref=backref('gene_aliases', uselist=True))
-    phosphosites = relationship('PhosphositeMeta', secondary='kinase_phosphosite_relations')
     
     def to_dict(self):
         """
@@ -61,9 +63,9 @@ class KinaseGeneName(Base):
 class KinaseSubcellularLocation(Base):
     __tablename__ = 'subcellular_location'
     subcellular_location_id = Column(Integer, primary_key = True)
-    gene_name = Column(String, ForeignKey('kinase_gene_names.gene_alias'))
+    gene_name = Column(String, ForeignKey('kinase_gene_meta.gene_name'))
     subcellular_location = Column(String)
-    kinase_meta = relationship('KinaseGeneName', backref=backref('subcellular_locations', uselist=True))
+    kinase_meta = relationship('KinaseGeneMeta', backref=backref('subcellular_locations', uselist=True))
     
     def to_dict(self):
         """
@@ -103,7 +105,7 @@ class KinasePhosphositeRelations(Base):
     # a many to many relationship table between substrates and kinases
     __tablename__ = "kinase_phosphosite_relations"
     phosphosite_id = Column(Integer, ForeignKey('phosphosite_meta.phosphosite_meta_id'), primary_key=True)
-    kinase_gene_id = Column(String, ForeignKey('kinase_gene_names.gene_alias'), primary_key=True)
+    kinase_gene_id = Column(String, ForeignKey('kinase_gene_meta.gene_name'), primary_key=True)
     
     
 class PhosphositeMeta(Base):
@@ -118,7 +120,7 @@ class PhosphositeMeta(Base):
     start_position = Column(Integer)
     end_position = Column(Integer)
     neighbouring_sequences = Column(String)
-    kinases = relationship('KinaseGeneName', secondary='kinase_phosphosite_relations')
+    kinases = relationship('KinaseGeneMeta', secondary='kinase_phosphosite_relations')
     
     def to_dict(self):
         """
@@ -136,32 +138,69 @@ class PhosphositeMeta(Base):
                 "neighbouring_sequences": self.neighbouring_sequences,
                 }
         return output
-    
 
-class Inhibitor(Base):
+
+class KinaseInhibitorRelations(Base):
+    # a many to many relationship table between kinase and the inhibitors
+    __tablename__ = "kinase_inhibitor_relations"
+    kinase_gene_name = Column(String, ForeignKey("kinase_gene_meta.gene_name"), primary_key=True)
+    inhibitor_id = Column(Integer, ForeignKey("inhibitor.inhibitor_id"), primary_key=True)
+    
+    
+class InhibitorMeta(Base):
     __tablename__ = 'inhibitor'
     inhibitor_id = Column(Integer, primary_key=True)
-    inhibitor = Column(String)
-    antagonizes_gene = Column(String, ForeignKey('kinase_gene_names.gene_alias'))
-    kinases = relationship('KinaseGeneName', backref=backref('inhibitors', uselist=True))
+    inhibitor_name = Column(String)
     molecular_weight = Column(Integer)
+    smiles = Column(String)
+    pubchem_id = Column(Integer)
+    inchi = Column(String)
     images_url = Column(String)
     empirical_formula = Column(String)
-    #references = Column(String)
+    kinases = relationship('KinaseGeneMeta', secondary="kinase_inhibitor_relations")
     
     def to_dict(self):
         """
         Return Inhibitor as a dictionary.
         """
         output = {
-                "inhibitor_id": self.inhibitor_id,
+                #"inhibitor_id": self.inhibitor_id,
                 "inhibitor": self.inhibitor,
-                "antagonizes_gene": self.antagonizes_gene,
                 "molecular_weight": self.molecular_weight,
                 "images_url": self.images_url,
-                "empirical_formula": self.empirical_formula
+                "empirical_formula": self.empirical_formula,
+                "kinases": self.get_kinase_list()
                 }
         return output
+    
+    def get_kinase_list(self):
+        """
+        Return a list of dictionary.
+        The dictionary contains the gene name and its gene aliases.
+        """
+        results = []
+        for kinase_obj in self.kinases:
+            tmp ={}
+            tmp_list = []
+            tmp["gene_name"] = kinase_obj.gene_name
+            for alias_obj in kinase_obj.gene_aliases:
+                tmp_list.append(alias_obj.gene_alias)
+            tmp["gene_alias"] = tmp_list
+            results.append(tmp)
+        return results
+    
+    """
+    def get_kinases_list(self):
+        raw_kinases = [kinase.to_dict() for kinase in self.kinases]
+        kinases = {}
+        for kin in raw_kinases:
+            if kin["gene_name"] in kinases:
+                kinases[kin["gene_name"]].append(kin["gene_alias"])
+            else:
+                kinases[kin["gene_name"]] = [kin["gene_alias"]]
+        return kinases
+    """   
+        
 
 #create an engine that stores the data in the local directory's kinase_database.db 
 engine = create_engine('sqlite:///kinase_database.db')

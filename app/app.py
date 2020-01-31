@@ -90,7 +90,7 @@ def Phosphosites():
 @app.route("/Inhibitors", methods = ['GET', 'POST'])
 def Inhibitors():
     ALL_inhibitors = get_all_inhibitors_meta()
-    return render_template('Inhibitors.html', title='Inhibitors', ALL_inhibitors=ALL_inhibitors)
+    return render_template('inhibitors.html', title='Inhibitors', ALL_inhibitors=ALL_inhibitors)
 
 @app.route("/Inhibitors/<inhibitor>")
 def Individual_Inhibitors(inhibitor):

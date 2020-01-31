@@ -63,10 +63,7 @@ with open(gene_aliases) as f:
             kinase_meta = kinase_meta_matches[-1] #we're betting that there's only one obj that returns within the list
         kinase_meta.protein_name = r["Protein_name"] # Append missing protein_name field to kinase_meta (KinaseGeneMeta) object
         gene_aliases = json.loads(r["Gene_aliases"].replace("'",'"')) # Convert string to list; othewise the thing returned is a string of list
-        for alias in gene_aliases:
-            #obj = KinaseGeneName(gene_name=r['Gene_name'],
-            #                     gene_alias=alias)
-            
+        for alias in gene_aliases: 
             # start of deduplication
             existing_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias == alias).all()
             if existing_match != []:
@@ -151,25 +148,63 @@ with open(phosphosites) as f:
 s.commit()       
 
 
-#creating a Inhibitor table
+#creating a InhibitorMeta table
 with open(inhibitors) as f:
     reader = csv.DictReader(f)
     for row in reader:
+        #Look in the KinaseGeneName and get the obj that has the same gene name as that of the row, then get the KinaseGeneMeta obj that has the same gene name
         gene_match = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).filter(KinaseGeneName.gene_alias==row["Target"]).all()
         #print(row["Target"])
+        #if there is no such entry in the KinaseGeneMeta, it will return an empty list
         if gene_match == []:
             #print(row["Target"])
-            continue
+            continue #skip
         else:
-            gene_meta = gene_match[-1]
-        inhibitor_query = s.query(Inhibitor).filter(Inhibitor.inhibitor==row["Inhibitor"]).all()
-        if inhibitor_query != []:
+            gene_meta = gene_match[-1] #if there's such an entry that's already existed, then it will return an obj; -1 or 0 will get the obj
+        inhibitor_query = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor==row["Inhibitor"]).all() #check in the InhibitorMeta for the existence of InhibitorMeta obj with the same name
+        if inhibitor_query != []: #if there is already a previously registered InhibitorMeta object, then get the latest obj (there really shouldn't be any duplication but sometimes databse can glitch)
             obj = inhibitor_query[-1]
-        else:
-            obj = Inhibitor(inhibitor=row["Inhibitor"],
+        else: #create the InhibitorMeta object
+            obj = InhibitorMeta(inhibitor_name=row["Inhibitor"],
                             molecular_weight=row["MW"],
                             empirical_formula=row["Emperical Formula"],
+                            smiles = row[],
+                            pub_chemid = row[],
+                            inchi = row[],
                             images_url=row["Images"])
-        gene_meta.inhibitors.append(obj)
+        gene_meta.inhibitors.append(obj) #append the InhibitorMeta object under the inhibitors virtual column in the respective KinaseGeneMeta obj
         s.add(obj)
 s.commit()    
+
+
+#creating an InhibitorName table
+with open(inhibitors) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        #check for the existence of the entry in InhibitorMeta with the same inhibitor name as the name in the csv
+        inhibitor_meta_match = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor_name==row[""]).all()
+        #if there is no such entry, it will return an empty list
+        if inhibitor_meta_match == []: 
+            continue  #skip it
+        else:
+            inhibitor_meta_obj = inhibitor_meta_match[-1] #teachnically, if there is already one, there should only be one but all returns a list;-1 or 0 will return the obj within the list
+        inhibitor_aliases = row["Alt Name"].split(",") #the aliases will be in a string of list into multiple strings
+        if row[""] not in inhibitor_aliases: #look for self-referencing alias; ie one of the name in the gene alias has to be itself
+            inhibitor_name_obj = InhibitorName(gene_alias=row[""])
+            inhibitor_meta_obj.inhibitor_aliases.append(inhibitor_name_obj)
+            s.add(inhibitor_name_obj)
+        for alias in inhibitor_aliases: #loop through each alias in the inhibitor_aliases
+            inhibitor_alias_match = s.query(InhibitorName).filter(InhibitorName.inhibitor_alias==alias).all() #check for the previous records of such aliases
+            if inhibitor_alias_match != []: #if it already exists; skip it
+                continue
+            inhibitor_name_obj = InhibitorName(gene_alias=alias) #otherwise, create it as an instance of InhibitorName
+            inhibitor_meta_obj.inhibitor_aliases.append(inhibitor_name_obj) #append the alias in the inhibitor_alias virtual column of the InhibitorMeta obj row
+            s.add(inhibitor_name_obj)
+        s.add(inhibitor_meta_obj)
+s.commit()
+    
+    
+    
+    
+    
+    
