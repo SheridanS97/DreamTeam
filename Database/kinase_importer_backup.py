@@ -29,7 +29,7 @@ gene_aliases = protein_names_and_aliases + "meta_names.csv"
 subcellular_location = base_dir + "Subcellular_location/Subcellular_location.csv"
 substrates = base_dir + "Phosphosites/new_clean_human_kinase_substrates.csv"
 inhibitors = base_dir + "Inhibitor/Final_inhibitors.csv"
-phosphosites = base_dir + "Genomic_location_of_PS/GL_and_neighbouring_aa_of_Sub_PS_final.csv"
+phosphosites = base_dir + "Genomic_location_of_PS/Phosphosite_genomic_locations.csv"
 
 
 #import the data into the database
@@ -77,9 +77,9 @@ s.commit() # Write changes to DB
 with open(subcellular_location) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        gene_name_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["Gene Name"]).one()
+        gene_meta_match = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).filter(KinaseGeneName.gene_alias==row["Gene Name"]).one()
         obj = KinaseSubcellularLocation(gene_name=row["Gene Name"], subcellular_location=row["Subcellular Location"])
-        gene_name_match.subcellular_locations.append(obj)
+        gene_meta_match.subcellular_locations.append(obj)
         s.add(obj)
 s.commit()
 
@@ -104,25 +104,27 @@ s.commit()
 with open(phosphosites) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        kinase_matches = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias == row["Kinase gene"]).all()
-        if kinase_matches == []:
+        #get the kinase obj that matches the kinase for the row
+        kinase_matches = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).filter(KinaseGeneName.gene_alias == row["Kinase gene"]).all()
+        if kinase_matches == []: #if the kinase name is not found in the alias or gene name of the database
             # print(row) #debug code to find out which line was it that was returning empty
-            continue
+            continue #skip that row
         else:
-            kinase_name = kinase_matches[-1]
+            kinase_meta = kinase_matches[-1] #otherwise get the obj; -1 because .all returns a list of memory address
+        #get the substrate_object that matched the gene name of the substrate
         substrate_match_list = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_gene_name==row["SUB_GENE"]).all()
-        if substrate_match_list == []:
-            continue
+        if substrate_match_list == []: #if there is no such substrate in the database, it will return an empty list
+            continue #skip it if there's no such substrate
         else:
-            substrate_match = substrate_match_list[-1]
+            substrate_match = substrate_match_list[-1] #if there's such substrate, we're betting on that there's no duplication of the substrate
         #deduplication
-        query = s.query(PhosphositeMeta)
+        query = s.query(PhosphositeMeta) # query the PhosphositeMeta table for the existence of phosphosite with the same substrate name as the substrate_object
         query = query.filter(PhosphositeMeta.substrate_meta_id==substrate_match.substrate_id)
         query = query.filter(PhosphositeMeta.phosphosite==row["PS"])
         phosphosite_match = query.all()
-        if phosphosite_match != []:
+        if phosphosite_match != []: #if the phosphosite_obj is not empty, ie it already exists; retrieve it
             obj = phosphosite_match[-1]
-        else:
+        else:   #if it doesn't yet exist, create the obj as an instance of PhosphositeMeta
             obj = PhosphositeMeta(substrate_meta_id=substrate_match.substrate_id,
                                   phosphosite=row["PS"],
                                   chromosome=row["Chromosome"],
@@ -131,8 +133,8 @@ with open(phosphosites) as f:
                                   start_position=row["Start co"],
                                   end_position=row["End co"],
                                   neighbouring_sequences=row["Neighbouring amino acids +/-7"])
-            substrate_match.phosphosites.append(obj)
-        obj.kinases.append(kinase_name)
+            substrate_match.phosphosites.append(obj) #append the phosphosite_obj to the phosphosites backref column in the corresponding substrate_obj
+        obj.kinases.append(kinase_meta) #append the kinase_obj in the kinases column of the relationship table between phosphosite and kinase
         s.add(obj)
 s.commit()       
 
@@ -141,22 +143,21 @@ s.commit()
 with open(inhibitors) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        gene_match = s.query(KinaseGeneName).filter(KinaseGeneName.gene_alias==row["Target"]).all()
+        gene_match = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).filter(KinaseGeneName.gene_alias==row["Target"]).all()
         #print(row["Target"])
         if gene_match == []:
             #print(row["Target"])
             continue
         else:
-            gene_name = gene_match[-1]
-        inhibitor_match = s.query(Inhibitor).filter(Inhibitor.inhibitor==row["Inhibitor"]).all()
-        if inhibitor_match != []: 
-            obj = inhibitor_match[-1]
+            gene_meta = gene_match[-1]
+        inhibitor_query = s.query(Inhibitor).filter(Inhibitor.inhibitor==row["Inhibitor"]).all()
+        if inhibitor_query != []:
+            obj = inhibitor_query[-1]
         else:
             obj = Inhibitor(inhibitor=row["Inhibitor"],
-                            antagonizes_gene=row["Target"],
                             molecular_weight=row["MW"],
                             empirical_formula=row["Emperical Formula"],
                             images_url=row["Images"])
-        gene_name.inhibitors.append(obj)
+        gene_meta.inhibitors.append(obj)
         s.add(obj)
 s.commit()    

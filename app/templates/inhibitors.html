@@ -13,7 +13,7 @@
      <th> Inhibitors </th>
      <th> Molecular Weight </th>
      <th> Empirical Formula </th>
-     <th> Target </th>
+     <th colspan="2">  Target </th>
   </tr>
 
   {% for dict_item in ALL_inhibitors %}
@@ -22,7 +22,7 @@
      <td> {{ dict_item['molecular_weight'] }}</td>
      <td> {{ dict_item['empirical_formula'] }}</td>
      {% for item in dict_item.kinases %}
-     <td> {{item['gene_name']}}</td>
+     <td colspan="4" > {{item['gene_name']}}</td>
           {% endfor %}
   </tr>
   {% endfor %}
