@@ -39,9 +39,12 @@ def Data_Upload():
                     if not os.path.exists(uploads_dir):
                         os.makedirs(uploads_dir)
                     InputFile.save(os.path.join(uploads_dir, secure_filename(InputFile.filename)))
-                    return redirect(url_for('home'))
+                    return redirect(url_for('DataAnalysis'))
     return render_template('Data_Upload.html', title='Data Upload', form=form)
 
+@app.route("/DataAnalysis")
+def DataAnalysis():
+    return render_template('data_analysis_results.html')
 
 
 @app.route("/HumanKinases", methods = ['GET', 'POST'])
