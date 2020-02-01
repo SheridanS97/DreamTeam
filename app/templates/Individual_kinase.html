@@ -61,32 +61,33 @@
 
    <table class="table table-hover">
            <tr>
-            <th rowspan="2">Substrate</th>
-            <th rowspan="2">Phosphosite </th>
-            <th colspan="5">Genomic Location</th>
+            <th id="sub" rowspan="2">Substrate</th>
+            <th id="phos" rowspan="2">Phosphosite </th>
+            <th id="GL" colspan="5" scope="colgroup">Genomic Location</th>
            </tr>   
            <tr>
-            <th>Chr</th>
-            <th>Karyotype</th>
-            <th>Strand</th>
-            <th>Start Position</th>
-            <th>End Position</th>
+            <th id="chr" >Chr</th>
+            <th id="kar" >Karyotype</th>
+            <th id="str" >Strand</th>
+            <th id="start" >Start Position</th>
+            <th id="end" >End Position</th>
            </tr>
            <tr>
             {% for key, value in substrate_phosphosites.items() %}
-            <td>{{key}}</td>
             {%for item in value%}
-            <td>{{item["phosphosite"]}}</td>
-            <td>{{item["chromosome"]}}</td>
-            <td>{{item["karyotype_band"]}}</td>
-            <td>{{item["strand"]}}</td>
-            <td>{{item["start_position"]}}</td>
-            <td>{{item["end_position"]}}</td>
-            <td></td>
+            <td headers="sub">{{key}}</td>
+           
+            <td headers="phos">{{item["phosphosite"]}}</td>
+            <td headers="chr">{{item["chromosome"]}}</td>
+            <td headers="kar">{{item["karyotype_band"]}}</td>
+            <td headers="str">{{item["strand"]}}</td>
+            <td headers="start" >{{item["start_position"]}}</td>
+            <td headers="end">{{item["end_position"]}}</td>
+          {% endfor %}
+
            </tr>
              {% endfor %}
-            {% endfor %}
-    
+            
           </table>
 
 
