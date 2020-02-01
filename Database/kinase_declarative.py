@@ -24,7 +24,7 @@ class KinaseGeneMeta(Base):
     gene_name = Column(String, primary_key=True)
     kinase_family = Column(String)
     phosphosites = relationship('PhosphositeMeta', secondary='kinase_phosphosite_relations')
-    inhibitors = relationship("Inhibitor", secondary="kinase_inhibitor_relations" )
+    inhibitors = relationship("InhibitorMeta", secondary="kinase_inhibitor_relations" )
     # gene_aliases <from backref in KinaseGeneName>
     
     #create a function to return the object as dictionary

@@ -222,6 +222,21 @@ def get_inhibitor_meta_from_inhibitor(inhibitor_entry):
     filter(InhibitorName.inhibitor_alias==inhibitor_entry).one()
     return inhibitor_query.to_dict()
 
+#Substrate search
+#Function to return the substrate metadata and its phosphosites' metadata from a substrate
+def get_substrate_phosphosites_from_substrate(substrate_input):
+    """(str) --> dict
+    Returns a dictionary of substrate metadata and all the phosphosites metadata that belong to the substrate.
+    Phosphosite will be in a list of dictionaries.
+    Refer to Database_query_II for more information.
+    """
+    substrate_query = s.query(SubstrateMeta).filter(or_(SubstrateMeta.substrate_gene_name==substrate_input, SubstrateMeta.substrate_name==substrate_input,\
+                SubstrateMeta.substrate_uniprot_entry==substrate_input, SubstrateMeta.substrate_uniprot_number==substrate_input)).all()
+    if substrate_query == []:
+        return []
+    for substrate in substrate_query:
+        return substrate.to_dict()
+    
 #Additional functions which might come in handy later
 #Function to return the meta details of an inhibitor associated with a kinase
 #This function might not be needed
