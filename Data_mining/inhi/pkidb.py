@@ -8,7 +8,7 @@ page = 'http://www.icoa.fr/pkidb/'
 #making a file name
 filename = "pkidb.csv"
 f = open(filename, "w")
-headers = "Inhibitor,Target,MW,Smiles,Synonyms,Images, ID\n"  #adding header to file
+headers = "Inhibitor,Target,MW,Smiles, InChiKey,Synonyms,Images,ID\n"  #adding header to file
 f.write(headers)
 f.close()
 
@@ -44,7 +44,12 @@ for each in all_tr:
 		MW = TD[9].text
 
 		smiles = each.find("td", {"style":"word-wrap: break-word; max-width: 250px;"})
-		smiles1 = smiles.text
+		s = smiles.text
+		start = 'Smiles=;'
+		end = 'InChiKey'
+		SMILES= s[s.find(start)+len(start):s.rfind(end)]
+
+		KEY = s.split('InChiKey=')[-1]
 
 		synonyms= str(TD[-3].text).replace("  ", ",")
 
@@ -77,7 +82,7 @@ for each in all_tr:
 
 		ID = chemblID(each)
 		#adding the results to the file
-		f.write('"{}","{}","{}","{}","{}","{}", "{}"'.format(inhibitor, Target2, MW, smiles1, synonyms, IMAGE, ID )+ "\n")
+		f.write('"{}","{}","{}","{}","{}","{}", "{}", "{}"'.format(inhibitor, Target2, MW, SMILES, KEY, synonyms, IMAGE, ID )+ "\n")
 	
 	except:
 		pass
