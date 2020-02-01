@@ -25,7 +25,7 @@ s = session()
 
 #Intermediate kinase results page
 def get_gene_alias_protein_name(kinase_input):
-    """
+    """ (str) --> list of dictionary
     Returns a list of dictionary.
     In the dictionary, there are gene name and protein name.
     Returns empty list when no match is found.
@@ -37,10 +37,12 @@ def get_gene_alias_protein_name(kinase_input):
     >> get_gene_alias_protein_name("Q9Y243")
     [{'Gene_Name': 'AKT3', 'Gene aliases': ['AKT3', 'PKBG'], 'Protein_Name': 'RAC-gamma serine/threonine-protein kinase'}]
     """
-    like_kin = "%{}%".format(kinase_input)
+    like_kin = "%{}%".format(kinase_input) #changing the user input so that it's usable with like
     tmp = []
+    #query KinaseGeneMeta and KinaseGeneName for entry that resembled the user input
     kinase_query = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(or_(KinaseGeneName.gene_alias.like(like_kin), KinaseGeneMeta.uniprot_entry.like(like_kin),\
                                    KinaseGeneMeta.uniprot_number.like(like_kin), KinaseGeneMeta.protein_name.like(like_kin))).all()
+    #put the results of the object into a dictionary
     for meta in kinase_query:
         results = {}
         results["Gene_Name"] = meta.to_dict()["gene_name"]
@@ -52,8 +54,9 @@ def get_gene_alias_protein_name(kinase_input):
 #Individual kinase page
 #Function to return gene name, family, protein name, uniprot entry, uniprot number.
 def get_gene_metadata_from_gene(kinase_str):
-    """
+    """ (str) --> dict
     Takes in a gene name as a string then output a dictionary.
+    Raises error if wrong or invalid gene name is given.
     >> get_gene_metadata_from_gene("MAPK1")
     {'gene_name': 'MAPK1', 
     'kinase_family': 'CMGC Ser/Thr protein kinase family',
@@ -61,12 +64,13 @@ def get_gene_metadata_from_gene(kinase_str):
     'uniprot_entry': 'MK01_HUMAN',
     'uniprot_number': 'P28482'}
     """
+    #query gene_name in KinaseGeneMeta for user input
     kinase_obj = s.query(KinaseGeneMeta).filter(KinaseGeneMeta.gene_name==kinase_str).one()
     return kinase_obj.to_dict()
 
 #Function to return subcellular location of kinase
 def get_subcellular_location_from_gene(kinase_gene):
-    """
+    """ (str) --> dict
     Returns a list of dictionary.
     The dictionary has the gene as the key and the subcellular location in the list.
     >> get_subcellular_location_from_gene('MAPK1')
@@ -78,57 +82,65 @@ def get_subcellular_location_from_gene(kinase_gene):
     """
     tmp = []
     results = {}
-    results["Gene_Name"] = kinase_gene
+    results["Gene_Name"] = kinase_gene #initialise the dictionary with the gene name of the user input
+    #query KinaseSubcellularLocation through KinaseGeneMeta via KinaseGeneName
     kinase_query = s.query(KinaseSubcellularLocation).join(KinaseGeneMeta).join(KinaseGeneName).\
     filter(KinaseGeneName.gene_alias==kinase_gene).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).\
     filter(KinaseGeneMeta.gene_name==KinaseSubcellularLocation.gene_name).all()
-    for row in kinase_query:
-        tmp.append(row.subcellular_location)
+    #.all returns a list of obj, use for loop 
+    for row in kinase_query: #loop through all the obj representation in kinase_query
+        tmp.append(row.subcellular_location) #append all the subcellular location to tmp
     results["Subcellular_Locations"] = tmp
     return results
 
 #Function to return the inhibitors from a kinase
 def get_inhibitors_from_gene(kinase_gene):
-    """
+    """ (str) --> list
     Take a string and return a list of dictionaries.
     Returns empty list if there are no inhibitors.
     >> get_inhibitors_from_gene("SGK1")
     ['GSK650394A', 'SGK-Sanofi-14i','SGK1-Sanofi-14g', 'SGK1-Sanofi-14h', 'SGK1-Sanofi-14n']
     """
     results = []
+    #query KinaseGeneMeta through KinaseGeneName
     kinase_query = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).\
     filter(KinaseGeneName.gene_alias==kinase_gene).all()
+    #.all() returns a list, if a gene does not have an inhibitor, it'll return an empty list
     if len(kinase_query) == 0:
         return []
+    #if .all() has an inhibitor, it should only be one entry with that gene name, thus [-1]
     for inhibitor in kinase_query[-1].inhibitors:
         results.append(inhibitor.inhibitor)
     return results
     
 #Function to return substrates and phosphosites from a kinase
 def get_substrates_phosphosites_from_gene(kinase_gene):
-    """
+    """ (str) --> dict
     Takes in a gene name of a kinase and return a dictionary of dictionaries.
     In each dictionary (inner), the key is the substrate name; the value is a list of dictionary containing the metadata
     of phosphosites.
-    Returns empty list if there are no substrates.
+    Returns empty dict if there are no substrates or no kinase_gene found.
     >> get_substrates_phosphosites_from_gene("JAK2")
     {'ARHGEF1': [{'phosphosite': 'Y738', 'chromosome': 19, 'karyotype_band': 'q13.2', 'strand': 1, 'start_position': 41904999, 
     'end_position': 41905001, 'neighbouring_sequences': 'WDQEAQIyELVAQTV'}],...}
     >> get_substrates_phosphosites_from_gene("empty")
-    []
+    {}
     """
     tmp = {}
+    #query KinaseGeneMeta for the kinase object using the user input via KinaseGeneName
     kinase_obj = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneName.gene_alias==kinase_gene).\
     filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).all()
+    #.all returns a list, if an user input does not have an entry in the KinaseGeneMeta, a empty dict will be returned
     if kinase_obj == []:
-        return []
+        return {}
     kinase_obj = kinase_obj[-1]
+    #loop through the phosphosite object in the list of phosphosites in a kinase_obj
     for phosphosite in kinase_obj.phosphosites:
-        gene = phosphosite.substrate.substrate_name
-        if gene in tmp:
-            tmp[gene].append(phosphosite.to_dict())
-        else:
-            tmp[gene] = [phosphosite.to_dict()]
+        gene = phosphosite.substrate.substrate_name #get the substrate name of the phosphosite
+        if gene in tmp: #if substrate has already been recorded
+            tmp[gene].append(phosphosite.to_dict()) #just append the phosphosite detail to the values of the substrate .
+        else: #if the substrate has not been recorded before
+            tmp[gene] = [phosphosite.to_dict()] #create a new entry in the dictionary
     return tmp
 
 #Function to return a dictionary of kinase, substrate, phosphosite
@@ -151,8 +163,7 @@ def get_kinase_substrate_phosphosite(sub, pho):
     'phosphosite': 'S498'}
     """
     tmp = {}
-    #substrate of query could be substrate gene name, substrate name, substrate uniprot entry name or 
-    #substrate uniprot number
+    #get the PhosphositeMeta obj that has the Subtrate obj and the same phosphosite
     sub_pho_query = s.query(PhosphositeMeta).join(SubstrateMeta).filter(PhosphositeMeta.phosphosite==pho).\
     filter(SubstrateMeta.substrate_id==PhosphositeMeta.substrate_meta_id).\
     filter(or_(SubstrateMeta.substrate_gene_name==sub, SubstrateMeta.substrate_name==sub,\
@@ -160,15 +171,19 @@ def get_kinase_substrate_phosphosite(sub, pho):
     #if  there are no entry in database an empty list will be returned
     if sub_pho_query == []:
         return []
+    #loop through the phosphosite obj
     for phosphosite in sub_pho_query:
         kinase_list = []
+        #loop through the kinases asociated with the phosphosite
         for kinase in phosphosite.kinases:
+            #append the gene name of the kinase into a list
             kinase_list.append(kinase.gene_name)
         tmp["kinase"] = kinase_list
         tmp["substrate"] = sub
         tmp["phosphosite"] = pho
     return tmp
 
+#INHIBITOR PAGE
 #Function to return ALL the meta details of ALL inhibitor
 def get_all_inhibitors_meta():
     """
@@ -182,15 +197,17 @@ def get_all_inhibitors_meta():
     'kinases': [{'gene_name': 'SGK1', 'gene_alias': ['SGK1', 'SGK']}]},...]
     """
     results = []
-    inhibitors = s.query(Inhibitor).all()
-    for inhibitor in inhibitors:
-        results.append(inhibitor.to_dict())
+    inhibitors = s.query(InhibitorMeta).all() #query for all the inhibitors meta within the inhibitor_meta table
+    for inhibitor in inhibitors:  #loop through the inhibitor object in the list
+        results.append(inhibitor.to_dict()) #append the meta detail of each inhibitor as a dictionary to the list
     return results
 
 #Function to return the meta details of the inhibitor from an inhibitor
-def get_inhibitor_meta_from_inhibitor(inhibitor_name):
+def get_inhibitor_meta_from_inhibitor(inhibitor_entry):
     """(str) --> dict
     Returns the meta data of the inhibitor.
+    The inhibitor can be the actual name or the alias of the inhibitor. 
+    Raises an error if the entry is not found. 
     >> get_inhibitor_meta_from_inhibitor("PD 184352 (CI-1040)")
     {'inhibitor': 'PD 184352 (CI-1040)', 
     'molecular_weight': 478.66,
@@ -200,9 +217,26 @@ def get_inhibitor_meta_from_inhibitor(inhibitor_name):
     {'gene_name': 'MAPK3', 'gene_alias': ['MAPK3', 'ERK1', 'PRKM3']},
     {'gene_name': 'MAP2K1', 'gene_alias': ['MAP2K1', 'MEK1', 'PRKMK1']}]}
     """
-    inhibitor_query = s.query(Inhibitor).filter(Inhibitor.inhibitor==inhibitor_name).one()
+    #search in InhibitorMeta through InhibitorName for entry that matches the name of the query
+    inhibitor_query = s.query(InhibitorMeta).join(InhibitorName).filter(InhibitorMeta.inhibitor_name==InhibitorName.inhibitor_name).\
+    filter(InhibitorName.inhibitor_alias==inhibitor_entry).one()
     return inhibitor_query.to_dict()
 
+#Substrate search
+#Function to return the substrate metadata and its phosphosites' metadata from a substrate
+def get_substrate_phosphosites_from_substrate(substrate_input):
+    """(str) --> dict
+    Returns a dictionary of substrate metadata and all the phosphosites metadata that belong to the substrate.
+    Phosphosite will be in a list of dictionaries.
+    Refer to Database_query_II for more information.
+    """
+    substrate_query = s.query(SubstrateMeta).filter(or_(SubstrateMeta.substrate_gene_name==substrate_input, SubstrateMeta.substrate_name==substrate_input,\
+                SubstrateMeta.substrate_uniprot_entry==substrate_input, SubstrateMeta.substrate_uniprot_number==substrate_input)).all()
+    if substrate_query == []:
+        return []
+    for substrate in substrate_query:
+        return substrate.to_dict()
+    
 #Additional functions which might come in handy later
 #Function to return the meta details of an inhibitor associated with a kinase
 #This function might not be needed
@@ -220,10 +254,14 @@ def get_inhibitor_meta_from_gene(kinase):
     'kinases': [{'gene_name': 'SGK1', 'gene_alias': ['SGK1', 'SGK']}]},...]
     """
     results = []
+    #query for the kinase object using either the gene name, gene alias, uniprot number or uniprot entry name
     kinase_query = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).\
-    filter(KinaseGeneName.gene_alias==kinase).all()
+    filter(or_(KinaseGeneName.gene_alias==kinase, KinaseGeneMeta.uniprot_number==kinase,\
+               KinaseGeneMeta.uniprot_entry==kinase)).all()
+    #if no entry was found, an empty list will be returned
     if kinase_query == []:
         return []
+    #loop through the list of inhibitors stored with the KinaseGeneMeta obj
     for inhibitor in kinase_query[-1].inhibitors:
         results.append(inhibitor.to_dict())
     return results
