@@ -147,7 +147,7 @@ class KinaseInhibitorRelations(Base):
     inhibitor_id = Column(Integer, ForeignKey("inhibitor.inhibitor_id"), primary_key=True)
     
     
-class InhibitorMeta(Base):
+class Inhibitor(Base):
     __tablename__ = 'inhibitor'
     inhibitor_id = Column(Integer, primary_key=True)
     inhibitor_name = Column(String)
