@@ -144,7 +144,7 @@ class KinaseInhibitorRelations(Base):
     # a many to many relationship table between kinase and the inhibitors
     __tablename__ = "kinase_inhibitor_relations"
     kinase_gene_name = Column(String, ForeignKey("kinase_gene_meta.gene_name"), primary_key=True)
-    inhibitor_id = Column(Integer, ForeignKey("inhibitor.inhibitor_id"), primary_key=True)
+    inhibitor_id = Column(Integer, ForeignKey("inhibitor_meta.inhibitor_id"), primary_key=True)
     
     
 class InhibitorMeta(Base):
@@ -153,10 +153,9 @@ class InhibitorMeta(Base):
     inhibitor_name = Column(String)
     molecular_weight = Column(Integer)
     smiles = Column(String)
-    pubchem_id = Column(Integer)
+    chembl_id = Column(Integer, nullable=True)
     inchi = Column(String)
     images_url = Column(String)
-    empirical_formula = Column(String)
     kinases = relationship('KinaseGeneMeta', secondary="kinase_inhibitor_relations")
     #inhibitor_aliases (backref)
     
@@ -169,13 +168,13 @@ class InhibitorMeta(Base):
                 "inhibitor_name": self.inhibitor_name,
                 "molecular_weight": self.molecular_weight,
                 "smiles": self.smiles,
-                "pubchem_id": self.pubchem_id,
                 "inchi": self.inchi,
                 "images_url": self.images_url,
-                "empirical_formula": self.empirical_formula,
                 "kinases": self.get_kinase_list(),
                 "inhibitor_aliases": [alias.inhibitor_alias for alias in self.inhibitor_aliases]
                 }
+        if self.chembl_id: #if chembl id is not none, then return the chembl id
+            output["chembl_id"] = self.chembl_id
         return output
     
     def get_kinase_list(self):
