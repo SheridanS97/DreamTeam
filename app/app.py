@@ -46,9 +46,10 @@ def Data_Upload():
                     flash('Incorrect selected file', 'danger')
     return render_template('Data_Upload.html', title='Data Upload', form=form)
 
+
 @app.route("/DataAnalysis")
 def DataAnalysis():
-    return render_template('data_analysis_results.html')
+    return render_template('data_parameter.html')
 
 
 @app.route("/HumanKinases", methods = ['GET', 'POST'])
