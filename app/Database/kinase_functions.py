@@ -6,24 +6,27 @@ Created on Fri Jan 24 16:40:24 2020
 @author: zho30
 """
 
-#calling the library
-from kinase_declarative import * #please make sure kinase_declarative.py is in the same folder
-from sqlalchemy import create_engine, or_, and_
-from sqlalchemy.orm import sessionmaker
-from pprint import pprint #don't really need this if running in script
+from sqlalchemy import or_
 
-#create engine and bine the engine
-engine = create_engine("sqlite:///kinase_database.db")
-Base.metadata.bind = engine
+from .db_setup import s
+# calling the library
+from .kinase_declarative import *  # please make sure kinase_declarative.py is in the same folder
 
-#create a session object
-session = sessionmaker(bind=engine)
-s = session()
 
 #Please refer to Database_query_II for more information
 #A list of functions is available on Database query II
 
 #Intermediate kinase results page
+#create a function to return a list of human kinases
+def get_all_aliases():
+    """
+    Returns a list of all aliases.
+    """
+    all_aliases = [x[0] for x in s.query(KinaseGeneName.gene_alias).all()]
+    return all_aliases
+get_all_aliases()
+
+
 def get_gene_alias_protein_name(kinase_input):
     """ (str) --> list of dictionary
     Returns a list of dictionary.
@@ -98,8 +101,8 @@ def get_inhibitors_from_gene(kinase_gene):
     """ (str) --> list
     Take a string and return a list of dictionaries.
     Returns empty list if there are no inhibitors.
-    >> get_inhibitors_from_gene("SGK1")
-    ['GSK650394A', 'SGK-Sanofi-14i','SGK1-Sanofi-14g', 'SGK1-Sanofi-14h', 'SGK1-Sanofi-14n']
+    >> get_inhibitors_from_gene("MAPK1")
+    ['Ulixertinib']
     """
     results = []
     #query KinaseGeneMeta through KinaseGeneName
@@ -110,7 +113,7 @@ def get_inhibitors_from_gene(kinase_gene):
         return []
     #if .all() has an inhibitor, it should only be one entry with that gene name, thus [-1]
     for inhibitor in kinase_query[-1].inhibitors:
-        results.append(inhibitor.inhibitor)
+        results.append(inhibitor.inhibitor_name)
     return results
     
 #Function to return substrates and phosphosites from a kinase
@@ -190,11 +193,14 @@ def get_all_inhibitors_meta():
     Return all the meta details of every inhibitor in a list of dictionary.
     >> get_all_inhibitors_meta()
     [{'inhibitor_id': 1,
-    'inhibitor': 'GSK650394A',
-    'molecular_weight': 382.45,
-    'images_url': 'http://www.kinase-screen.mrc.ac.uk/system/files/compounds/jpg/gsk-50394_5.jpg',
-    'empirical_formula': 'C25H22N2O2',
-    'kinases': [{'gene_name': 'SGK1', 'gene_alias': ['SGK1', 'SGK']}]},...]
+    'inhibitor_name': 'Abemaciclib',
+    'molecular_weight': 506.3,
+    'smiles': 'CCN1CCN(CC1)Cc2ccc(nc2)Nc3ncc(c(n3)c4cc5c(c(c4)F)nc(n5C(C)C)C)F',
+    'inchi': 'UZWDCWONPYILKI-UHFFFAOYSA-N',
+    'images_url': ' http://www.icoa.fr/pkidb/static/img/mol/Abemaciclib.svg',
+    'kinases': [{'gene_name': 'CDK4', 'gene_alias': ['CDK4']}],
+    'inhibitor_aliases': ['Verzenio', 'Abemaciclib', 'LY-2835219'],
+    'chembl_id': ' CHEMBL3301610'},...]
     """
     results = []
     inhibitors = s.query(InhibitorMeta).all() #query for all the inhibitors meta within the inhibitor_meta table
@@ -206,21 +212,55 @@ def get_all_inhibitors_meta():
 def get_inhibitor_meta_from_inhibitor(inhibitor_entry):
     """(str) --> dict
     Returns the meta data of the inhibitor.
-    The inhibitor can be the actual name or the alias of the inhibitor. 
-    Raises an error if the entry is not found. 
+    The inhibitor can be the actual name or the alias of the inhibitor.
+    Raises an error if the entry is not found.
     >> get_inhibitor_meta_from_inhibitor("PD 184352 (CI-1040)")
-    {'inhibitor': 'PD 184352 (CI-1040)', 
-    'molecular_weight': 478.66,
-    'images_url': 'http://www.kinase-screen.mrc.ac.uk/system/files/compounds/jpg/pd-184352_5.jpg',
-    'empirical_formula': 'C17H14ClF2IN2O2',
-    'kinases': [{'gene_name': 'YES1', 'gene_alias': ['YES1', 'YES']},
-    {'gene_name': 'MAPK3', 'gene_alias': ['MAPK3', 'ERK1', 'PRKM3']},
-    {'gene_name': 'MAP2K1', 'gene_alias': ['MAP2K1', 'MEK1', 'PRKMK1']}]}
+    {'inhibitor_id': 6,
+    'inhibitor_name': 'Afatinib',
+    'molecular_weight': 485.2,
+    'smiles': 'CN(C)C/C=C/C(=O)Nc1cc2c(cc1O[C@H]3CCOC3)ncnc2Nc4ccc(c(c4)Cl)F',
+    'inchi': 'ULXXDDBFHOBEHA-CWDCEQMOSA-N',
+    'images_url': ' http://www.icoa.fr/pkidb/static/img/mol/Afatinib.svg',
+    'kinases': [{'gene_name': 'EGFR',
+    'gene_alias': ['EGFR', 'ERBB', 'ERBB1', 'HER1']}],
+    'inhibitor_aliases': ['Giotrif;Gilotrif', 'Afatinib', 'BIBW-2992'],
+    'chembl_id': ' CHEMBL1173655'}
     """
     #search in InhibitorMeta through InhibitorName for entry that matches the name of the query
     inhibitor_query = s.query(InhibitorMeta).join(InhibitorName).filter(InhibitorMeta.inhibitor_name==InhibitorName.inhibitor_name).\
     filter(InhibitorName.inhibitor_alias==inhibitor_entry).one()
     return inhibitor_query.to_dict()
+
+#Function to return the meta data of the inhibitors related to one gene
+def get_inhibitor_meta_from_gene(kinase):
+    """
+    Take in a kinase gene name and return a list of dictionaries.
+    Returns empty list if there is not inhibitor for the kinase.
+    >> kinase = "MAPK1"
+    >> get_inhibitor_meta_from_gene(kinase)
+    [{'inhibitor_id': 172,
+    'inhibitor_name': 'Ulixertinib',
+    'molecular_weight': 432.1,
+    'smiles': 'CC(C)Nc1cc(c(cn1)Cl)c2cc([nH]c2)C(=O)N[C@H](CO)c3cccc(c3)Cl',
+    'inchi': 'KSERXGMCDHOLSS-LJQANCHMSA-N',
+    'images_url': ' http://www.icoa.fr/pkidb/static/img/mol/Ulixertinib.svg',
+    'kinases': [{'gene_name': 'MAPK1',
+    'gene_alias': ['MAPK1', 'ERK2', 'PRKM1', 'PRKM2']}],
+    'inhibitor_aliases': ['VRT752271VRT-752271BVD-523', 'Ulixertinib'],
+    'chembl_id': ' CHEMBL3590106'}]
+    """
+    results = []
+    #query for the kinase object using either the gene name, gene alias, uniprot number or uniprot entry name
+    kinase_query = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).\
+    filter(or_(KinaseGeneName.gene_alias==kinase, KinaseGeneMeta.uniprot_number==kinase,\
+               KinaseGeneMeta.uniprot_entry==kinase)).all()
+    #if no entry was found, an empty list will be returned
+    if kinase_query == []:
+        return []
+    #loop through the list of inhibitors stored with the KinaseGeneMeta obj
+    for inhibitor in kinase_query[-1].inhibitors:
+        results.append(inhibitor.to_dict())
+    return results
 
 #Substrate search
 #Function to return the substrate metadata and its phosphosites' metadata from a substrate
