@@ -34,17 +34,22 @@ def Data_Upload():
                 InputFile = request.files["InputFile"]
                 if InputFile.filename == '':
                     flash('No selected file', 'danger')
+                    return redirect(url_for('Data_Upload'))
                 if InputFile and allowed_file(InputFile.filename):
                     uploads_dir = os.path.join(app.instance_path, 'Data_Upload')
                     if not os.path.exists(uploads_dir):
                         os.makedirs(uploads_dir)
                     InputFile.save(os.path.join(uploads_dir, secure_filename(InputFile.filename)))
+                    flash ("Upload Successful", "info")
                     return redirect(url_for('DataAnalysis'))
+                else:
+                    flash('Incorrect selected file', 'danger')
     return render_template('Data_Upload.html', title='Data Upload', form=form)
+
 
 @app.route("/DataAnalysis")
 def DataAnalysis():
-    return render_template('data_analysis_results.html')
+    return render_template('data_parameter.html')
 
 
 @app.route("/HumanKinases", methods = ['GET', 'POST'])
