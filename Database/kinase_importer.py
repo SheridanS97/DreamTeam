@@ -186,12 +186,12 @@ with open(inhibitors) as f:
             inhibitor_obj = inhibitor_meta_match[-1]
         else:
             chembl_id = row["ID"]
-            if chembl_id == "None":
+            if chembl_id == "None":  # a couple of rows had None for chembl id
                 chembl_id = None
             inhibitor_obj = InhibitorMeta( inhibitor_name = row["Inhibitor"],
                                         molecular_weight = row["MW"],
                                         smiles = row["Smiles"],
-                                        chembl_id = chembl_id, #can be none??
+                                        chembl_id = chembl_id,
                                         inchi = row["InChiKey"],
                                         images_url = row["Images"])
             s.add(inhibitor_obj)
@@ -208,6 +208,7 @@ with open(inhibitors) as f:
 s.commit()
 
 
+#creating a new InhibitorName table
 with open(inhibitors) as f:
     reader = csv.DictReader(f)
     for row in reader:
@@ -219,7 +220,7 @@ with open(inhibitors) as f:
         inhibitor_alias_list = row["Synonyms"].split(",")
         if row["Synonyms"] == "": #to catch those row with nothing
             inhibitor_alias_list.remove("")
-        if row["Inhibitor"] not in inhibitor_alias_list:
+        if row["Inhibitor"] not in inhibitor_alias_list: # if the alias do not have self-referencing name
             inhibitor_alias_list.append(row["Inhibitor"])
         for alias in inhibitor_alias_list:
             inhibitor_alias_match = s.query(InhibitorName).filter(InhibitorName.inhibitor_alias==alias).all()
