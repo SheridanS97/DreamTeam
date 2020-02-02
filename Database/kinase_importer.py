@@ -31,8 +31,8 @@ clean_human_kinase = protein_names_and_aliases + "clean_human_kinase.csv"
 gene_aliases = protein_names_and_aliases + "meta_names.csv"
 subcellular_location = base_dir + "Subcellular_location/Subcellular_location.csv"
 substrates = base_dir + "Phosphosites/new_clean_human_kinase_substrates.csv"
-inhibitors = base_dir + "Inhibitor/Final_inhibitors.csv"
-phosphosites = base_dir + "Genomic_location_of_PS/Phosphosite_genomic_locations.csv"
+inhibitors = base_dir + "inhi/Complete_inhibitor.csv"
+phosphosites = base_dir + "Genomic_locations_of_phosphosites/Final_Phosphosite_genomic_locations.csv"
 
 
 #import the data into the database
@@ -147,7 +147,7 @@ with open(phosphosites) as f:
         s.add(obj)
 s.commit()       
 
-
+"""
 #creating a InhibitorMeta table
 with open(inhibitors) as f:
     reader = csv.DictReader(f)
@@ -161,8 +161,8 @@ with open(inhibitors) as f:
             continue #skip
         else:
             gene_meta = gene_match[-1] #if there's such an entry that's already existed, then it will return an obj; -1 or 0 will get the obj
-        inhibitor_query = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor==row["Inhibitor"]).all() #check in the InhibitorMeta for the existence of InhibitorMeta obj with the same name
-        if inhibitor_query != []: #if there is already a previously registered InhibitorMeta object, then get the latest obj (there really shouldn't be any duplication but sometimes databse can glitch)
+        inhibitor_query = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor==row["Inhibitor"]).all() # check in the InhibitorMeta for the existence of InhibitorMeta obj with the same name
+        if inhibitor_query != []: # if there is already a previously registered InhibitorMeta object, then get the latest obj (there really shouldn't be any duplication but sometimes databse can glitch)
             obj = inhibitor_query[-1]
         else: #create the InhibitorMeta object
             obj = InhibitorMeta(inhibitor_name=row["Inhibitor"],
@@ -175,8 +175,68 @@ with open(inhibitors) as f:
         gene_meta.inhibitors.append(obj) #append the InhibitorMeta object under the inhibitors virtual column in the respective KinaseGeneMeta obj
         s.add(obj)
 s.commit()    
+"""
+
+#creating an InhibitorMeta table
+with open(inhibitors) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        inhibitor_meta_match = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor_name==row["Inhibitor"]).all()
+        if inhibitor_meta_match != []:
+            inhibitor_obj = inhibitor_meta_match[-1]
+        else:
+            chembl_id = row["ID"]
+            if chembl_id == "None":
+                chembl_id = None
+            inhibitor_obj = InhibitorMeta( inhibitor_name = row["Inhibitor"],
+                                        molecular_weight = row["MW"],
+                                        smiles = row["Smiles"],
+                                        chembl_id = chembl_id, #can be none??
+                                        inchi = row["InChiKey"],
+                                        images_url = row["Images"])
+            s.add(inhibitor_obj)
+        target_genes = row["Target"].split(",")
+        for gene in target_genes:
+            gene_match = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).\
+                            filter(KinaseGeneName.gene_alias==gene).all()
+            if gene_match == []:
+                continue
+            else:
+                gene_obj = gene_match[-1]
+            gene_obj.inhibitors.append(inhibitor_obj)
+            s.add(gene_obj)
+s.commit()
 
 
+with open(inhibitors) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        inhibitor_match = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor_name==row["Inhibitor"]).all()
+        if inhibitor_match == []:
+            continue
+        else:
+            inhibitor_meta_obj = inhibitor_match[-1]
+        inhibitor_alias_list = row["Synonyms"].split(",")
+        if row["Synonyms"] == "": #to catch those row with nothing
+            inhibitor_alias_list.remove("")
+        if row["Inhibitor"] not in inhibitor_alias_list:
+            inhibitor_alias_list.append(row["Inhibitor"])
+        for alias in inhibitor_alias_list:
+            inhibitor_alias_match = s.query(InhibitorName).filter(InhibitorName.inhibitor_alias==alias).all()
+            if inhibitor_alias_match != []:
+                continue
+            else:
+                inhibitor_name_obj = InhibitorName(inhibitor_alias = alias)
+                inhibitor_meta_obj.inhibitor_aliases.append(inhibitor_name_obj)
+                s.add(inhibitor_name_obj)
+            s.add(inhibitor_meta_obj)
+    s.commit()
+
+
+
+
+
+"""
 #creating an InhibitorName table
 with open(inhibitors) as f:
     reader = csv.DictReader(f)
@@ -202,7 +262,7 @@ with open(inhibitors) as f:
             s.add(inhibitor_name_obj)
         s.add(inhibitor_meta_obj)
 s.commit()
-    
+"""
     
     
     
