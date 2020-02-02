@@ -6,21 +6,13 @@ Created on Sun Jan 19 14:13:37 2020
 @author: han
 """
 
-#import the library
-import os
 import csv
 import json
-from kinase_declarative import *
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+# import the library
+import os
 
-#create the engine
-engine = create_engine("sqlite:///kinase_database.db")
-Base.metadata.bind = engine
-
-#create the session
-session = sessionmaker()
-s = session()
+from .db_setup import s
+from .kinase_declarative import *
 
 #setting the directories of the files
 #these will need to be changed accordingly if one were to generate the database
