@@ -1,20 +1,22 @@
 {% extends "layout.html" %}
 {% block content %}
-   <div class ="content-section">
+  <div class ="content-section">
     <fieldset class="form-group">
 				<legend class="border-bottom mb-4">Upload Your Phosphoproteomics Data</legend>
+				<P> Once you have upload your data, we will then require you to select defined parameters  </P>
 			<form action="/upload" method="POST" enctype="multipart/form-data">
-					<div class="input-group">
-					  <div class="form-control-label">
-					    <span class="btn btn-outline-info" id="inputGroupFileAddon01">Upload</span>
-					  </div>
-					  <div class="custom-file">
-					    <input type="file" class="custom-file-input" id="InputFile" name="InputFile">
-					    <label class="custom-file-label" for="InputFile">No file chosen.....	
-						</label>
-					  </div> 
+		      <input type=file  id="InputFile" name="InputFile">
+		      <input type=submit value=Upload class="btn btn-outline-info">
+  
 					  
 		  	</form>
 
-
+		  	    <div class="border-top pt-1">
+                            <small class="text-muted"> Need Guidance  ? <a class="ml-2" href="{{ url_for('Help') }}">Refer to our Help section</a>
+                             </small>
+    </div>
 {% endblock content %}
+
+
+
+		
