@@ -1,13 +1,9 @@
-from flask import Flask, render_template, url_for, flash, redirect, request
-from werkzeug.utils import secure_filename
-from forms import *
-from flask_wtf import FlaskForm
-from flask_wtf.file import FileField, FileAllowed, FileRequired
-from wtforms import validators, StringField, SubmitField
 import os
-from sqlalchemy import create_engine, or_, and_
-from kinase_functions import *
-from db_setup import s 
+
+from Database.kinase_functions import *
+from flask import Flask, render_template, url_for, flash, redirect, request
+from forms import *
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
@@ -51,12 +47,7 @@ def DataAnalysis():
 def HumanKinases():
     form=Kinase() 
     search_kinase = form.search.data
-    GeneName = s.query(KinaseGeneName).all()
-    list_aliases = []
-    
-    for gene in GeneName:
-        gene_aliases = gene.gene_alias
-        list_aliases.append(gene_aliases)
+    list_aliases = get_all_aliases() #this function returns a list of all kinase aliases
 
     if form.validate_on_submit():
         for x in range(len(list_aliases)):
@@ -116,7 +107,7 @@ def about():
     },
     {
         'Name': 'Han Ooi',
-        'Description': 'A Msc Bioinformatics student, who loves coding as well',
+        'Description': 'A highly masculine Msc Bioinformatics bro, who loves pumping iron and coding as well',
     },
 
     {
