@@ -7,10 +7,11 @@ Created on Wed Jan 15 17:01:24 2020
 """
 
 #import library
+# import library
 from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship, backref
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship, backref
 
 #create a base object
 Base = declarative_base()
