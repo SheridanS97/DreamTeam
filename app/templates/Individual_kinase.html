@@ -63,7 +63,7 @@
            <tr>
             <th id="sub" rowspan="2">Substrate</th>
             <th id="phos" rowspan="2">Phosphosite </th>
-            <th id="GL" colspan="5" scope="colgroup">Genomic Location</th>
+            <th colspan="5" scope="colgroup">Genomic Location</th>
            </tr>   
            <tr>
             <th id="chr" >Chr</th>
@@ -72,9 +72,10 @@
             <th id="start" >Start Position</th>
             <th id="end" >End Position</th>
            </tr>
-           <tr>
+          
             {% for key, value in substrate_phosphosites.items() %}
             {%for item in value%}
+            <tr>
             <td headers="sub">{{key}}</td>
            
             <td headers="phos">{{item["phosphosite"]}}</td>
@@ -83,12 +84,11 @@
             <td headers="str">{{item["strand"]}}</td>
             <td headers="start" >{{item["start_position"]}}</td>
             <td headers="end">{{item["end_position"]}}</td>
-          {% endfor %}
+            </tr>
 
-           </tr>
-             {% endfor %}
-            
-          </table>
+          {% endfor %}
+           {% endfor %}
+    </table>
 
 
 
