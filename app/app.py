@@ -1,8 +1,6 @@
 import os
-
 from flask import Flask, render_template, url_for, flash, redirect, request
 from werkzeug.utils import secure_filename
-
 from .Database.kinase_functions import *
 from .forms import *
 
