@@ -23,13 +23,7 @@
 	
     </table>
 
-{{substrate_phosphosites}}
 
-{% for dict_item in Individual_Inhibitor %}
-     {% for item in dict_item.kinases %}
-     	{{item['gene_name']}}
-          {% endfor %}
-  {% endfor %}
 
 
 {% endblock content %}
