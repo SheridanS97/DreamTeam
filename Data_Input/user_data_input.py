@@ -6,7 +6,6 @@ Created on Fri Jan 31 18:37:16 2020
 """
 
 from kinase_functions import *
-from kinase_declarative import *
 from sqlalchemy import create_engine, or_, and_
 from sqlalchemy.orm import sessionmaker
 from pprint import pprint
@@ -19,7 +18,7 @@ import statsmodels.formula.api as smf
 import math
 import plotly.express as px
 from scipy.stats import norm
-from scipy.stats import hypergeom 
+#from scipy.stats import hypergeom 
 from bokeh.models import Span
 from bokeh.resources import CDN
 from bokeh.embed import file_html, components
@@ -56,7 +55,7 @@ def ReadDataInput(userDataInput):
     #input_original_subset=input_original_subset.head(100)
     return input_original_subset
 
-input_original_subset=ReadDataInput('Ipatasertib.tsv')
+input_original_subset=ReadDataInput('az20.txt')
 
 ##Carry out -log10 transform on P values
 def NegLog10(input_original_subset):
@@ -292,6 +291,17 @@ from bokeh.palettes import Spectral6
 ###Total serine phophorylated
 #Total significantly upregulated
 #total significantly downregulated
+
+phospho_ser = sum(log2FCKinase.iloc[:, 7].astype(str).str.contains("S", case=False)) # Ser.
+phospho_thr = sum(log2FCKinase.iloc[:, 7].astype(str).str.contains("T", case=False)) # Thr.
+phospho_tyr = sum(log2FCKinase.iloc[:, 7].astype(str).str.contains("Y", case=False)) # Tyr.
+
+
+phos_ser_list=log2FCKinase[log2FCKinase.iloc[:, 7].astype(str).str.contains("S", case=False)]
+phos_thr_list=log2FCKinase[log2FCKinase.iloc[:, 7].astype(str).str.contains("T", case=False)]
+phos_tyr_list=log2FCKinase[log2FCKinase.iloc[:, 7].astype(str).str.contains("Y", case=False)]
+
+
 phos_ser_sig=phos_ser_list[phos_ser_list.iloc[:,8]>np.log(0.05)]
 phos_ser_nonsig=sum(phos_ser_list.iloc[:,8]<np.log(0.05))
 
