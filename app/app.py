@@ -1,9 +1,10 @@
 import os
 
-from Database.kinase_functions import *
 from flask import Flask, render_template, url_for, flash, redirect, request
-from forms import *
 from werkzeug.utils import secure_filename
+
+from .Database.kinase_functions import *
+from .forms import *
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
