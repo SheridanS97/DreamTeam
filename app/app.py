@@ -4,6 +4,7 @@ from werkzeug.utils import secure_filename
 
 from Database.kinase_functions import *
 from forms import *
+from user_data_input_edited import *
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
@@ -32,34 +33,38 @@ def Data_Upload():
                     flash('No selected file', 'danger')
                     return redirect(url_for('Data_Upload'))
                 if InputFile and allowed_file(InputFile.filename):
+                    filename = secure_filename(InputFile.filename)
                     uploads_dir = os.path.join(app.instance_path, 'Data_Upload')
                     if not os.path.exists(uploads_dir):
                         os.makedirs(uploads_dir)
                     InputFile.save(os.path.join(uploads_dir, secure_filename(InputFile.filename)))
                     flash ("Upload Successful", "info")
-                    return redirect(url_for('Parameter'))
+                    return redirect(url_for('Parameter', filename=filename ))
                 else:
                     flash('Incorrect selected file', 'danger')
     return render_template('Data_Upload.html', title='Data Upload', form=form)
 
 
-@app.route("/upload/Parameters", methods = ['GET', 'POST'])
-def Parameter():
+@app.route("/upload/Parameters/<filename>", methods = ['GET', 'POST'])
+def Parameter(filename):
     form = Parameters()
     if request.method == "POST":
         if form.validate_on_submit():
             PValue = form.PValue.data
             Fold = form.Fold.data
             Coeff = form.Coefficience.data
-            return redirect(url_for('Visualisation' , PValue=PValue, Fold=Fold, Coeff=Coeff ))
+            return redirect(url_for('Visualisation' ,filename=filename, PValue=PValue, Fold=Fold, Coeff=Coeff ))
         else:
-            flash("Coefficience of Variance Threshold must be between 0 to 100", "danger")
+            flash("P-Value Threshold must be between 0 - 0.05 and Coefficience of Variance Threshold must be a whole number between 0 to 100", "danger")
     return render_template('data_parameter.html', form=form)
 
 
-@app.route("/upload/Parameters/DataVisualisation")
-def Visualisation():
-    return render_template('data_analysis_results.html')   
+@app.route("/upload/Parameters/<filename>/<PValue>/<Fold>/<Coeff>")
+def Visualisation(filename, PValue, Fold, Coeff):
+    VolcanoPlot1 = VolcanoPlot_Sub(filename)
+    VolcanoPlot2 = VolcanoPlot(filename)
+    Enrichment = EnrichmentPlot(filename)
+    return render_template('data_analysis_results.html',filename=filename, PValue=PValue, Fold=Fold, Coeff=Coeff, VolcanoPlot1=VolcanoPlot1, VolcanoPlot2=VolcanoPlot2, Enrichment=Enrichment)   
 
 
 @app.route("/HumanKinases", methods = ['GET', 'POST'])
