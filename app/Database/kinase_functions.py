@@ -264,17 +264,19 @@ def get_inhibitor_meta_from_gene(kinase):
 
 #Phosphosite search by genomic location
 #Function to return a list of all the chromosomes
-def get_all_chromosome():
+def get_all_chromosome(as_tuples=True):
     """
     Returns a list of all chromosome numbers.
     >> get_all_chromosome()
     [1,2,3,... 'X','Y']
     """
     chromosome_query = [x[0] for x in s.query(PhosphositeMeta.chromosome).all()]
+    if as_tuples:
+        return [(x, x) for x in set(chromosome_query)]
     return list(set(chromosome_query))
 
 #Function to get the karyotype band given the chromosome
-def get_karyotype_through_chromosome(chromosome_number):
+def get_karyotype_through_chromosome(chromosome_number, as_tuples=True):
     """(str) --> list
     Returns a list of karyotype band given a chromosome number.
     >> get_karyotype_through_chromosome("2")
@@ -283,7 +285,10 @@ def get_karyotype_through_chromosome(chromosome_number):
     karyo_list = []
     phosphosite_obj = s.query(PhosphositeMeta.karyotype_band).filter(PhosphositeMeta.chromosome==chromosome_number).all()
     phosphosite_obj = list(set(x[0] for x in sorted(phosphosite_obj))) #removed duplications
-    return sorted(phosphosite_obj, key=lambda x: (not x.islower(),x)) #order them by alphabet
+    ordered_list = sorted(phosphosite_obj, key=lambda x: (not x.islower(),x)) #order them by alphabet
+    if as_tuples:
+        return [(x, x) for x in ordered_list]
+    return ordered_list
 
 # Function to return a list of phosphosites given the chromosome and karyotype
 def get_location_through_chromosome_karyotype(chromosome_input, karyotype_input):
