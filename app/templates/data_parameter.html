@@ -1,23 +1,29 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class ="content-section">
+	<form method = "POST">
     <fieldset class="form-group">
 				<legend class="border-bottom mb-4">User-Defined Parameters</legend>
 				<P> Please select desired thresholds for your Phosphoproteomics Data Analaysis</P>
-			<form id="P-Value" action="" method="POST" enctype="multipart/form-data">
-                <label class="form-group" for= ""><b> P-Value Threshold: <i>(0.05 or 0.01) </b></label>
 
-				  <select class="custom-select" id="inputGroupSelect02" id="" name=""required/>
-				    <option selected>Choose...</option>
-				    <option value="1">0.01</option>
-				    <option value="2">0.05</option>
-				  </select>
-				</div>
-
-           </form>
-</fieldset>              
-        
+               	<div class="form-group">
+                    {{ form.PValue.label(class="form-control-label") }}
+                     {{ form.PValue(class="form-control form-control-lg") }}
+                </div>
+              	<div class="form-group">
+                    {{ form.Fold.label(class="form-control-label") }}
+                     {{ form.Fold(class="form-control form-control-lg") }}
+                </div>
+              	<div class="form-group">
+                    {{ form.Coefficience.label(class="form-control-label") }}
+                     {{ form.Coefficience(class="form-control form-control-lg") }}
+                </div>
+		</fieldset>              
+		<div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+	</form>        
 </div>
+
 
 
 {% endblock content %}}
