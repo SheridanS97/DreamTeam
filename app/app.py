@@ -37,15 +37,29 @@ def Data_Upload():
                         os.makedirs(uploads_dir)
                     InputFile.save(os.path.join(uploads_dir, secure_filename(InputFile.filename)))
                     flash ("Upload Successful", "info")
-                    return redirect(url_for('DataAnalysis'))
+                    return redirect(url_for('Parameter'))
                 else:
                     flash('Incorrect selected file', 'danger')
     return render_template('Data_Upload.html', title='Data Upload', form=form)
 
 
-@app.route("/DataAnalysis")
-def DataAnalysis():
-    return render_template('data_parameter.html')
+@app.route("/upload/Parameters", methods = ['GET', 'POST'])
+def Parameter():
+    form = Parameters()
+    if request.method == "POST":
+        if form.validate_on_submit():
+            PValue = form.PValue.data
+            Fold = form.Fold.data
+            Coeff = form.Coefficience.data
+            return redirect(url_for('Visualisation' , PValue=PValue, Fold=Fold, Coeff=Coeff ))
+        else:
+            flash("Coefficience of Variance Threshold must be between 0 to 100", "danger")
+    return render_template('data_parameter.html', form=form)
+
+
+@app.route("/upload/Parameters/DataVisualisation")
+def Visualisation():
+    return render_template('data_analysis_results.html')   
 
 
 @app.route("/HumanKinases", methods = ['GET', 'POST'])
