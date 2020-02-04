@@ -8,21 +8,35 @@
                 <legend class="border-bottom mb-4">Phosphosite search by location </legend>
 
                 <div class="form-group">
-                    {{ form.chromosome_number.label(class="form-control-label") }}
-                     {{ form.chromosome_number(class="form-control form-control-lg") }}
+                    {{ Phospho_form.chromosome_number.label(class="form-control-label") }}
+                     {{ Phospho_form.chromosome_number(class="form-control form-control-lg") }}
                 </div>
               	<div class="form-group">
-                    {{ form.karyotypes.label(class="form-control-label") }}
-                     {{ form.karyotypes(class="form-control form-control-lg") }}
+                    {{ Phospho_form.karyotypes.label(class="form-control-label") }}
+                     {{ Phospho_form.karyotypes(class="form-control form-control-lg") }}
                 </div>
             </fieldset>
 		<div class="form-group">
-                {{ form.submit(class="btn btn-outline-info") }}
+                {{ Phospho_form.submit(class="btn btn-outline-info") }}
 	</form>
     <div class="border-top pt-1">
                             <small class="text-muted"> Need Guidance  ? <a class="ml-2" href="{{ url_for('Help') }}">Refer to our Help section</a>
                              </small>
     </div>
+    <fieldset class="form-group">
+        <div class="form-group">
+                      {{ Substrate_form.csrf_token }}
+                    {{ Substrate_form.search.label(class="form-control-label") }}
+                     {{ Substrate_form.search(class="form-control form-control-lg") }}
+
+                       {% if Substrate_form.errors %}
+                        {{ Substrate_form.errors }}
+                        {% endif %}
+                </div>
+    </fieldset>
+    <div class="form-group">
+                {{ Substrate_form.submit(class="btn btn-outline-info") }}
+      </div>
 {% endblock content %}
 
 
