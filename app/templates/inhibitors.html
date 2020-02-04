@@ -4,6 +4,10 @@
         <legend class="border-bottom mb-4">List of Inhibitors</legend>
 
 
+{{ALL_inhibitors}}
+
+
+
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
 <table id="myTable" class="table table-hover table-bordered table-sm">
@@ -18,7 +22,7 @@
 
   {% for dict_item in ALL_inhibitors %}
   <tr>
-     <td> <a href = "/Inhibitors/{{dict_item['inhibitor']}}">{{ dict_item['inhibitor'] }}</a></td>
+     <td> <a href = "/Inhibitors/{{dict_item['inhibitor_name']}}">{{ dict_item['inhibitor_name'] }}</a></td>
      <td> {{ dict_item['molecular_weight'] }}</td>
      <td> {{ dict_item['empirical_formula'] }}</td>
      {% for item in dict_item.kinases %}

@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, validators, TextField
-from wtforms.validators import DataRequired, Length, EqualTo, Required
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, validators, TextField,IntegerField
+from wtforms.validators import DataRequired, Length, EqualTo, Required, NumberRange
 from flask_wtf.file import FileField, FileAllowed, FileRequired
 from flask_wtf import Form
 from wtforms import SelectField
@@ -29,3 +29,9 @@ class Phosphosite(FlaskForm):
 	chromosome_number = SelectField('chromosome_number', choices=[('one', '1'),('two', '2'), ('three', '3')])
 	karyotypes = SelectField('karyotypes', choices=[('q','c'), ('r','t')])
 	submit = SubmitField('Search')
+
+class Parameters(FlaskForm):
+	PValue = SelectField('P-Value Threshold: (0.01 or 0.05)', choices=[('0.01', '0.01'),('0.05', '0.05')])
+	Fold = SelectField('Fold Change Significance Threshold: (0 - 5)', choices=[('0', '0'),('1', '1'), ('2', '2'),('3', '3'),('4', '4'),('5', '5')])
+	Coefficience = IntegerField('Coefficience of Variance Threshold (%)', validators=[DataRequired(), NumberRange(min=0,max=100)])
+	submit = SubmitField('Submit')
