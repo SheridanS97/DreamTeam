@@ -87,6 +87,7 @@ class SubstrateMeta(Base):
     substrate_gene_name = Column(String)
     substrate_uniprot_entry = Column(String)
     substrate_uniprot_number = Column(Integer)
+    substrate_url = Column(String)
     
     def to_dict(self):
         """
@@ -100,6 +101,8 @@ class SubstrateMeta(Base):
                 "substrate_uniprot_number": self.substrate_uniprot_number,
                 "phosphosites": [phosphosite.to_dict() for phosphosite in self.phosphosites]
                 }
+        if self.substrate_url: #if the url is present
+            output["substrate_url"] = self.substrate_url
         return output
     
 class KinasePhosphositeRelations(Base):
