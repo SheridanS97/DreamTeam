@@ -5,7 +5,7 @@ Created on Fri Jan 31 18:37:16 2020
 @author: sheri
 """
 
-from kinase_functions import *
+from DreamTeam.app.Database.kinase_functions import *
 from sqlalchemy import create_engine, or_, and_
 from sqlalchemy.orm import sessionmaker
 from pprint import pprint
