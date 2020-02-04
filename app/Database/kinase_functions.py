@@ -262,6 +262,51 @@ def get_inhibitor_meta_from_gene(kinase):
         results.append(inhibitor.to_dict())
     return results
 
+#Phosphosite search by genomic location
+#Function to return a list of all the chromosomes
+def get_all_chromosome():
+    """
+    Returns a list of all chromosome numbers.
+    >> get_all_chromosome()
+    [1,2,3,... 'X','Y']
+    """
+    chromosome_query = [x[0] for x in s.query(PhosphositeMeta.chromosome).all()]
+    return list(set(chromosome_query))
+
+#Function to get the karyotype band given the chromosome
+def get_karyotype_through_chromosome(chromosome_number):
+    """(str) --> list
+    Returns a list of karyotype band given a chromosome number.
+    >> get_karyotype_through_chromosome("2")
+    ['p13.1','p13.3','p14','p15','p16.1',...]
+    """
+    karyo_list = []
+    phosphosite_obj = s.query(PhosphositeMeta.karyotype_band).filter(PhosphositeMeta.chromosome==chromosome_number).all()
+    phosphosite_obj = list(set(x[0] for x in sorted(phosphosite_obj))) #removed duplications
+    return sorted(phosphosite_obj, key=lambda x: (not x.islower(),x)) #order them by alphabet
+
+# Function to return a list of phosphosites given the chromosome and karyotype
+def get_location_through_chromosome_karyotype(chromosome_input, karyotype_input):
+    """(str, str) --> list
+    Returns a list of phosphosphosite location by taking in the chromosome number, karyotype number.
+    Returns empty list if there is no location.
+    >> get_location_through_chromosome_karyotype(2, "q35")
+    ['214780979:214780977',
+    '216160126:216160128',
+    '216160135:216160137',
+    '216204355:216204357',
+    '218479669:218479667',...]
+    """
+    results = []
+    phosphosite_query = s.query(PhosphositeMeta).filter(PhosphositeMeta.chromosome==chromosome).\
+    filter(PhosphositeMeta.karyotype_band==karyotype).all()
+    if phosphosite_query==[]:
+        return []
+    for phosphosite in phosphosite_query:
+        results.append("{}:{}".format(phosphosite.start_position, phosphosite.end_position))
+    results.sort()
+    return results
+
 #Substrate search
 #Function to return the substrate metadata and its phosphosites' metadata from a substrate
 def get_substrate_phosphosites_from_substrate(substrate_input):
@@ -269,6 +314,14 @@ def get_substrate_phosphosites_from_substrate(substrate_input):
     Returns a dictionary of substrate metadata and all the phosphosites metadata that belong to the substrate.
     Phosphosite will be in a list of dictionaries.
     Refer to Database_query_II for more information.
+    >> get_substrate_phosphosites_from_substrate('PTPRA')
+    {}
+    >> get_substrate_phosphosites_from_substrate('HDAC5')
+    {'substrate_id': 42, 'substrate_name': 'HDAC5', 'substrate_gene_name': 'HDAC5', 'substrate_uniprot_entry': 'HDAC5_HUMAN',
+    'substrate_uniprot_number': 'Q9UQL6', 'phosphosites': [{'phosphosite_meta_id': 57, 'substrate_meta_id': 42,
+    'phosphosite': 'S498', 'chromosome': 17, 'karyotype_band': 'q21.31', 'strand': -1, 'start_position': 44088494,
+    'end_position': 44088492, 'neighbouring_sequences': 'RPLSRtQsSPLPQsP'},...],
+    'substrate_url': 'https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr17%3A44076746%2D44123702&hgsid=796473843_RdusyHlWn1O3a5PrtgCz1VDHBQGv'}
     """
     substrate_query = s.query(SubstrateMeta).filter(or_(SubstrateMeta.substrate_gene_name==substrate_input, SubstrateMeta.substrate_name==substrate_input,\
                 SubstrateMeta.substrate_uniprot_entry==substrate_input, SubstrateMeta.substrate_uniprot_number==substrate_input)).all()
