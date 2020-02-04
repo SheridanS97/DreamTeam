@@ -30,6 +30,11 @@ class Phosphosite(FlaskForm):
 	karyotypes = SelectField('karyotypes', choices=[('q','c'), ('r','t')])
 	submit = SubmitField('Search')
 
+class Substrate(FlaskForm):
+	search = StringField('Enter a valid Substrate name', validators=[DataRequired()])
+	submit = SubmitField('Search')
+
+
 class Parameters(FlaskForm):
 	PValue = DecimalField('P-Value Threshold: (0 - 0.05)', validators=[DataRequired(), NumberRange(min=0, max=0.05)])
 	Coefficience = IntegerField('Coefficience of Variance Threshold (%)', validators=[DataRequired(), NumberRange(min=0,max=100)])
