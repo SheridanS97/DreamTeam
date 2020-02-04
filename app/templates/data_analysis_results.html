@@ -3,19 +3,8 @@
 <div class ="content-section">
     <fieldset class="form-group">
 				<legend class="border-bottom mb-4">User-Defined Parameters</legend>
-				<P> Please select desired thresholds for your Phosphoproteomics Data Analaysis</P>
-			<form action="" method="POST" enctype="multipart/form-data">
-                <label class="form-group" for= ""><b> P-Value Threshold: <i>(0.05 or 0.01) </b></label>
- 				<input class="form-group" placeholder="Enter value" type="number" id="" name=""  pattern="(0[\.][0][1])|(0[\.][0][5])" step="0.01" required/>
-
-						  <select class="custom-select" id="inputGroupSelect02" id="" name=""required/>
-						    <option selected>Choose...</option>
-						    <option value="1">0.01</option>
-						    <option value="2">0.05</option>
-						  </select>
-						</div>
-
-		           </form>
+				<P> DATA Analysis {{PValue}}, {{Fold}}</P>
+	
 		</fieldset>              
                 
     </div>
