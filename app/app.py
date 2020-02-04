@@ -46,17 +46,20 @@ def Data_Upload():
 @app.route("/upload/Parameters", methods = ['GET', 'POST'])
 def Parameter():
     form = Parameters()
-    PValue = dict(form.PValue.choices).get(form.PValue.data)
-    Fold = form.Fold.data
-    Coeff = form.Coefficience.data
     if request.method == "POST":
-        return redirect(url_for('Visualisation' , PValue=PValue, Fold=Fold, Coeff=Coeff ))
+        if form.validate_on_submit():
+            PValue = form.PValue.data
+            Fold = form.Fold.data
+            Coeff = form.Coefficience.data
+            return redirect(url_for('Visualisation' , PValue=PValue, Fold=Fold, Coeff=Coeff ))
+        else:
+            flash("Coefficience of Variance Threshold must be between 0 to 100", "danger")
     return render_template('data_parameter.html', form=form)
 
 
 @app.route("/upload/Parameters/DataVisualisation")
 def Visualisation():
-    return render_template('data_analysis_results.html' )   
+    return render_template('data_analysis_results.html')   
 
 
 @app.route("/HumanKinases", methods = ['GET', 'POST'])

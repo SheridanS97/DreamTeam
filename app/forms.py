@@ -31,7 +31,8 @@ class Phosphosite(FlaskForm):
 	submit = SubmitField('Search')
 
 class Parameters(FlaskForm):
-	PValue = SelectField('P-Value Threshold: (0.01 or 0.05)', choices=[('0.01', '0.01'),('0.05', '0.05')])
-	Fold = SelectField('Fold Change Significance Threshold: (0 - 5)', choices=[('0', '0'),('1', '1'), ('2', '2'),('3', '3'),('4', '4'),('5', '5')])
+	PValue = StringField('P-Value Threshold: (0.01 or 0.05)', validators=[DataRequired()])
 	Coefficience = IntegerField('Coefficience of Variance Threshold (%)', validators=[DataRequired(), NumberRange(min=0,max=100)])
+	Fold = SelectField('Fold Change Significance Threshold: (0 - 5)', choices=[('0', '0'),('1', '1'), ('2', '2'),('3', '3'),('4', '4'),('5', '5')])
 	submit = SubmitField('Submit')
+
