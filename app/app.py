@@ -101,9 +101,19 @@ def Individual_kinase(search_kinase,gene):
 
 @app.route("/Phosphosite", methods= ['GET', 'POST'])
 def Phosphosites():
-    form = Phosphosite()
-    return render_template('Phosphosite.html', title='Phosphosite Search', form=form)
+    Phospho_form = Phosphosite()
+    Substrate_form = Substrate()
+    chr_number = Phospho_form.chromosome_number.data
 
+    if Substrate_form.validate_on_submit():
+        substrate_input = Substrate_form.search.data
+        return redirect(url_for('results_phosphosite',substrate_input=substrate_input) )
+    return render_template('Phosphosite.html', title='Phosphosite Search',  Substrate_form=Substrate_form, Phospho_form=Phospho_form)
+
+@app.route("/Phosphosite_result/<substrate_input>", methods= ['GET', 'POST'])
+def results_phosphosite(substrate_input):
+    substrate_info = get_phosphosite_meta_from_substrate(substrate_input)
+    return render_template('results_phosphosite.html', substrate_info=substrate_info)
 
 @app.route("/Inhibitors", methods = ['GET', 'POST'])
 def Inhibitors():
