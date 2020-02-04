@@ -110,10 +110,9 @@ def data_analysis(filename):
     
     return (calculations_df, df_final3) #calculations_df)
 
-data_analysis('az20.txt')
 
 def VolcanoPlot_Sub(filename):
-    data_analysis(filename)
+    calculations_df, df_final3=data_analysis(filename)
     
     FC_T=1
     FC_TN=-1
@@ -133,7 +132,7 @@ def VolcanoPlot_Sub(filename):
     #title = Inhibitor + " :Data with identified kinases"
     #feeding data into ColumnDataSource
 
-    source = ColumnDataSource(log2FCKinase)
+    source = ColumnDataSource(df_final3)
 
     hover = HoverTool(tooltips=[
                                 ('Substrate', '@Substrate'),
@@ -164,7 +163,7 @@ VolcanoPlotSub=VolcanoPlot_Sub('az20.txt')
 
 
 def VolcanoPlot(filename):
-    data_analysis(filename)
+    calculations_df, df_final3=data_analysis(filename)
     
     FC_T=1
     FC_TN=-1
@@ -210,10 +209,8 @@ def VolcanoPlot(filename):
     html=file_html(p, CDN, "Volcano Plot of Filtered Kinases" )
     return html
 
-
-
 def EnrichmentPlot(filename):
-    data_analysis(filename)
+    calculations_df, df_final3=data_analysis(filename)
     
     reduc_calculations_df=calculations_df[calculations_df['m']>= 4]
     reduc_calculations_df=reduc_calculations_df.sort_values(by='Enrichment')
@@ -225,8 +222,6 @@ def EnrichmentPlot(filename):
 
     enrichment=reduc_calculations_df['Enrichment']
     source = ColumnDataSource(reduc_calculations_df)
-
-
 
     hover = HoverTool(tooltips=[('Enrichment)','@Enrichment'),
                                 ('Number of Substrates', '@m'),
