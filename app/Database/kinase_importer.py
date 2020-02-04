@@ -82,7 +82,32 @@ with open(subcellular_location) as f:
         s.add(obj)
 s.commit()
 
+#create a SubstrateMeta table
+with open(phosphosites) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        substrate_match = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_uniprot_number==row["SUB_ACC_ID"]).all()
+        if substrate_match == []:
+            obj = SubstrateMeta(substrate_gene_name=row["SUB_GENE"],
+                                substrate_uniprot_number=row["SUB_ACC_ID"],
+                                substrate_url=row["URL"])
+            s.add(obj)
+s.commit()
 
+#Adding in the substrate name and the uniprot entry from Mo's dataset
+with open(substrates) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        substrates_meta_match = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_uniprot_number==row["SUB_ACC_ID"]).all()
+        if substrates_meta_match == []:
+            continue
+        substrate_meta = substrates_meta_match[-1]
+        substrate_meta.substrate_name = row["SUBSTRATE"]
+        substrate_meta.substrate_uniprot_entry = row["SUB_ENTRY_NAME"]
+        s.add(substrate_meta)
+s.commit()
+
+"""
 #creating a SubstrateMeta table            
 with open(substrates) as f:
     reader = csv.DictReader(f)
@@ -99,6 +124,19 @@ with open(substrates) as f:
             s.add(obj)
 s.commit()
     
+
+#importing urls into the SubstrateMeta table
+with open(phosphosites) as f:
+    reader = csv.DictReader(f)
+    for row in reader: #loop through each row in the csv
+        substrate_meta_match = s.query(SubstrateMeta).filter(SubstrateMeta.substrate_uniprot_number==row["SUB_ACC_ID"]).all() #find the substrate obj that has the same uniprot number
+        if substrate_meta_match == []: #if no such entry found
+            continue      #skip to the next row
+        substrate_meta = substrate_meta_match[-1] #get the substrate obj
+        substrate_meta.substrate_url = row["URL"] #assign the missing url value
+        s.add(substrate_meta)
+s.commit()
+"""
 
 #creating a PhosphositeMeta table
 with open(phosphosites) as f:
