@@ -264,47 +264,53 @@ def get_inhibitor_meta_from_gene(kinase):
 
 #Phosphosite search by genomic location
 #Function to return a list of all the chromosomes
-def get_all_chromosome():
+def get_all_chromosome(as_tuples=True):
     """
     Returns a list of all chromosome numbers.
+    If a list of int are desired, set as_tuples=False.
     >> get_all_chromosome()
-    [1,2,3,... 'X','Y']
+    [(1, 1),(2, 2),(3, 3),...(21, 21),(22, 22),('Y', 'Y'),('X', 'X')]
     """
-    chromosome_query = [x[0] for x in s.query(PhosphositeMeta.chromosome).all()]
-    return list(set(chromosome_query))
+    chromosome_query = [x[0] for x in s.query(PhosphositeMeta.chromosome).all()] #return the obj in the query
+    if as_tuples: #if as_tuples==True by default, ie if you want tuples
+        return [(x, x) for x in set(chromosome_query)]
+    return list(set(chromosome_query)) #otherwise, return result in a list with no tuples in
 
 #Function to get the karyotype band given the chromosome
-def get_karyotype_through_chromosome(chromosome_number):
+def get_karyotype_through_chromosome(chromosome_number, as_tuples=True):
     """(str) --> list
     Returns a list of karyotype band given a chromosome number.
+    If a list of int are desired, set as_tuples=False.
     >> get_karyotype_through_chromosome("2")
-    ['p13.1','p13.3','p14','p15','p16.1',...]
+    [('p13.1', 'p13.1'),('p13.3', 'p13.3'),('p14', 'p14'),...]
     """
-    karyo_list = []
     phosphosite_obj = s.query(PhosphositeMeta.karyotype_band).filter(PhosphositeMeta.chromosome==chromosome_number).all()
     phosphosite_obj = list(set(x[0] for x in sorted(phosphosite_obj))) #removed duplications
-    return sorted(phosphosite_obj, key=lambda x: (not x.islower(),x)) #order them by alphabet
+    ordered_list = sorted(phosphosite_obj, key=lambda x: (not x.islower(),x)) #order them by alphabet
+    if as_tuples: #ie if list of tuples is desired by default
+        return [(x, x) for x in ordered_list]
+    return ordered_list
 
 # Function to return a list of phosphosites given the chromosome and karyotype
-def get_location_through_chromosome_karyotype(chromosome_input, karyotype_input):
+def get_location_through_chromosome_karyotype(chromosome_input, karyotype_input, as_tuples=True):
     """(str, str) --> list
     Returns a list of phosphosphosite location by taking in the chromosome number, karyotype number.
     Returns empty list if there is no location.
+    If a list of int are desired, set as_tuples=False.
     >> get_location_through_chromosome_karyotype(2, "q35")
-    ['214780979:214780977',
-    '216160126:216160128',
-    '216160135:216160137',
-    '216204355:216204357',
-    '218479669:218479667',...]
+    [('214780979:214780977', '214780979:214780977'),('216160126:216160128', '216160126:216160128'),
+    ('216160135:216160137', '216160135:216160137'),
     """
     results = []
-    phosphosite_query = s.query(PhosphositeMeta).filter(PhosphositeMeta.chromosome==chromosome).\
-    filter(PhosphositeMeta.karyotype_band==karyotype).all()
-    if phosphosite_query==[]:
+    phosphosite_query = s.query(PhosphositeMeta).filter(PhosphositeMeta.chromosome==chromosome_input).\
+    filter(PhosphositeMeta.karyotype_band==karyotype_input).all() #search for the phosphosites with the chro and karyo
+    if phosphosite_query==[]: #if no match found
         return []
-    for phosphosite in phosphosite_query:
-        results.append("{}:{}".format(phosphosite.start_position, phosphosite.end_position))
+    for phosphosite in phosphosite_query: #loop through the results if any
+        results.append("{}:{}".format(phosphosite.start_position, phosphosite.end_position)) #append the start and end co into a list
     results.sort()
+    if as_tuples: #if list of tuples (default) is desired
+        return [(x,x) for x in results]
     return results
 
 #Substrate search
