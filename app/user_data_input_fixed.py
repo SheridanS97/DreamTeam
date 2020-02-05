@@ -66,7 +66,7 @@ def data_analysis(filename):
     final_substrate=log2FCKinase
     # Replace nan with 0.
     log2FCKinase.loc[:, "Log2 Fold Change"] =log2FCKinase.loc[:,"Log2 Fold Change"].fillna(0)
-    Final_substrate=log2FCKinase
+    
     Sub_phosp_list=[]
     for i, j, k in zip(log2FCKinase['Substrate'], log2FCKinase['Phosphosite'],range(len(log2FCKinase))):
         Sub_phosp_list.append([])
