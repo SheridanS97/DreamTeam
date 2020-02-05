@@ -232,21 +232,19 @@ s.commit()
 with open(inhibitors) as f:
     reader = csv.DictReader(f)
     for row in reader:
-        target_genes = row["Target"].split(",")
+        inhibitor_meta_match = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor_name == row["Inhibitor"]).all()
+        if inhibitor_meta_match == []:
+            continue
+        inhibitor_obj = inhibitor_meta_match[-1]
+        target_genes = row["Target"].replace(" ", "").split(",")
         for gene in target_genes:
             gene_match = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).\
                             filter(KinaseGeneName.gene_alias==gene).all()
             if gene_match == []:
                 continue
             gene_obj = gene_match[-1]
-            inhibitor_meta_match = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor_name == row["Inhibitor"]).all()
-            if inhibitor_meta_match == []:
-                continue
-            inhibitor_obj = inhibitor_meta_match[-1]
-            gene_obj.inhibitors.append(inhibitor_obj)
             inhibitor_obj.kinases.append(gene_obj)
-            s.add(gene_obj)
-            s.add(inhibitor_obj)
+        s.add(inhibitor_obj)
 s.commit()
 
 
