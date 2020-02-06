@@ -33,7 +33,7 @@ from bokeh.palettes import brewer
 
 def data_analysis(filename):
      #read in txt file
-    df_input_original = pd.read_csv(filename,  sep='\t')
+    df_input_original = pd.read_csv('../instance/Data_Upload/'+filename,  sep='\t')
 
     #There are 86 columns in the dataframe, but only 7 columns have values, the rest are empty
     #Need to remove the empty columns
