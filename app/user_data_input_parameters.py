@@ -26,19 +26,30 @@ from bokeh.models import HoverTool, WheelZoomTool, PanTool, BoxZoomTool, ResetTo
 from bokeh.palettes import brewer
 
 
-#engine = create_engine("sqlite:///kinase_database.db")
-#Base.metadata.bind = engine
-#session = sessionmaker(bind=engine)
-#s = session()
+#FC=2
+#p_val=0.01
+#CV=100
 
-def data_analysis(filename):
-     #read in txt file
-    df_input_original = pd.read_csv('../instance/Data_Upload/'+filename,  sep='\t')
-
+def data_analysis(filename, CV):
+    
+    #read in txt file
+   # df_input_original = pd.read_csv(filename, sep='\t')
+   df_input_original = pd.read_csv("../app/instance/Data_Upload/"+ filename,  sep='\t')
+    
     #There are 86 columns in the dataframe, but only 7 columns have values, the rest are empty
     #Need to remove the empty columns
     input_original_subset = df_input_original.iloc[:, 0:7]
+    
+    col_number=  input_original_subset.shape[1]
 
+    if col_number == 5:
+        input_original_subset["control_cv"] = 1
+        input_original_subset["condition_cv"] = 1        
+        
+    df_cols=["Substrate", "control_mean", "inhibitor_mean", "fold_change", "p_value", "ctrlCV", "treatCV" ]
+
+    input_original_subset.columns=df_cols
+    
     #Make columns 2-7 type float instead of string
     input_original_subset.iloc[:, 1:7] = input_original_subset.iloc[:, 1:7].astype(float)
 
@@ -64,9 +75,11 @@ def data_analysis(filename):
    
     log2FCKinase.loc[:, "Log2 Fold Change"].replace([np.inf, -np.inf], np.nan, inplace=True)
     final_substrate=log2FCKinase
+   
     # Replace nan with 0.
     log2FCKinase.loc[:, "Log2 Fold Change"] =log2FCKinase.loc[:,"Log2 Fold Change"].fillna(0)
-    
+   
+    Final_substrate=log2FCKinase
     Sub_phosp_list=[]
     for i, j, k in zip(log2FCKinase['Substrate'], log2FCKinase['Phosphosite'],range(len(log2FCKinase))):
         Sub_phosp_list.append([])
@@ -87,6 +100,8 @@ def data_analysis(filename):
     df_final2=df_final1.dropna()
     df_final2=df_final2.explode('kinase')
     df_final3=df_final2.dropna(subset = ["kinase"])
+    
+    df_final3= df_final3[(df_final3['ctrlCV'] <=  CV) & (df_final3['treatCV'] <= CV)]  
     
     mS = df_final3.groupby('kinase')['Log2 Fold Change'].mean()
     mP = df_final3['Log2 Fold Change'].mean()
@@ -112,19 +127,22 @@ def data_analysis(filename):
     calculations_df=pd.DataFrame(calculations_dict)
     calculations_df=calculations_df.reset_index(level=['kinase'])
     final_substrate=final_substrate.drop(['Kinase'], axis=1)
+    
+    #user define CV value: Rows Above CV filtered out
+    
     return (calculations_df, final_substrate ,df_final3) #calculations_df)
 
-#calculations, final_substrate, df_final3=data_analysis('AZD5438.tsv')
+#calculations, final_substrate, df_final3=data_analysis('AZD5438.tsv', CV)
 
-def VolcanoPlot_Sub(filename):
-    calculations_df, final_substrate, df_final3=data_analysis(filename)
+def VolcanoPlot_Sub(filename, CV, p_val, FC):
+    calculations_df, final_substrate, df_final3=data_analysis(filename, CV)
     
-    FC_T=1
-    FC_TN=-1
-    PV_T=-np.log10(0.05)
+    
+    FC_N = -FC
+    PV=-np.log10(p_val)
 
-    final_substrate.loc[(final_substrate['Log2 Fold Change'] > FC_T) & (final_substrate['-Log10 Corrected P-Value'] > PV_T), 'color' ] = "Green"  # upregulated
-    final_substrate.loc[(final_substrate['Log2 Fold Change'] < FC_TN) & (final_substrate['-Log10 Corrected P-Value'] > PV_T), 'color' ] = "Red"   # downregulated
+    final_substrate.loc[(final_substrate['Log2 Fold Change'] > FC) & (final_substrate['-Log10 Corrected P-Value'] > PV), 'color' ] = "Green"  # upregulated
+    final_substrate.loc[(final_substrate['Log2 Fold Change'] < FC_N) & (final_substrate['-Log10 Corrected P-Value'] > PV), 'color' ] = "Red"   # downregulated
     final_substrate['color'].fillna('grey', inplace=True)
 
     output_notebook()
@@ -133,9 +151,6 @@ def VolcanoPlot_Sub(filename):
 
     category_items = final_substrate[category].unique()
     title="Volcano Plot"
-
-    #title = Inhibitor + " :Data with identified kinases"
-    #feeding data into ColumnDataSource
 
     source = ColumnDataSource(final_substrate)
 
@@ -152,9 +167,9 @@ def VolcanoPlot_Sub(filename):
    
     p.scatter(x = 'Log2 Fold Change', y = '-Log10 Corrected P-Value',source=source,size=10,color='color')
    
-    p_sig = Span(location=PV_T,dimension='width', line_color='black',line_dash='dashed', line_width=3)
-    fold_sig_over=Span(location=FC_T,dimension='height', line_color='black',line_dash='dashed', line_width=3)
-    fold_sig_under=Span(location=FC_TN,dimension='height', line_color='black',line_dash='dashed', line_width=3)
+    p_sig = Span(location=PV,dimension='width', line_color='black',line_dash='dashed', line_width=3)
+    fold_sig_over=Span(location=FC,dimension='height', line_color='black',line_dash='dashed', line_width=3)
+    fold_sig_under=Span(location=FC_N,dimension='height', line_color='black',line_dash='dashed', line_width=3)
 
     p.add_layout(p_sig)   
     p.add_layout(fold_sig_over)   
@@ -163,18 +178,17 @@ def VolcanoPlot_Sub(filename):
     html=file_html(p, CDN, "Volcano Plot of Substrates" )
     return html
 
-#VolcanoPlotSub=VolcanoPlot_Sub('AZD5438.tsv')
+#VolcanoPlotSub=VolcanoPlot_Sub('AZD5438.tsv', CV, p_val, FC)
 
 
-def VolcanoPlot(filename):
-    calculations_df, final_substrate, df_final3=data_analysis(filename)
+def VolcanoPlot(filename, CV, p_val, FC):
+    calculations_df, final_substrate, df_final3=data_analysis(filename, CV)
     
-    FC_T=1
-    FC_TN=-1
-    PV_T=-np.log10(0.05)
+    FC_N=-FC
+    PV=-np.log10(p_val)
 
-    df_final3.loc[(df_final3['Log2 Fold Change'] > FC_T) & (df_final3['-Log10 Corrected P-Value'] > PV_T), 'color' ] = "Green"  # upregulated
-    df_final3.loc[(df_final3['Log2 Fold Change'] < FC_TN) & (df_final3['-Log10 Corrected P-Value'] > PV_T), 'color' ] = "Red"   # downregulated
+    df_final3.loc[(df_final3['Log2 Fold Change'] > FC) & (df_final3['-Log10 Corrected P-Value'] > PV), 'color' ] = "Green"  # upregulated
+    df_final3.loc[(df_final3['Log2 Fold Change'] < FC_N) & (df_final3['-Log10 Corrected P-Value'] > PV), 'color' ] = "Red"   # downregulated
     df_final3['color'].fillna('grey', inplace=True)
 
     output_notebook()
@@ -202,9 +216,9 @@ def VolcanoPlot(filename):
    
     p.scatter(x = 'Log2 Fold Change', y = '-Log10 Corrected P-Value',source=source,size=10,color='color')
    
-    p_sig = Span(location=PV_T,dimension='width', line_color='black',line_dash='dashed', line_width=3)
-    fold_sig_over=Span(location=FC_T,dimension='height', line_color='black',line_dash='dashed', line_width=3)
-    fold_sig_under=Span(location=FC_TN,dimension='height', line_color='black',line_dash='dashed', line_width=3)
+    p_sig = Span(location=PV,dimension='width', line_color='black',line_dash='dashed', line_width=3)
+    fold_sig_over=Span(location=FC,dimension='height', line_color='black',line_dash='dashed', line_width=3)
+    fold_sig_under=Span(location=FC_N,dimension='height', line_color='black',line_dash='dashed', line_width=3)
 
     p.add_layout(p_sig)   
     p.add_layout(fold_sig_over)   
@@ -212,16 +226,16 @@ def VolcanoPlot(filename):
 
     html=file_html(p, CDN, "Volcano Plot of Filtered Kinases" )
     return html
-#Volc_plot=VolcanoPlot('AZD5438.tsv')
+#Volc_plot=VolcanoPlot('AZD5438.tsv',CV, p_val, FC)
 
-def EnrichmentPlot(filename):
-    calculations_df, df_final2, df_final3=data_analysis(filename)
+def EnrichmentPlot(filename, CV, p_val, FC):
+    calculations_df, df_final2, df_final3=data_analysis(filename,CV)
     
     reduc_calculations_df=calculations_df[calculations_df['m']>= 4]
     reduc_calculations_df=reduc_calculations_df.sort_values(by='Enrichment')
 
-    reduc_calculations_df.loc[(reduc_calculations_df['P_value'] < 0.05), 'color'] = "Orange"  # significance 0.05# significance 0.01
-    reduc_calculations_df.loc[(reduc_calculations_df['P_value'] > 0.05), 'color' ] = "Black"
+    reduc_calculations_df.loc[(reduc_calculations_df['P_value'] < p_val), 'color'] = "Orange"  # significance 0.05# significance 0.01
+    reduc_calculations_df.loc[(reduc_calculations_df['P_value'] > p_val), 'color' ] = "Black"
 
     kinase=reduc_calculations_df['kinase']
 
@@ -244,4 +258,19 @@ def EnrichmentPlot(filename):
 
     html=file_html(p, CDN, "Kinase Substrate Enrichment" )
     return html
-#enrich=EnrichmentPlot('AZD5438.tsv')
+
+#enrich=EnrichmentPlot('AZD5438.tsv',CV, p_val, FC)
+
+
+def df_html(filename, CV):
+    calculations_df, final_substrate, df_final3=data_analysis(filename,CV)
+    df_calc=calculations_df.to_html()
+    return df_calc
+#df1_html=df_html('AZD5438.tsv', CV)
+
+
+def df2_html(filename,CV):
+    calculations_df, final_substrate, df_final3=data_analysis(filename,CV)
+    df_final_html=df_final3.to_html()
+    return df_final_html
+#df2_html=df_final_html('AZD5438.tsv', CV)  
