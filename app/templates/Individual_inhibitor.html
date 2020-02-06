@@ -1,26 +1,38 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class ="content-section">
-        <legend class="border-bottom mb-4">{{Individual_Inhibitor["inhibitor"]}}</legend>
-
-{{Individual_Inhibitor}}
+        <legend class="border-bottom mb-4">{{Individual_Inhibitor["inhibitor_name"]}}</legend>
 
 <table class="table table-hover">
       <tr>
         <th scope="row">Inhibitor</th>
-        <td>{{Individual_Inhibitor["inhibitor"]}}</td>
+        <td>{{Individual_Inhibitor["inhibitor_name"]}}</td>
+      </tr>
+      <th scope="row">Chembl ID</th>
+        <td>{{Individual_Inhibitor["chembl_id"]}}</td>
       </tr>
       <tr>
         <th scope="row">Molecular Weight</th>
         <td>{{Individual_Inhibitor["molecular_weight"]}}</td>
       </tr>
       <tr>
-        <th scope="row">Image</th>
-        <td><img src="{{Individual_Inhibitor['images_url']}}" height="100" width="200"></td>
+        <th scope="row">Smiles</th>
+        <td>{{Individual_Inhibitor['smiles']}} </td>
       </tr>
+       <th scope="row">Inchi</th>
+        <td>{{Individual_Inhibitor['inchi']}} </td>
       <tr>
-        <th scope="row">Empirical Formula</th>
-    	<td>{{Individual_Inhibitor["empirical_formula"]}}</td>
+      <th scope="row">Image</th>
+        <td><img src="{{Individual_Inhibitor['images_url']}}" height="200" width="300"></td>
+      </tr>
+      <th scope="row">Inhibitor Aliases</th>
+        <td>{{", ".join(Individual_Inhibitor['inhibitor_aliases'])}} </td>
+      </tr>
+       <th scope="row">Gene Name</th>
+        <td>{{Individual_Inhibitor['kinases'][0]['gene_name']}} </td>
+      </tr>
+       <th scope="row">Gene Alias</th>
+        <td>{{ ", ".join (Individual_Inhibitor['kinases'][0]['gene_alias'])}} </td>
       </tr>
 	
     </table>
@@ -28,6 +40,9 @@
 
 
 
-{% endblock content %}
 
+
+
+
+{% endblock content %}
 
