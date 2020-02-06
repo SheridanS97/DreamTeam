@@ -349,6 +349,16 @@ def get_sub_pho_from_chr_kar_loc(chromosome_input, karyotype_input=None):
     return results
 
 #Substrate search
+#Function to return a list of substrate name and substrate gene name
+def get_all_substrates():
+    """
+    Return a list of all substrates names and substrate gene names
+    """
+    substrate_list = [x[0] for x in s.query(SubstrateMeta.substrate_name).all()]
+    substrate_list.extend(x[0] for x in s.query(SubstrateMeta.substrate_gene_name).all())
+    return list(set(substrate_list))
+
+
 #Function to return the substrate metadata and its phosphosites' metadata from a substrate
 def get_substrate_phosphosites_from_substrate(substrate_input):
     """(str) --> dict
