@@ -6,7 +6,7 @@ Created on Fri Jan 24 16:40:24 2020
 @author: zho30
 """
 
-from sqlalchemy import or_
+from sqlalchemy import or_, and_
 
 from .db_setup import s
 # calling the library

@@ -27,13 +27,10 @@ class FileForm(FlaskForm):
     submit = SubmitField('Submit')
 
 class Phosphosite(FlaskForm):
-	chromosome = SelectField('chromosome number', choices= [],  validators=[optional()])
-	karyotype = SelectField('karyotypes', choices=[], coerce=str, validators=[optional()])
-	submit_for_position = SubmitField('Submit for position')
+	chromosome = SelectField('chromosome number', choices= [],  validators=[DataRequired()])
+	karyotype = SelectField('karyotypes', choices=[], validators=[DataRequired()])
+	submit = SubmitField('Submit')
 
-class Position(FlaskForm):
-	position = SelectField('Position', choices=[], coerce=str, validators=[DataRequired()])
-	submit = SubmitField('Search')
 
 class Substrate(FlaskForm):
 	search = StringField('Enter a valid Substrate name', validators=[DataRequired()])
