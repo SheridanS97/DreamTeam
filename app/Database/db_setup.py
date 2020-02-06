@@ -1,5 +1,4 @@
 #calling library
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from .kinase_declarative import *

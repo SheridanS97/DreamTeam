@@ -11,8 +11,8 @@ import json
 # import the library
 import os
 
-from .db_setup import s
-from .kinase_declarative import *
+from db_setup import s
+from kinase_declarative import *
 
 #setting the directories of the files
 #these will need to be changed accordingly if one were to generate the database
@@ -207,6 +207,7 @@ with open(inhibitors) as f:
 s.commit()    
 """
 
+
 #creating an InhibitorMeta table
 with open(inhibitors) as f:
     reader = csv.DictReader(f)
@@ -225,16 +226,25 @@ with open(inhibitors) as f:
                                         inchi = row["InChiKey"],
                                         images_url = row["Images"])
             s.add(inhibitor_obj)
-        target_genes = row["Target"].split(",")
+s.commit()
+
+#adding genes to InhibitorMeta
+with open(inhibitors) as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        inhibitor_meta_match = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor_name == row["Inhibitor"]).all()
+        if inhibitor_meta_match == []:
+            continue
+        inhibitor_obj = inhibitor_meta_match[-1]
+        target_genes = row["Target"].replace(" ", "").split(",")
         for gene in target_genes:
             gene_match = s.query(KinaseGeneMeta).join(KinaseGeneName).filter(KinaseGeneMeta.gene_name==KinaseGeneName.gene_name).\
                             filter(KinaseGeneName.gene_alias==gene).all()
             if gene_match == []:
                 continue
-            else:
-                gene_obj = gene_match[-1]
-            gene_obj.inhibitors.append(inhibitor_obj)
-            s.add(gene_obj)
+            gene_obj = gene_match[-1]
+            inhibitor_obj.kinases.append(gene_obj)
+        s.add(inhibitor_obj)
 s.commit()
 
 
