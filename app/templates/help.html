@@ -1,4 +1,80 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class ="content-section">
+  <h1>Using Phosphoview</h1>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#KIN">Kinase</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#INH">Inhibitors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#PS">Phosphosite</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#UP">File upload</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+
+  <div class="tab-pane container active" id="KIN">
+    <table class="table table-hover">
+      <tr>
+        <h3>Kinase Search</h3>
+          <img src="\templates\help_images\Kinase_search1.png" width="400" height="200">
+
+
+          <p>Kinase search allows you to type your query kinase into the search bar. </p>
+          <img src="/help_images/Kinase_mid_result.png" width="400" height="200">
+          <p>This returns all kinase entries matching your query, taking into account
+            gene name and aliases.
+          If kinase name is unknown, you can search for part of the name or a single
+          letter to return all entries featuring your query.
+         From the table of results click on choosen kinase gene name to view
+       more information. </p>
+
+          <h3>Kinase Results</h3>
+          <img src="In_kin_results_BKG.png" width="400" height="200">
+          <p>Firstly background information about the target kinase is displayed.
+          Using tabs on the results table you can explore phosphosites the kinases acts on as well as
+        the (Uniprot) protein feature viewer for the target kinase.</p>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <div class="tab-pane container active" id="INH">
+    <table class="table table-hover">
+        <tr>
+          <h2>Inhibitor help</h2>
+            <p> Search by kinase or by inhibitor</p>
+        </tr>
+    </table>
+  </div>
+
+  <div class="tab-pane container fade" id="PS">
+   <table class="table table-hover">
+           <tr>
+              <h2>Phosphosite Help</h2>
+                <p> Search by substrate gene name or genomic location </p>
+           </tr>
+    </table>
+  </div>
+
+  <div class="tab-pane container fade" id="UP">
+   <table class="table table-hover">
+           <tr>
+              <h2>Data upload Help</h2>
+                <p> Kinase activty calculator</p>
+           </tr>
+    </table>
+  </div>
+
+</div>
 {% endblock content %}
