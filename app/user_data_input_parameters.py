@@ -34,7 +34,7 @@ def data_analysis(filename, CV):
     
     #read in txt file
    # df_input_original = pd.read_csv(filename, sep='\t')
-   df_input_original = pd.read_csv("../app/instance/Data_Upload/"+ filename,  sep='\t')
+    df_input_original = pd.read_csv("instance/Data_Upload/"+ filename,  sep='\t')
     
     #There are 86 columns in the dataframe, but only 7 columns have values, the rest are empty
     #Need to remove the empty columns
@@ -274,3 +274,4 @@ def df2_html(filename,CV):
     df_final_html=df_final3.to_html()
     return df_final_html
 #df2_html=df_final_html('AZD5438.tsv', CV)  
+    
