@@ -214,15 +214,16 @@ def get_inhibitor_meta_from_inhibitor(inhibitor_entry):
     Returns the meta data of the inhibitor.
     The inhibitor can be the actual name or the alias of the inhibitor.
     Raises an error if the entry is not found.
-    >> get_inhibitor_meta_from_inhibitor("PD 184352 (CI-1040)")
+    >> get_inhibitor_meta_from_inhibitor("Afatinib")
     {'inhibitor_id': 6,
     'inhibitor_name': 'Afatinib',
     'molecular_weight': 485.2,
     'smiles': 'CN(C)C/C=C/C(=O)Nc1cc2c(cc1O[C@H]3CCOC3)ncnc2Nc4ccc(c(c4)Cl)F',
     'inchi': 'ULXXDDBFHOBEHA-CWDCEQMOSA-N',
     'images_url': ' http://www.icoa.fr/pkidb/static/img/mol/Afatinib.svg',
-    'kinases': [{'gene_name': 'EGFR',
-    'gene_alias': ['EGFR', 'ERBB', 'ERBB1', 'HER1']}],
+    'kinases': [{'gene_name': 'EGFR','gene_alias': ['EGFR', 'ERBB', 'ERBB1', 'HER1']},
+    {'gene_name': 'ERBB2','gene_alias': ['ERBB2', 'HER2', 'MLN19', 'NEU', 'NGL']},
+    {'gene_name': 'ERBB4', 'gene_alias': ['ERBB4', 'HER4']}],
     'inhibitor_aliases': ['Giotrif;Gilotrif', 'Afatinib', 'BIBW-2992'],
     'chembl_id': ' CHEMBL1173655'}
     """
