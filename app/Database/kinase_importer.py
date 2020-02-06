@@ -215,39 +215,3 @@ with open(inhibitors) as f:
             s.add(inhibitor_meta_obj)
     s.commit()
 
-
-
-
-
-"""
-#creating an InhibitorName table
-with open(inhibitors) as f:
-    reader = csv.DictReader(f)
-    for row in reader:
-        #check for the existence of the entry in InhibitorMeta with the same inhibitor name as the name in the csv
-        inhibitor_meta_match = s.query(InhibitorMeta).filter(InhibitorMeta.inhibitor_name==row["Target"]).all()
-        #if there is no such entry, it will return an empty list
-        if inhibitor_meta_match == []: 
-            continue  #skip it
-        else:
-            inhibitor_meta_obj = inhibitor_meta_match[-1] #teachnically, if there is already one, there should only be one but all returns a list;-1 or 0 will return the obj within the list
-        inhibitor_aliases = row["Synonymns"].split(",") #the aliases will be in a string of list into multiple strings
-        if row["Inhibitor"] not in inhibitor_aliases: #look for self-referencing alias; ie one of the name in the gene alias has to be itself
-            inhibitor_name_obj = InhibitorName(gene_alias=row["Inhibitor"])
-            inhibitor_meta_obj.inhibitor_aliases.append(inhibitor_name_obj)
-            s.add(inhibitor_name_obj)
-        for alias in inhibitor_aliases: #loop through each alias in the inhibitor_aliases
-            inhibitor_alias_match = s.query(InhibitorName).filter(InhibitorName.inhibitor_alias==alias).all() #check for the previous records of such aliases
-            if inhibitor_alias_match != []: #if it already exists; skip it
-                continue
-            inhibitor_name_obj = InhibitorName(gene_alias=alias) #otherwise, create it as an instance of InhibitorName
-            inhibitor_meta_obj.inhibitor_aliases.append(inhibitor_name_obj) #append the alias in the inhibitor_alias virtual column of the InhibitorMeta obj row
-            s.add(inhibitor_name_obj)
-        s.add(inhibitor_meta_obj)
-s.commit()
-"""
-    
-    
-    
-    
-    

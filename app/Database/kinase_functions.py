@@ -370,9 +370,10 @@ def get_substrate_phosphosites_from_substrate(substrate_input):
     'end_position': 44088492, 'neighbouring_sequences': 'RPLSRtQsSPLPQsP'},...],
     'substrate_url': 'https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr17%3A44076746%2D44123702&hgsid=796473843_RdusyHlWn1O3a5PrtgCz1VDHBQGv'}
     """
+    #look for SubstrateMeta obj with the query
     substrate_query = s.query(SubstrateMeta).filter(or_(SubstrateMeta.substrate_gene_name==substrate_input, SubstrateMeta.substrate_name==substrate_input,\
                 SubstrateMeta.substrate_uniprot_entry==substrate_input, SubstrateMeta.substrate_uniprot_number==substrate_input)).all()
-    if substrate_query == []:
+    if substrate_query == []: #if no such obj was found, skip it
         return []
     for substrate in substrate_query:
         return substrate.to_dict()
@@ -424,11 +425,12 @@ def get_phosphosite_meta_from_substrate(substrate_input):
     'neighbouring_sequences': 'GEPGLsHsGsEQPEQ'},...]
     """
     results = []
+    #look for the phosphosite object that matches the query
     phosphosite_query = s.query(PhosphositeMeta)\
     .filter(PhosphositeMeta.substrate_meta_id==SubstrateMeta.substrate_id)\
     .filter(or_(SubstrateMeta.substrate_gene_name==substrate_input, SubstrateMeta.substrate_name==substrate_input,\
                 SubstrateMeta.substrate_uniprot_entry==substrate_input, SubstrateMeta.substrate_uniprot_number==substrate_input)).all()
-    if phosphosite_query == []:
+    if phosphosite_query == []: #if query not found, return an empty list
         return []
     for row in phosphosite_query:
         results.append(row.to_dict())
