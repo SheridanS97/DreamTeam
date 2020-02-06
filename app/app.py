@@ -1,10 +1,10 @@
 import os
-from flask import Flask, render_template, url_for, flash, redirect, request
+from flask import Flask, render_template, url_for, flash, redirect, request, jsonify
 from werkzeug.utils import secure_filename
 
 from Database.kinase_functions import *
 from forms import *
-from user_data_input_edited import *
+from user_data_input_fixed import *
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
@@ -103,17 +103,41 @@ def Individual_kinase(search_kinase,gene):
 def Phosphosites():
     Phospho_form = Phosphosite()
     Substrate_form = Substrate()
-    chr_number = Phospho_form.chromosome_number.data
+    Position_form = Position()
+    Phospho_form.chromosome.choices = get_all_chromosome()
+    chr_number = Phospho_form.chromosome.data
+    Phospho_form.karyotype.choices = get_karyotype_through_chromosome(chr_number)
+    kar_input = Phospho_form.karyotype.data
+    Position_form.position.choices = get_location_through_chromosome_karyotype(chr_number, kar_input)
+
+    if Phospho_form.is_submitted() :
+        chr_number = Phospho_form.chromosome.data
+        kar_input = Phospho_form.karyotype.data
+        flash('subitted: '+ chr_number + ','+ kar_input, 'info')
+        Position_form.position.choices = get_location_through_chromosome_karyotype(chr_number, kar_input)
+        return redirect(url_for('results_phosphosite2'))
+
 
     if Substrate_form.validate_on_submit():
         substrate_input = Substrate_form.search.data
         return redirect(url_for('results_phosphosite',substrate_input=substrate_input) )
-    return render_template('Phosphosite.html', title='Phosphosite Search',  Substrate_form=Substrate_form, Phospho_form=Phospho_form)
+    return render_template('Phosphosite.html', title='Phosphosite Search', Substrate_form=Substrate_form, Phospho_form=Phospho_form, Position_form =Position_form)
 
-@app.route("/Phosphosite_result/<substrate_input>", methods= ['GET', 'POST'])
+
+@app.route("/karyotype/<chromosome>")
+def karyotype(chromosome):
+    karyotypes = get_karyotype_through_chromosome(chromosome)
+    return jsonify({'karyotypes': karyotypes})
+
+
+@app.route("/Phosphosite_result/<substrate_input>")
 def results_phosphosite(substrate_input):
     substrate_info = get_phosphosite_meta_from_substrate(substrate_input)
     return render_template('results_phosphosite.html', substrate_info=substrate_info)
+
+@app.route("/Phosphosite_result")
+def results_phosphosite2():
+    return render_template('results_phosphosite_location.html')
 
 @app.route("/Inhibitors", methods = ['GET', 'POST'])
 def Inhibitors():

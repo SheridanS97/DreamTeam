@@ -1,9 +1,10 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, validators, TextField,IntegerField, DecimalField
-from wtforms.validators import DataRequired, Length, EqualTo, Required, NumberRange
+from wtforms.validators import DataRequired, Length, EqualTo, Required, NumberRange, optional
 from flask_wtf.file import FileField, FileAllowed, FileRequired
 from flask_wtf import Form
 from wtforms import SelectField
+
 
 # use this python module for creating python forms and user input 
 # import stringfields  so the user can input strings
@@ -26,13 +27,17 @@ class FileForm(FlaskForm):
     submit = SubmitField('Submit')
 
 class Phosphosite(FlaskForm):
-	chromosome_number = SelectField('chromosome_number', choices=[('one', '1'),('two', '2'), ('three', '3')])
-	karyotypes = SelectField('karyotypes', choices=[('q','c'), ('r','t')])
+	chromosome = SelectField('chromosome number', choices= [],  validators=[optional()])
+	karyotype = SelectField('karyotypes', choices=[], coerce=str, validators=[optional()])
+	submit_for_position = SubmitField('Submit for position')
+
+class Position(FlaskForm):
+	position = SelectField('Position', choices=[], coerce=str, validators=[DataRequired()])
 	submit = SubmitField('Search')
 
 class Substrate(FlaskForm):
 	search = StringField('Enter a valid Substrate name', validators=[DataRequired()])
-	submit = SubmitField('Search')
+	submit_substrate = SubmitField('Search')
 
 
 class Parameters(FlaskForm):
