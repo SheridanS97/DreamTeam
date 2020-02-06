@@ -214,15 +214,16 @@ def get_inhibitor_meta_from_inhibitor(inhibitor_entry):
     Returns the meta data of the inhibitor.
     The inhibitor can be the actual name or the alias of the inhibitor.
     Raises an error if the entry is not found.
-    >> get_inhibitor_meta_from_inhibitor("PD 184352 (CI-1040)")
+    >> get_inhibitor_meta_from_inhibitor("Afatinib")
     {'inhibitor_id': 6,
     'inhibitor_name': 'Afatinib',
     'molecular_weight': 485.2,
     'smiles': 'CN(C)C/C=C/C(=O)Nc1cc2c(cc1O[C@H]3CCOC3)ncnc2Nc4ccc(c(c4)Cl)F',
     'inchi': 'ULXXDDBFHOBEHA-CWDCEQMOSA-N',
     'images_url': ' http://www.icoa.fr/pkidb/static/img/mol/Afatinib.svg',
-    'kinases': [{'gene_name': 'EGFR',
-    'gene_alias': ['EGFR', 'ERBB', 'ERBB1', 'HER1']}],
+    'kinases': [{'gene_name': 'EGFR','gene_alias': ['EGFR', 'ERBB', 'ERBB1', 'HER1']},
+    {'gene_name': 'ERBB2','gene_alias': ['ERBB2', 'HER2', 'MLN19', 'NEU', 'NGL']},
+    {'gene_name': 'ERBB4', 'gene_alias': ['ERBB4', 'HER4']}],
     'inhibitor_aliases': ['Giotrif;Gilotrif', 'Afatinib', 'BIBW-2992'],
     'chembl_id': ' CHEMBL1173655'}
     """
@@ -348,6 +349,16 @@ def get_sub_pho_from_chr_kar_loc(chromosome_input, karyotype_input=None):
     return results
 
 #Substrate search
+#Function to return a list of substrate name and substrate gene name
+def get_all_substrates():
+    """
+    Return a list of all substrates names and substrate gene names
+    """
+    substrate_list = [x[0] for x in s.query(SubstrateMeta.substrate_name).all()]
+    substrate_list.extend(x[0] for x in s.query(SubstrateMeta.substrate_gene_name).all())
+    return list(set(substrate_list))
+
+
 #Function to return the substrate metadata and its phosphosites' metadata from a substrate
 def get_substrate_phosphosites_from_substrate(substrate_input):
     """(str) --> dict
