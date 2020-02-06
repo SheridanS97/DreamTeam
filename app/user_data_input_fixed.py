@@ -63,7 +63,7 @@ def data_analysis(filename):
     log2FCKinase = NegLog10Kinase
    
     log2FCKinase.loc[:, "Log2 Fold Change"].replace([np.inf, -np.inf], np.nan, inplace=True)
-
+    final_substrate=log2FCKinase
     # Replace nan with 0.
     log2FCKinase.loc[:, "Log2 Fold Change"] =log2FCKinase.loc[:,"Log2 Fold Change"].fillna(0)
     
@@ -111,32 +111,33 @@ def data_analysis(filename):
 
     calculations_df=pd.DataFrame(calculations_dict)
     calculations_df=calculations_df.reset_index(level=['kinase'])
-    
-    return (calculations_df, df_final2,df_final3) #calculations_df)
+    final_substrate=final_substrate.drop(['Kinase'], axis=1)
+    return (calculations_df, final_substrate ,df_final3) #calculations_df)
 
+#calculations, final_substrate, df_final3=data_analysis('AZD5438.tsv')
 
 def VolcanoPlot_Sub(filename):
-    calculations_df, df_final2, df_final3=data_analysis(filename)
+    calculations_df, final_substrate, df_final3=data_analysis(filename)
     
     FC_T=1
     FC_TN=-1
     PV_T=-np.log10(0.05)
 
-    df_final2.loc[(df_final2['Log2 Fold Change'] > FC_T) & (df_final2['-Log10 Corrected P-Value'] > PV_T), 'color' ] = "Green"  # upregulated
-    df_final2.loc[(df_final2['Log2 Fold Change'] < FC_TN) & (df_final2['-Log10 Corrected P-Value'] > PV_T), 'color' ] = "Red"   # downregulated
-    df_final2['color'].fillna('grey', inplace=True)
+    final_substrate.loc[(final_substrate['Log2 Fold Change'] > FC_T) & (final_substrate['-Log10 Corrected P-Value'] > PV_T), 'color' ] = "Green"  # upregulated
+    final_substrate.loc[(final_substrate['Log2 Fold Change'] < FC_TN) & (final_substrate['-Log10 Corrected P-Value'] > PV_T), 'color' ] = "Red"   # downregulated
+    final_substrate['color'].fillna('grey', inplace=True)
 
     output_notebook()
 
     category = 'Substrate'
 
-    category_items = df_final3[category].unique()
+    category_items = final_substrate[category].unique()
     title="Volcano Plot"
 
     #title = Inhibitor + " :Data with identified kinases"
     #feeding data into ColumnDataSource
 
-    source = ColumnDataSource(df_final2)
+    source = ColumnDataSource(final_substrate)
 
     hover = HoverTool(tooltips=[
                                 ('Substrate', '@Substrate'),
@@ -162,11 +163,11 @@ def VolcanoPlot_Sub(filename):
     html=file_html(p, CDN, "Volcano Plot of Substrates" )
     return html
 
-VolcanoPlotSub=VolcanoPlot_Sub('AZD5438.tsv')
+#VolcanoPlotSub=VolcanoPlot_Sub('AZD5438.tsv')
 
 
 def VolcanoPlot(filename):
-    calculations_df, df_final2, df_final3=data_analysis(filename)
+    calculations_df, final_substrate, df_final3=data_analysis(filename)
     
     FC_T=1
     FC_TN=-1
@@ -211,7 +212,7 @@ def VolcanoPlot(filename):
 
     html=file_html(p, CDN, "Volcano Plot of Filtered Kinases" )
     return html
-Volc_plot=VolcanoPlot('AZD5438.tsv')
+#Volc_plot=VolcanoPlot('AZD5438.tsv')
 
 def EnrichmentPlot(filename):
     calculations_df, df_final2, df_final3=data_analysis(filename)
@@ -229,7 +230,7 @@ def EnrichmentPlot(filename):
 
     hover = HoverTool(tooltips=[('Enrichment)','@Enrichment'),
                                 ('Number of Substrates', '@m'),
-                                ('P-value', 'P_value')])
+                                ('P-value', '@P_value')])
 
     tools = [hover, WheelZoomTool(), PanTool(), BoxZoomTool(), ResetTool(), SaveTool()]
     p = figure(tools=tools, y_range=kinase, x_range=((enrichment.min()-5), (enrichment.max()+5)), plot_width=600, plot_height=800, toolbar_location=None,
@@ -243,4 +244,4 @@ def EnrichmentPlot(filename):
 
     html=file_html(p, CDN, "Kinase Substrate Enrichment" )
     return html
-enrich=EnrichmentPlot('AZD5438.tsv')
+#enrich=EnrichmentPlot('AZD5438.tsv')

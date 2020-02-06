@@ -1,35 +1,36 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class ="content-section">
-        <legend class="border-bottom mb-4">List of Inhibitors</legend>
+        <legend class="border-bottom mb-4">Search for Inhibitors
+</legend>
 
 
-{{ALL_inhibitors}}
 
 
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Name, ID or Target...">
 
 <table id="myTable" class="table table-hover table-bordered table-sm">
 
   <tr>
      
      <th> Inhibitors </th>
-     <th> Molecular Weight </th>
-     <th> Empirical Formula </th>
-     <th colspan="2">  Target </th>
+     <th> Chembl ID </th>
+     <th> Inhibitor Aliases </th>
+     <th> Target </th>
   </tr>
 
   {% for dict_item in ALL_inhibitors %}
   <tr>
      <td> <a href = "/Inhibitors/{{dict_item['inhibitor_name']}}">{{ dict_item['inhibitor_name'] }}</a></td>
-     <td> {{ dict_item['molecular_weight'] }}</td>
-     <td> {{ dict_item['empirical_formula'] }}</td>
-     {% for item in dict_item.kinases %}
-     <td colspan="4" > {{item['gene_name']}}</td>
-          {% endfor %}
+     <td> {{ dict_item['chembl_id'] }}</td>
+     <td> {{",  ".join (dict_item['inhibitor_aliases']) }}</td>
+     <td> {{ dict_item['kinases'][0]['gene_name'] }}</td>
+ 
   </tr>
   {% endfor %}
+
+
 
   <script>
   // function used in the table to filter via user search 
@@ -63,4 +64,5 @@
 
 </script>
 </table>
+
 {% endblock content %}
