@@ -314,39 +314,32 @@ def get_location_through_chromosome_karyotype(chromosome_input, karyotype_input,
     return results
 
 #Function to return the substrate and phosphosite details when user look for chromosome number and/or karyotype and/or phosphosites
-def get_sub_pho_from_chr_kar_loc(chromosome_input, karyotype_input=None, phosphosite_location_input=None):
+def get_sub_pho_from_chr_kar_loc(chromosome_input, karyotype_input=None):
     """
     Return a list of dict.
     Karyotype and phosphosite location are None by default in case a user only search for chromosome.
     >> get_sub_pho_from_chr_kar_loc(2,"q35",'216160126:216160128')
-    [{'substrate gene': 'XRCC5',
-    'substrate name': 'Ku80',
-    'substrate_url': 'https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr2%3A216107464%2D216206303&hgsid=796473843_RdusyHlWn1O3a5PrtgCz1VDHBQGv',
-    'phosphosite': 'S577', 'chromosome': 2, 'karyotype': 'q35', 'strand': 1, 'start': 216160126,
-    'end': 216160128, 'neighbouring sequences': 'EQGGAHFsVSsLAEG', 'kinases': ['PRKDC']}]
+    [{'substrate gene': 'DES','substrate name': 'desmin',
+    'substrate_url': 'https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr2%3A219418377%2D219426734&hgsid=796473843_RdusyHlWn1O3a5PrtgCz1VDHBQGv',
+    'phosphosite': 'T76','phosphosite_location': '219418688:219418690','chromosome': 2,'karyotype': 'q35',
+    'strand': 1,'neighbouring sequences': 'LRAsRLGttRtPssy','kinases': ['PRKACA', 'ROCK1']},
     """
     results = []
     if karyotype_input == None: #this means if user only search for chromosome number
         phosphosite_query = s.query(PhosphositeMeta).filter(PhosphositeMeta.chromosome==chromosome_input).all()
-    elif phosphosite_location == None: #if user only search for chromosome number and karyotype
+    else: #if user only for chromosome number and karyotype
         phosphosite_query = s.query(PhosphositeMeta).filter(and_(PhosphositeMeta.chromosome==chromosome_input,
                                                              PhosphositeMeta.karyotype_band==karyotype_input)).all()
-    else: #if user search for all three
-        start_location = phosphosite_location_input.split(":")[0] #get only the start coordinate
-        phosphosite_query = s.query(PhosphositeMeta).filter((PhosphositeMeta.chromosome==chromosome_input)&
-                                                            (PhosphositeMeta.karyotype_band==karyotype_input)&
-                                                            (PhosphositeMeta.start_position==start_location)).all()
     for phosphosite_obj in phosphosite_query:
         tmp={}
         tmp["substrate gene"]=phosphosite_obj.substrate.substrate_gene_name
         tmp["substrate name"]=phosphosite_obj.substrate.substrate_name
         tmp["substrate_url"]=phosphosite_obj.substrate.substrate_url
         tmp["phosphosite"]=phosphosite_obj.phosphosite
+        tmp["phosphosite_location"]="{}:{}".format(phosphosite_obj.start_position, phosphosite_obj.end_position)
         tmp["chromosome"]=phosphosite_obj.chromosome
         tmp["karyotype"]=phosphosite_obj.karyotype_band
         tmp["strand"]=phosphosite_obj.strand
-        tmp["start"]=phosphosite_obj.start_position
-        tmp["end"]=phosphosite_obj.end_position
         tmp["neighbouring sequences"]=phosphosite_obj.neighbouring_sequences
         tmp["kinases"] =[]
         for kinase in phosphosite_obj.kinases:
@@ -370,9 +363,10 @@ def get_substrate_phosphosites_from_substrate(substrate_input):
     'end_position': 44088492, 'neighbouring_sequences': 'RPLSRtQsSPLPQsP'},...],
     'substrate_url': 'https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr17%3A44076746%2D44123702&hgsid=796473843_RdusyHlWn1O3a5PrtgCz1VDHBQGv'}
     """
+    #look for SubstrateMeta obj with the query
     substrate_query = s.query(SubstrateMeta).filter(or_(SubstrateMeta.substrate_gene_name==substrate_input, SubstrateMeta.substrate_name==substrate_input,\
                 SubstrateMeta.substrate_uniprot_entry==substrate_input, SubstrateMeta.substrate_uniprot_number==substrate_input)).all()
-    if substrate_query == []:
+    if substrate_query == []: #if no such obj was found, skip it
         return []
     for substrate in substrate_query:
         return substrate.to_dict()
@@ -424,11 +418,12 @@ def get_phosphosite_meta_from_substrate(substrate_input):
     'neighbouring_sequences': 'GEPGLsHsGsEQPEQ'},...]
     """
     results = []
+    #look for the phosphosite object that matches the query
     phosphosite_query = s.query(PhosphositeMeta)\
     .filter(PhosphositeMeta.substrate_meta_id==SubstrateMeta.substrate_id)\
     .filter(or_(SubstrateMeta.substrate_gene_name==substrate_input, SubstrateMeta.substrate_name==substrate_input,\
                 SubstrateMeta.substrate_uniprot_entry==substrate_input, SubstrateMeta.substrate_uniprot_number==substrate_input)).all()
-    if phosphosite_query == []:
+    if phosphosite_query == []: #if query not found, return an empty list
         return []
     for row in phosphosite_query:
         results.append(row.to_dict())
