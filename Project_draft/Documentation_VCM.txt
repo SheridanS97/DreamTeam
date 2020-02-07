@@ -11,6 +11,15 @@ Using VMC model, user never has direct access to the database. This prevents the
 
 In our version of web application, our controller were separated into two different bits because one part of the sortware application deals with users' uploaded document in order to return graphical representations. 
 
+Advantages of VCM
+-easier multiple programmers to coordinate and work together.
+-reduces the load for one person.
+-faster development as multiple stages could be developed simultaneously.
+
+Disadvantage of VCM
+-needs clear boundaries of the tasks division in the beginning
+-VCM architecture is not the easiest to understand for junior programmers.
+
 VCM1
 In the first VCM, user puts would search for something which is then passed to the controller. The controller uses functions from the Model to query the database before returning the data back to View. View would then render the information into user-friendly format.
 
