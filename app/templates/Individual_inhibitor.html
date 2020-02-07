@@ -29,7 +29,9 @@
         <td>{{", ".join(Individual_Inhibitor['inhibitor_aliases'])}} </td>
       </tr>
        <th scope="row">Gene Name</th>
-        <td>{{Individual_Inhibitor['kinases'][0]['gene_name']}} </td>
+        <td> {% for dict_item in Individual_Inhibitor['kinases'] %}
+                  {{dict_item['gene_name']}} 
+                {% endfor %} </td>
       </tr>
        <th scope="row">Gene Alias</th>
         <td>{{ ", ".join (Individual_Inhibitor['kinases'][0]['gene_alias'])}} </td>
@@ -37,7 +39,9 @@
 	
     </table>
 
-
+{% for dict_item in Individual_Inhibitor['kinases'] %}
+{{dict_item['gene_name']}}
+  {% endfor %}
 
 
 

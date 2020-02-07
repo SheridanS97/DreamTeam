@@ -50,7 +50,7 @@ def get_gene_alias_protein_name(kinase_input):
     for meta in kinase_query:
         results = {}
         results["Gene_Name"] = meta.to_dict()["gene_name"]
-        results["Gene aliases"] = meta.to_dict()["gene_aliases"]
+        results["Gene_aliases"] = meta.to_dict()["gene_aliases"]
         results["Protein_Name"] = meta.to_dict()["protein_name"]
         results["Uniprot_id"] = meta.to_dict()["uniprot_number"]
         tmp.append(results)

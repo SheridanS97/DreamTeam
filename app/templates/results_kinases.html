@@ -11,6 +11,7 @@
     <th>Gene Name</th>
     <th>Gene Aliases</th>
     <th>Protein Name</th>
+    <th>Uniprot ID</th>
 
   </tr>
 
@@ -21,10 +22,13 @@
       <a href ="/HumanKinases/results_kinases/{{search_kinase}}/{{items.Gene_Name}}">{{ items.Gene_Name }}</a> </td>
     <td> {{ ", ".join(items.Gene_aliases) }} </td>
     <td> {{ items.Protein_Name }} </td>
+    <td> {{ items.Uniprot_id }} </td>
   </tr>
   {% endfor %}
 
 </table>
+
+
 {% endblock content %}
 
 
