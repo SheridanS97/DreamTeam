@@ -8,7 +8,7 @@
 
 
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Name, ID or Target...">
+<input class="form-control" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Name, ID or Target...">
 
 <table id="myTable" class="table table-hover table-bordered table-sm">
 
@@ -30,6 +30,9 @@
   </tr>
   {% endfor %}
 
+{% for dict_item in ALL_inhibitors['kinases'] %}
+                  {{dict_item}} 
+                {% endfor %} 
 
 
   <script>
