@@ -262,7 +262,7 @@ def EnrichmentPlot(filename, CV, p_val, FC):
 def df_html(filename, CV):
     calculations_df, final_substrate, df_final3=data_analysis(filename,CV)
     df_calc=calculations_df.to_html()
-    return df_final3.to_csv("kinases.csv")
+    return df_calc
     
 
 
