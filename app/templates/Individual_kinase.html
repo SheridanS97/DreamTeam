@@ -55,13 +55,18 @@
        <th scope="row">Inhibitor</th>
         <td>{{",  ".join(Inhibitor)}}</td>
       </tr>
+       
     </table>
+
+
+
+<small class="text-muted"> Need More Information  ? <a class="ml-2" target="_blank" href="https://www.uniprot.org/uniprot/{{Information['uniprot_entry']}}">Please Refer to Uniprot</a>
+                        </small>
 
 
 
   </div>
   <div class="tab-pane container fade" id="PS">
-
 
    <table class="table table-hover">
            <tr>
@@ -97,8 +102,6 @@
 
 
 
-
-
   </div>
   <div class="tab-pane container fade" id="GW">
     
@@ -107,9 +110,8 @@
 
       <!-- Kinase Annotation -->
     <section id="annot" class="tab-panel">
-      <h4 class="w3-border-bottom w3-border-light-grey w3-padding-12 w3-light-grey">{{Information["gene_name"]}} Protein Sequence Features </h4>
       <!-- Provista javascript -->
-      <div id="yourDiv" style="width:1024px; margin:auto;"></div>
+      <div id="yourDiv" style="width:800; margin :auto;"></div>
       <center><script>
           window.onload = function() {
               var yourDiv = document.getElementById('yourDiv');
