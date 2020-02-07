@@ -34,11 +34,12 @@ def get_gene_alias_protein_name(kinase_input):
     Returns empty list when no match is found.
     >> kin = "AKT"
     >> get_gene_alias_protein_name(kin)
-    [{'Gene_Name': 'AKT1', 'Gene aliases': ['AKT1', 'PKB', 'RAC'], 'Protein_Name': 'RAC-alpha serine/threonine-protein kinase'}, 
-    {'Gene_Name': 'AKT2', 'Gene aliases': ['AKT2'], 'Protein_Name': 'RAC-beta serine/threonine-protein kinase'}, 
-    {'Gene_Name': 'AKT3', 'Gene aliases': ['AKT3', 'PKBG'], 'Protein_Name': 'RAC-gamma serine/threonine-protein kinase'}]
-    >> get_gene_alias_protein_name("Q9Y243")
-    [{'Gene_Name': 'AKT3', 'Gene aliases': ['AKT3', 'PKBG'], 'Protein_Name': 'RAC-gamma serine/threonine-protein kinase'}]
+    [{'Gene aliases': ['AKT1', 'PKB', 'RAC'],'Gene_Name': 'AKT1',
+    'Protein_Name': 'RAC-alpha serine/threonine-protein kinase','Uniprot_id': 'P31749'},
+    {'Gene aliases': ['AKT2'],'Gene_Name': 'AKT2',
+    'Protein_Name': 'RAC-beta serine/threonine-protein kinase','Uniprot_id': 'P31751'},
+    {'Gene aliases': ['AKT3', 'PKBG'],'Gene_Name': 'AKT3',
+    'Protein_Name': 'RAC-gamma serine/threonine-protein kinase','Uniprot_id': 'Q9Y243'}]
     """
     like_kin = "%{}%".format(kinase_input) #changing the user input so that it's usable with like
     tmp = []
@@ -51,6 +52,7 @@ def get_gene_alias_protein_name(kinase_input):
         results["Gene_Name"] = meta.to_dict()["gene_name"]
         results["Gene_aliases"] = meta.to_dict()["gene_aliases"]
         results["Protein_Name"] = meta.to_dict()["protein_name"]
+        results["Uniprot_id"] = meta.to_dict()["uniprot_number"]
         tmp.append(results)
     return tmp
 
@@ -146,6 +148,7 @@ def get_substrates_phosphosites_from_gene(kinase_gene):
             tmp[gene] = [phosphosite.to_dict()] #create a new entry in the dictionary
     return tmp
 
+
 #Function to return a dictionary of kinase, substrate, phosphosite
 #For Sheridan's part
 def get_kinase_substrate_phosphosite(sub, pho):
@@ -165,6 +168,8 @@ def get_kinase_substrate_phosphosite(sub, pho):
     'substrate': 'Q9UQL6', 
     'phosphosite': 'S498'}
     """
+    if pho == "None": #if phosphosite is None (str)
+        return[]
     tmp = {}
     #get the PhosphositeMeta obj that has the Subtrate obj and the same phosphosite
     sub_pho_query = s.query(PhosphositeMeta).join(SubstrateMeta).filter(PhosphositeMeta.phosphosite==pho).\
@@ -358,6 +363,16 @@ def get_all_substrates():
     substrate_list.extend(x[0] for x in s.query(SubstrateMeta.substrate_gene_name).all())
     return list(set(substrate_list))
 
+
+def get_all_substrates_complete():
+    """
+    Return a list of all substrates names and substrate gene names
+    """
+    substrate_list = [x[0] for x in s.query(SubstrateMeta.substrate_name).all()]
+    substrate_list.extend(x[0] for x in s.query(SubstrateMeta.substrate_gene_name).all())
+    substrate_list.extend(x[0] for x in s.query(SubstrateMeta.substrate_uniprot_entry).all())
+    substrate_list.extend(x[0] for x in s.query(SubstrateMeta.substrate_uniprot_number).all())
+    return list(set(substrate_list))
 
 #Function to return the substrate metadata and its phosphosites' metadata from a substrate
 def get_substrate_phosphosites_from_substrate(substrate_input):

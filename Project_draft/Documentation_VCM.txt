@@ -1,0 +1,27 @@
+Documentation for VCM
+The design of the web application was inspired by View-Model-Controller (VMC) model commonly used in software design. VMC is a way to internally separate the codes into parts so that they are more orgnized and easier to share. It also allows task division much more efficient.
+
+Model is normally the component that contains the database or the closest component adjacent to database. In the design of this project, Database is separated from Model. Model contains codes to access the database, allowing organization and manipulation of the data. 
+
+View is the part that returns the information back to the user, in some from of graphical visualisations such as table, diagrams or charts.
+
+Controller is the liaison between Model and View. Controller retrieves the inputs from user and turn them into requests for the Model. 
+
+Using VMC model, user never has direct access to the database. This prevents the database from being corrupted.
+
+In our version of web application, our controller were separated into two different bits because one part of the sortware application deals with users' uploaded document in order to return graphical representations. 
+
+Advantages of VCM
+-easier multiple programmers to coordinate and work together.
+-reduces the load for one person.
+-faster development as multiple stages could be developed simultaneously.
+
+Disadvantage of VCM
+-needs clear boundaries of the tasks division in the beginning
+-VCM architecture is not the easiest to understand for junior programmers.
+
+VCM1
+In the first VCM, user puts would search for something which is then passed to the controller. The controller uses functions from the Model to query the database before returning the data back to View. View would then render the information into user-friendly format.
+
+VCM2
+In the second part of the VCM, user would upload a file via the controller. The controller also allows the users to specify their parameters. Using the function from model, controller would then retrieve the data needed from database and carry out neccesary analysis. The results of the analysis would then be returned to View and then the users.
