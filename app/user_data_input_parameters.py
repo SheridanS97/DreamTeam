@@ -31,10 +31,10 @@ from bokeh.palettes import brewer
 #CV=100
 
 def data_analysis(filename, CV):
-    
+    CV=(int(CV)/100)
     #read in txt file
-   # df_input_original = pd.read_csv(filename, sep='\t')
-    df_input_original = pd.read_csv("instance/Data_Upload/"+ filename,  sep='\t')
+    df_input_original = pd.read_csv(filename, sep='\t')
+    #df_input_original = pd.read_csv("../app/instance/Data_Upload/"+ filename,  sep='\t')
     
     #There are 86 columns in the dataframe, but only 7 columns have values, the rest are empty
     #Need to remove the empty columns
@@ -101,7 +101,7 @@ def data_analysis(filename, CV):
     df_final2=df_final2.explode('kinase')
     df_final3=df_final2.dropna(subset = ["kinase"])
     
-    df_final3= df_final3[(df_final3['ctrlCV'] <=  CV) & (df_final3['treatCV'] <= CV)]  
+    df_final3= df_final3[(df_final3['ctrlCV'] <= CV) & (df_final3['treatCV'] <= CV)]  
     
     mS = df_final3.groupby('kinase')['Log2 Fold Change'].mean()
     mP = df_final3['Log2 Fold Change'].mean()
@@ -132,14 +132,14 @@ def data_analysis(filename, CV):
     
     return (calculations_df, final_substrate ,df_final3) #calculations_df)
 
-#calculations, final_substrate, df_final3=data_analysis('AZD5438.tsv', CV)
+
 
 def VolcanoPlot_Sub(filename, CV, p_val, FC):
     calculations_df, final_substrate, df_final3=data_analysis(filename, CV)
     
-    
-    FC_N = -FC
-    PV=-np.log10(p_val)
+    FC=float(FC)
+    FC_N = -(float(FC))
+    PV=-np.log10(float(p_val))
 
     final_substrate.loc[(final_substrate['Log2 Fold Change'] > FC) & (final_substrate['-Log10 Corrected P-Value'] > PV), 'color' ] = "Green"  # upregulated
     final_substrate.loc[(final_substrate['Log2 Fold Change'] < FC_N) & (final_substrate['-Log10 Corrected P-Value'] > PV), 'color' ] = "Red"   # downregulated
@@ -178,14 +178,13 @@ def VolcanoPlot_Sub(filename, CV, p_val, FC):
     html=file_html(p, CDN, "Volcano Plot of Substrates" )
     return html
 
-#VolcanoPlotSub=VolcanoPlot_Sub('AZD5438.tsv', CV, p_val, FC)
 
 
 def VolcanoPlot(filename, CV, p_val, FC):
     calculations_df, final_substrate, df_final3=data_analysis(filename, CV)
-    
-    FC_N=-FC
-    PV=-np.log10(p_val)
+    FC=float(FC)
+    FC_N=-(float(FC))
+    PV=-np.log10(float(p_val))
 
     df_final3.loc[(df_final3['Log2 Fold Change'] > FC) & (df_final3['-Log10 Corrected P-Value'] > PV), 'color' ] = "Green"  # upregulated
     df_final3.loc[(df_final3['Log2 Fold Change'] < FC_N) & (df_final3['-Log10 Corrected P-Value'] > PV), 'color' ] = "Red"   # downregulated
@@ -226,7 +225,6 @@ def VolcanoPlot(filename, CV, p_val, FC):
 
     html=file_html(p, CDN, "Volcano Plot of Filtered Kinases" )
     return html
-#Volc_plot=VolcanoPlot('AZD5438.tsv',CV, p_val, FC)
 
 def EnrichmentPlot(filename, CV, p_val, FC):
     calculations_df, df_final2, df_final3=data_analysis(filename,CV)
@@ -234,8 +232,8 @@ def EnrichmentPlot(filename, CV, p_val, FC):
     reduc_calculations_df=calculations_df[calculations_df['m']>= 4]
     reduc_calculations_df=reduc_calculations_df.sort_values(by='Enrichment')
 
-    reduc_calculations_df.loc[(reduc_calculations_df['P_value'] < p_val), 'color'] = "Orange"  # significance 0.05# significance 0.01
-    reduc_calculations_df.loc[(reduc_calculations_df['P_value'] > p_val), 'color' ] = "Black"
+    reduc_calculations_df.loc[(reduc_calculations_df['P_value'] < float(p_val)), 'color'] = "Orange"  # significance 0.05# significance 0.01
+    reduc_calculations_df.loc[(reduc_calculations_df['P_value'] > float(p_val)), 'color' ] = "Black"
 
     kinase=reduc_calculations_df['kinase']
 
@@ -259,19 +257,17 @@ def EnrichmentPlot(filename, CV, p_val, FC):
     html=file_html(p, CDN, "Kinase Substrate Enrichment" )
     return html
 
-#enrich=EnrichmentPlot('AZD5438.tsv',CV, p_val, FC)
 
 
 def df_html(filename, CV):
     calculations_df, final_substrate, df_final3=data_analysis(filename,CV)
     df_calc=calculations_df.to_html()
-    return df_calc
-#df1_html=df_html('AZD5438.tsv', CV)
+    return df_final3.to_csv("kinases.csv")
+    
 
 
 def df2_html(filename,CV):
     calculations_df, final_substrate, df_final3=data_analysis(filename,CV)
     df_final_html=df_final3.to_html()
     return df_final_html
-#df2_html=df_final_html('AZD5438.tsv', CV)  
     
