@@ -6,38 +6,25 @@
   <legend class="border-bottom mb-4">Phosphosite search by location </legend>
         <form method = "POST">
             <div class="form-group">
-   
+
                    {{ Phospho_form.csrf_token }}
                     {{ Phospho_form.chromosome.label(class="form-control-label") }}
                      {{ Phospho_form.chromosome(class="form-control form-control-lg") }}
 
+                  
                     {{ Phospho_form.karyotype.label(class="form-control-label") }}
                      {{ Phospho_form.karyotype(class="form-control form-control-lg") }}
 
                        {% if Phospho_form.errors %}
                         {{ Phospho_form.errors }}
                         {% endif %}
+
                 </div>        
               <div class="form-group">
-               {{ Phospho_form.submit_for_position(class="btn btn-outline-info") }} 
+               {{ Phospho_form.submit(class="btn btn-outline-info") }} 
         </form> 
         
-
-             <form  method = "POST">
-              <div class="form-group">
-                        {{ Position_form.csrf_token }}
-                     {{ Position_form.position.label(class="form-control-label") }}
-                     {{ Position_form.position(class="form-control form-control-lg") }}
-               
-                      {% if Position_form.errors %}
-                        {{ Position_form.errors }}
-                        {% endif %}
-
-                  </div>
-                <div class="form-group">
-                       {{ Position_form.submit(class="btn btn-outline-info") }}  
-                </form> 
-    
+ 
     <div class="border-top pt-1">
                             <small class="text-muted"> Need Guidance  ? <a class="ml-2" href="{{ url_for('Help') }}">Refer to our Help section</a>
                              </small>
@@ -46,7 +33,7 @@
 
       <form method = "POST">
         <div class="form-group">
-                      {{ Substrate_form.csrf_token }}
+                    {{ Substrate_form.csrf_token }}
                     {{ Substrate_form.search.label(class="form-control-label") }}
                      {{ Substrate_form.search(class="form-control form-control-lg") }}
 
@@ -58,10 +45,9 @@
     <div class="form-group">
                 {{ Substrate_form.submit_substrate(class="btn btn-outline-info") }}
       </div>
-
     </form>
-
    </body> 
+
 
        <script>
           let chromosome_select = document.getElementById('chromosome');
