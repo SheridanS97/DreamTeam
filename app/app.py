@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 
 from Database.kinase_functions import *
 from forms import *
-from user_data_input_fixed import *
+from user_data_input_parameters import *
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '11d5c86229d773022cb61679343f8232'
@@ -59,11 +59,11 @@ def Parameter(filename):
     return render_template('data_parameter.html', form=form)
 
 
-@app.route("/upload/Parameters/<filename>/<PValue>/<Fold>/<Coeff>")
+@app.route("/upload/Parameters/<filename>/<PValue>/<Coeff>/<Fold>")
 def Visualisation(filename, PValue, Fold, Coeff):
-    VolcanoPlot1 = VolcanoPlot_Sub(filename)
-    VolcanoPlot2 = VolcanoPlot(filename)
-    Enrichment = EnrichmentPlot(filename)
+    VolcanoPlot1 = VolcanoPlot_Sub(filename, Coeff, PValue, Fold)
+    VolcanoPlot2 = VolcanoPlot(filename, Coeff, PValue, Fold)
+    Enrichment = EnrichmentPlot(filename, Coeff, PValue, Fold)
     return render_template('data_analysis_results.html',filename=filename, PValue=PValue, Fold=Fold, Coeff=Coeff, VolcanoPlot1=VolcanoPlot1, VolcanoPlot2=VolcanoPlot2, Enrichment=Enrichment)   
 
 
@@ -103,25 +103,22 @@ def Individual_kinase(search_kinase,gene):
 def Phosphosites():
     Phospho_form = Phosphosite()
     Substrate_form = Substrate()
-    Position_form = Position()
+
     Phospho_form.chromosome.choices = get_all_chromosome()
-    chr_number = Phospho_form.chromosome.data
-    Phospho_form.karyotype.choices = get_karyotype_through_chromosome(chr_number)
-    kar_input = Phospho_form.karyotype.data
-    Position_form.position.choices = get_location_through_chromosome_karyotype(chr_number, kar_input)
 
-    if Phospho_form.is_submitted() :
-        chr_number = Phospho_form.chromosome.data
-        kar_input = Phospho_form.karyotype.data
-        flash('subitted: '+ chr_number + ','+ kar_input, 'info')
-        Position_form.position.choices = get_location_through_chromosome_karyotype(chr_number, kar_input)
-        return redirect(url_for('results_phosphosite2'))
+    if request.method == "POST":
+        if Substrate_form.validate_on_submit():
+            substrate_input = Substrate_form.search.data
+            return redirect(url_for('results_by_substrate',substrate_input=substrate_input) )
 
-
-    if Substrate_form.validate_on_submit():
-        substrate_input = Substrate_form.search.data
-        return redirect(url_for('results_phosphosite',substrate_input=substrate_input) )
-    return render_template('Phosphosite.html', title='Phosphosite Search', Substrate_form=Substrate_form, Phospho_form=Phospho_form, Position_form =Position_form)
+        if Phospho_form.validate_on_submit() == False:
+            chr_number = Phospho_form.chromosome.data
+            kar_input = Phospho_form.karyotype.data
+            kar_inputs = kar_input.replace(" ", "")
+            flash('subitted: '+ chr_number + ','+ kar_inputs, 'info')
+            return redirect(url_for('results_phosphosite2', chr_number=chr_number,kar_inputs=kar_inputs ))
+    
+    return render_template('Phosphosite.html', title='Phosphosite Search', Substrate_form=Substrate_form, Phospho_form=Phospho_form)
 
 
 @app.route("/karyotype/<chromosome>")
@@ -130,14 +127,16 @@ def karyotype(chromosome):
     return jsonify({'karyotypes': karyotypes})
 
 
+
 @app.route("/Phosphosite_result/<substrate_input>")
-def results_phosphosite(substrate_input):
-    substrate_info = get_phosphosite_meta_from_substrate(substrate_input)
+def results_by_substrate(substrate_input):
+    substrate_info = get_substrate_phosphosites_from_substrate(substrate_input)
     return render_template('results_phosphosite.html', substrate_info=substrate_info)
 
-@app.route("/Phosphosite_result")
-def results_phosphosite2():
-    return render_template('results_phosphosite_location.html')
+@app.route("/Phosphosite_result/<chr_number>/<kar_inputs>")
+def results_phosphosite2(chr_number,kar_inputs):
+    Info_by_chromosome_karyotype = get_sub_pho_from_chr_kar_loc(chr_number ,kar_inputs)
+    return render_template('results_phosphosite_location.html', Info_by_chromosome_karyotype=Info_by_chromosome_karyotype,chr_number=chr_number,kar_inputs=kar_inputs )
 
 @app.route("/Inhibitors", methods = ['GET', 'POST'])
 def Inhibitors():
