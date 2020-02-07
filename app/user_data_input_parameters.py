@@ -133,7 +133,6 @@ def data_analysis(filename, CV):
     return (calculations_df, final_substrate ,df_final3) #calculations_df)
 
 
-
 def VolcanoPlot_Sub(filename, CV, p_val, FC):
     calculations_df, final_substrate, df_final3=data_analysis(filename, CV)
     
@@ -177,7 +176,6 @@ def VolcanoPlot_Sub(filename, CV, p_val, FC):
 
     html=file_html(p, CDN, "Volcano Plot of Substrates" )
     return html
-
 
 
 def VolcanoPlot(filename, CV, p_val, FC):
@@ -257,17 +255,13 @@ def EnrichmentPlot(filename, CV, p_val, FC):
     html=file_html(p, CDN, "Kinase Substrate Enrichment" )
     return html
 
-
-
 def df_html(filename, CV):
     calculations_df, final_substrate, df_final3=data_analysis(filename,CV)
     df_calc=calculations_df.to_html()
-    return df_final3.to_csv("kinases.csv")
-    
-
+    return df_calc
 
 def df2_html(filename,CV):
     calculations_df, final_substrate, df_final3=data_analysis(filename,CV)
     df_final_html=df_final3.to_html()
     return df_final_html
-    
+   
