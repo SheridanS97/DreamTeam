@@ -34,11 +34,12 @@ def get_gene_alias_protein_name(kinase_input):
     Returns empty list when no match is found.
     >> kin = "AKT"
     >> get_gene_alias_protein_name(kin)
-    [{'Gene_Name': 'AKT1', 'Gene aliases': ['AKT1', 'PKB', 'RAC'], 'Protein_Name': 'RAC-alpha serine/threonine-protein kinase'}, 
-    {'Gene_Name': 'AKT2', 'Gene aliases': ['AKT2'], 'Protein_Name': 'RAC-beta serine/threonine-protein kinase'}, 
-    {'Gene_Name': 'AKT3', 'Gene aliases': ['AKT3', 'PKBG'], 'Protein_Name': 'RAC-gamma serine/threonine-protein kinase'}]
-    >> get_gene_alias_protein_name("Q9Y243")
-    [{'Gene_Name': 'AKT3', 'Gene aliases': ['AKT3', 'PKBG'], 'Protein_Name': 'RAC-gamma serine/threonine-protein kinase'}]
+    [{'Gene aliases': ['AKT1', 'PKB', 'RAC'],'Gene_Name': 'AKT1',
+    'Protein_Name': 'RAC-alpha serine/threonine-protein kinase','Uniprot_id': 'P31749'},
+    {'Gene aliases': ['AKT2'],'Gene_Name': 'AKT2',
+    'Protein_Name': 'RAC-beta serine/threonine-protein kinase','Uniprot_id': 'P31751'},
+    {'Gene aliases': ['AKT3', 'PKBG'],'Gene_Name': 'AKT3',
+    'Protein_Name': 'RAC-gamma serine/threonine-protein kinase','Uniprot_id': 'Q9Y243'}]
     """
     like_kin = "%{}%".format(kinase_input) #changing the user input so that it's usable with like
     tmp = []
@@ -49,8 +50,9 @@ def get_gene_alias_protein_name(kinase_input):
     for meta in kinase_query:
         results = {}
         results["Gene_Name"] = meta.to_dict()["gene_name"]
-        results["Gene_aliases"] = meta.to_dict()["gene_aliases"]
+        results["Gene aliases"] = meta.to_dict()["gene_aliases"]
         results["Protein_Name"] = meta.to_dict()["protein_name"]
+        results["Uniprot_id"] = meta.to_dict()["uniprot_number"]
         tmp.append(results)
     return tmp
 
