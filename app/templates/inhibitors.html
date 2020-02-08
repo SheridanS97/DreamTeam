@@ -25,14 +25,14 @@
      <td> <a href = "/Inhibitors/{{dict_item['inhibitor_name']}}">{{ dict_item['inhibitor_name'] }}</a></td>
      <td> {{ dict_item['chembl_id'] }}</td>
      <td> {{",  ".join (dict_item['inhibitor_aliases']) }}</td>
-     <td> {{ dict_item['kinases'][0]['gene_name'] }}</td>
+     <td> {% for item in dict_item['kinases'] %}  
+      <a href ="/{{item['gene_name']}}">{{item['gene_name']}}</a>  
+        {% endfor %}</td>
+     
  
   </tr>
   {% endfor %}
 
-{% for dict_item in ALL_inhibitors['kinases'] %}
-                  {{dict_item}} 
-                {% endfor %} 
 
 
   <script>
