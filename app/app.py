@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, url_for, flash, redirect, request, jsonify
+from flask import Flask, render_template, url_for, flash, redirect, request, jsonify, send_from_directory
 from werkzeug.utils import secure_filename
 
 from Database.kinase_functions import *
@@ -122,17 +122,21 @@ def Phosphosites():
 
     if request.method == "POST":
         if Substrate_form.validate_on_submit():
-            substrate_input = Substrate_form.search.data
-
-            return redirect(url_for('results_by_substrate',substrate_input=substrate_input) )
+            substrate_input = Substrate_form.search.data.upper()
+            if substrate_input in get_all_substrates():
+                return redirect(url_for('results_by_substrate',substrate_input=substrate_input) )
+            else:
+                flash("Not valid substrate name", "danger")
+                return redirect(url_for('Phosphosites'))
 
         if Phospho_form.validate_on_submit() == False:
             chr_number = Phospho_form.chromosome.data
             kar_input = Phospho_form.karyotype.data
             kar_inputs = kar_input.replace(" ", "")
-            flash('subitted: '+ chr_number + ','+ kar_inputs, 'info')
-            return redirect(url_for('results_phosphosite2', chr_number=chr_number,kar_inputs=kar_inputs ))
-    
+            if kar_inputs:
+                flash('subitted: '+ chr_number + ','+ kar_inputs, 'info')
+                return redirect(url_for('results_phosphosite2', chr_number=chr_number,kar_inputs=kar_inputs ))
+
     return render_template('Phosphosite.html', title='Phosphosite Search', Substrate_form=Substrate_form, Phospho_form=Phospho_form)
 
 
@@ -162,7 +166,6 @@ def Inhibitors():
 def Individual_Inhibitors(inhibitor):
     Individual_Inhibitor = get_inhibitor_meta_from_inhibitor(inhibitor)
     return render_template('Individual_inhibitor.html', title='Individual Inhibitors', Individual_Inhibitor=Individual_Inhibitor, inhibitor=inhibitor)
-
 
 @app.route("/help")
 def Help():
