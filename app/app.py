@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, url_for, flash, redirect, request, jsonify, send_from_directory
+from flask import Flask, render_template, url_for, flash, redirect, request, jsonify
 from werkzeug.utils import secure_filename
 
 from Database.kinase_functions import *
