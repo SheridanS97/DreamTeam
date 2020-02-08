@@ -34,8 +34,8 @@ from bokeh.layouts import row
 def data_analysis(filename, CV):
     CV=(int(CV)/100)
     #read in txt file
-    df_input_original = pd.read_csv(filename, sep='\t')
-    #df_input_original = pd.read_csv("../app/instance/Data_Upload/"+ filename,  sep='\t')
+    #df_input_original = pd.read_csv(filename, sep='\t')
+    df_input_original = pd.read_csv("../app/instance/Data_Upload/"+ filename,  sep='\t')
     
     #There are 86 columns in the dataframe, but only 7 columns have values, the rest are empty
     #Need to remove the empty columns
@@ -138,7 +138,6 @@ def data_analysis(filename, CV):
     #user define CV value: Rows Above CV filtered out
     
     return (calculations_df, final_substrate ,df_final3) #calculations_df)
-calculations_df, final_substrate, df_final3=data_analysis("mux.tsv", 100)
 
 
 def VolcanoPlot_Sub(final_substrate, CV, p_val, FC):
