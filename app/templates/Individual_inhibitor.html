@@ -23,7 +23,7 @@
         <td>{{Individual_Inhibitor['inchi']}} </td>
       <tr>
       <th scope="row">Image</th>
-        <td><img src="{{Individual_Inhibitor['images_url']}}" height="200" width="300"></td>
+        <td><img src="{{Individual_Inhibitor['images_url']}}" height="200" width="250"></td>
       </tr>
       <th scope="row">Inhibitor Aliases</th>
         <td>{{", ".join(Individual_Inhibitor['inhibitor_aliases'])}} </td>
@@ -34,14 +34,13 @@
                 {% endfor %} </td>
       </tr>
        <th scope="row">Gene Alias</th>
-        <td>{{ ", ".join (Individual_Inhibitor['kinases'][0]['gene_alias'])}} </td>
+          <td> {% for dict_item in Individual_Inhibitor['kinases'] %}
+                  {{", ".join(dict_item['gene_alias'])}} 
+                {% endfor %} </td>
       </tr>
 	
     </table>
 
-{% for dict_item in Individual_Inhibitor['kinases'] %}
-{{dict_item['gene_name']}}
-  {% endfor %}
 
 
 
