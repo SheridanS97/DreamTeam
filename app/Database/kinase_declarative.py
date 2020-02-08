@@ -141,9 +141,15 @@ class PhosphositeMeta(Base):
                 "start_position": self.start_position,
                 "end_position": self.end_position,
                 "neighbouring_sequences": self.neighbouring_sequences,
+                "kinases": self.get_kinase_list()
                 }
         return output
 
+    def get_kinase_list(self):
+        """
+        Return the list of kinase related to the phosphosites.
+        """
+        return [kinase.gene_name for kinase in self.kinases]
 
 class KinaseInhibitorRelations(Base):
     # a many to many relationship table between kinase and the inhibitors
