@@ -49,22 +49,28 @@ def Data_Upload():
 def Parameter(filename):
     form = Parameters()
     if request.method == "POST":
-        if form.validate_on_submit():
-            PValue = form.PValue.data
-            Fold = form.Fold.data
-            Coeff = form.Coefficience.data
-            return redirect(url_for('Visualisation' ,filename=filename, PValue=PValue, Fold=Fold, Coeff=Coeff ))
+        PValue = form.PValue.data
+        Fold = form.Fold.data
+        Coeff = form.Coefficience.data
+        if 0 <= PValue <= 0.05:
+            if 0 <= Coeff <= 100:
+                return redirect(url_for('Visualisation', filename=filename, PValue=PValue, Fold=Fold, Coeff=Coeff ))
+            else:
+                flash("Coefficience of Variance Threshold must be a whole number between 0 to 100", "danger")
+
         else:
-            flash("P-Value Threshold must be between 0 - 0.05 and Coefficience of Variance Threshold must be a whole number between 0 to 100", "danger")
+            flash("P-Value Threshold must be between 0 - 0.05", "danger")
     return render_template('data_parameter.html', form=form)
 
 
 @app.route("/upload/Parameters/<filename>/<PValue>/<Coeff>/<Fold>")
+@app.route("/upload/Parameters/<filename>/<PValue>/<Fold>/<Coeff>")
 def Visualisation(filename, PValue, Fold, Coeff):
-    VolcanoPlot1 = VolcanoPlot_Sub(filename, Coeff, PValue, Fold)
-    VolcanoPlot2 = VolcanoPlot(filename, Coeff, PValue, Fold)
-    Enrichment = EnrichmentPlot(filename, Coeff, PValue, Fold)
-    return render_template('data_analysis_results.html',filename=filename, PValue=PValue, Fold=Fold, Coeff=Coeff, VolcanoPlot1=VolcanoPlot1, VolcanoPlot2=VolcanoPlot2, Enrichment=Enrichment)   
+    calculations_df,df_final2,df_final3=data_analysis(filename, Coeff)
+    VolcanoPlot1 = VolcanoPlot_Sub(df_final2, Coeff, PValue,Fold)
+    VolcanoPlot2 = VolcanoPlot(df_final3, Coeff, PValue, Fold)
+    Enrichment = EnrichmentPlot(calculations_df, Coeff, PValue, Fold)
+    return render_template('data_analysis_results.html',filename=filename, PValue=PValue, Fold=Fold, Coeff=Coeff, VolcanoPlot1=VolcanoPlot1, VolcanoPlot2=VolcanoPlot2, Enrichment=Enrichment)
 
 
 @app.route("/HumanKinases", methods = ['GET', 'POST'])
@@ -98,6 +104,14 @@ def Individual_kinase(search_kinase,gene):
     Inhibitor = get_inhibitors_from_gene(gene)
     return render_template('Individual_kinase.html', title='Individual Kinase Page', Inhibitor= Inhibitor, gene = gene, Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
 
+@app.route("/<gene>")
+def kinase_from_inhibitor_page(gene):
+    Information = get_gene_metadata_from_gene(gene)
+    subcellular_location = (get_subcellular_location_from_gene(gene))
+    substrate_phosphosites = get_substrates_phosphosites_from_gene(gene)
+    Inhibitor = get_inhibitors_from_gene(gene)
+    return render_template('Individual_kinase.html', title='Individual Kinase Page', Inhibitor= Inhibitor, gene = gene, Information = Information, subcellular_location= subcellular_location, substrate_phosphosites=substrate_phosphosites)
+
 
 @app.route("/Phosphosite", methods= ['GET', 'POST'])
 def Phosphosites():
@@ -109,6 +123,7 @@ def Phosphosites():
     if request.method == "POST":
         if Substrate_form.validate_on_submit():
             substrate_input = Substrate_form.search.data
+
             return redirect(url_for('results_by_substrate',substrate_input=substrate_input) )
 
         if Phospho_form.validate_on_submit() == False:
