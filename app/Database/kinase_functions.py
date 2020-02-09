@@ -368,10 +368,12 @@ def get_all_substrates_complete():
     """
     Return a list of all substrates names and substrate gene names
     """
-    substrate_list = [x[0] for x in s.query(SubstrateMeta.substrate_name).all()]
-    substrate_list.extend(x[0] for x in s.query(SubstrateMeta.substrate_gene_name).all())
-    substrate_list.extend(x[0] for x in s.query(SubstrateMeta.substrate_uniprot_entry).all())
-    substrate_list.extend(x[0] for x in s.query(SubstrateMeta.substrate_uniprot_number).all())
+    substrate_list = []
+    for substrate in s.query(SubstrateMeta).all():
+        substrate_list.append(substrate.substrate_name)
+        substrate_list.append(substrate.substrate_gene_name)
+        substrate_list.append(substrate.substrate_uniprot_entry)
+        substrate_list.append(substrate.substrate_uniprot_number)
     return list(set(substrate_list))
 
 #Function to return the substrate metadata and its phosphosites' metadata from a substrate
@@ -381,19 +383,35 @@ def get_substrate_phosphosites_from_substrate(substrate_input):
     Phosphosite will be in a list of dictionaries.
     Refer to Database_query_II for more information.
     >> get_substrate_phosphosites_from_substrate('PTPRA')
-    {}
+    []
     >> get_substrate_phosphosites_from_substrate('HDAC5')
-    {'substrate_id': 42, 'substrate_name': 'HDAC5', 'substrate_gene_name': 'HDAC5', 'substrate_uniprot_entry': 'HDAC5_HUMAN',
-    'substrate_uniprot_number': 'Q9UQL6', 'phosphosites': [{'phosphosite_meta_id': 57, 'substrate_meta_id': 42,
-    'phosphosite': 'S498', 'chromosome': 17, 'karyotype_band': 'q21.31', 'strand': -1, 'start_position': 44088494,
-    'end_position': 44088492, 'neighbouring_sequences': 'RPLSRtQsSPLPQsP'},...],
+    {'substrate_id': 42,'substrate_name': 'HDAC5',
+    'substrate_gene_name': 'HDAC5',
+    'substrate_uniprot_entry': 'HDAC5_HUMAN',
+    'substrate_uniprot_number': 'Q9UQL6',
+    'phosphosites': [{'phosphosite_meta_id': 57,
+                   'substrate_meta_id': 42,
+                   'phosphosite': 'S498',
+                   'chromosome': 17,
+                   'karyotype_band': 'q21.31',
+                   'strand': -1,
+                   'start_position': 44088494,
+                   'end_position': 44088492,
+                   'neighbouring_sequences': 'RPLSRtQsSPLPQsP',
+                   'kinases': ['CAMK1',
+                    'CAMK2A',
+                    'CAMK4',
+                    'PRKAA1',
+                    'PRKAA2',
+                    'PRKD1',
+                    'PRKD2',
+                    'PRKD3']},...]
     'substrate_url': 'https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr17%3A44076746%2D44123702&hgsid=796473843_RdusyHlWn1O3a5PrtgCz1VDHBQGv'}
     """
-    #look for SubstrateMeta obj with the query
     substrate_query = s.query(SubstrateMeta).filter(or_(SubstrateMeta.substrate_gene_name==substrate_input, SubstrateMeta.substrate_name==substrate_input,\
                 SubstrateMeta.substrate_uniprot_entry==substrate_input, SubstrateMeta.substrate_uniprot_number==substrate_input)).all()
-    if substrate_query == []: #if no such obj was found, skip it
-        return []
+    if substrate_query == []:
+        return {}
     for substrate in substrate_query:
         return substrate.to_dict()
     
