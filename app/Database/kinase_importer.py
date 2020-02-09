@@ -11,8 +11,8 @@ import json
 # import the library
 import os
 
-from db_setup import s
-from kinase_declarative import *
+from .db_setup import s
+from .kinase_declarative import *
 
 #setting the directories of the files
 #these will need to be changed accordingly if one were to generate the database
