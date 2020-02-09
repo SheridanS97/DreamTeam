@@ -1,14 +1,50 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class ="content-section">
+      <!-- download button -->
+      <button class="btn float-right" style="width:25%" onclick="exportTableToCSV('Inhibitors.csv')"><i class="fa fa-download"></i>Download</button>
+
+<!-- Email button -->
+        <div id="share-buttons" class="float-right">
+   <a href="mailto:?Subject=List of Inhibitors&amp;Body= http://127.0.0.1:5000/HumanKinases/results_kinases/akt">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+    </div>
+<style type="text/css">
+#share-buttons img {
+width: 40px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+</style>
+
         <legend class="border-bottom mb-4">Search for Inhibitors
 </legend>
 
+<!-- add download icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
 
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
 
-
+<!-- search bar -->
 <input class="form-control" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Name, ID or Target...">
+
 
 <table id="myTable" class="table table-hover table-bordered table-sm">
 
@@ -67,5 +103,47 @@
 
 </script>
 </table>
+
+<script>
+ function downloadCSV(csv, filename) {
+                var csvFile;
+                var downloadLink;
+
+                csvFile = new Blob([csv], {type: "text/csv"});
+
+
+                downloadLink = document.createElement("a");
+
+                downloadLink.download = filename;
+
+                downloadLink.href = window.URL.createObjectURL(csvFile);
+
+
+                downloadLink.style.display = "none";
+
+                document.body.appendChild(downloadLink);
+
+
+                downloadLink.click();
+            }
+
+
+ function exportTableToCSV(filename) {
+            var csv = [];
+            var rows = document.querySelectorAll("table tr");
+
+            for (var i = 0; i < rows.length; i++) {
+                var row = [], cols = rows[i].querySelectorAll("td, th");
+
+                for (var j = 0; j < cols.length; j++) 
+                    row.push("\""+cols[j].innerText+"\"");
+
+                csv.push(row.join(","));        
+            }
+
+            // Download CSV file
+            downloadCSV(csv.join("\n"), filename);
+        }
+</script>
 
 {% endblock content %}

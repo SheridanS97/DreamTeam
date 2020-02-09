@@ -1,6 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class ="content-section">
+
+    <!-- Email button -->
+        <div id="share-buttons" class="float-right">
+   <a href="mailto:?Subject={{Individual_Inhibitor['inhibitor_name']}}  &amp;Body= http://127.0.0.1:5000/Inhibitors/{{Individual_Inhibitor['inhibitor_name']}}">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+    </div>
+<style type="text/css">
+#share-buttons img {
+width: 40px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+</style>
+
         <legend class="border-bottom mb-4">{{Individual_Inhibitor["inhibitor_name"]}}</legend>
 
 <table class="table table-hover">
@@ -9,7 +26,7 @@
         <td>{{Individual_Inhibitor["inhibitor_name"]}}</td>
       </tr>
       <th scope="row">Chembl ID</th>
-        <td> <a href="https://www.ebi.ac.uk/chembl/compound_report_card/{{Individual_Inhibitor["chembl_id"].replace(" ", "")}}/" target="_blank">{{Individual_Inhibitor["chembl_id"]}}</a></td>
+        <td> <a href="https://www.ebi.ac.uk/chembl/compound_report_card/{{Individual_Inhibitor['chembl_id'].replace(' ', '')}}/" target="_blank">{{Individual_Inhibitor["chembl_id"]}}</a></td>
       </tr>
       <tr>
         <th scope="row">Molecular Weight</th>
@@ -19,7 +36,7 @@
         <th scope="row">Smiles</th>
         <td>{{Individual_Inhibitor['smiles']}} </td>
       </tr>
-       <th scope="row">Inchi</th>
+       <th scope="row">InChiKey</th>
         <td>{{Individual_Inhibitor['inchi']}} </td>
       <tr>
       <th scope="row">Image</th>

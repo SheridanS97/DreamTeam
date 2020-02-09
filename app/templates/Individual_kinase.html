@@ -4,6 +4,23 @@
 
 
 <div class ="content-section">
+
+  <!-- Email button -->
+        <div id="share-buttons" class="float-right">
+   <a href="mailto:?Subject={{Information['gene_name']}}  &amp;Body= http://127.0.0.1:5000/HumanKinases/results_kinases/tak/{{Information['gene_name']}}">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+    </div>
+<style type="text/css">
+#share-buttons img {
+width: 40px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+</style>
+
         <legend class="border-bottom mb-4">{{Information["gene_name"]}}</legend>
 
 <!-- Nav tabs -->
