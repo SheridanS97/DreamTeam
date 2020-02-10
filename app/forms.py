@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, validators, TextField,IntegerField, DecimalField
-from wtforms.validators import DataRequired, Length, EqualTo, Required, NumberRange, optional
+from wtforms.validators import DataRequired, Length, EqualTo, Required, NumberRange
 from flask_wtf.file import FileField, FileAllowed, FileRequired
 from flask_wtf import Form
 from wtforms import SelectField
@@ -38,8 +38,9 @@ class Substrate(FlaskForm):
 
 
 class Parameters(FlaskForm):
-	PValue = DecimalField('P-Value Threshold: (0 - 0.05)', validators=[DataRequired(), NumberRange(min=0, max=0.05)])
-	Coefficience = IntegerField('Coefficience of Variance Threshold (%)', validators=[DataRequired(), NumberRange(min=0,max=100)])
-	Fold = SelectField('Fold Change Significance Threshold: (0 - 5)', choices=[('0', '0'),('1', '1'), ('2', '2'),('3', '3'),('4', '4'),('5', '5')])
-	submit = SubmitField('Submit')
+    PValue = DecimalField('P-Value Threshold: (0.01 - 0.05)', validators=[DataRequired(), NumberRange(min=0, max=0.05)])
+    Coefficience = DecimalField('Coefficient of Variance Threshold', validators=[DataRequired(), NumberRange(min=0,max=3)])
+    Fold = SelectField('Fold Change Significance Threshold: (0 - 5)', choices=[('0', '0'),('1', '1'), ('2', '2'),('3', '3'),('4', '4'),('5', '5')])
+    Sub = SelectField('Minimum Number of Substrates for Enrichment Visualisation', choices =[('0', '0'),('1', '1'), ('2', '2'),('3', '3'),('4', '4'),('5', '5')])
+    submit = SubmitField('Submit')
 

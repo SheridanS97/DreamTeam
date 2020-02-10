@@ -13,8 +13,9 @@ import csv #loading csv package
 import pandas as pd #loading pandas package
 import re #loading regex package
 import numpy as np
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
+import statsmodels.api# as sm
+import statsmodels.formula.api #as smf
+from statsmodels.stats._knockoff import RegressionFDR
 import math
 import plotly.express as px
 from scipy.stats import norm
@@ -31,11 +32,12 @@ from bokeh.layouts import row
 #p_val=0.01
 #CV=100
 
-def data_analysis(filename, CV):
-    CV=(int(CV)/100)
+def data_analysis(filename, p_val, CV, Sub):
+    Sub=float(Sub)
+    CV=float(CV)
     #read in txt file
-    df_input_original = pd.read_csv(filename, sep='\t')
-    #df_input_original = pd.read_csv("../app/instance/Data_Upload/"+ filename,  sep='\t')
+    #df_input_original = pd.read_csv(filename, sep='\t')
+    df_input_original = pd.read_csv("../app/instance/Data_Upload/"+ filename,  sep='\t')
     
     #There are 86 columns in the dataframe, but only 7 columns have values, the rest are empty
     #Need to remove the empty columns
@@ -50,16 +52,31 @@ def data_analysis(filename, CV):
     df_cols=["Substrate", "control_mean", "inhibitor_mean", "fold_change", "p_value", "ctrlCV", "treatCV" ]
 
     input_original_subset.columns=df_cols
-    
+    input_original_subset.iloc[:, 0]=input_original_subset.iloc[:, 0].astype(str)
+
+    input_original_subset=(input_original_subset[~input_original_subset['Substrate'].str.contains("None")] ) #drop rows with "None"
+
+
+
+    met_regex1 = r"\([M]\d+\)" #Use Regex to find "(M and any number of digits)"
+
+
+    input_original_subset=(input_original_subset[~input_original_subset.Substrate.str.contains(met_regex1)].copy()) #d1: rows with (Mddd) removed....copy() to remove conflict    
     #Make columns 2-7 type float instead of string
+
+    input_original_subset['ctrlCV'] = input_original_subset['ctrlCV'].replace(np.nan, 3)
+    input_original_subset["treatCV"]=input_original_subset["treatCV"].replace(np.nan, 3)
+
     input_original_subset.iloc[:, 1:7] = input_original_subset.iloc[:, 1:7].astype(float)
 
     #Need to separate the phosphosite from the substrate in the first column into 2 separate columns
     input_original_subset[['Substrate','Phosphosite']] = input_original_subset.Substrate.str.split('\(|\)', expand=True).iloc[:,[0,1]]
 
-    #Remove any rows where there are NaN in any of the columns
-    input_original_subset=input_original_subset.dropna()
-    #input_original_subset=input_original_subset.head(100)
+
+ #   input_original_subset=input_original_subset.dropna()
+
+#print (NegLog10Kinase.head())
+#
    
     #Take -log10 of the corrected p-value.
     uncorrected_p_values=input_original_subset.iloc[ :,4].astype(np.float64)
@@ -69,12 +86,14 @@ def data_analysis(filename, CV):
     input_original_subset["-Log10 Corrected P-Value"]=log10_corrected_pvalue
     NegLog10Kinase=input_original_subset
     
+    NegLog10Kinase.loc[:, "fold_change"].replace([np.inf, -np.inf], 0, inplace=True)
     log2FC=np.log2(NegLog10Kinase.iloc[:, 3])
-    NegLog10Kinase["Log2 Fold Change"]=pd.Series(log2FC)
+
+    NegLog10Kinase["Log2 Fold Change"]=log2FC
     
     log2FCKinase = NegLog10Kinase
    
-    log2FCKinase.loc[:, "Log2 Fold Change"].replace([np.inf, -np.inf], np.nan, inplace=True)
+    log2FCKinase.loc[:, "Log2 Fold Change"].replace([np.inf, -np.inf], 0, inplace=True)
     final_substrate=log2FCKinase
    
     # Replace nan with 0.
@@ -119,14 +138,12 @@ def data_analysis(filename, CV):
 
     Z_Scores=[]    
     for i, j in zip(mS, m):
-        Z_Scores.append((i-mP)*math.sqrt(j)*1/delta)
+        Z_Scores.append(((i-mP)*math.sqrt(j))/delta)
 
     p_means=[]
     for i in Z_Scores:
         p_means.append(norm.sf(abs(i)))
         
- 
-  # p_adj = multipletests(p_means, alpha=0.05, method='fdr_bh')
     enrichment=mS/mP
     
     calculations_dict={'mS': mS, 'mP':mP, 'm':m, 'Delta':delta, 'Z_Scores':Z_Scores,"P_value":p_means, "Enrichment":enrichment}
@@ -138,10 +155,9 @@ def data_analysis(filename, CV):
     #user define CV value: Rows Above CV filtered out
     
     return (calculations_df, final_substrate ,df_final3) #calculations_df)
-calculations_df, final_substrate, df_final3=data_analysis("mux.tsv", 100)
+#calculations_df, final_substrate, df_final3=data_analysis("Ipatasertib.tsv", 0.05, 3)
 
-
-def VolcanoPlot_Sub(final_substrate, CV, p_val, FC):
+def VolcanoPlot_Sub(final_substrate, p_val, FC, CV):
     #calculations_df, final_substrate, df_final3=data_analysis(filename, CV)
     
     FC=float(FC)
@@ -150,7 +166,7 @@ def VolcanoPlot_Sub(final_substrate, CV, p_val, FC):
 
     final_substrate.loc[(final_substrate['Log2 Fold Change'] > FC) & (final_substrate['-Log10 Corrected P-Value'] > PV), 'color' ] = "Green"  # upregulated
     final_substrate.loc[(final_substrate['Log2 Fold Change'] < FC_N) & (final_substrate['-Log10 Corrected P-Value'] > PV), 'color' ] = "Red"   # downregulated
-    final_substrate['color'].fillna('grey', inplace=True)
+    final_substrate['color'].fillna('grey', inplace=True)  
 
     output_notebook()
 
@@ -168,16 +184,17 @@ def VolcanoPlot_Sub(final_substrate, CV, p_val, FC):
                                 ('p_value', '@{-Log10 Corrected P-Value}')])
 
     tools = [hover, WheelZoomTool(), PanTool(), BoxZoomTool(), ResetTool(), SaveTool()]
-    
-    p = figure(tools=tools,title=title,plot_width=700,plot_height=400,toolbar_location='right',
+    #p.figure.circle('x','y',color='color',legend='regulation',source=source)
+    p = figure(tools=tools,title=title, plot_width=700,plot_height=400,toolbar_location='right',
            toolbar_sticky=False)
    
     p.scatter(x = 'Log2 Fold Change', y = '-Log10 Corrected P-Value',source=source,size=10,color='color')
-   
+
+    #types= ['Upregulated', 'Downregulated']
     p_sig = Span(location=PV,dimension='width', line_color='black',line_dash='dashed', line_width=3)
     fold_sig_over=Span(location=FC,dimension='height', line_color='black',line_dash='dashed', line_width=3)
     fold_sig_under=Span(location=FC_N,dimension='height', line_color='black',line_dash='dashed', line_width=3)
-
+    
     p.add_layout(p_sig)   
     p.add_layout(fold_sig_over)   
     p.add_layout(fold_sig_under)   
@@ -191,7 +208,7 @@ def VolcanoPlot_Sub(final_substrate, CV, p_val, FC):
 
 #VolcanoPlot_Sub("mux.tsv", 100, 0.05, 2)
 
-def VolcanoPlot(df_final3, CV, p_val, FC):
+def VolcanoPlot(df_final3, p_val, FC, CV):
    # calculations_df, final_substrate, df_final3=data_analysis(filename, CV)
     FC=float(FC)
     FC_N=-(float(FC))
@@ -240,46 +257,38 @@ def VolcanoPlot(df_final3, CV, p_val, FC):
     html=file_html(p, CDN, "Volcano Plot of Filtered Kinases" )
     return html
 
-def EnrichmentPlot(calculations_df, CV, p_val, FC):
+def EnrichmentPlot(calculations_df, p_val, FC, CV, Sub):
     #calculations_df, df_final2, df_final3=data_analysis(filename,CV)
     
-    reduc_calculations_df=calculations_df[calculations_df['m']>= 4]
-    reduc_calculations_df=reduc_calculations_df.sort_values(by='Enrichment')
+    reduc_calculations_df=calculations_df[calculations_df['m']>= float(Sub)]
+    reduc_calculations_df=reduc_calculations_df.sort_values(by='Z_Scores')
 
     reduc_calculations_df.loc[(reduc_calculations_df['P_value'] < float(p_val)), 'color'] = "Orange"  # significance 0.05# significance 0.01
     reduc_calculations_df.loc[(reduc_calculations_df['P_value'] > float(p_val)), 'color' ] = "Black"
 
     kinase=reduc_calculations_df['kinase']
 
-    enrichment=reduc_calculations_df['Enrichment']
+    enrichment=reduc_calculations_df['Z_Scores']
     source = ColumnDataSource(reduc_calculations_df)
 
-    hover = HoverTool(tooltips=[('Enrichment)','@Enrichment'),
+    hover = HoverTool(tooltips=[('Z-Score)','@Z_Scores'),
                                 ('Number of Substrates', '@m'),
-                                ('P-value', '@P_value')])
+                                ('P-value', '@P_value'),
+                                ('Kinase', 'kinase')])
 
     tools = [hover, WheelZoomTool(), PanTool(), BoxZoomTool(), ResetTool(), SaveTool()]
     p = figure(tools=tools, y_range=kinase, x_range=((enrichment.min()-5), (enrichment.max()+5)), plot_width=600, plot_height=800, toolbar_location=None,
            title="Kinase Substrate Enrichment",)
-    p.hbar(y="kinase", left=0, right='Enrichment', height=0.3, color= 'color', source=source)
+    p.hbar(y="kinase", left=0, right='Z_Scores', height=0.3, color= 'color', source=source)
 
     p.ygrid.grid_line_color = None
-    p.xaxis.axis_label = "Enrichment (mS/mP)"
+    p.xaxis.axis_label = "Z-Score"
     p.yaxis.axis_label = "Kinase"
     p.outline_line_color = None
 
-    html=file_html(p, CDN, "Kinase Substrate Enrichment" )
+    html=file_html(p, CDN, "Ratio of Enrichment" )
     return html
 
-
-def df_html(filename, CV):
-    calculations_df, final_substrate, df_final3=data_analysis(filename,CV)
-    df_calc=calculations_df.to_html()
-    return df_final3.to_csv("kinases.csv")
-    
-
-def df2_html(filename,CV):
-    calculations_df, final_substrate, df_final3=data_analysis(filename,CV)
-    df_final_html=df_final3.to_html()
+def df2_html(calculations_df):
+    df_final_html=calculations_df.to_html()
     return df_final_html
-    
