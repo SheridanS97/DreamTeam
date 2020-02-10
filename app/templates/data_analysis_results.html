@@ -4,14 +4,16 @@
     <fieldset class="form-group">
 				<legend class="border-bottom mb-4">DATA ANALYSIS</legend>
 				<P> Filename: {{filename}} </P>
-				<p> P-Value : {{PValue}}, Fold : {{Fold}} , Coefficience: {{Coeff}} </p>
+				<p> P-Value : {{PValue}}, Fold : {{Fold}} , Coefficience: {{Coeff}}, Minimum Number of Substrates: {{Sub}} </p>
 		</fieldset> 
 
 	{{VolcanoPlot1|safe}}   
 
 	{{VolcanoPlot2|safe}}         
 	
-    {{Enrichment|safe}}            
+    {{Enrichment|safe}} 
+    
+    {{Calculations|safe}}           
     </div>
 
 
