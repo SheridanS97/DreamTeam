@@ -52,12 +52,14 @@ def Parameter(filename):
         PValue = form.PValue.data
         Fold = form.Fold.data
         Coeff = form.Coefficience.data
+
         Sub = form.Sub.data
         if 0 <= PValue <= 0.05:
             if 0 <= Coeff <= 3:
                 return redirect(url_for('Visualisation', filename=filename, PValue=PValue, Fold=Fold, Coeff=Coeff, Sub=Sub ))
             else:
                 flash("Coefficience of Variance Threshold must be a whole number between 0 to 3", "danger")
+
 
         else:
             flash("P-Value Threshold must be between 0 - 0.05", "danger")

@@ -1,7 +1,34 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<h1> Hello </h1>
+<div class ="content-section">
+        <legend class="border-bottom mb-4">{{Info_by_chromosome_karyotype["substrate_gene"]}}</legend>
+
+<table class="table table-hover">
+      <tr>
+        <th scope="row">Substrate Protein Name</th>
+        <td>{{substrate_info["substrate_name"]}}</td>
+      </tr>
+      <th scope="row">Substrate Gene Name</th>
+        <td>{{substrate_info["substrate_gene_name"]}}</td>
+      </tr>
+      <th scope="row">Phosphosite</th>
+        <td>{% for dict_item in substrate_info['phosphosites'] %}
+                  {{dict_item['phosphosite']}} 
+                {% endfor %} </td>
+        </tr>         
+   <th scope="row">Neighbouring Sequences</th>
+        <td>{% for dict_item in substrate_info['phosphosites'] %}
+                  {{dict_item['neighbouring_sequences']}} 
+                {% endfor %} </td>
+      </tr>
+     <th scope="row">Genome Browser</th>
+        <td><a  target="_blank" 
+	href='{{substrate_info["substrate_url"]}}'>Please Click Here</a> </td>
+      </tr>
+	
+    </table>
+
 
 
 {{Info_by_chromosome_karyotype}}

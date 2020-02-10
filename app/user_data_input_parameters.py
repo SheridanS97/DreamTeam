@@ -155,7 +155,6 @@ def data_analysis(filename, p_val, CV, Sub):
     #user define CV value: Rows Above CV filtered out
     
     return (calculations_df, final_substrate ,df_final3) #calculations_df)
-#calculations_df, final_substrate, df_final3=data_analysis("Ipatasertib.tsv", 0.05, 3)
 
 def VolcanoPlot_Sub(final_substrate, p_val, FC, CV):
     #calculations_df, final_substrate, df_final3=data_analysis(filename, CV)

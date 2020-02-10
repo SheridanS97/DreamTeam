@@ -25,36 +25,64 @@
 
   <div class="tab-pane container active" id="KIN">
     <table class="table table-hover">
-      <tr>
-        <h3>Kinase Search</h3>
-          <img src="\templates\help_images\Kinase_search1.png" width="400" height="200">
-
-
+        <tr>
+          <h2>Kinase search</h2>
           <p>Kinase search allows you to type your query kinase into the search bar. </p>
-          <img src="/help_images/Kinase_mid_result.png" width="400" height="200">
+          <img src="static\help_images\Kinase_search_map.png" width="400" height="200">
           <p>This returns all kinase entries matching your query, taking into account
-            gene name and aliases.
-          If kinase name is unknown, you can search for part of the name or a single
-          letter to return all entries featuring your query.
-         From the table of results click on choosen kinase gene name to view
-       more information. </p>
+              gene name and aliases.
+            If kinase name is unknown, you can search for part of the name or a single
+            letter to return all entries featuring your query.
+           From the table of results click on choosen kinase gene name to view
+         more information. </p>
+         <img src="static/help_images/Kinase_mid_result_map.png" width="400" height="200">
 
           <h3>Kinase Results</h3>
-          <img src="In_kin_results_BKG.png" width="400" height="200">
-          <p>Firstly background information about the target kinase is displayed.
-          Using tabs on the results table you can explore phosphosites the kinases acts on as well as
-        the (Uniprot) protein feature viewer for the target kinase.</p>
-      </tr>
+          <p>Selecting a kinase take you to the individual kinase information page.
+            <br/>Background information about the kinase is diplayed first. This shows information about:
+            <ul>
+              <li> Protein name</li>
+              <li> Uniprot number</li>
+              <li> Uniprot entry</li>
+              <li> Gene name</li>
+              <li> Kinase family</li>
+              <li> Gene aliases</li>
+              <li> Subcellular location</li>
+              <li> Inhibitor</li>
+            </ul><p/>
+          <img src="static\help_images\Kin_mapk1_BKI.png" width="400" height="200">
+          <p>To explore the uniprot page for your kinase simply click on the uniprot number.<p/>
+          <img src="static\help_images\Kin_mapk1_uni_link.png" width="400" height="200">
+          <p>Using tabs on the results table you can explore phosphosites the kinases acts on.</p>
+          <img src="static\help_images\Kin_mapk1_Phos.png" width="400" height="200">
+          <p>To find out more information about a substrate click on the substrate name.</p>
+          <img src="static\help_images\Kin_mapk1_Phos_link.png" width="400" height="200">
+          <p> Protein browser.<p/>
+        </tr>
     </table>
   </div>
-
 
 
   <div class="tab-pane container active" id="INH">
     <table class="table table-hover">
         <tr>
-          <h2>Inhibitor help</h2>
-            <p> Search by kinase or by inhibitor</p>
+          <h2>Inhibitor search</h2>
+            <p> Inhibitor search page includes a table with all inhibitors.
+            Typing in the search bar will condense the table to results which feature the query term only. </p>
+            <img src="static\help_images\inhi_search1.png" width="400" height="200">
+            <h3> Inhibitor Results</h3>
+            <p>Clicking on chosen inhibitor name, you are taken to the individual inhibitor information page where you will find the following:
+            <ul>
+              <li>Chembl ID</li>
+              <li>Molecular weight</li>
+              <li>Smiles formular</li>
+              <li>Inchi formular</li>
+              <li>An image of the inhibitor</li>
+              <li>Inhibitor aliases</li>
+              <li>Target of the inhibitor(gene name and aliases)</li>
+
+            </ul></p>
+            <img src="static\help_images\inhi_search_plain.png" width="400" height="200">
         </tr>
     </table>
   </div>
@@ -62,8 +90,12 @@
   <div class="tab-pane container fade" id="PS">
    <table class="table table-hover">
            <tr>
-              <h2>Phosphosite Help</h2>
-                <p> Search by substrate gene name or genomic location </p>
+              <h2>Phosphosite search</h2>
+                <p> Phosphosites can be searched by genomic location.</p>
+                <img src="static\help_images\PS_search_ch.png" width="400" height="200">
+                <p>Alternatively you can search by substrate name.</p>
+                <img src="static\help_images\PS_search_sub.png" width="400" height="200">
+                <h3>Phosphosite results</h3>
            </tr>
     </table>
   </div>
@@ -73,6 +105,7 @@
            <tr>
               <h2>Data upload Help</h2>
                 <p> Kinase activty calculator</p>
+                <img src="static\help_images\Data_upload_pg1.png" width="400" height="200">
            </tr>
     </table>
   </div>

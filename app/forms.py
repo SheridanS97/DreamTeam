@@ -1,3 +1,4 @@
+
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, validators, TextField,IntegerField, DecimalField
 from wtforms.validators import DataRequired, Length, EqualTo, Required, NumberRange
@@ -43,4 +44,3 @@ class Parameters(FlaskForm):
     Fold = SelectField('Fold Change Significance Threshold: (0 - 5)', choices=[('0', '0'),('1', '1'), ('2', '2'),('3', '3'),('4', '4'),('5', '5')])
     Sub = SelectField('Minimum Number of Substrates for Enrichment Visualisation', choices =[('0', '0'),('1', '1'), ('2', '2'),('3', '3'),('4', '4'),('5', '5')])
     submit = SubmitField('Submit')
-
